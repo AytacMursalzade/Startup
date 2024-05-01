@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 function FooterTopdiv() {
   return (
-    <div className="mt-[55px]">
+    <div className="mt-[30px] px-[75px] ">
       <ul className="  flex flex-row gap-[15px] justify-around ">
-        <li className=" flex flex-row gap-[40px] ">
+        <li className=" flex flex-row mt-[20px] gap-[40px] ">
           <Link
             to="/"
-            className="relative w-[145px] h-[147px] overflow-hidden"
+            className="relative w-[118px] h-[119px] overflow-hidden"
           >
             <img src={friend} alt="community" className="w-full h-full" />
             <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
@@ -25,10 +25,10 @@ function FooterTopdiv() {
             </p>
           </div>
         </li>
-        <li className=" flex flex-row gap-[40px] ">
-        <Link
+        <li className=" flex flex-row mt-[20px] gap-[40px] ">
+          <Link
             to="/"
-            className="relative w-[145px] h-[147px] overflow-hidden"
+            className="relative w-[118px] h-[119px] overflow-hidden"
           >
             <img src={friend} alt="community" className="w-full h-full" />
             <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
@@ -44,10 +44,10 @@ function FooterTopdiv() {
             </p>
           </div>
         </li>
-        <li className=" flex flex-row gap-[40px] ">
-        <Link
+        <li className=" flex flex-row mt-[20px] gap-[40px] ">
+          <Link
             to="/"
-            className="relative w-[145px] h-[147px] overflow-hidden"
+            className="relative w-[118px] h-[119px] overflow-hidden"
           >
             <img src={friend} alt="community" className="w-full h-full" />
             <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>

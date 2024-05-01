@@ -1,3 +1,92 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.bullet{
+    background-image: url("../src/assets/iphoneear.jpg");
+}
+.handleearphone{
+    background-image: url("../src/assets/handleearphone.jpg");
+}
+.drone{
+    background-image: url("../src/assets/drone.jpg");
+}
+.charger{
+    background-image: url("../src/assets/chargephone.jpg");
+}
+
+
+
+*container{
+    width: 100%;
+    max-width: 1708px;
+    margin: 0 , auto;
+    padding: 0 20px;
+}
+
+.dropdown {
+    position: relative;
+  }
+  
+  .category-button {
+    padding: 10px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px); 
+    left: 0;
+    z-index: 10; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    background-color: #fff; 
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .category-button {
+    position: relative;
+    padding: 10px;
+  }
+  
+  .arrow {
+    position: absolute;
+    left: 80px;
+    top: 52%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  
+  .arrow-up {
+    border-top: 5px solid black;
+  }
+  
+  .arrow-down {
+    border-bottom: 5px solid black;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    z-index: 10;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px #3b82f6; 
+}
+
