@@ -6,7 +6,7 @@ import PartnerSlider from './PartnerSlider';
 function FooterAverage() {
   return (
     <div>
-      <div className="flex flex-col items-center justify-center mt-[230px]">
+      <div className="flex flex-col items-center justify-center mt-[160px]">
         <h1 className="font-bold text-[34px] ">SHOP BY BRAND</h1>
 
         <div className="flex items-center justify-center mt-[15px]">

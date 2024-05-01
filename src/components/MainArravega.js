@@ -17,15 +17,15 @@ function MainArravega() {
           </div>
         
       </div>
-      <div className="WM relative">
+      <div className="WM relative px-[23px]">
         <div>
-          <div className="wishlistBefore absolute top-[20px] left-[72px] flex justify-center items-center shadow-[10px_10px_107px_-47px_rgba(224,32,224,1);] text-white w-[33px] h-[33px] rounded-[50%] bg-[#2695FF]">
+          <div className="wishlistBefore absolute top-[20px] left-[93px] flex justify-center items-center shadow-[10px_10px_107px_-47px_rgba(224,32,224,1);] text-white w-[33px] h-[33px] rounded-[50%] bg-[#2695FF]">
             <FaGavel />
           </div>
-          <div className="wishlistBefore absolute top-[70px] left-[72px] flex justify-center shadow-[10px_10px_92px_-47px_rgba(148,133,148,1);] items-center text-black w-[33px] h-[33px] rounded-[50%] bg-white hover:bg-[#2695FF] hover:text-white  ">
+          <div className="wishlistBefore absolute top-[70px] left-[93px] flex justify-center shadow-[10px_10px_92px_-47px_rgba(148,133,148,1);] items-center text-black w-[33px] h-[33px] rounded-[50%] bg-white hover:bg-[#2695FF] hover:text-white  ">
             <CiHeart />
           </div>
-          <div className="wishlistBefore absolute top-[120px] left-[72px] flex justify-center items-center shadow-[10px_10px_92px_-47px_rgba(148,133,148,1);] text-black w-[33px] h-[33px] rounded-[50%] bg-white hover:bg-[#2695FF] hover:text-white ">
+          <div className="wishlistBefore absolute top-[120px] left-[93px] flex justify-center items-center shadow-[10px_10px_92px_-47px_rgba(148,133,148,1);] text-black w-[33px] h-[33px] rounded-[50%] bg-white hover:bg-[#2695FF] hover:text-white ">
             <FaSearch />
           </div>
         </div>
