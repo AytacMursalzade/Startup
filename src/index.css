@@ -18,11 +18,11 @@
 
 
 
-*container{
+*.container{
     width: 100%;
-    max-width: 1708px;
+    max-width: 1668px;
     margin: 0 , auto;
-    padding: 0 20px;
+    padding: 15 10px;
 }
 
 .dropdown {
@@ -90,3 +90,55 @@
     box-shadow: 0 0 0 2px #3b82f6; 
 }
 
+input:focus{
+	border-color: inherit;
+    -webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.imagePhone{
+  background-image: url(../src/assets/mobile_prod1-1-400x400.jpg);
+}
+.slider-container {
+  position: relative;
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
