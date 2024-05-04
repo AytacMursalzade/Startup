@@ -6,7 +6,7 @@ import Formdata from "./Formdata"
 function Locationn() {
   return (
     <div>
-      <div className="flex flex-col items-center justify-center mt-[126px]">
+      <div className="flex flex-col items-center justify-center ">
         <h1 className="font-bold text-[34px] ">NEED HELP? CONTACT US</h1>
 
         <div className="flex items-center justify-center mt-[15px]">

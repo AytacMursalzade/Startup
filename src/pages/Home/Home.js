@@ -6,6 +6,7 @@ import FooterAverage from "../../components/FooterAverage";
 import Hovered from "../../components/Hovered";
 import Locationn from "./../../components/Locationn";
 import FooterFilter from "../../components/FooterFilter";
+import Salesparts from './../../components/Salesparts';
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
         <Mainbottom />
         <MainArravega />
         <Hovered />
+        <Salesparts />
         <Locationn />
         <FooterTop />
         <FooterAverage />
