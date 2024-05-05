@@ -4,6 +4,7 @@ import { FaGavel } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import backgroundPhone from "../assets/mobile_prod1-1-400x400.jpg";
+import Tooltip from "@mui/material/Tooltip";
 
 function MainArravega() {
   return (
@@ -22,15 +23,15 @@ function MainArravega() {
       <div className=" container flex flex-wrap gap-[41px] px-[70px] mt-[46px] ">
         <div className="WM px-[23px] border-solid shadow-[-2px_5px_28px_-16px_rgba(46,46,46,0.73)] w-[302px] h-[436px] ">
           <div className="flex flex-col items-start pt-[30px] gap-[8px] ">
-            <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+           <Tooltip title="Bid Now"> <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <FaGavel />
-            </button>
-            <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+            </button></Tooltip>
+            <Tooltip title="Add to Wishlist"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <CiHeart />
-            </button>
-            <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+            </button></Tooltip>
+            <Tooltip title="Quickview"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <FaSearch />
-            </button>
+            </button></Tooltip>
           </div>
           <div className="flex flex-col ml-[50px]  ">
             <div className="mt-[-80px]  ">
@@ -48,16 +49,16 @@ function MainArravega() {
           </div>
         </div>
         <div className="WM px-[23px] border-solid shadow-[-2px_5px_28px_-16px_rgba(46,46,46,0.73)] w-[302px] h-[436px] ">
-          <div className="flex flex-col items-start pt-[30px] gap-[8px] ">
-            <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+        <div className="flex flex-col items-start pt-[30px] gap-[8px] ">
+           <Tooltip title="Bid Now"> <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <FaGavel />
-            </button>
-            <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+            </button></Tooltip>
+            <Tooltip title="Add to Wishlist"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <CiHeart />
-            </button>
-            <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+            </button></Tooltip>
+            <Tooltip title="Quickview"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <FaSearch />
-            </button>
+            </button></Tooltip>
           </div>
           <div className="flex flex-col ml-[50px]  ">
             <div className="mt-[-80px]  ">
@@ -75,16 +76,16 @@ function MainArravega() {
           </div>
         </div>
         <div className="WM px-[23px] border-solid shadow-[-2px_5px_28px_-16px_rgba(46,46,46,0.73)] w-[302px] h-[436px] ">
-          <div className="flex flex-col items-start pt-[30px] gap-[8px]  ">
-            <button className="rounded-[45px]  bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+        <div className="flex flex-col items-start pt-[30px] gap-[8px] ">
+           <Tooltip title="Bid Now"> <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <FaGavel />
-            </button>
-            <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+            </button></Tooltip>
+            <Tooltip title="Add to Wishlist"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <CiHeart />
-            </button>
-            <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+            </button></Tooltip>
+            <Tooltip title="Quickview"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <FaSearch />
-            </button>
+            </button></Tooltip>
           </div>
           <div className="flex flex-col ml-[50px]  ">
             <div className="mt-[-80px]  ">
@@ -108,16 +109,16 @@ function MainArravega() {
           }}
           className="WM px-[23px] border-solid shadow-[-2px_5px_28px_-16px_rgba(46,46,46,0.73)] w-[302px] h-[436px] "
         >
-          <div className="flex flex-col items-start pt-[30px] gap-[8px] ">
-            <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+           <div className="flex flex-col items-start pt-[30px] gap-[8px] ">
+           <Tooltip title="Bid Now"> <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <FaGavel />
-            </button>
-            <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+            </button></Tooltip>
+            <Tooltip title="Add to Wishlist"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <CiHeart />
-            </button>
-            <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
+            </button></Tooltip>
+            <Tooltip title="Quickview"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
               <FaSearch />
-            </button>
+            </button></Tooltip>
           </div>
           <div className="flex flex-col  ">
             <div className="flex flex-col  py-[22px]  items-center mt-[200px] border-t-2 ">

@@ -2,25 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Slide from "../components/Slide";
-import { useDispatch, useSelector } from "react-redux";
-import { modalFunc } from "../redux/modalSlice";
-import DropdownButton from "./DropdownButton";
+
 
 
 function Header() {
 
-  const dispatch = useDispatch();
+ 
 
   return (
     <>
       
-      <div className="h-[70px] bg-[#2695FF] flex justify-between ">
+      <div className="h-[70px] bg-[#2695FF] flex justify-between mb-[98px] ">
         <nav>
             <ul className="flex gap-[44px] text-white items-center text-[14px] font-medium ">
                 <Link><li className="ml-[70px] w-[240px] justify-center font-medium h-[70px] flex gap-[5px] items-center py-[20px] px-[15px] text-black bg-[white] "><GiHamburgerMenu /> CATEGORIES</li>
                
                 </Link>
-                <Link><li onClick={() => dispatch(modalFunc())} className="border-t-2 border-transparent border-white transition duration-300">Home</li></Link>
+                <Link><li className="border-t-2 border-transparent border-white transition duration-300">Home</li></Link>
                 <Link><li className="border-t-2 border-transparent hover:border-white transition duration-300">Shop</li></Link>
                 <Link><li className="border-t-2 border-transparent hover:border-white transition duration-300">Vendors</li></Link>
                 <Link><li className="border-t-2 border-transparent hover:border-white transition duration-300">Shortcodes</li></Link>

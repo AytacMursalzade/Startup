@@ -6,7 +6,7 @@ function Filter() {
     <div>
       <form className="flex items-center justify-between w-[420px] mt-[-10px] py-[4px] px-[20px] rounded-full bg-white ">
         <input
-          className="text-white outline-none "
+          className="text-black outline-none "
           type="text"
           placeholder="Search products..."
         />

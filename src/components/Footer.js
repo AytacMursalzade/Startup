@@ -56,7 +56,7 @@ function Footer() {
           </h1>
           <form className="flex">
             <label>
-              <input className="w-[200px] h-[40px] px-[12px] " type="text" name="name" placeholder="Enter your email" />
+              <input className="w-[200px] h-[40px] px-[12px] focus:outline-none focus:border-gray-700"  type="text" name="name" placeholder="Enter your email" />
             </label>
             <button className="flex justify-center items-center hover:bg-[#0543EC] w-[110px] h-[40px] rounded-[8px]  bg-[#484848] text-white "><input type="submit" value="Submit" /></button>
           </form>
