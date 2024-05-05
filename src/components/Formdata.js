@@ -6,6 +6,8 @@ function Form() {
     name: "",
     email: "",
     message: "",
+    lastname: "",
+    subject: ""
   });
 
   const handleChange = (e) => {
@@ -20,7 +22,7 @@ function Form() {
   return (
     <div className="w-[680px]  p-6 bg-white shadow-md">
       <form onSubmit={handleSubmit}>
-        <div className="flex justify-between px-[15px] ">
+        <div className="flex justify-between px-[15px]  ">
           
           <div className="flex flex-col gap-[82px] ">
             <input
@@ -29,7 +31,7 @@ function Form() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="px-3 py-2 mt-1 input"
+              className="px-3 py-2 mt-1 input focus:outline-none focus:ring-0"
               placeholder="First Name"
               required
             />
@@ -39,7 +41,7 @@ function Form() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="px-3 py-2 mt-1  input"
+              className="px-3 py-2 mt-1  input focus:outline-none focus:ring-0"
               placeholder="Your Email"
               required
             />
@@ -48,7 +50,7 @@ function Form() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="px-3 py-2 mt-1 input"
+              className="px-3 py-2 mt-1 input focus:outline-none focus:ring-0"
               placeholder="Your Message"
               rows="4"
               required
@@ -56,22 +58,22 @@ function Form() {
           </div>
           <div className="flex flex-col gap-[82px]">
             <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
+              type="lastname"
+              id="lastname"
+              name="lastname"
+              value={formData.lastname}
               onChange={handleChange}
-              className="px-3 py-2 mt-1  input"
+              className="px-3 py-2 mt-1  input focus:outline-none focus:ring-0"
               placeholder="Last Name"
               required
             />
             <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
+              type="subject"
+              id="subject"
+              name="subject"
+              value={formData.subject}
               onChange={handleChange}
-              className="px-3 py-2 mt-1 input"
+              className="px-3 py-2 mt-1 input focus:outline-none focus:ring-0"
               placeholder="Subject"
               required
             />

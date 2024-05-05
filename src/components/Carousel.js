@@ -50,7 +50,7 @@ const Carousel = () => {
         <button className="flex items-center justify-center w-[35px] h-[35px] text-white bg-[#7F7F7F] hover:bg-black absolute left-[35px] top-1/2 transform -translate-y-1/2" onClick={handlePrev}><FaChevronLeft /></button>
         <button className="flex items-center justify-center w-[35px] h-[35px] text-white bg-[#7F7F7F] hover:bg-black absolute right-[35px] top-1/2 transform -translate-y-1/2" onClick={handleNext}><FaChevronRight /></button>
       </div>
-      <div className="progress-bar absolute bottom-0 " style={{ height: "12px", backgroundColor:"#D8D7DC", width: `${progress}%` }}></div>
+      <div className="progress-bar mt-[500px] " style={{ height: "12px", backgroundColor:"#D8D7DC", width: `${progress}%` }}></div>
     </div>
   );
 };
