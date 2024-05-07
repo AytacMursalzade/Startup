@@ -1,11 +1,11 @@
 // Navbar.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { openSubmenu, closeSubmenu } from './actions';
+import { openSubmenu, closeSubmenu } from '../redux/Slice/NavbarSlice';
 
 const Navbar = () => {
   const dispatch = useDispatch();
-  const {isSubmenuOpen} = useSelector(state => state.isSubmenuOpen);
+  const {isSubmenuOpen} = useSelector(state => state.navbarReducer.isSubmenuOpen);
 
   const handleCategoriesHover = () => {
     dispatch(openSubmenu());

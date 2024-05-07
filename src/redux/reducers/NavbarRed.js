@@ -1,5 +1,5 @@
 // reducers.js
-import { OPEN_SUBMENU, CLOSE_SUBMENU } from './actions';
+import { OPEN_SUBMENU, CLOSE_SUBMENU } from '../Slice/NavbarSlice';
 
 const initialState = {
   activeSubmenu: true,

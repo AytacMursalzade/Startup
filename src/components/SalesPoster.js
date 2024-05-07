@@ -3,9 +3,9 @@ import React from "react";
 function SalesPoster() {
   return (
     <>
-      <div className=" flex flex-col gap-[60px] mr-[32px] ">       
+      <div className="poster flex flex-col gap-[60px] mr-[32px] ">       
         <div>
-          <div className="w-[365px] h-[501px] flex justify-center items-center flex-col gap-[15px] bg-[blue] ">
+          <div className="bluePoster w-[365px] h-[501px] flex justify-center items-center flex-col gap-[15px] bg-[blue] ">
             <h1 className="text-[27px] text-white font-extrabold ">Phones</h1>
             <p className="text-white flex gap-[8px] ">
               <strong className="font-bold text-[16px] ">12</strong>Products

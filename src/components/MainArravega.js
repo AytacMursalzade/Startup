@@ -3,13 +3,13 @@ import imageTelephone from "../assets/mobile_prod1-1-400x400.jpg";
 import { FaGavel } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
-import backgroundPhone from "../assets/mobile_prod1-1-400x400.jpg";
+import phone from "../assets/mobile_prod1-1-400x400.jpg";
 import Tooltip from "@mui/material/Tooltip";
 
 function MainArravega() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center mt-[126px]">
+      <div className="topic flex flex-col items-center justify-center mt-[126px] mb-[25px] ">
         <h1 className="font-bold text-[34px] ">LATEST AUCTIONS</h1>
 
         <div className="flex items-center justify-center mt-[15px]">
@@ -20,114 +20,145 @@ function MainArravega() {
           <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_left"></div>
         </div>
       </div>
-      <div className=" container flex flex-wrap gap-[41px] px-[70px] mt-[46px] ">
-        <div className="WM px-[23px] border-solid shadow-[-2px_5px_28px_-16px_rgba(46,46,46,0.73)] w-[302px] h-[436px] ">
-          <div className="flex flex-col items-start pt-[30px] gap-[8px] ">
-           <Tooltip title="Bid Now"> <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <FaGavel />
-            </button></Tooltip>
-            <Tooltip title="Add to Wishlist"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <CiHeart />
-            </button></Tooltip>
-            <Tooltip title="Quickview"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <FaSearch />
-            </button></Tooltip>
-          </div>
-          <div className="flex flex-col ml-[50px]  ">
-            <div className="mt-[-80px]  ">
-              <img src={imageTelephone} alt="telephone" />
-            </div>
-
-            <div className="flex flex-col items-center py-[22px] mt-[73px] border-t-2 ">
-              <h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#2695FF] ">
-                Dual SIM Smartphone
-              </h2>
-              <p className="text-[#606060] text-[14px] font-light loading-[22px] ">
-                Current Bid: <span>$5.021.00</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="WM px-[23px] border-solid shadow-[-2px_5px_28px_-16px_rgba(46,46,46,0.73)] w-[302px] h-[436px] ">
-        <div className="flex flex-col items-start pt-[30px] gap-[8px] ">
-           <Tooltip title="Bid Now"> <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <FaGavel />
-            </button></Tooltip>
-            <Tooltip title="Add to Wishlist"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <CiHeart />
-            </button></Tooltip>
-            <Tooltip title="Quickview"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <FaSearch />
-            </button></Tooltip>
-          </div>
-          <div className="flex flex-col ml-[50px]  ">
-            <div className="mt-[-80px]  ">
-              <img src={imageTelephone} alt="telephone" />
-            </div>
-
-            <div className="flex flex-col items-center py-[22px]  mt-[73px] border-t-2 ">
-              <h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#2695FF] ">
-                Dual SIM Smartphone
-              </h2>
-              <p className="text-[#606060] text-[14px] font-light loading-[22px] ">
-                Current Bid: <span>$5.021.00</span>
-              </p>
+      
+      <div className="PhonesAll flex gap-[18px] px-[71px] ">
+        <div className="first">
+          <div className="allPhones w-[320px] h-[450px] shadow-lg">
+            <div className="flex flex-col">
+              <div className="flex justify-between items-start pt-[30px]">
+                <div className="flex flex-col gap-[8px] pl-[18px] ">
+                  <Tooltip title="Bid Now">
+                    <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <FaGavel />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Add to Wishlist">
+                    <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <CiHeart />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Quickview">
+                    <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <FaSearch />
+                    </button>
+                  </Tooltip>
+                </div>
+                <div>
+                  <img className="w-full" src={phone} alt="phones" />
+                </div>
+              </div>
+              <div className="phoneBottom flex flex-col mt-[47px] border-t-2 pt-[18px] items-center gap-[9px]">
+                <h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#2695FF]">
+                  Dual SIM Smartphone
+                </h2>
+                <p className="text-[#606060] text-[14px] font-light loading-[22px]">
+                  Sealed Bid Auction
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="WM px-[23px] border-solid shadow-[-2px_5px_28px_-16px_rgba(46,46,46,0.73)] w-[302px] h-[436px] ">
-        <div className="flex flex-col items-start pt-[30px] gap-[8px] ">
-           <Tooltip title="Bid Now"> <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <FaGavel />
-            </button></Tooltip>
-            <Tooltip title="Add to Wishlist"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <CiHeart />
-            </button></Tooltip>
-            <Tooltip title="Quickview"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <FaSearch />
-            </button></Tooltip>
-          </div>
-          <div className="flex flex-col ml-[50px]  ">
-            <div className="mt-[-80px]  ">
-              <img src={imageTelephone} alt="telephone" />
-            </div>
-
-            <div className="flex flex-col items-center py-[22px]  mt-[73px] border-t-2 ">
-              <h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#2695FF] ">
-                Dual SIM Smartphone
-              </h2>
-              <p className="text-[#606060] text-[14px] font-light loading-[22px] ">
-                Current Bid: <span>$5.021.00</span>
-              </p>
+          <div className="allPhones w-[320px] h-[450px] shadow-lg">
+            <div className="flex flex-col">
+              <div className="flex justify-between items-start pt-[30px]">
+                <div className="flex flex-col gap-[8px] pl-[18px] ">
+                  <Tooltip title="Bid Now">
+                    <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <FaGavel />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Add to Wishlist">
+                    <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <CiHeart />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Quickview">
+                    <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <FaSearch />
+                    </button>
+                  </Tooltip>
+                </div>
+                <div>
+                  <img className="w-full" src={phone} alt="phones" />
+                </div>
+              </div>
+              <div className="phoneBottom flex flex-col mt-[47px] border-t-2 pt-[18px] items-center gap-[9px]">
+                <h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#2695FF]">
+                  Dual SIM Smartphone
+                </h2>
+                <p className="text-[#606060] text-[14px] font-light loading-[22px]">
+                  Sealed Bid Auction
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          style={{
-            backgroundImage: `url(${backgroundPhone})`,
-            backgroundSize: "cover",
-          }}
-          className="WM px-[23px] border-solid shadow-[-2px_5px_28px_-16px_rgba(46,46,46,0.73)] w-[302px] h-[436px] "
-        >
-           <div className="flex flex-col items-start pt-[30px] gap-[8px] ">
-           <Tooltip title="Bid Now"> <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <FaGavel />
-            </button></Tooltip>
-            <Tooltip title="Add to Wishlist"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <CiHeart />
-            </button></Tooltip>
-            <Tooltip title="Quickview"><button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md ">
-              <FaSearch />
-            </button></Tooltip>
+        <div className="second">
+          <div className="allPhones w-[320px] h-[450px] shadow-lg">
+            <div className="flex flex-col">
+              <div className="flex justify-between items-start pt-[30px]">
+                <div className="flex flex-col gap-[8px] pl-[18px] ">
+                  <Tooltip title="Bid Now">
+                    <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <FaGavel />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Add to Wishlist">
+                    <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <CiHeart />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Quickview">
+                    <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <FaSearch />
+                    </button>
+                  </Tooltip>
+                </div>
+                <div>
+                  <img className="w-full" src={phone} alt="phones" />
+                </div>
+              </div>
+              <div className="phoneBottom flex flex-col mt-[47px] border-t-2 pt-[18px] items-center gap-[9px]">
+                <h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#2695FF]">
+                  Dual SIM Smartphone
+                </h2>
+                <p className="text-[#606060] text-[14px] font-light loading-[22px]">
+                  Sealed Bid Auction
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col  ">
-            <div className="flex flex-col  py-[22px]  items-center mt-[200px] border-t-2 ">
-              <h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#2695FF] ">
-                Dual SIM Smartphone
-              </h2>
-              <p className="text-[#606060] text-[14px] font-light loading-[22px] ">
-                Current Bid: <span>$5.021.00</span>
-              </p>
+          <div className="allPhones w-[320px] h-[450px] shadow-lg">
+            <div className="flex flex-col">
+              <div className="flex justify-between items-start pt-[30px]">
+                <div className="flex flex-col gap-[8px] pl-[18px] ">
+                  <Tooltip title="Bid Now">
+                    <button className="rounded-[45px] bg-[#2695FF] text-white flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <FaGavel />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Add to Wishlist">
+                    <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <CiHeart />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Quickview">
+                    <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
+                      <FaSearch />
+                    </button>
+                  </Tooltip>
+                </div>
+                <div>
+                  <img className="w-full" src={phone} alt="phones" />
+                </div>
+              </div>
+              <div className="phoneBottom flex flex-col mt-[47px] border-t-2 pt-[18px] items-center gap-[9px]">
+                <h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#2695FF]">
+                  Dual SIM Smartphone
+                </h2>
+                <p className="text-[#606060] text-[14px] font-light loading-[22px]">
+                  Sealed Bid Auction
+                </p>
+              </div>
             </div>
           </div>
         </div>

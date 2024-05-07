@@ -12,7 +12,7 @@ function Header() {
   return (
     <>
       
-      <div className="h-[70px] bg-[#2695FF] flex justify-between mb-[98px] ">
+      <div className="headerNav h-[70px] bg-[#2695FF] flex justify-between mb-[98px] ">
         <nav>
             <ul className="flex gap-[44px] text-white items-center text-[14px] font-medium ">
                 <Link><li className="ml-[70px] w-[240px] justify-center font-medium h-[70px] flex gap-[5px] items-center py-[20px] px-[15px] text-black bg-[white] "><GiHamburgerMenu /> CATEGORIES</li>

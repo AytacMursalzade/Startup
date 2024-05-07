@@ -20,7 +20,7 @@ function Form() {
   };
 
   return (
-    <div className="w-[680px]  p-6 bg-white shadow-md">
+    <div className="formData w-[680px]  p-6 bg-white shadow-md">
       <form onSubmit={handleSubmit}>
         <div className="flex justify-between px-[15px]  ">
           
