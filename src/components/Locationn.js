@@ -17,8 +17,8 @@ function Locationn() {
           <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_left"></div>
         </div>
       </div>
-      <div className="flex justify-evenly items-center  mt-[57px] ">
-        <div className="mt-[80px] ">
+      <div className="formData flex justify-evenly items-center  mt-[57px] ">
+        <div className="location mt-[80px] ">
           <img width={680} src={locationimage} alt="location" />
         </div>
         <div><Formdata/></div>

@@ -6,7 +6,7 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 function Footer() {
   return (
     <>
-      <div className="flex justify-around ml-[10px] gap-[30px] ">
+      <div className="averageFooter flex justify-around ml-[10px] gap-[30px] ">
         <div>
           <ul className="flex flex-col gap-[8px] ">
             <Link>
@@ -54,15 +54,15 @@ function Footer() {
           <h1 className="text-[#343E47] font-bold text-[24px] mb-[12px] ">
             Subscribe to our Newsteller
           </h1>
-          <form className="flex">
+          <form className="flex shadow-md ">
             <label>
-              <input className="w-[200px] h-[40px] px-[12px] focus:outline-none focus:border-gray-700"  type="text" name="name" placeholder="Enter your email" />
+              <input className="formFooter w-[200px] h-[40px] px-[12px] focus:outline-none focus:border-gray-700"  type="text" name="name" placeholder="Enter your email" />
             </label>
-            <button className="flex justify-center items-center hover:bg-[#0543EC] w-[110px] h-[40px] rounded-[8px]  bg-[#484848] text-white "><input type="submit" value="Submit" /></button>
+            <button className="btnFilter flex justify-center items-center hover:bg-[#0543EC] w-[110px] h-[40px] rounded-[8px]  bg-[#484848] text-white "><input type="submit" value="Submit" /></button>
           </form>
         </div>
       </div>
-      <div className="flex justify-between bg-[#F8F8F8] items-center px-[90px] text-[#343E47] font-normal mt-[70px] w-[100%] h-[80px] ">
+      <div className="lastFooter flex justify-between bg-[#F8F8F8] items-center px-[90px] text-[#343E47] font-normal mt-[70px] w-[100%] h-[80px] ">
         <p>Copyright by ModelTheme. All Rights Reserved.</p>
         <p>Elite Author on ThemeForest.</p>
       </div>

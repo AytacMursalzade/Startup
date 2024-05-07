@@ -14,6 +14,12 @@
 .charger {
   background-image: url("../src/assets/chargephone.jpg");
 }
+.communitylink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+}
 
 *.container {
   width: 100%;
@@ -172,4 +178,281 @@ input:focus {
 
 .tooltip-container:hover .tooltip > title {
   visibility: visible;
+} */
+
+/* //MEDIA QUERY// */
+
+@media only screen and (max-width: 600px) {
+  br{
+    display: none;
+  }
+  *.container{
+    width: 535px;
+  }
+  .hamburgerMenu{
+    color: #2695ff;
+  }
+  .logoicon{
+    display: flex;
+    flex-direction: row;
+  }
+  .dropdown{
+    display: none;
+  }
+  .logoIcons{
+    height: 70px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    margin-bottom: 18px;
+  }
+  .topHeader{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    margin-left: 432px;
+    padding-top: 8px;
+    font-size: 16px;
+  }
+  .iconsHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-left: 244px;
+    font-size: 19px;
+  }
+  .headerTop{
+    display: block;
+    
+  }
+  .nameTop{
+    display: none;
+  }
+  .wishTrack{
+    display: none;
+  }
+  .slider-container{
+    width: 535px;
+  }
+  .dropdown{
+    display: none;
+  }
+  .headerNav{
+    display: none;
+  }
+  .filtered{
+    display: none;
+  }
+  .basket{
+    display: none;
+  }
+  /* .searchButton{
+    margin-top: 15px;
+    background-color: red;
+    border: none;
+    background-color: transparent;
+    color: black;
+  } */
+  .logo{
+   width: 70px; 
+   position: relative;
+   right: 60px;
+  }
+  /* //callcenter */
+  .tracking{
+    display: flex;
+    justify-content: start;
+    padding-left: 15px;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: -170px;
+  }
+  /* //posters */
+   .viewPart{
+      width: 590px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+
+      margin-left: -70px;
+  }
+  .btnHovered{
+    display: none;
+  }
+  /* auctionshow */
+  .symbols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+  .onePoster{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .salesPart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-left: -12px;
+    width: 258px;
+    height: 410px;
+    
+  }
+  .salesPartPost{
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: wrap;
+
+  }
+  .Poster {
+    width: 535px;
+    height: 323px;
+    margin-left: 8px;
+  }
+  /* //Posters// */
+  .posterYelGree{
+    margin-left: -60px;
+  }
+  .posterTwo{
+    margin-left: 10px;
+    margin-top: -72px;
+  }
+  .bullet {
+    width: 535px;
+    height: 243px;
+    background-image: url("../src/assets/535(1).jpg");
+  }
+  .handleearphone {
+    width: 535px;
+    height: 341px;
+    background-image: url("../src/assets/535(6.jpg");
+  }
+  .drone {
+    width: 535px;
+    height: 341px;
+    background-image: url("../src/assets/535(3).jpg");
+  }
+  .charger {
+    width: 535px;
+    height: 248px;
+    background-image: url("../src/assets/535(4).jpg");
+  }
+  /* //phones// */
+  
+    .first{
+      display: flex;
+      flex-direction: row;
+      margin-right: -150px;
+      flex-wrap: wrap;
+    }
+    .second{
+      display: flex;
+      flex-direction: row;
+      margin-right: -150px;
+      flex-wrap: wrap;
+    }
+    .PhonesAll{   
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: -100px;
+    }
+    .allPhones{
+      width: 250px;
+      height: 400px;
+      margin-left: 40px;
+    }
+   
+    .phoneBottom{
+      margin-top: 78px;
+      width: 250px;
+    }
+    
+  
+  /* //location */
+  .formData{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+  }
+  .location{
+    display: none;
+  }
+  /* friendcommunity */
+  .community{
+    display: flex;
+    flex-direction: column;
+  }
+  .latestnew{
+    display: flex;
+    flex-direction: column;
+  }
+  .symbolsLatest{
+    margin-right: -7px;
+    width: 100%;
+  }
+  .communityPost{
+    margin-left: -48px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* //slide// */
+  .sliderpart{
+    width: 550px;
+  }
+  /* footerfilter */
+  .filterfooter{
+    width: 560px;
+    height: 120px;
+  }
+  .filterown{
+    width: 500px;
+    height: 40px;
+  }
+  .footerblue{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 19px 10px;
+  }
+  /* //Footer// */
+  .averageFooter{
+    display: flex;
+    flex-direction: column;
+    padding-left: 9px;
+  }
+  /* //lastfooter */
+  .lastFooter{
+    display: none;
+    margin-bottom: 180px;
+  }
+  .formFooter{
+    margin-top: 9px;
+    width: 330px;
+  }
+  .btnFilter{
+    margin-top: 9px;
+    width: 150px;
+    border-radius: 49px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  
+}
+
+@media only screen and (min-width: 768px) {
+  
+
+}
+@media only screen and (min-width: 992px) {
+ 
+}
+/* @media only screen and (min-width: 1200px) {
+  
 } */
