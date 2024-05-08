@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .bullet {
   background-image: url("../src/assets/iphoneear.jpg");
 }
@@ -13,6 +14,18 @@
 }
 .charger {
   background-image: url("../src/assets/chargephone.jpg");
+}
+.bulletArt{
+  background-image: url("../src/assets/ibid_art_banner1.jpg");
+}
+.droneArt{
+  background-image: url("../src/assets/ibid_art_banner2.jpg");
+}
+.PosterArt{
+  background-image: url("../src/assets/420banner.jpg");
+}
+.PosterArtTwo{
+  background-image: url("../src/assets/500benner.jpg");
 }
 .communitylink{
   display: flex;
@@ -98,6 +111,13 @@ input:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+.inputBlue:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0543EC;
+}
+
+
 
 .imagePhone {
   background-image: url(../src/assets/mobile_prod1-1-400x400.jpg);
@@ -440,6 +460,40 @@ input:focus {
     width: 150px;
     border-radius: 49px;
   }
+  /* //////////////////////////////////////////////////////////////////ArtAuction */
+  .posterYelGree{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 120px;
+    gap: 5px;
+  }
+  .bulletArt{
+    width: 535px;
+    height: 289px;
+    background-image: url("../src/assets/ibid_art_banner1.jpg");
+  }
+  .classicalArt{
+    width: 535px;
+    height: 350px;
+    background-image: url("../src/assets/ibid_art_banner2.jpg");
+    
+  }
+  /* //sales// */
+  .symbols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+  .PosterArt{
+    width: 533px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-left: -58px;
+  }
+ 
 }
 
 @media only screen and (min-width: 600px) {

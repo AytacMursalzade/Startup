@@ -1,11 +1,10 @@
-// Navbar.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { openSubmenu, closeSubmenu } from '../redux/Slice/NavbarSlice';
+import { openSubmenu, closeSubmenu } from '../redux/slice/NavbarSlice';
 
 const Navbar = () => {
   const dispatch = useDispatch();
-  const {isSubmenuOpen} = useSelector(state => state.navbarReducer.isSubmenuOpen);
+  const {isSubmenuOpen} = useSelector(state => state.navbar);
 
   const handleCategoriesHover = () => {
     dispatch(openSubmenu());
@@ -14,6 +13,7 @@ const Navbar = () => {
   const handleCategoriesLeave = () => {
     dispatch(closeSubmenu());
   };
+  
 
   return (
     <div className="h-[70px] bg-[#2695FF] flex justify-between">
@@ -41,7 +41,7 @@ const Navbar = () => {
               </div>
             )}
           </li>
-          <li onMouseEnter={handleCategoriesHover()} onMouseLeave={handleCategoriesLeave()} className={`border-t-2 border-transparent border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Home
+          <li onMouseEnter={handleCategoriesHover} onMouseLeave={handleCategoriesLeave} className={`border-t-2 border-transparent border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Home
             {isSubmenuOpen && (
               <div className="absolute  w-[14px] h-[70px] top-full left-0 bg-white text-black">
                 <ul>

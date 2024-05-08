@@ -1,10 +1,10 @@
-// navbarSlice.js
-
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   isSubmenuOpen: true,
+  
 };
+
 
 const navbarSlice = createSlice({
   name: 'navbar',
@@ -13,6 +13,7 @@ const navbarSlice = createSlice({
     openSubmenu: (state) => {
       state.isSubmenuOpen = true;
     },
+    
     closeSubmenu: (state) => {
       state.isSubmenuOpen = false;
     },

@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logoimage from "../assets/logo-ibid.png";
 import { FaAngleDoubleRight } from "react-icons/fa";
 
-function Footer() {
+function Footer(props) {
   return (
     <>
       <div className="averageFooter flex justify-around ml-[10px] gap-[30px] ">
@@ -11,7 +10,7 @@ function Footer() {
           <ul className="flex flex-col gap-[8px] ">
             <Link>
               <li>
-                <img width={120} src={Logoimage} alt="logo" />
+                <img width={120} src={props.Logoimage} alt="logo" />
               </li>
             </Link>
             <li className="text-[#AFAFAF] ">contact@example.com</li>

@@ -3,15 +3,16 @@ import { Link } from "react-router-dom";
 import { FaBasketShopping } from "react-icons/fa6";
 import { LuHeart } from "react-icons/lu";
 import { FaTruck } from "react-icons/fa";
-import Filter from "./Filter";
 import DropdownButton from "./DropdownButton";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
 import { RiAdminFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
+import FilterArt from "./FilterArt";
+import DropdownArt from "./DropdownArt";
 
-function HeaderArrage(props) {
+function HeaderArrageArt(props) {
   return (
     <>
       <div className="headerTop flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
@@ -75,11 +76,11 @@ function HeaderArrage(props) {
             </Link>
           </div>
         </div>
-        <div className="flex  border-solid shadow-lg rounded-l-3xl rounded-r-3xl ">
-          <button className="rounded-l-[45px] px-[8px]  border w-[120px] dropdown ">
-            <DropdownButton />
+        <div className="flex  shadow-lg ">
+          <button className=" px-[25px] border-r dropdown ">
+            <DropdownArt />
           </button>
-          <Filter />
+          <FilterArt />
         </div>
         <div className="basket flex gap-[15px]">
           <div className="flex flex-col">
@@ -103,4 +104,4 @@ function HeaderArrage(props) {
   );
 }
 
-export default HeaderArrage;
+export default HeaderArrageArt;
