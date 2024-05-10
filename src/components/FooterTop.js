@@ -1,7 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import work from "../assets/work.jpg";
-import illusion from "../assets/illusion.jpg";
 import { FaGavel } from "react-icons/fa6";
 import FooterTopdiv from "./FooterTopdiv";
 

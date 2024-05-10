@@ -1,7 +1,6 @@
 import React from "react";
 import { FaGavel } from "react-icons/fa6";
 import locationimage from "../assets/contact-us-red.png"
-import Formdata from "./Formdata"
 import FormDataBlue from "./FormDataBlue";
 
 function LocationArt() {

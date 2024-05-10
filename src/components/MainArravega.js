@@ -20,8 +20,8 @@ function MainArravega() {
         </div>
       </div>
       
-      <div className="PhonesAll flex gap-[18px] px-[71px] ">
-        <div className="first">
+      <div className="PhonesAll flex gap-[17px] px-[71px] ">
+        <div className="first flex gap-[17px] ">
           <div className="allPhones w-[320px] h-[450px] shadow-lg">
             <div className="flex flex-col">
               <div className="flex justify-between items-start pt-[30px]">
@@ -91,7 +91,7 @@ function MainArravega() {
             </div>
           </div>
         </div>
-        <div className="second">
+        <div className="second flex gap-[17px] ">
           <div className="allPhones w-[320px] h-[450px] shadow-lg">
             <div className="flex flex-col">
               <div className="flex justify-between items-start pt-[30px]">

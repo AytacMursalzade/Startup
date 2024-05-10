@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 function PosterAct() {
   return (
     <div>
-      <div className="posterShow flex flex-wrap ">
-        <div className="posterYelGree flex gap-[8px]">
+      <div className="posterShow flex ml-[75px] mt-[140px] ">
+        <div className="posterYelGreeArt flex gap-[8px]">
           <Link className='bulletArt'>
             <div className=" w-[658px] h-[382px] ml-[75px]">
               <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px]  ">

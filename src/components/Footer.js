@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaAngleDoubleRight } from "react-icons/fa";
 
 function Footer(props) {
   return (

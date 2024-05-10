@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FaBasketShopping } from "react-icons/fa6";
 import { LuHeart } from "react-icons/lu";
 import { FaTruck } from "react-icons/fa";
-import DropdownButton from "./DropdownButton";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
