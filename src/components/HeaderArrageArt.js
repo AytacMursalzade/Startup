@@ -55,7 +55,6 @@ function HeaderArrageArt(props) {
       <div className="logoIcons flex col-3  justify-between items-center px-[75px] py-[30px] ">
         <div className="logoicon">
           <div className="logo">
-            <img width={80} src={props.Logoimage} alt="logo" />
           </div>
           <div className="iconsHeader  hidden ">
             <Link to="/">
