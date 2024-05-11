@@ -5,13 +5,13 @@ import NavbarItem from "./NavbarItem";
 
 
 
-function Header(props) {
+function Header({bgColor}) {
 
  
 
   return (
     <>
-      <div className={`headerNav h-[70px] bg-[${props.bgColor}] flex justify-between mb-[98px]`} >
+      <div style={{backgroundColor:bgColor}} className={`headerNav h-[70px] flex justify-between mb-[98px]`} >
         <NavbarItem />
         <Link><div className="mr-[94px] text-white font-bold py-[20px] ">Sign in</div></Link>
         
