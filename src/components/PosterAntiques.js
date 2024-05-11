@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 
-function PosterAct() {
+function PosterAntiques() {
   return (
     <div>
       <div className="posterShow flex ml-[75px] mt-[140px] ">
@@ -12,7 +12,7 @@ function PosterAct() {
               <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px]  ">
                 <div className="flex flex-col">
                   <h1 className="font-extrabold text-[30px] text-white mt-[50px] ">
-                    CONTEMPORARY ART
+                    VINTAGE WATCHES 
                   </h1>
                   <p className="text-white font-light">20 Auctions</p>
                 </div>
@@ -29,9 +29,9 @@ function PosterAct() {
               <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px] ">
                 <div className="flex flex-col">
                   <h1 className="font-extrabold text-[30px] text-white mt-[50px] ">
-                  CLASSICAL ART
+                  VINTAGE WATCHES
                   </h1>
-                  <p className="text-white font-light">29 Auctions</p>
+                  <p className="text-white font-light">20 Auctions</p>
                 </div>
                 <div>
                   <button className="btnHovered border-1 border-black-100 hover:bg-[white] hover:text-[red] text-white font-semibold rounded-[9px] border border-solid-1  px-[20px] py-[6px]" >
@@ -48,4 +48,4 @@ function PosterAct() {
   )
 }
 
-export default PosterAct
+export default PosterAntiques

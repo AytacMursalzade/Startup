@@ -1,23 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import poster from "../assets/collectable167.jpg";
+import poster from "../assets/culon183.png";
 import { FaGavel } from "react-icons/fa6";
 import { IoMdEye } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
 import Tooltip from "@mui/material/Tooltip";
 
-function SalesArt() {
+function SalesAntiques() {
   return (
     <>
       <div className="viewPartArt flex flex-col gap-[73px] mt-[99px] mb-[100px] ">
         <div className="onePoster flex gap-[17px] justify-around ml-[75px] ">
           <div className="PosterArt w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] ">
-            <h1 className="text-[27px] text-white font-extrabold ">ABSTRACT</h1>
+            <h1 className="text-[27px] text-white font-extrabold ">WATCHES</h1>
             <p className="text-white flex gap-[8px] ">
-              <strong className="font-bold text-[16px] ">4</strong>Collections
+              <strong className="font-bold text-[16px] ">11</strong>Collections
             </p>
-            <button className="w-[205px] h-[50px] hover:bg-white hover:text-[#0543EC] text-[14px] font-semibold text-white rounded-[9px] bg-[#0543EC] ">
+            <button className="w-[205px] h-[50px] hover:bg-white hover:text-[red] text-[14px] font-semibold text-white rounded-[9px] bg-[red] ">
               VIEW ALL ITEMS
             </button>
           </div>
@@ -30,8 +30,8 @@ function SalesArt() {
               </Link>
               <div className="flex flex-col gap-[20px] justify-center ">
                 <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[#2695FF] font-bold ">
-                  Le bouquet de Paris
+                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[red] font-bold ">
+                  Huda Purse Vintage
                   </h1>
                 </Link>
 
@@ -40,17 +40,52 @@ function SalesArt() {
                 </p>
                 <div className="symbols flex gap-[8px] ">
                   <Tooltip title="Bid Now">
-                    <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] bg-[red] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <IoMdEye />
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                      <FaSearch />
+                    </button>
+                  </Tooltip>
+                </div>
+              </div>
+            </div>
+            <div className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] ">
+              <Link>
+                <div>
+                  <img  src={poster} width={167} alt="sales" />
+                </div>
+              </Link>
+              <div className="flex flex-col gap-[20px] justify-center ">
+                <Link>
+                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[red] font-bold ">
+                  Le bouquet de Paris
+                  </h1>
+                </Link>
+
+                <p className="text-[14px] text-[#606060] font-light ">
+                  Starting Bid:
+                </p>
+                <div className="symbols flex gap-[8px] ">
+                  <Tooltip title="Bid Now">
+                    <button className="rounded-[9px] bg-[red] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                      <FaGavel />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Add to Wishlist">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                      <FaHeart />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Quickview">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -75,52 +110,17 @@ function SalesArt() {
                 </p>
                 <div className="symbols flex gap-[8px] ">
                   <Tooltip title="Bid Now">
-                    <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] bg-[red] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaGavel />
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
-                      <FaSearch />
-                    </button>
-                  </Tooltip>
-                </div>
-              </div>
-            </div>
-            <div className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] ">
-              <Link>
-                <div>
-                  <img  src={poster} width={167} alt="sales" />
-                </div>
-              </Link>
-              <div className="flex flex-col gap-[20px] justify-center ">
-                <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-white font-bold ">
-                  Le bouquet de Paris
-                  </h1>
-                </Link>
-
-                <p className="text-[14px] text-[#606060] font-light ">
-                  Starting Bid:
-                </p>
-                <div className="symbols flex gap-[8px] ">
-                  <Tooltip title="Bid Now">
-                    <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
-                      <FaGavel />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
-                      <FaHeart />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -145,17 +145,17 @@ function SalesArt() {
                 </p>
                 <div className="symbols flex gap-[8px] ">
                   <Tooltip title="Bid Now">
-                    <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] bg-[red] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaGavel />
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -168,11 +168,11 @@ function SalesArt() {
         </div>
         <div className="onePoster flex gap-[17px] justify-around ml-[75px] ">
           <div className="PosterArt w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] ">
-            <h1 className="text-[27px] text-white font-extrabold ">ANTIQUE</h1>
+            <h1 className="text-[27px] text-white font-extrabold ">JEWELRY</h1>
             <p className="text-white flex gap-[8px] ">
-              <strong className="font-bold text-[16px] ">4</strong>Collections
+              <strong className="font-bold text-[16px] ">5</strong>Products
             </p>
-            <button className="w-[205px] h-[50px] hover:bg-white hover:text-[#0543EC] text-[14px] font-semibold text-white rounded-[9px] bg-[#0543EC] ">
+            <button className="w-[205px] h-[50px] hover:bg-[red] hover:text-[red] text-[14px] font-semibold text-white rounded-[9px] bg-[red] ">
               VIEW ALL ITEMS
             </button>
           </div>
@@ -185,7 +185,7 @@ function SalesArt() {
               </Link>
               <div className="flex flex-col gap-[20px] justify-center ">
                 <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-white font-bold ">
+                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-red font-bold ">
                     Bluetooth Headphones
                   </h1>
                 </Link>
@@ -195,17 +195,52 @@ function SalesArt() {
                 </p>
                 <div className="symbols flex gap-[8px] ">
                   <Tooltip title="Bid Now">
-                    <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] bg-[red] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaGavel />
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-[white] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-[white] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                      <FaSearch />
+                    </button>
+                  </Tooltip>
+                </div>
+              </div>
+            </div>
+            <div className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] ">
+              <Link>
+                <div>
+                  <img  src={poster} width={167} alt="sales" />
+                </div>
+              </Link>
+              <div className="flex flex-col gap-[20px] justify-center ">
+                <Link>
+                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[red] font-bold ">
+                    Black Pearl
+                  </h1>
+                </Link>
+
+                <p className="text-[14px] text-[#606060] font-light ">
+                  Auction Ended
+                </p>
+                <div className="symbols flex gap-[8px] ">
+                  <Tooltip title="Bid Now">
+                    <button className="rounded-[9px] bg-[red] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                      <FaGavel />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Add to Wishlist">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                      <FaHeart />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Quickview">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -230,17 +265,17 @@ function SalesArt() {
                 </p>
                 <div className="symbols flex gap-[8px] ">
                   <Tooltip title="Bid Now">
-                    <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] bg-[red] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaGavel />
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -265,52 +300,17 @@ function SalesArt() {
                 </p>
                 <div className="symbols flex gap-[8px] ">
                   <Tooltip title="Bid Now">
-                    <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] bg-[red] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaGavel />
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
-                      <FaSearch />
-                    </button>
-                  </Tooltip>
-                </div>
-              </div>
-            </div>
-            <div className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] ">
-              <Link>
-                <div>
-                  <img  src={poster} width={167} alt="sales" />
-                </div>
-              </Link>
-              <div className="flex flex-col gap-[20px] justify-center ">
-                <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-white font-bold ">
-                    Bluetooth Headphones
-                  </h1>
-                </Link>
-
-                <p className="text-[14px] text-[#606060] font-light ">
-                  Auction Ended
-                </p>
-                <div className="symbols flex gap-[8px] ">
-                  <Tooltip title="Bid Now">
-                    <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
-                      <FaGavel />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
-                      <FaHeart />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -328,4 +328,4 @@ function SalesArt() {
   );
 }
 
-export default SalesArt;
+export default SalesAntiques;

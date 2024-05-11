@@ -18,7 +18,7 @@ function FooterTopdiv() {
         
         <div className="symbolsLatest flex flex-col justify-around ">
           <Link>
-            <h1 className="text-[20px] font-bold hover:text-[#2695FF] ">
+            <h1 className="text-[20px] font-bold hover:text-[#0543EC] ">
               A Phone Keeps Your <br /> Friends Away
             </h1>
           </Link>
@@ -39,7 +39,7 @@ function FooterTopdiv() {
           
           <div className="symbolsLatest flex flex-col justify-around ">
             <Link>
-              <h1 className="text-[20px] font-bold hover:text-[#2695FF] ">
+              <h1 className="text-[20px] font-bold hover:text-[#0543EC] ">
                 A Phone Keeps Your <br /> Friends Away
               </h1>
             </Link>
@@ -60,7 +60,7 @@ function FooterTopdiv() {
           
           <div className="symbolsLatest flex flex-col justify-around ">
             <Link>
-              <h1 className="text-[20px] font-bold hover:text-[#2695FF] ">
+              <h1 className="text-[20px] font-bold hover:text-[#0543EC] ">
                 A Phone Keeps Your <br /> Friends Away
               </h1>
             </Link>

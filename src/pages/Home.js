@@ -26,7 +26,7 @@ function Home() {
         <Locationn />
         <FooterTop />
         <FooterAverage />
-        <FooterFilter  bgColor="#2695FF"  />
+        <FooterFilter  bgColor="#2695FF"/>
         <Footer Logoimage={Logoimage1}/>
       </div>
     </>

@@ -84,7 +84,7 @@ function HeaderArrageArt(props) {
         <div className="basket flex gap-[15px]">
           <div className="flex flex-col">
             <Link>
-              <p className="text-end hover:text-[#3C55D6] font-bold ">
+              <p className="text-end hover:text-[#BE263F] font-bold ">
                 My Card
               </p>
             </Link>
@@ -93,8 +93,8 @@ function HeaderArrageArt(props) {
             </Link>
           </div>
           <Link>
-            <div className="text-[25px] mt-[10px] text-[#395b7c] ">
-              <FaBasketShopping />
+            <div className="text-[25px] mt-[10px] text-[#BE263F] ">
+              <FaBasketShopping  />
             </div>
           </Link>
         </div>
