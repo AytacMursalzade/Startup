@@ -1,8 +1,8 @@
 import React from "react";
 import { FaGavel } from "react-icons/fa6";
-import FooterTopdiv from "./FooterTopdiv";
+import AntiqueFooter from "./AntiqueFooter";
 
-function FooterTop() {
+function FooterTop({GavelColor}) {
   return (
     <>
       <div className="community">
@@ -11,13 +11,13 @@ function FooterTop() {
 
           <div className="flex items-center justify-center mt-[15px]">
             <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
-            <span className="font-bold text-[#0543EC] text-[27px]">
+            <span style={{color:GavelColor}} className="font-bold text-[27px]">
               <FaGavel />
             </span>
             <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_left"></div>
           </div>
         </div>
-        <FooterTopdiv />
+        <AntiqueFooter />
       </div>
     </>
   );

@@ -17,15 +17,15 @@ function Home() {
   return (
     <>
       <div className="container">
-        <HeaderArrage Logoimage={Logoimage1}/>
+        <HeaderArrage BasketColor="#0543EC" Logoimage={Logoimage1}/>
         <Header bgColor="#2695FF"/>
         <Mainbottom />
         <MainArravega />
         <Hovered />
         <Salespart />
         <Locationn />
-        <FooterTop />
-        <FooterAverage />
+        <FooterTop GavelColor="#2695FF" />
+        <FooterAverage GavelColorshop="#2695FF" nameAuction="SHOP BY BRAND" />
         <FooterFilter  bgColor="#2695FF"/>
         <Footer Logoimage={Logoimage1}/>
       </div>

@@ -7,7 +7,7 @@ import image4 from "../assets/tracking_icons.png";
 function Mainbottom() {
   return (
    <div>
-     <div className="tracking flex gap-[145px] justify-center mt-[107px] ">
+     <div className="tracking flex gap-[145px] justify-center ">
       <div className="flex gap-[25px]">
         <img width={50} src={image1} alt="earphones" />
         <div>

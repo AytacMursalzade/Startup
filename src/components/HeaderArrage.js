@@ -11,7 +11,7 @@ import { FaSearch } from "react-icons/fa";
 import { RiAdminFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-function HeaderArrage(props) {
+function HeaderArrage({BasketColor,Logoimage}) {
   return (
     <>
       <div className="headerTop flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
@@ -55,7 +55,7 @@ function HeaderArrage(props) {
       <div className="logoIcons flex col-3  justify-between items-center px-[75px] py-[30px] ">
         <div className="logoicon">
           <div className="logo">
-            <img width={80} src={props.Logoimage} alt="logo" />
+            <img width={80} src={Logoimage} alt="logo" />
           </div>
           <div className="iconsHeader  hidden ">
             <Link to="/">
@@ -93,7 +93,7 @@ function HeaderArrage(props) {
             </Link>
           </div>
           <Link>
-            <div className="text-[25px] mt-[10px] text-[#395b7c] ">
+            <div style={{color:BasketColor}} className="text-[25px] mt-[10px] ">
               <FaBasketShopping />
             </div>
           </Link>

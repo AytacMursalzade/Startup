@@ -16,14 +16,14 @@ import LatestArt from "../components/LatestArt";
 function ArtAuction() {
   return (
     <div className="container">
-      <HeaderArrageArt Logoimage={Logoimage1}/>
+      <HeaderArrageArt BasketColor="#0543EC" Logoimage={Logoimage1}/>
       <Header bgColor="#0543EC"/>
       <LatestArt />
       <PosterAct />
       <SalesArt />
-      <LocationArt />
-      <FooterTop />
-      <FooterAverage />
+      <LocationArt helpGavel="#0543EC"/>
+      <FooterTop GavelColor="#0543EC"/>
+      <FooterAverage GavelColorshop="#0543EC" nameAuction="SHOP BY BRAND"/>
       <FooterFilterArt bgColor="#0543EC"  />
       <Footer Logoimage={Logoimage1}/>
     </div>

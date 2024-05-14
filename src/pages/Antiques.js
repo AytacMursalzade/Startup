@@ -14,14 +14,14 @@ import SalesAntiques from "../components/SalesAntiques";
 function Antiques() {
   return (
     <div className="container">
-    <HeaderArrageArt Logoimage={Logoimage1}/>
+    <HeaderArrageArt BasketColor="red" Logoimage={Logoimage1}/>
     <Header bgColor="red"/>
-    <LatesAnti />
+    <LatesAnti textLatest="Jewelry Container" howToused="Current Bid" />
     <PosterAntiques />
-    <SalesAntiques />
+    <SalesAntiques SalesText="Black Pearl"/>
     <LocationArt />
-    <FooterTop />
-    <FooterAverage />
+    <FooterTop GavelColor="red" />
+    <FooterAverage GavelColorshop="red" nameAuction="SHOP BY BRAND"  />
     <FooterFilterArt bgColor="red"  />
     <Footer Logoimage={Logoimage1}/>
   </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Footer(props) {
   return (
     <>
-      <div className="averageFooter flex justify-around ml-[10px] gap-[30px] ">
+      <div className="averageFooter flex justify-around  ml-[10px] gap-[30px] ">
         <div>
           <ul className="flex flex-col gap-[8px] ">
             <Link>
@@ -61,7 +61,7 @@ function Footer(props) {
         </div>
       </div>
       <div className="lastFooter flex justify-between bg-[#F8F8F8] items-center px-[90px] text-[#343E47] font-normal mt-[70px] w-[100%] h-[80px] ">
-        <p>Copyright by ModelTheme. All Rights Reserved.</p>
+        <p className="CopyLastFooter">Copyright by ModelTheme. All Rights Reserved.</p>
         <p>Elite Author on ThemeForest.</p>
       </div>
     </>

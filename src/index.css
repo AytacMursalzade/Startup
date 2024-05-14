@@ -49,8 +49,30 @@ li:hover .submenu {
 .PosterArt{
   background-image: url("../src/assets/420banner.jpg");
 }
+.PosterAntiques{
+  
+  background-image: url("../src/assets/440color.png");
+} 
+.PosterAutoOne{
+  
+  background-image: url("../src/assets/sportCar868.png");
+} 
+.PosterAutoTwo{
+  
+  background-image: url("../src/assets/bmw587.png");
+} 
+.PosterAutomotive{
+  
+  background-image: url("../src/assets/SprotsCars.jpg");
+} 
 .PosterArtTwo{
   background-image: url("../src/assets/500benner.jpg");
+}
+.PosterAntiquesTwo{
+  background-image: url("../src/assets/700Vintage.png");
+}
+.PosterAutomotiveTwo{
+  background-image: url("../src/assets/VINtagecars.jpg");
 }
 .communitylink{
   display: flex;
@@ -58,7 +80,17 @@ li:hover .submenu {
   align-items: center;
   width: 120px;
 }
+.backSubject{
+  text-shadow: 1px -6px 18px rgba(32,29,29,0.7);
+  color: white;
+}
+.slide-item {
+  transition: transform 0.5s ease; /* Burada geçiş efektini tanımlıyoruz */
+}
 
+.slide-item:hover {
+  transform: translateX(5px); /* Fare üzerine gelindiğinde kaydırma efekti */
+}
 *.container {
   width: 100%;
   max-width: 1668px;
@@ -268,7 +300,8 @@ input:focus {
   }
   .headerTop{
     display: block;
-    
+    border: none;
+    border-bottom: 1px solid rgb(225, 222, 222);
   }
   .nameTop{
     display: none;
@@ -425,6 +458,7 @@ input:focus {
   
   /* //location */
   .formData{
+    margin-left: 15px;
     width: 100%; 
     display: flex;
     justify-content: center;
@@ -475,6 +509,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     padding-left: 9px;
+   
   }
   /* //lastfooter */
   .lastFooter{
@@ -541,6 +576,11 @@ input:focus {
     height: 300px;
     margin-left: -60px;
   }
+  .PosterAntiques{
+    width: 533px;
+    height: 300px;
+    margin-left: -60px;
+  }
   .lastFooter{
     display: none;
     margin-bottom: 180px;
@@ -554,6 +594,39 @@ input:focus {
     width: 150px;
     border-radius: 49px;
   }
+  /* ////////////////////Antiques//////////////////// */
+  .CopyLastFooter{
+    display: block;
+  }
+  .PosterAntiquesTwo{
+    width: 533px;
+    height: 300px;
+    margin-left: -60px;
+  }
+  /* /////////////////Automotive////////////////////// */
+  .PosterAutomotive{
+    width: 535px;
+    height: 340px;
+  }
+  .PosterAutomotiveTwo{
+    width: 535px;
+    height: 340px;
+  }
+  .PosterAutoOne{
+    width: 535px;
+    height: 300px;
+    margin-left: -60px;
+  }
+  
+  .PosterAutoTwo{
+    width: 535px;
+    height: 300px;
+    margin-left: -60px;
+  }
+  /* .CopyLastFooter{
+    
+    display: block;
+  } */
 }
 
 @media only screen and (min-width: 600px) {

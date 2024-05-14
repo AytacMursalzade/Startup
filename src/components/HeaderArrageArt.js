@@ -11,7 +11,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import FilterArt from "./FilterArt";
 import DropdownArt from "./DropdownArt";
 
-function HeaderArrageArt(props) {
+function HeaderArrageArt({basketColor,Logoimage}) {
   return (
     <>
       <div className="headerTop flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
@@ -56,6 +56,11 @@ function HeaderArrageArt(props) {
         <div className="logoicon">
           <div className="logo">
           </div>
+          <Link>
+              <div>
+                <img width={90} src={Logoimage} alt="logo" />
+              </div>
+            </Link>
           <div className="iconsHeader  hidden ">
             <Link to="/">
               <RiAdminFill />
@@ -92,7 +97,7 @@ function HeaderArrageArt(props) {
             </Link>
           </div>
           <Link>
-            <div className="text-[25px] mt-[10px] text-[#BE263F] ">
+            <div style={{color:basketColor}} className="text-[25px] mt-[10px]  ">
               <FaBasketShopping  />
             </div>
           </Link>

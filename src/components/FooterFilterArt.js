@@ -3,7 +3,7 @@ import { IoSearchSharp } from "react-icons/io5";
 
 function FooterFilterArt({bgColor}) {
   return (
-    <div style={{backgroundColor:bgColor}} className="filterfooter w-[100%] h-[80px] mt-[90px] mb-[75px]]">
+    <div style={{backgroundColor:bgColor}} className="filterfooter w-[100%] h-[80px] mt-[90px] mb-[75px]">
       <div className="footerblue flex justify-between pt-[30px] px-[95px] ">
         <div className="text-white text-[18px] font-extrabold ">
           <h1>Browse through our products library!</h1>

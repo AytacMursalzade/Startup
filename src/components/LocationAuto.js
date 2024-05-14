@@ -1,9 +1,9 @@
 import React from "react";
 import { FaGavel } from "react-icons/fa6";
-import locationimage from "../assets/contact-us-red.png"
+import locationimage from "../assets/ibid-automotive-contact-maporange.png"
 import FormDataBlue from "./FormDataBlue";
 
-function LocationArt({helpGavel}) {
+function LocationAuto({helpGavel}) {
   return (
     <div>
       <div>
@@ -22,11 +22,11 @@ function LocationArt({helpGavel}) {
         <div className="location mt-[80px] ">
           <img width={680} src={locationimage} alt="location" />
         </div>
-        <div><FormDataBlue submitColor="#0543EC" /></div>
+        <div><FormDataBlue submitColor="#EE964B" /></div>
       </div>
     </div>
     </div>
   )
 }
 
-export default LocationArt
+export default LocationAuto

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-function FormDataBlue() {
+function FormDataBlue({submitColor}) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -81,7 +81,8 @@ function FormDataBlue() {
         </div>
         <button
           type="submit"
-          className="flex justify-center gap-[10px] px-3 font-semibold w-[100%] rounded-[9px] text-white bg-[#0543EC] py-3  mt-1 input"
+          style={{backgroundColor:submitColor}}
+          className="flex justify-center gap-[10px] px-3 font-semibold w-[100%] rounded-[9px] text-white  py-3  mt-1 input"
         >
          <div> SEND MESSAGE</div>
           <div className="mt-[4px] "><FaArrowRightLong /></div>
