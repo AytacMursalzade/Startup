@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function ShopCard() {
   return (
-    <div className='w-[300px] h-[200px] gap-[15px] '>
+    <div className='w-[500px] h-[200px] gap-[15px] bg-white '>
       <div><h1>SHOP SHORTCODES</h1>
         <ul className='flex'>
           <Link to="/salebanners"><li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal "><AiOutlinePercentage /> Sale Banners</li></Link>

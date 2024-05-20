@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Card() {
   return (
-    <div className="flex gap-[23px] text-[#334141] px-[20px] py-[20px] border-solid shadow-[-2px_5px_28px_-16px_rgba(46,46,46,0.73)] w-[550px] h-[439] ">
+    <div className="flex gap-[23px] text-[#334141] bg-white px-[20px] py-[20px] border-solid shadow-[-2px_5px_28px_-16px_rgba(46,46,46,0.73)] w-[550px] h-[439] ">
       <div className="NavbarCard">
         <ul >
           <Link to="/">

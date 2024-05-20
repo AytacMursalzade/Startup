@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Slide from "../components/Slide";
 import NavbarItem from "./NavbarItem";
 
 

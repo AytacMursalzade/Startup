@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NavbarBook from "./NavbarBook";
 import { Link } from "react-router-dom";
 import Card from "./Card";
 import { FaBasketShopping } from "react-icons/fa6";
@@ -9,27 +8,31 @@ import DropdownButton from "./DropdownButton";
 import { FaSearch } from "react-icons/fa";
 import { RiAdminFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Logoimage1 from "../assets/logo-white.png";
 import { useDispatch, useSelector } from "react-redux";
 import { openSubmenu, closeSubmenu } from "../redux/slice/navbarSlice";
 
 function HeaderBook({ bgColor, basketColor,src }) {
   const dispatch = useDispatch();
-  const { isSubmenuOpen } = useSelector((state) => state.navbar);
+  const {isSubmenuOpen} = useSelector(state => state.navbar);
+
 
   const [isHomeHovered, setIsHomeHovered] = useState({
-    home: false,
+    home: false
   });
+  
 
   const handleHomeHover = (home) => {
     dispatch(openSubmenu());
     setIsHomeHovered({ ...isHomeHovered, [home]: true });
+ 
   };
 
   const handleHomeLeave = (home) => {
     dispatch(closeSubmenu());
     setIsHomeHovered({ ...isHomeHovered, [home]: false });
   };
+
+ 
 
   return (
     <>
@@ -66,20 +69,22 @@ function HeaderBook({ bgColor, basketColor,src }) {
           </button>
           <Filter />
         </div>
-          <nav className="relative">
+          <nav >
             <ul className="flex gap-[44px] text-white items-center text-[14px] font-medium ">
               <Link to="/home">
                 <li
                   onMouseEnter={() => handleHomeHover("home")}
                   onMouseLeave={() => handleHomeLeave("home")}
-                  className={`border-t-2 border-transparent border-white transition duration-300 ${
+                  className={`border-t-2 relative border-transparent border-white transition duration-300 ${
                     isSubmenuOpen ? "visible" : ""
                   }`}
                 >
                   Home
                   {isSubmenuOpen && isHomeHovered["home"] && (
-                    <div className="submenu absolute z-50 w-[70px] h-[70px] top-full left-0 bg-white text-black">
-                      <Card />
+                    <div
+                    className=" absolute z-50 w-[70px] h-[70px] top-8 left-0 bg-white text-black"
+                  >
+                    <Card />
                     </div>
                   )}
                 </li>

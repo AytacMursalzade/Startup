@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-.submenu {
+/* .submenu {
   visibility: hidden;
   position: absolute;
   display: none; 
@@ -18,7 +18,7 @@
 }
 li:hover .submenu {
   visibility: visible;
-}
+} */
 .NavbarCard ul ~ li{
   border: 2px solid black;
   background-color: #0543EC;
