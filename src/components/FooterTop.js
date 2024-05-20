@@ -9,6 +9,7 @@ function FooterTop({
   LatestText2,
   LatestTextp1,
   LatestTextp2,
+  hoverText
 }) {
   return (
     <>
@@ -28,6 +29,7 @@ function FooterTop({
           </div>
         </div>
         <AntiqueFooter
+          hoverText={hoverText}
           LatText1={LatText1}
           LatestText2={LatestText2}
           LatestTextp1={LatestTextp1}

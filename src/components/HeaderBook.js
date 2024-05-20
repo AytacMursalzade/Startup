@@ -9,7 +9,7 @@ import { FaSearch } from "react-icons/fa";
 import { RiAdminFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useDispatch, useSelector } from "react-redux";
-import { openSubmenu, closeSubmenu } from "../redux/slice/navbarSlice";
+import { openSubmenu, closeSubmenu } from "../redux/navbarSlice";
 
 function HeaderBook({ bgColor, basketColor,src }) {
   const dispatch = useDispatch();

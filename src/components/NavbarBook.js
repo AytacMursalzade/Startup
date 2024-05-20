@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { openSubmenu, closeSubmenu } from "../redux/slice/navbarSlice";
+import { openSubmenu, closeSubmenu } from "../redux/navbarSlice";
 import Card from "./Card";
 import { Link } from "react-router-dom";
 import { FaBasketShopping } from "react-icons/fa6";

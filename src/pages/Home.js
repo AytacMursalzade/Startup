@@ -27,7 +27,7 @@ function Home() {
         <Hovered />
         <Salespart />
         <Locationn radiusBorder="45px" img={imageHomeLoc} GavellColor="#2695FF"  inputBg="#2695FF"/>
-        <FooterTop LatText1="A Phone keeps Your" LatestText2="Friends away" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to ensure…" GavelColor="#2695FF" />
+        <FooterTop hoverText="#2695FF" LatText1="A Phone keeps Your" LatestText2="Friends away" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to ensure…" GavelColor="#2695FF" />
         <FooterAverage GavelColorshop="#2695FF" nameAuction="SHOP BY BRAND" />
         <FooterFilter rounded="45px" bgColor="#2695FF"/>
         <Footer Logoimage={Logoimage1}/>

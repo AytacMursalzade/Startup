@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import navbarReducer  from "../redux/slice/navbarSlice.js"
+import navbarReducer  from "./navbarSlice";
 
 
 export const store = configureStore({

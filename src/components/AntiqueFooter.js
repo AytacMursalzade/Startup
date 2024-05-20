@@ -2,11 +2,11 @@ import React from "react";
 import friend from "../assets/community.jpg";
 import { Link } from "react-router-dom";
 
-function AntiqueFooter({LatText1,LatestText2,LatestTextp1,LatestTextp2,mouseEnter,mouseLeave,hovered}) {
+function AntiqueFooter({LatText1,LatestText2,hoverText,LatestTextp1,LatestTextp2,mouseEnter,mouseLeave}) {
 
-  const style = {
-    color: hovered ? 'red' : 'black',
-  };
+  // const styleHover = {
+  //   color: hovered ? 'red' : 'black',
+  // };
 
   return (
     <div className="mt-[30px] px-[75px] ">
@@ -25,8 +25,7 @@ function AntiqueFooter({LatText1,LatestText2,LatestTextp1,LatestTextp2,mouseEnte
           <Link>
             <h1 onMouseEnter={mouseEnter}
                 onMouseLeave={mouseLeave}
-                style={style}
-                className="text-[20px] font-bold">
+                className={`text-20px font-bold hover:${hoverText}`}>
                {LatText1}<br /> {LatestText2}
             </h1>
           </Link>
