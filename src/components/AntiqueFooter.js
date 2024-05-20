@@ -2,7 +2,12 @@ import React from "react";
 import friend from "../assets/community.jpg";
 import { Link } from "react-router-dom";
 
-function AntiqueFooter() {
+function AntiqueFooter({LatText1,LatestText2,LatestTextp1,LatestTextp2,mouseEnter,mouseLeave,hovered}) {
+
+  const style = {
+    color: hovered ? 'red' : 'black',
+  };
+
   return (
     <div className="mt-[30px] px-[75px] ">
       <ul className="flex flex-row gap-[15px] justify-around latestnew ">
@@ -18,12 +23,15 @@ function AntiqueFooter() {
         
         <div className="symbolsLatest flex flex-col justify-around ">
           <Link>
-            <h1 className="text-[20px] font-bold hover:text-[#0543EC] ">
-              A Phone Keeps Your <br /> Friends Away
+            <h1 onMouseEnter={mouseEnter}
+                onMouseLeave={mouseLeave}
+                style={style}
+                className="text-[20px] font-bold">
+               {LatText1}<br /> {LatestText2}
             </h1>
           </Link>
           <p>
-            Bring to the table win-win survival <br /> strategies to ensure…
+            {LatestTextp1} <br /> {LatestTextp2}
           </p>
         </div>
       </li>
@@ -38,14 +46,14 @@ function AntiqueFooter() {
             </Link>
           
           <div className="symbolsLatest flex flex-col justify-around ">
-            <Link>
-              <h1 className="text-[20px] font-bold hover:text-[#0543EC] ">
-                A Phone Keeps Your <br /> Friends Away
-              </h1>
-            </Link>
-            <p>
-              Bring to the table win-win survival <br /> strategies to ensure…
-            </p>
+          <Link>
+            <h1 className="text-[20px] font-bold hover:text-[#0543EC] ">
+               {LatText1}<br /> {LatestText2}
+            </h1>
+          </Link>
+          <p>
+            {LatestTextp1} <br /> {LatestTextp2}
+          </p>
           </div>
         </li>
         <li className="communityPost flex flex-row mt-[20px] gap-[40px] ">
@@ -59,14 +67,14 @@ function AntiqueFooter() {
             </Link>
           
           <div className="symbolsLatest flex flex-col justify-around ">
-            <Link>
-              <h1 className="text-[20px] font-bold hover:text-[#0543EC] ">
-                A Phone Keeps Your <br /> Friends Away
-              </h1>
-            </Link>
-            <p>
-              Bring to the table win-win survival <br /> strategies to ensure…
-            </p>
+          <Link>
+            <h1 className="text-[20px] font-bold hover:text-[#0543EC] ">
+               {LatText1}<br /> {LatestText2}
+            </h1>
+          </Link>
+          <p>
+            {LatestTextp1} <br /> {LatestTextp2}
+          </p>
           </div>
         </li>
       </ul>

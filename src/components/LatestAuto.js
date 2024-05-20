@@ -2,21 +2,20 @@ import React from "react";
 import { FaGavel } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
-import art from "../assets/Automotive271.jpg";
 import Tooltip from "@mui/material/Tooltip";
 import { Link } from "react-router-dom";
 import { IoMdEye } from "react-icons/io";
 
 
-function LatestAuto({textLatest,howToused}) {
+function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLatest1,OneLatest,toolRadius}) {
   return (
     <>
       <div className="topic flex flex-col items-center justify-center mt-[126px] mb-[25px] ">
-        <h1 className="font-bold text-[34px] ">LATEST AUCTIONS</h1>
+        <h1 className="font-bold text-[34px] ">{OneLatest}</h1>
 
         <div className="flex items-center justify-center mt-[15px]">
           <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
-          <span className="font-bold text-[#EE964B] text-[27px]">
+          <span style={{color:GavelTextColor}} className="font-bold text-[27px]">
             <FaGavel />
           </span>
           <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_left"></div>
@@ -30,17 +29,17 @@ function LatestAuto({textLatest,howToused}) {
               <div className="flex  items-start pt-[30px]">
                 <div className="flex flex-col gap-[8px] pl-[18px] ">
                   <Tooltip title="Bid Now">
-                    <button className="rounded-[50%] bg-[#EE964B] text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{backgroundColor:tooltipBg, borderRadius:toolRadius}} className="text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <IoMdEye />
                     </button>
                   </Tooltip>
                   <Tooltip title="View Auction">
-                    <button className="rounded-[50%] hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className=" hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <CiHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[50%] hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className=" hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -51,7 +50,7 @@ function LatestAuto({textLatest,howToused}) {
               </div>
               <div className="phoneBottom flex flex-col  border-t-2 pt-[24px] items-center gap-[9px]">
                 <Link to="/"><h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#EE964B]">
-                 {textLatest}
+                 {textLatest} <br/> {textLatest1}
                 </h2></Link>
                 <p className="text-[#606060] text-[16px] font-light loading-[22px]">
                   {howToused}
@@ -64,17 +63,17 @@ function LatestAuto({textLatest,howToused}) {
               <div className="flex justify-between items-start pt-[30px]">
                 <div className="flex flex-col gap-[8px] pl-[18px] ">
                   <Tooltip title="Bid Now">
-                    <button className="rounded-[50%] bg-[#EE964B] text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{backgroundColor:tooltipBg,borderRadius:toolRadius}} className="  text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <FaGavel />
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[50%] hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className=" hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <CiHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[50%] hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className="hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -100,17 +99,17 @@ function LatestAuto({textLatest,howToused}) {
               <div className="flex justify-between items-start pt-[30px]">
                 <div className="flex flex-col gap-[8px] pl-[18px] ">
                   <Tooltip title="Bid Now">
-                    <button className="rounded-[50%] bg-[#EE964B] text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{backgroundColor:tooltipBg,borderRadius:toolRadius}} className=" text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <FaGavel />
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[50%] hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className="hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <CiHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[50%] hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className=" hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -134,17 +133,17 @@ function LatestAuto({textLatest,howToused}) {
               <div className="flex justify-between items-start pt-[30px]">
                 <div className="flex flex-col gap-[8px] pl-[18px] ">
                   <Tooltip title="Bid Now">
-                    <button className="rounded-[50%] bg-[#EE964B] text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{backgroundColor:tooltipBg,borderRadius:toolRadius}} className=" text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <FaGavel />
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[50%] hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className=" hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <CiHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[50%] hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className="hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
                       <FaSearch />
                     </button>
                   </Tooltip>

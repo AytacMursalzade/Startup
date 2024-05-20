@@ -3,12 +3,12 @@ import Input from "../Input";
 function Category({ handleChange }) {
   return (
     <div>
-      <h2 className="sidebar-title">Category</h2>
+      <h2 className="sidebar-title text-[22px] font-normal mb-[20px] ">Category</h2>
 
       <div>
-        <label className="sidebar-label-container">
-          <input onChange={handleChange} type="radio" value="" name="test" />
-          <span className="checkmark"></span>All
+        <label className="sidebar-label-container relative pl-[35px] mb-[12px] pointer ">
+          <input className="absolute opacity-0 pointer " onChange={handleChange} type="radio" value="" name="test" />
+          <span className="checkmark absolute top-0 left-0 h-[20px] w-[20px] bg-[#eee] rounded-[50%] "></span>All
         </label>
         <Input
           handleChange={handleChange}

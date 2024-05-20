@@ -13,8 +13,8 @@
   background-color: red;
   color: black;
   z-index: 100;
-  width: 200px; /* Alt menünün genişliği */
-  height: 400px; /* Alt menünün yüksekliği */
+  width: 200px; 
+  height: 400px; 
 }
 li:hover .submenu {
   visibility: visible;
@@ -28,20 +28,36 @@ li:hover .submenu {
   align-items: center;
   justify-content: center;
 }
+
 .bullet {
   background-image: url("../src/assets/iphoneear.jpg");
 }
 .handleearphone {
   background-image: url("../src/assets/handleearphone.jpg");
 }
+.handleearphoneBook {
+  background-image: url("../src/assets/comBook3.jpg");
+}
 .drone {
   background-image: url("../src/assets/drone.jpg");
+}
+.droneBook {
+  background-image: url("../src/assets/comicBook2.jpg");
 }
 .charger {
   background-image: url("../src/assets/chargephone.jpg");
 }
+.chargerBook {
+  background-image: url("../src/assets/comicBook41.jpg");
+}
+.charBook {
+  background-image: url("../src/assets/comicBook5.jpg");
+}
 .bulletArt{
   background-image: url("../src/assets/ibid_art_banner1.jpg");
+}
+.bulletBook{
+  background-image: url("../src/assets/comicBook1.jpg");
 }
 .droneArt{
   background-image: url("../src/assets/ibid_art_banner2.jpg");
@@ -61,6 +77,14 @@ li:hover .submenu {
   
   background-image: url("../src/assets/bmw587.png");
 } 
+.PosterCatOne{
+  
+  background-image: url("../src/assets/chickenscattlejs.jpg");
+} 
+.PosterCatTwo{
+  
+  background-image: url("../src/assets/donkeycattlejs.jpg");
+} 
 .PosterAutomotive{
   
   background-image: url("../src/assets/SprotsCars.jpg");
@@ -74,22 +98,125 @@ li:hover .submenu {
 .PosterAutomotiveTwo{
   background-image: url("../src/assets/VINtagecars.jpg");
 }
+.chargerCat{
+  background-image: url("../src/assets/sheep.jpg");
+}
+.horseCat{
+  background-image: url("../src/assets/horse400.jpg");
+}
+.bulletCat{
+  background-image: url("../src/assets/chicken.jpg");
+}
+.droneCat{
+  background-image: url("../src/assets/donkey.jpg");
+}
+.bulletMil{
+  background-image: url("../src/assets/Militaria-banner1-1024x481.jpg");
+
+}
+.bulletSelf{
+  background-image: url("../src/assets/assortStorage1.jpg");
+}
+.bulletCoinsOne{
+  background-image: url("../src/assets/ibid_coin_banner1.jpg");
+}
+.bulletCoinsTwo{
+  background-image: url("../src/assets/ibid_coins_banner2.jpg");
+}
+.droneMil{
+  background-image: url("../src/assets/Militaria-banner2.png");
+
+}
+.householdSelf{
+  background-image: url("../src/assets/householdSelf.jpg");
+}
+.sportingSelf{
+  background-image: url("../src/assets/sportingStorage.jpg");
+}
+.toolStorage{
+  background-image: url("../src/assets/toolsStorage.jpg");
+}
+/* .posterMilOne{
+  background-image: url("../src/assets/Militaria-banner3.jpg");
+
+}
+.posterMilTwo{
+  background-image: url("../src/assets/Militaria-banners420.jpg");
+
+} */
+.horseMil{
+  background-image: url("../src/assets/Militaria-banner3.jpg");
+
+}
+.chargerMil{
+  background-image: url("../src/assets/Militaria-banners4.jpg");
+}
+.salesSelf{
+  background-image: url("../src/assets/lowReal.jpg");
+}
+.householdSelf{
+  background-image: url("../src/assets/constructionsReal.jpg");
+}
+.landReal{
+  background-image: url("../src/assets/landReal.jpg");
+}
+.apartmanState{
+  background-image: url("../src/assets/realestatefinish.jpg");
+}
 .communitylink{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 120px;
 }
+.sidebar-label-container{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+.sidebar-label-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.sidebar-label-container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sidebar-label-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.sidebar-label-container .checkmark:after {
+  top: 6.4px;
+  left: 6.4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+
+.line {
+  margin-top: 3rem;
+  border-color: #f7f7f7;
+}
 .backSubject{
   text-shadow: 1px -6px 18px rgba(32,29,29,0.7);
   color: white;
 }
 .slide-item {
-  transition: transform 0.5s ease; /* Burada geçiş efektini tanımlıyoruz */
+  transition: transform 0.5s ease; 
 }
 
 .slide-item:hover {
-  transform: translateX(5px); /* Fare üzerine gelindiğinde kaydırma efekti */
+  transform: translateX(5px); 
 }
 *.container {
   width: 100%;
@@ -407,6 +534,12 @@ input:focus {
     height: 243px;
     background-image: url("../src/assets/535(1).jpg");
   }
+  .bulletBook{
+    margin-left: 0px;
+    width: 535px;
+    height: 243px;
+    background-image: url("../src/assets/comicBook1.jpg");
+  }
   .handleearphone {
     width: 535px;
     height: 341px;
@@ -619,6 +752,17 @@ input:focus {
   }
   
   .PosterAutoTwo{
+    width: 535px;
+    height: 300px;
+    margin-left: -60px;
+  }
+  .PosterCatOne{
+    width: 535px;
+    height: 300px;
+    margin-left: -60px;
+  }
+  
+  .PosterCatTwo{
     width: 535px;
     height: 300px;
     margin-left: -60px;

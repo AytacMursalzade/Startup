@@ -12,6 +12,11 @@ const Navbar = (props) => {
   const dispatch = useDispatch();
   const {isSubmenuOpen} = useSelector(state => state.navbar);
 
+
+  const catStyle = {
+    display: 'block'
+  }
+
   const [isCategoryHovered, setIsCategoryHovered] = useState({
     categories: false
   });
@@ -115,12 +120,12 @@ const Navbar = (props) => {
 
   return (
     <div className={`h-[70px] bg-[${props.bgColor}] flex justify-between`}>
-      <nav className='relative'>
+      <nav>
         <ul className="flex gap-[44px] text-white items-center text-[14px] font-medium ">
-          <Link to="/categories"><li
+          <Link to="/categories"><li style={catStyle}
             onMouseEnter={() => handleCategoryHover('categories')}
             onMouseLeave={() => handleCategoryLeave('categories')}
-            className={`ml-[70px] w-[240px] justify-center font-medium h-[70px] flex gap-[5px] items-center py-[20px] px-[15px] text-black bg-[white] ${isSubmenuOpen ? 'visible' : ''}`}
+            className={`categoriesCattle relative ml-[70px] w-[240px] justify-center font-medium h-[70px] flex gap-[5px] items-center py-[20px] px-[15px] text-black bg-[white] ${isSubmenuOpen ? 'visible' : ''}`}
           ><GiHamburgerMenu /> 
             CATEGORIES
             {isSubmenuOpen && isCategoryHovered['categories'] &&(
@@ -130,7 +135,7 @@ const Navbar = (props) => {
             )}
           </li></Link>
           <Link to="/home"><li onMouseEnter={() => handleHomeHover('home')}
-            onMouseLeave={() => handleHomeLeave('home')} className={`border-t-2 border-transparent border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Home
+            onMouseLeave={() => handleHomeLeave('home')} className={`border-t-2 border-transparent relative border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Home
             {isSubmenuOpen && isHomeHovered['home'] && (
               <div className="submenu absolute z-50 w-[70px] h-[70px] top-full left-0 bg-white text-black">
                 <Card />
@@ -139,7 +144,7 @@ const Navbar = (props) => {
             )}
           </li></Link>
           <Link to="/shop"><li onMouseEnter={() => handleShopHover('shop')}
-            onMouseLeave={() => handleShopLeave('shop')} className={`border-t-2 border-transparent hover:border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Shop
+            onMouseLeave={() => handleShopLeave('shop')} className={`border-t-2 border-transparent relative hover:border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Shop
             {isSubmenuOpen && isShopHovered['shop'] &&(
               <div className="submenu absolute z-50 w-[70px] h-[70px] top-full left-0 bg-white text-black">
                 <ShopCard />
@@ -149,7 +154,7 @@ const Navbar = (props) => {
           <Link to="/vendors"><li>Vendors
           </li></Link>
           <Link to="/shortcodes"><li onMouseEnter={() => handleShortcodesHover('shortcodes')}
-            onMouseLeave={() => handleShortcodesLeave('shortcodes')} className={`border-t-2 border-transparent hover:border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Shortcodes
+            onMouseLeave={() => handleShortcodesLeave('shortcodes')} className={`border-t-2 border-transparent relative hover:border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Shortcodes
             {isSubmenuOpen && isShortcodesHovered['shortcodes'] && (
               <div className="absolute z-50 w-[70px] h-[70px] top-full left-0 bg-white text-black">
                 <ShopCard/>
@@ -157,7 +162,7 @@ const Navbar = (props) => {
             )}
           </li></Link>
           <Link to="/blog"><li onMouseEnter={() => handleBlogHover('blog')}
-            onMouseLeave={() => handleBlogLeave('blog')} className={`border-t-2 border-transparent hover:border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Blog
+            onMouseLeave={() => handleBlogLeave('blog')} className={`border-t-2 border-transparent relative hover:border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Blog
             {isSubmenuOpen && isBlogHovered['blog'] && (
               <div className="absolute z-50 w-[70px] h-[70px] top-full left-0 bg-white text-black">
                 <BlogCard />
@@ -165,7 +170,7 @@ const Navbar = (props) => {
             )}
           </li></Link>
           <Link to="/media"><li onMouseEnter={() => handleMediaHover('media')}
-            onMouseLeave={() => handleMediaLeave('media')} className={`border-t-2 border-transparent hover:border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Media
+            onMouseLeave={() => handleMediaLeave('media')} className={`border-t-2 border-transparent relative hover:border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Media
             {isSubmenuOpen && isMediaHovered['media'] && (
               <div className="absolute z-50 w-[70px] h-[70px] top-full left-0 bg-white text-black">
                 <ul>
@@ -181,7 +186,7 @@ const Navbar = (props) => {
           <Link to="/contact"><li>Contact
           </li></Link>
           <Link to="/pages"><li onMouseEnter={() => handlePagesHover('pages')}
-            onMouseLeave={() => handlePagesLeave('pages')} className={`border-t-2 border-transparent hover:border-white transition duration-300${isSubmenuOpen ? 'visible' : ''}`}>Pages
+            onMouseLeave={() => handlePagesLeave('pages')} className={`border-t-2 border-transparent relative hover:border-white transition duration-300${isSubmenuOpen ? 'visible' : ''}`}>Pages
             {isSubmenuOpen && isPagesHovered['pages'] && (
               <div className="absolute z-50 w-[70px] h-[70px] top-full left-0 bg-white text-black">
                 <ul>

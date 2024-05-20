@@ -3,8 +3,8 @@ import Input from "../Input";
 const Price = ({ handleChange }) => {
   return (
     <>
-      <div className="ml">
-        <h2 className="sidebar-title price-title">Price</h2>
+      <div className="ml-[20px]">
+        <h2 className="sidebar-title price-title mt-[20px] ">Price</h2>
 
         <label className="sidebar-label-container">
           <input onChange={handleChange} type="radio" value="" name="test2" />

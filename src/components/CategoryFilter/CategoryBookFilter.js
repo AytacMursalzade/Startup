@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React , { useState } from "react";
 import Navigation from "./Nav";
 import Products from "./Products";
 import products from "../../db/data";
@@ -52,7 +52,7 @@ function CategoryBookFilter() {
 
     return filteredProducts.map(
       ({ img, title, star, reviews, prevPrice, newPrice }) => (
-        <CardCategory
+        <CardCategory className="w-[1412px]"
           key={Math.random()}
           img={img}
           title={title}
@@ -69,10 +69,13 @@ function CategoryBookFilter() {
 
   return (
     <>
-      <Sidebar handleChange={handleChange} />
-      <Navigation query={query} handleInputChange={handleInputChange} />
-      <Recommended handleClick={handleClick} />
-      <Products result={result} />
+      <div className="w-[1705px] px-[75px] ">
+        
+        <Sidebar handleChange={handleChange} />
+        <Navigation query={query} handleInputChange={handleInputChange} />
+        <Recommended handleClick={handleClick} />
+        <Products result={result} />
+      </div>
     </>
   );
 }

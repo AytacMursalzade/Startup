@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 const Nav = ({ handleInputChange, query }) => {
   return (
-    <nav>
+    <nav className="flex justify-around items-center px-[20px]  ml-[36px] ">
       <div className="nav-container">
         <input
-          className="search-input"
+          className="search-input bg-[white] mr-[900px] mt-[50px] border border-black   px-[30px] py-[8px] "
           type="text"
           onChange={handleInputChange}
           value={query}
-          placeholder="Enter your search shoes."
+          placeholder="Search..."
         />
       </div>
       <div className="profile-container">

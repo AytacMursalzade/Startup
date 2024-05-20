@@ -4,7 +4,7 @@ import { IoSearchSharp } from "react-icons/io5";
 function Filter() {
   return (
     <div>
-      <form className="filtered flex items-center justify-between w-[420px] mt-[-10px] py-[4px] px-[20px] rounded-full bg-white ">
+      <form className="filtered flex items-center justify-between w-[350px] h-[25px] pt-[16px]  px-[20px] rounded-full bg-white ">
         <input
           className="text-black outline-none "
           type="text"
