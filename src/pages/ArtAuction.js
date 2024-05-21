@@ -22,10 +22,10 @@ function ArtAuction() {
       <PosterAct />
       <SalesArt />
       <LocationArt helpGavel="#0543EC"/>
-      <FooterTop GavelColor="#0543EC"/>
+      <FooterTop hoverColor="colorBlue" GavelColor="#0543EC"/>
       <FooterAverage GavelColorshop="#0543EC" nameAuction="SHOP BY BRAND"/>
       <FooterFilterArt bgColor="#0543EC"  />
-      <Footer Logoimage={Logoimage1}/>
+      <Footer textH1="#343E47" textColorFB="#343E47" hoverFB="colorBlue" hoverbgF="colorBluebg" Logoimage={Logoimage1}/>
     </div>
   );
 }

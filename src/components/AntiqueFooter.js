@@ -2,11 +2,9 @@ import React from "react";
 import friend from "../assets/community.jpg";
 import { Link } from "react-router-dom";
 
-function AntiqueFooter({LatText1,LatestText2,hoverText,LatestTextp1,LatestTextp2,mouseEnter,mouseLeave}) {
+function AntiqueFooter({LatText1,LatestText2,LatestTextp1,LatestTextp2,mouseEnter,mouseLeave,hoverColor}) {
 
-  // const styleHover = {
-  //   color: hovered ? 'red' : 'black',
-  // };
+  
 
   return (
     <div className="mt-[30px] px-[75px] ">
@@ -23,9 +21,7 @@ function AntiqueFooter({LatText1,LatestText2,hoverText,LatestTextp1,LatestTextp2
         
         <div className="symbolsLatest flex flex-col justify-around ">
           <Link>
-            <h1 onMouseEnter={mouseEnter}
-                onMouseLeave={mouseLeave}
-                className={`text-20px font-bold hover:${hoverText}`}>
+            <h1 className={`${hoverColor} text-[20px] font-bold`}>
                {LatText1}<br /> {LatestText2}
             </h1>
           </Link>
@@ -41,12 +37,12 @@ function AntiqueFooter({LatText1,LatestText2,hoverText,LatestTextp1,LatestTextp2
               className="relative w-[118px] h-[119px] overflow-hidden"
             ><div className="communitylink">
               <img src={friend} alt="community" className="w-full h-full" />
-              <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div></div>
+              <div className="absolute inset-0cl bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div></div>
             </Link>
           
           <div className="symbolsLatest flex flex-col justify-around ">
           <Link>
-            <h1 className="text-[20px] font-bold hover:text-[#0543EC] ">
+            <h1 className={`${hoverColor} text-[20px] font-bold`}>
                {LatText1}<br /> {LatestText2}
             </h1>
           </Link>
@@ -67,7 +63,7 @@ function AntiqueFooter({LatText1,LatestText2,hoverText,LatestTextp1,LatestTextp2
           
           <div className="symbolsLatest flex flex-col justify-around ">
           <Link>
-            <h1 className="text-[20px] font-bold hover:text-[#0543EC] ">
+            <h1 className={`${hoverColor} text-[20px] font-bold`}>
                {LatText1}<br /> {LatestText2}
             </h1>
           </Link>

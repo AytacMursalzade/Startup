@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import poster from "../assets/bmwVintage300.jpg";
 import { FaGavel } from "react-icons/fa6";
 import { IoMdEye } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
 import Tooltip from "@mui/material/Tooltip";
 
-function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCard,numberProduct,productCard,numberPoster,posterCard,productName}) {
+function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCard,numberProduct,productCard,numberPoster,posterCard,productName,hoveredSales,hoverBGsales}) {
 
   const BGimgMil = {
     backgroundImage: `url(${imgPoster})`, 
@@ -41,7 +40,7 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
               </Link>
               <div className="flex flex-col gap-[20px] pl-[15px] justify-center ">
                 <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[red] font-bold ">
+                  <h1 className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`} >
                   {SalesText}
                   </h1>
                 </Link>
@@ -56,12 +55,12 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[red] hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[red] hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -76,7 +75,7 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
               </Link>
               <div className="flex flex-col gap-[20px] pl-[15px] justify-center ">
                 <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[red] font-bold ">
+                  <h1 className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`}>
                   {SalesText}
                   </h1>
                 </Link>
@@ -91,12 +90,12 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -111,7 +110,7 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
               </Link>
               <div className="flex flex-col gap-[20px] pl-[15px] justify-center ">
                 <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[red] font-bold ">
+                  <h1 className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`}>
                   {SalesText}
                   </h1>
                 </Link>
@@ -126,12 +125,12 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-[white] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -146,7 +145,7 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
               </Link>
               <div className="flex flex-col gap-[20px] pl-[15px] justify-center ">
                 <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[red] font-bold ">
+                  <h1 className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`}>
                   {SalesText}
                   </h1>
                 </Link>
@@ -161,12 +160,12 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -196,7 +195,7 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
               </Link>
               <div className="flex flex-col gap-[20px] pl-[15px] justify-center ">
                 <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[red] font-bold ">
+                  <h1 className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`}>
                   {SalesText}
                   </h1>
                 </Link>
@@ -211,12 +210,12 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-[white] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-[white] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -231,7 +230,7 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
               </Link>
               <div className="flex flex-col gap-[20px] pl-[15px] justify-center ">
                 <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[red] font-bold ">
+                  <h1 className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`}>
                   {SalesText}
                   </h1>
                 </Link>
@@ -246,12 +245,12 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -266,7 +265,7 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
               </Link>
               <div className="flex flex-col gap-[20px] pl-[15px] justify-center ">
                 <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[red] font-bold ">
+                  <h1 className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`}>
                   {SalesText}
                   </h1>
                 </Link>
@@ -281,12 +280,12 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -301,7 +300,7 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
               </Link>
               <div className="flex flex-col gap-[20px] pl-[15px] justify-center ">
                 <Link>
-                  <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[red] font-bold ">
+                  <h1 className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`}>
                   {SalesText}
                   </h1>
                 </Link>
@@ -316,12 +315,12 @@ function SalesAntiques({SalesText,img,toolBg,imgPoster,imagePoster,textPosterCar
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[red] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <button className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}>
                       <FaSearch />
                     </button>
                   </Tooltip>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { IoMdEye } from "react-icons/io";
 
 
-function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLatest1,OneLatest,toolRadius}) {
+function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLatest1,OneLatest,toolRadius,hoverLatest,hoverTextBotm}) {
   return (
     <>
       <div className="topic flex flex-col items-center justify-center mt-[126px] mb-[25px] ">
@@ -34,12 +34,12 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
                     </button>
                   </Tooltip>
                   <Tooltip title="View Auction">
-                    <button style={{borderRadius:toolRadius}} className=" hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className={`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
                       <CiHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button style={{borderRadius:toolRadius}} className=" hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className= {`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -49,7 +49,7 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
                 </div>
               </div>
               <div className="phoneBottom flex flex-col  border-t-2 pt-[24px] items-center gap-[9px]">
-                <Link to="/"><h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#EE964B]">
+                <Link to="/"><h2 className={`text-[#484848] text-[18px] font-bold loading-[22px] ${hoverTextBotm}`}>
                  {textLatest} <br/> {textLatest1}
                 </h2></Link>
                 <p className="text-[#606060] text-[16px] font-light loading-[22px]">
@@ -68,12 +68,12 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button style={{borderRadius:toolRadius}} className=" hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className={`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
                       <CiHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button style={{borderRadius:toolRadius}} className="hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className={`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -83,7 +83,7 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
                 </div>
               </div>
               <div className="phoneBottom flex flex-col  border-t-2 pt-[24px] items-center gap-[9px]">
-                <Link to="/"><h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#EE964B]">
+                <Link to="/"><h2 className={`text-[#484848] text-[18px] font-bold loading-[22px] ${hoverTextBotm}`}>
                   {textLatest}
                 </h2></Link>
                 <p className="text-[#606060] text-[16px] font-light loading-[22px]">
@@ -104,12 +104,12 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button style={{borderRadius:toolRadius}} className="hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className={`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
                       <CiHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button style={{borderRadius:toolRadius}} className=" hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className={`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -119,7 +119,7 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
                 </div>
               </div>
               <div className="phoneBottom flex flex-col  border-t-2 pt-[18px] items-center gap-[9px]">
-                <Link to="/"><h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#EE964B]">
+                <Link to="/"><h2 className={`text-[#484848] text-[18px] font-bold loading-[22px] ${hoverTextBotm}`}>
                   {textLatest}
                 </h2></Link>
                 <p className="text-[#606060] text-[16px] font-light loading-[22px]">
@@ -138,12 +138,12 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button style={{borderRadius:toolRadius}} className=" hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className={`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
                       <CiHeart />
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button style={{borderRadius:toolRadius}} className="hover:bg-[#EE964B] text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                    <button style={{borderRadius:toolRadius}} className={`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -153,7 +153,7 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
                 </div>
               </div>
               <div className="phoneBottom flex flex-col  border-t-2 pt-[18px] items-center gap-[9px]">
-               <Link to="/"> <h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#EE964B]">
+               <Link to="/"> <h2 className={`text-[#484848] text-[18px] font-bold loading-[22px] ${hoverTextBotm}`}>
                   {textLatest}
                 </h2></Link>
                 <p className="text-[#606060] text-[16px] font-light loading-[22px]">

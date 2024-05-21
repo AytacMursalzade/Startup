@@ -17,14 +17,14 @@ function Automotive() {
     <div className="container automark ">
     <HeaderArrage basketColor="#EE964B" Logoimage={LogoimageAuto}/>
     <Header bgColor="#EE964B"/>
-    <LatestAuto OneLatest="LATEST AUCTIONS" toolRadius="50%" textLatest="Orange Fiat 500" art={artAuto} GavelTextColor="#EE964B" tooltipBg="#EE964B" howToused="Current Bid" />
+    <LatestAuto hoverTextBotm="colorOrange" hoverLatest="colorOrangebg" OneLatest="LATEST AUCTIONS" toolRadius="50%" textLatest="Orange Fiat 500" art={artAuto} GavelTextColor="#EE964B" tooltipBg="#EE964B" howToused="Current Bid" />
     <PosterAutomotive />
     <SalesAutomotive SalesText="El Camino" hoverTextColor="#EE964B"/>
     <LocationAuto helpGavel="#EE964B"/>
-    <FooterTop GavelColor="#EE964B" />
+    <FooterTop hoverColor="colorOrange" GavelColor="#EE964B" />
     <FooterAverage GavelColorshop="#EE964B" nameAuction="AUCTIONS BY BRAND" />
     <FooterFilter bgColor="#EE964B"  />
-    <Footer Logoimage={LogoimageAuto}/>
+    <Footer textH1="#343E47" textColorFB="#343E47" hoverFB="colorOrange" hoverbgF="colorOrangebg" Logoimage={LogoimageAuto}/>
   </div>
   )
 }

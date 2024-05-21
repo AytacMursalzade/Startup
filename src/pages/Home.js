@@ -22,15 +22,15 @@ function Home() {
         <HeaderArrage basketColor="#0543EC" Logoimage={Logoimage1}/>
         <Header bgColor="#2695FF"/>
         <Slide />
-        <Mainbottom />
+        <Mainbottom mtTop="30px" colorP="#606060" colorH="#343e47"/>
         <MainArravega />
         <Hovered />
         <Salespart />
         <Locationn radiusBorder="45px" img={imageHomeLoc} GavellColor="#2695FF"  inputBg="#2695FF"/>
-        <FooterTop hoverText="#2695FF" LatText1="A Phone keeps Your" LatestText2="Friends away" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to ensure…" GavelColor="#2695FF" />
+        <FooterTop hoverColor="colorBlue" LatText1="A Phone keeps Your" LatestText2="Friends away" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to ensure…" GavelColor="#2695FF" />
         <FooterAverage GavelColorshop="#2695FF" nameAuction="SHOP BY BRAND" />
         <FooterFilter rounded="45px" bgColor="#2695FF"/>
-        <Footer Logoimage={Logoimage1}/>
+        <Footer textH1="#343E47" textColorFB="#343E47" hoverFB="colorBlue" hoverbgF="colorBluebg" Logoimage={Logoimage1}/>
       </div>
     </>
   );

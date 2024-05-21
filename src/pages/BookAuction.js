@@ -23,10 +23,10 @@ function BookAuction() {
       <HoveredBook />
       <CategoryBookFilter />
       <Locationn img={locationimageB} GavellColor="#F27928" inputBg="#F27928"/>
-      <FooterTop GavelColor="#F27928" />
+      <FooterTop hoverColor="colorOrang" GavelColor="#F27928" />
       <FooterAverage GavelColorshop="#F27928" nameAuction="SHOP BY BRAND" />
       <FooterFilter bgColor="#F27928" />
-      <Footer Logoimage={Logoimage1} />
+      <Footer textH1="#343E47" textColorFB="#343E47" hoverFB="colorOrang" hoverbgF="colorOrangbg" Logoimage={Logoimage1} />
     </div>
   );
 }

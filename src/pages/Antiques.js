@@ -12,6 +12,7 @@ import PosterAntiques from "../components/PosterAntiques";
 import SalesAntiques from "../components/SalesAntiques";
 import imageAnt from "../assets/culon183.png";
 import imagePoster from "../assets/700Vintage.png";
+import imgAnt from "../assets/440color.png";
 
 function Antiques() {
   return (
@@ -21,6 +22,9 @@ function Antiques() {
       <LatesAnti textLatest="Jewelry Container" howToused="Current Bid" />
       <PosterAntiques />
       <SalesAntiques
+        imagePoster={imgAnt}
+        hoveredSales="RedC"
+        hoverBGsales="RedCbg"
         imgPoster={imagePoster}
         SalesText="Black Pearl"
         img={imageAnt}
@@ -33,10 +37,10 @@ function Antiques() {
         numberPoster="5"
       />
       <LocationArt />
-      <FooterTop GavelColor="red" />
+      <FooterTop hoverColor="RedC" GavelColor="red" />
       <FooterAverage GavelColorshop="red" nameAuction="SHOP BY BRAND" />
       <FooterFilterArt bgColor="red" />
-      <Footer Logoimage={Logoimage1} />
+      <Footer textH1="#343E47" textColorFB="#343E47" hoverFB="RedC" hoverbgF="RedCbg" Logoimage={Logoimage1} />
     </div>
   );
 }

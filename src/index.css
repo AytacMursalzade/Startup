@@ -19,6 +19,66 @@
 li:hover .submenu {
   visibility: visible;
 } */
+.RedC{
+  @apply hover:text-red-500;
+}
+.RedCbg{
+  @apply hover:bg-red-500;
+}
+.colorBlue{
+  @apply hover:text-blue-500;
+}
+.colorBluebg{
+  @apply hover:bg-blue-500;
+}
+.colorOrange{
+  @apply hover:text-[#EE964B];
+}
+.colorOrangebg{
+  @apply hover:bg-[#EE964B];
+}
+.colorOrang{
+  @apply hover:text-[#F27928];
+}
+.colorOrangbg{
+  @apply hover:bg-[#F27928];
+}
+.colorGreenField{
+  @apply hover:text-[#627452];
+}
+.colorGreenFieldbg{
+  @apply hover:bg-[#627452];
+}
+.colorshipsHarbour{
+  @apply hover:text-[#4F89B0];
+}
+.colorshipsHarbourbg{
+  @apply hover:bg-[#4F89B0];
+}
+.colorBakersChocolate{
+  @apply hover:text-[#5E3217];
+}
+.colorBakersChocolatebg{
+  @apply hover:bg-[#5E3217];
+}
+.colorPurplishBlue{
+  @apply hover:text-[#6449E7];
+}
+.colorPurplishBluebg{
+  @apply hover:bg-[#6449E7];
+}
+.colorBluishBlack{
+  @apply hover:text-[#414144];
+}
+.colorBluishBlackbg{
+  @apply hover:bg-[#414144];
+}
+.colorBlueMania{
+  @apply hover:text-[#6FCBF4];
+}
+.colorBlueManiabg{
+  @apply hover:bg-[#6FCBF4];
+}
 .NavbarCard ul ~ li{
   border: 2px solid black;
   background-color: #0543EC;
@@ -154,6 +214,7 @@ li:hover .submenu {
 .salesSelf{
   background-image: url("../src/assets/lowReal.jpg");
 }
+
 .householdSelf{
   background-image: url("../src/assets/constructionsReal.jpg");
 }
@@ -162,6 +223,18 @@ li:hover .submenu {
 }
 .apartmanState{
   background-image: url("../src/assets/realestatefinish.jpg");
+}
+.bulletTour{
+  background-image: url("../src/assets/ToursBullet.jpg");
+}
+.bulletCruises{
+  background-image: url("../src/assets/ourCruises.jpg");
+}
+.bulletBreaks{
+  background-image: url("../src/assets/breaks.jpg");
+}
+.villaTour{
+  background-image: url("../src/assets/villastour.jpg");
 }
 .communitylink{
   display: flex;
@@ -233,7 +306,7 @@ li:hover .submenu {
   padding: 10px;
 }
 
-.dropdown-menu {
+/* .dropdown-menu {
   position: absolute;
   top: calc(100% + 5px);
   left: 0;
@@ -247,7 +320,7 @@ li:hover .submenu {
 
 .dropdown {
   position: relative;
-}
+} */
 
 .category-button {
   position: relative;

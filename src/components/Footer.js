@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Footer(props) {
+function Footer({Logoimage,hoverbgF,hoverFB,FooterBG,widthFooter,heightFooter,bgFootBtm,textColorFB,textH1}) {
   return (
     <>
-      <div className="averageFooter flex justify-around  ml-[10px] gap-[30px] ">
+      <div style={{width:widthFooter,height:heightFooter,backgroundColor:FooterBG}}><div  className="averageFooter flex justify-around  ml-[10px] gap-[30px] ">
         <div>
           <ul className="flex flex-col gap-[8px] ">
             <Link>
               <li>
-                <img width={120} src={props.Logoimage} alt="logo" />
+                <img width={120} src={Logoimage} alt="logo" />
               </li>
             </Link>
             <li className="text-[#AFAFAF] ">contact@example.com</li>
@@ -17,50 +17,50 @@ function Footer(props) {
           </ul>
         </div>
         <div>
-          <h1 className="text-[#343E47] font-bold text-[24px] mb-[12px] ">
+          <h1 style={{color:textH1}} className="font-bold text-[24px] mb-[12px] ">
             Useful Links
           </h1>
           <ul className="text-[#AFAFAF] text-[16px] font-normal  flex flex-col gap-[8px] ">
             <Link>
-              <li className="hover:text-[#2695FF]">Mobile Phone</li>
+              <li className={`${hoverFB}`}>Mobile Phone</li>
             </Link>
             <Link>
-              <li className="hover:text-[#2695FF]">Laptop</li>
+              <li className={`${hoverFB}`}>Laptop</li>
             </Link>
             <Link>
-              <li className="hover:text-[#2695FF]">Headphones</li>
+              <li className={`${hoverFB}`}>Headphones</li>
             </Link>
           </ul>
         </div>
         <div>
-          <h1 className="text-[#343E47] font-bold text-[24px] mb-[12px] ">
+          <h1 style={{color:textH1}} className="font-bold text-[24px] mb-[12px] ">
             Useful Links
           </h1>
           <ul className="text-[#AFAFAF] text-[16px] font-normal  flex flex-col gap-[8px] ">
             <Link>
-              <li className="hover:text-[#2695FF]">Mobile Phone</li>
+              <li className={`${hoverFB}`}>Mobile Phone</li>
             </Link>
             <Link>
-              <li className="hover:text-[#2695FF]">Laptop</li>
+              <li className={`${hoverFB}`}>Laptop</li>
             </Link>
             <Link>
-              <li className="hover:text-[#2695FF]">Headphones</li>
+              <li className={`${hoverFB}`}>Headphones</li>
             </Link>
           </ul>
         </div>
         <div>
-          <h1 className="text-[#343E47] font-bold text-[24px] mb-[12px] ">
+          <h1 style={{color:textH1}} className="font-bold text-[24px] mb-[12px] ">
             Subscribe to our Newsteller
           </h1>
           <form className="flex shadow-md ">
             <label>
               <input className="formFooter w-[200px] h-[40px] px-[12px] focus:outline-none focus:border-gray-700"  type="text" name="name" placeholder="Enter your email" />
             </label>
-            <button className="btnFilter flex justify-center items-center hover:bg-[#0543EC] w-[110px] h-[40px] rounded-[8px]  bg-[#484848] text-white "><input type="submit" value="Submit" /></button>
+            <button className={`btnFilter flex justify-center items-center ${hoverbgF} w-[110px] h-[40px] rounded-[8px]  bg-[#484848] text-white`} ><input type="submit" value="Submit" /></button>
           </form>
         </div>
-      </div>
-      <div className="lastFooter flex justify-between bg-[#F8F8F8] items-center px-[90px] text-[#343E47] font-normal mt-[70px] w-[100%] h-[80px] ">
+      </div></div>
+      <div style={{backgroundColor:bgFootBtm, color:textColorFB}} className="lastFooter flex justify-between  items-center px-[90px] font-normal mt-[70px] w-[100%] h-[80px] ">
         <p className="CopyLastFooter">Copyright by ModelTheme. All Rights Reserved.</p>
         <p>Elite Author on ThemeForest.</p>
       </div>

@@ -16,7 +16,7 @@ function PosterCoins() {
                   <p className="text-white font-light">20 Auctions</p>
                 </div>
                 <div>
-                  <button className="btnHovered border-1 border-black-100 hover:bg-white hover:text-[#5E3217] text-white font-semibold rounded-[9px] border border-solid-1  px-[20px] py-[6px] ">
+                  <button className="btnHovered border-1 border-black-100 hover:bg-white hover:text-[#4F89B0] text-white font-semibold rounded-[9px] border border-solid-1  px-[20px] py-[6px] ">
                     VIEW MORE
                   </button>
                 </div>
@@ -33,7 +33,7 @@ function PosterCoins() {
                   <p className="text-white font-light">29 Auctions</p>
                 </div>
                 <div>
-                  <button className="btnHovered border-1 border-black-100 hover:bg-white hover:text-[#5E3217] text-white font-semibold rounded-[9px] border border-solid-1  px-[20px] py-[6px] ">
+                  <button className="btnHovered border-1 border-black-100 hover:bg-white hover:text-[#4F89B0] text-white font-semibold rounded-[9px] border border-solid-1  px-[20px] py-[6px] ">
                     VIEW MORE
                   </button>
                 </div>
