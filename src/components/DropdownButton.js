@@ -13,7 +13,7 @@ function DropdownButton() {
   };
 
   return (
-    <div className="dropdown">
+    <div className="dropdown ">
       <button className="category-button text-[14px] font-normal text-[#575555] " onClick={toggleDropdown}>
         Category
         <span className={`arrow ${isOpen ? "arrow-up" : "arrow-down"}`} />

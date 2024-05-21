@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo-ibid.png";
 import { FaBasketShopping } from "react-icons/fa6";
 import { LuHeart } from "react-icons/lu";
 import { FaTruck } from "react-icons/fa";
@@ -12,10 +11,10 @@ import { FaSearch } from "react-icons/fa";
 import { RiAdminFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-function HeaderArrage() {
+function HeaderArrage({basketColor,Logoimage,bgColor}) {
   return (
     <>
-      <div className="headerTop flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
+      <div style={{backgroundColor:bgColor}} className="headerTop  flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
         <div className="flex justify-between gap-[28px]">
           <div className="hidden topHeader">
             <MdEmail />
@@ -56,7 +55,7 @@ function HeaderArrage() {
       <div className="logoIcons flex col-3  justify-between items-center px-[75px] py-[30px] ">
         <div className="logoicon">
           <div className="logo">
-            <img width={80} src={Logo} alt="logo" />
+            <img width={80} src={Logoimage} alt="logo" />
           </div>
           <div className="iconsHeader  hidden ">
             <Link to="/">
@@ -94,7 +93,7 @@ function HeaderArrage() {
             </Link>
           </div>
           <Link>
-            <div className="text-[25px] mt-[10px] text-[#395b7c] ">
+            <div style={{color:basketColor}} className="text-[25px] mt-[10px] ">
               <FaBasketShopping />
             </div>
           </Link>

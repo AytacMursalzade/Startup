@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-function Form() {
+function Form({inputBg,radiusBorder}) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -81,7 +81,8 @@ function Form() {
         </div>
         <button
           type="submit"
-          className="flex justify-center gap-[10px] px-3 font-semibold w-[100%] rounded-[45px] text-white bg-[#2695FF] py-3  mt-1 input"
+          style={{backgroundColor:inputBg,borderRadius:radiusBorder}}
+          className="flex justify-center gap-[10px] px-3 font-semibold w-[100%]  text-white  py-3  mt-1 input"
         >
          <div> SEND MESSAGE</div>
           <div className="mt-[4px] "><FaArrowRightLong /></div>
