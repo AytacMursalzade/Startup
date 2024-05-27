@@ -27,12 +27,12 @@ function RealEstate() {
     <Slide />
     <LatestAuto hoverTextBotm="colorPurplishBlue" hoverLatest="colorPurplishBluebg" OneLatest="LATEST PROPERTIES AUCTIONS" toolRadius="9px" textLatest="Villa Flowers" art={EstateFlin} GavelTextColor="#6449E7" tooltipBg="#6449E7" howToused="Current Bid" />
     <RealEstatePoster />
-    <SalesAntiques hoveredSales="colorPurplishBlue" hoverBGsales="colorPurplishBluebg" imagePoster={imageRealEstate} imgPoster={imagePosterReal} SalesText="Luxury Villa" img={imageReal} toolBg="#6449E7" textPosterCard="VILLA" productCard="Products" numberProduct="6" productName="Products" posterCard="DUPLEX" numberPoster="4"/>
+    <SalesAntiques display5={true} hoveredSales="colorPurplishBlue" hoverBGsales="colorPurplishBluebg" imagePoster={imageRealEstate} imgPoster={imagePosterReal} SalesText="Luxury Villa" img={imageReal} toolBg="#6449E7" textPosterCard="VILLA" productCard="Products" numberProduct="6" productName="Products" posterCard="DUPLEX" numberPoster="4"/>
     <Locationn radiusBorder="9px" img={locationimageSelf} GavellColor="#6449E7" inputBg="#6449E7"/>
-    <FooterTop hoverColor="colorPurplishBlue" GavelColor="#414144" LatText1="A Phone Keeps Your" LatestText2="Friends Away" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to ensure…"  />
+    <FooterTop display={false} hoverColor="colorPurplishBlue" GavelColor="#414144" LatText1="A Phone Keeps Your" LatestText2="Friends Away" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to ensure…"  />
     <FooterAverage GavelColorshop="#6449E7" nameAuction="SHOP BY BRAND" />
-    <FooterFilter rounded="9px"  bgColor="#6449E7"/>
-    <Footer textH1="#343E47" textColorFB="#343E47" hoverFB="colorPurplishBlue" hoverbgF="colorPurplishBluebg" Logoimage={LogoimageEstate}/>
+    <FooterFilter mtfooteR="75px" rounded="9px"  bgColor="#6449E7"/>
+    <Footer ptFtr="50px" BtnRadius="9px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="colorPurplishBlue" hoverbgF="colorPurplishBluebg" Logoimage={LogoimageEstate}/>
   </div>
   )
 }

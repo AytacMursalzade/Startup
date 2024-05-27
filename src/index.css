@@ -3,6 +3,39 @@
 @tailwind utilities;
 
 
+
+.slider-container {
+  width: 60%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.slide {
+  user-select: none;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator {
+  width: 60px;
+  height: 2px;
+  background-color: #696464;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: white;
+}
 /* .submenu {
   visibility: hidden;
   position: absolute;
@@ -19,6 +52,7 @@
 li:hover .submenu {
   visibility: visible;
 } */
+
 .RedC{
   @apply hover:text-red-500;
 }
@@ -30,6 +64,12 @@ li:hover .submenu {
 }
 .colorBluebg{
   @apply hover:bg-blue-500;
+}
+.colorBlueOpen{
+  @apply hover:text-[#009EA3];
+}
+.colorBlueOpenbg{
+  @apply hover:bg-[#009EA3];
 }
 .colorOrange{
   @apply hover:text-[#EE964B];
@@ -79,6 +119,24 @@ li:hover .submenu {
 .colorBlueManiabg{
   @apply hover:bg-[#6FCBF4];
 }
+.colorYellow{
+  @apply hover:text-[#FBDE06];
+}
+.colorYellowbg{
+  @apply hover:bg-[#FBDE06];
+}
+.colorPurplebg{
+  @apply hover:bg-[#C16BB6];
+}
+.colorPurple{
+  @apply hover:text-[#C16BB6];
+}
+.colorGreenBluebg{
+  @apply hover:bg-[#4AD493];
+}
+.colorGreenBlue{
+  @apply hover:text-[#4AD493];
+}
 .NavbarCard ul ~ li{
   border: 2px solid black;
   background-color: #0543EC;
@@ -89,6 +147,23 @@ li:hover .submenu {
   justify-content: center;
 }
 
+.PosterCoins{
+  background-color: #E94A35;
+}
+.CoinsPTwo{
+  background-color: #2196f3;
+}
+.CoinsPThree{
+  background-color: yellow;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;  
+}
 .bullet {
   background-image: url("../src/assets/iphoneear.jpg");
 }
@@ -196,14 +271,18 @@ li:hover .submenu {
 .toolStorage{
   background-image: url("../src/assets/toolsStorage.jpg");
 }
-/* .posterMilOne{
-  background-image: url("../src/assets/Militaria-banner3.jpg");
-
+.Machine1{
+  background-image: url("../src/assets/machine1.png");
 }
-.posterMilTwo{
-  background-image: url("../src/assets/Militaria-banners420.jpg");
-
-} */
+.compoctors{
+  background-image: url("../src/assets/compoctors.png");
+}
+.buldozers{
+  background-image: url("../src/assets/buldozers.jpg");
+}
+.cranes{
+  background-image: url("../src/assets/craness.jpg");
+}
 .horseMil{
   background-image: url("../src/assets/Militaria-banner3.jpg");
 

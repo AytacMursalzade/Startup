@@ -1,13 +1,19 @@
 import React from "react";
 import { FaGavel } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaShoppingBasket } from "react-icons/fa";
 import Tooltip from "@mui/material/Tooltip";
 import { Link } from "react-router-dom";
 import { IoMdEye } from "react-icons/io";
 
 
-function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLatest1,OneLatest,toolRadius,hoverLatest,hoverTextBotm}) {
+function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLatest1,OneLatest,toolRadius,hoverLatest,toolBg,hoverTextBotm,displayTool,displayToolNew}) {
+  const ToolStyle ={
+    display: displayTool ? 'block' : 'none'
+  }
+  const ToolStyleNew ={
+    display: displayToolNew ? 'block' : 'none'
+  }
   return (
     <>
       <div className="topic flex flex-col items-center justify-center mt-[126px] mb-[25px] ">
@@ -24,13 +30,18 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
 
       <div className="PhonesAll flex gap-[13px] px-[71px] ">
         <div className="first flex gap-[13px] ">
-          <div className="allPhones w-[322px] h-[400px] shadow-lg">
+          <div className="allPhones w-[322px] min-h-[425px] shadow-lg">
             <div className="flex flex-col">
               <div className="flex  items-start pt-[30px]">
                 <div className="flex flex-col gap-[8px] pl-[18px] ">
-                  <Tooltip title="Bid Now">
-                    <button style={{backgroundColor:tooltipBg, borderRadius:toolRadius}} className="text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                <Tooltip style={ToolStyle} title="Bid Now">
+                    <button style={{backgroundColor:tooltipBg, borderRadius:toolRadius}} className="rounded-[9px]  text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <IoMdEye />
+                    </button>
+                  </Tooltip>
+                  <Tooltip style={ToolStyleNew} title="Add to cart">
+                    <button style={{backgroundColor:tooltipBg, borderRadius:toolRadius}}className="rounded-[9px]  text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <FaShoppingBasket />
                     </button>
                   </Tooltip>
                   <Tooltip title="View Auction">
@@ -58,13 +69,18 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
               </div>
             </div>
           </div>
-          <div className="allPhones w-[322px] h-[400px] shadow-lg">
+          <div className="allPhones w-[322px] min-h-[425px] shadow-lg">
             <div className="flex flex-col">
               <div className="flex justify-between items-start pt-[30px]">
                 <div className="flex flex-col gap-[8px] pl-[18px] ">
-                  <Tooltip title="Bid Now">
-                    <button style={{backgroundColor:tooltipBg,borderRadius:toolRadius}} className="  text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                <Tooltip style={ToolStyle} title="Bid Now">
+                    <button style={{backgroundColor:tooltipBg, borderRadius:toolRadius}} className="rounded-[9px]  text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaGavel />
+                    </button>
+                  </Tooltip>
+                  <Tooltip style={ToolStyleNew} title="Add to cart">
+                    <button style={{backgroundColor:tooltipBg, borderRadius:toolRadius}} className="rounded-[9px]  text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <FaShoppingBasket />
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
@@ -94,13 +110,18 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
           </div>
         </div>
         <div className="second flex gap-[13px]  ">
-          <div className="allPhones w-[322px] h-[400px] shadow-lg">
+          <div className="allPhones w-[322px] min-h-[425px] shadow-lg">
             <div className="flex flex-col">
               <div className="flex justify-between items-start pt-[30px]">
                 <div className="flex flex-col gap-[8px] pl-[18px] ">
-                  <Tooltip title="Bid Now">
-                    <button style={{backgroundColor:tooltipBg,borderRadius:toolRadius}} className=" text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                <Tooltip style={ToolStyle} title="Bid Now">
+                    <button style={{backgroundColor:tooltipBg, borderRadius:toolRadius}} className="rounded-[9px]  text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaGavel />
+                    </button>
+                  </Tooltip>
+                  <Tooltip style={ToolStyleNew} title="Add to cart">
+                    <button style={{backgroundColor:tooltipBg, borderRadius:toolRadius}} className="rounded-[9px]  text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <FaShoppingBasket />
                     </button>
                   </Tooltip>
                   <Tooltip title="Add to Wishlist">
@@ -109,7 +130,7 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
                     </button>
                   </Tooltip>
                   <Tooltip title="Quickview">
-                    <button style={{borderRadius:toolRadius}} className={`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
+                    <button style={{borderRadius:toolRadius}}className={`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
                       <FaSearch />
                     </button>
                   </Tooltip>
@@ -128,17 +149,22 @@ function LatestAuto({textLatest,howToused,GavelTextColor,tooltipBg,art,textLates
               </div>
             </div>
           </div>
-          <div className="allPhones w-[322px] h-[400px] shadow-lg">
+          <div className="allPhones w-[322px] min-h-[425px] shadow-lg">
             <div className="flex flex-col">
               <div className="flex justify-between items-start pt-[30px]">
                 <div className="flex flex-col gap-[8px] pl-[18px] ">
-                  <Tooltip title="Bid Now">
-                    <button style={{backgroundColor:tooltipBg,borderRadius:toolRadius}} className=" text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md">
+                <Tooltip style={ToolStyle} title="Bid Now">
+                    <button style={{backgroundColor:tooltipBg, borderRadius:toolRadius}} className="rounded-[9px]  text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
                       <FaGavel />
                     </button>
                   </Tooltip>
+                  <Tooltip style={ToolStyleNew} title="Add to cart">
+                    <button style={{backgroundColor:tooltipBg, borderRadius:toolRadius}} className="rounded-[9px]  text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md ">
+                    <FaShoppingBasket />
+                    </button>
+                  </Tooltip>
                   <Tooltip title="Add to Wishlist">
-                    <button style={{borderRadius:toolRadius}} className={`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
+                    <button style={{borderRadius:toolRadius}}className={`${hoverLatest} text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}>
                       <CiHeart />
                     </button>
                   </Tooltip>

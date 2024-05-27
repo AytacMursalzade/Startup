@@ -11,10 +11,13 @@ import { FaSearch } from "react-icons/fa";
 import { RiAdminFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-function HeaderArrage({basketColor,Logoimage,bgColor}) {
+function HeaderArrage({basketColor,Logoimage,bgColor,display2}) {
+  const handMade = {
+    display: display2 ? 'block' : 'none',
+  };
   return (
     <>
-      <div style={{backgroundColor:bgColor}} className="headerTop  flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
+      <div style={{backgroundColor:bgColor,...handMade}} className="headerTop  flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
         <div className="flex justify-between gap-[28px]">
           <div className="hidden topHeader">
             <MdEmail />

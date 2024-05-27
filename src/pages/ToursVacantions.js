@@ -1,5 +1,4 @@
 import React from "react";
-import LogoimageEstate from "../assets/realestate.png";
 import LatestAuto from "../components/LatestAuto";
 import tourLatest from "../assets/tours-vacantions_One.jpg";
 import FooterTop from "../components/FooterTop";
@@ -15,15 +14,16 @@ import TourSales from "../components/TourSales";
 import imageTour from "../assets/tourCattle.jpg";
 import imagePoster3 from "../assets/ourCruises.jpg";
 import imgPoster from "../assets/ToursBullet.jpg";
-import imagePoster from "../assets/breaks.jpg";
+import imagePoster5 from "../assets/breaks.jpg";
 import imagePoster4 from "../assets/realEstateHome.jpg"
 import TourImg from "../components/TourImg";
+import labLatest from "../assets/TourCod.jpg";
 
 function ToursVacantions() {
   return (
     <div className="container">
       <NavbarBook bgColorTop="#022147"/>
-      <HeaderBook bgColor="#092A5F" src={imageloGo} basketColor="#092A5F" />
+      <HeaderBook bgColor="#092A5F" src={imageloGo} basketColor="#6FCBF4" />
       <ToursSlide />
       <Mainbottom colorBg="#6FCBF4" heightMain="145px" mtTop="-1px" colorP="white" colorH="white"/>
       <LatestAuto
@@ -38,6 +38,7 @@ function ToursVacantions() {
       />
       <TourPoster />
       <TourSales
+        display={false}
         imagePoster4={imagePoster4}
         imagePoster3={imagePoster3}
         tooltipBg="#6FCBF4"
@@ -45,7 +46,7 @@ function ToursVacantions() {
         textLatest="Budapest, Hungary"
         hoveredSales="colorBlueMania"
         hoverBGsales="colorBlueManiabg"
-        imagePoster={imagePoster}
+        imagePoster5={imagePoster5}
         imgPoster={imgPoster}
         SalesText="Budapest,Hungary"
         imageTour={imageTour}
@@ -63,15 +64,19 @@ function ToursVacantions() {
       />
       <TourImg /> 
       <FooterTop
+        display={true}
+        friend={labLatest}
+        LatestHeight="278px"
+        LatestWidth="184px"
         hoverColor="colorBlueMania"
         GavelColor="#6FCBF4"
-        LatText1="A Phone Keeps Your"
-        LatestText2="Friends Away"
+        LatText1="Great offers for private"
+        LatestText2="islands stays in Europe"
         LatestTextp1="Bring to the table win-win survival"
-        LatestTextp2="Strategies to ensure…"
+        LatestTextp2="Strategies to …"
       />
       <FooterFilter rounded="45px" bgColor="#6FCBF4" />
-      <Footer textH1="white" FooterBG="#092A5F" widthFooter="1897" bgFootBtm="#22406F" heightFooter="120px" textColorFB="white" hoverFB="colorBlueMania" hoverbgF="colorBlueManiabg" Logoimage={imageloGo} />
+      <Footer BtnRadius="45px" ptFtr="50px" BrdInput="45px" textH1="white" FooterBG="#092A5F" widthFooter="1897" bgFootBtm="#22406F" heightFooter="230px" textColorFB="white" hoverFB="colorBlueMania" hoverbgF="colorBlueManiabg" Logoimage={imageloGo} />
     </div>
   );
 }

@@ -11,7 +11,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useDispatch, useSelector } from "react-redux";
 import { openSubmenu, closeSubmenu } from "../redux/navbarSlice";
 
-function HeaderBook({ bgColor, basketColor,src }) {
+function HeaderBook({ bgColor, basketColor,src,display9,display8 }) {
   const dispatch = useDispatch();
   const {isSubmenuOpen} = useSelector(state => state.navbar);
 
@@ -32,7 +32,12 @@ function HeaderBook({ bgColor, basketColor,src }) {
     setIsHomeHovered({ ...isHomeHovered, [home]: false });
   };
 
- 
+  const listBlock = {
+    display: display9 ? 'block' :'none'
+  };
+  const listBlockStore = {
+    display: display8 ? 'block' :'none'
+  };
 
   return (
     <>
@@ -90,9 +95,14 @@ function HeaderBook({ bgColor, basketColor,src }) {
                 </li>
               </Link>
 
-              <Link to="/store">
+              <Link style={listBlockStore} to="/store">
                 <li className="border-t-2 border-transparent hover:border-white transition duration-300">
                   Store
+                </li>
+              </Link>
+              <Link style={listBlock} to="/auctions">
+                <li className="border-t-2 border-transparent hover:border-white transition duration-300">
+                 Auctions
                 </li>
               </Link>
 

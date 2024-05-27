@@ -27,10 +27,10 @@ function Home() {
         <Hovered />
         <Salespart />
         <Locationn radiusBorder="45px" img={imageHomeLoc} GavellColor="#2695FF"  inputBg="#2695FF"/>
-        <FooterTop hoverColor="colorBlue" LatText1="A Phone keeps Your" LatestText2="Friends away" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to ensure…" GavelColor="#2695FF" />
+        <FooterTop display={false} hoverColor="colorBlue" LatText1="A Phone keeps Your" LatestText2="Friends away" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to ensure…" GavelColor="#2695FF" />
         <FooterAverage GavelColorshop="#2695FF" nameAuction="SHOP BY BRAND" />
-        <FooterFilter rounded="45px" bgColor="#2695FF"/>
-        <Footer textH1="#343E47" textColorFB="#343E47" hoverFB="colorBlue" hoverbgF="colorBluebg" Logoimage={Logoimage1}/>
+        <FooterFilter mtfooteR="75px" rounded="45px" bgColor="#2695FF"/>
+        <Footer ptFtr="50px" BtnRadius="45px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="colorBlue" hoverbgF="colorBluebg" Logoimage={Logoimage1}/>
       </div>
     </>
   );
