@@ -22,6 +22,7 @@ function Antiques() {
       <LatesAnti textLatest="Jewelry Container" howToused="Current Bid" />
       <PosterAntiques />
       <SalesAntiques
+        display5={true}
         imagePoster={imgAnt}
         hoveredSales="RedC"
         hoverBGsales="RedCbg"
@@ -37,10 +38,10 @@ function Antiques() {
         numberPoster="5"
       />
       <LocationArt />
-      <FooterTop hoverColor="RedC" GavelColor="red" />
+      <FooterTop display={false} hoverColor="RedC" GavelColor="red" />
       <FooterAverage GavelColorshop="red" nameAuction="SHOP BY BRAND" />
       <FooterFilterArt bgColor="red" />
-      <Footer textH1="#343E47" textColorFB="#343E47" hoverFB="RedC" hoverbgF="RedCbg" Logoimage={Logoimage1} />
+      <Footer BtnRadius="8px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="RedC" hoverbgF="RedCbg" Logoimage={Logoimage1} />
     </div>
   );
 }

@@ -26,9 +26,9 @@ function CattleAuction() {
       <CattlePoster /> 
       <SalesCattle SalesText="Old English Game Lod #788"/>
       <Locationn img={locationimageCat} GavellColor="#627452" inputBg="#627452"/>
-      <FooterTop hoverColor="colorGreenField" LatText1="How rotational grazing" LatestText2="helps in a drought" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to..."  GavelColor="#627452" />
-      <FooterFilter bgColor="#627452" />
-      <Footer textH1="#343E47" textColorFB="#343E47" hoverFB="colorGreenField" hoverbgF="colorGreenFieldbg" Logoimage={Logoimage1} />  
+      <FooterTop display={false} hoverColor="colorGreenField" LatText1="How rotational grazing" LatestText2="helps in a drought" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to..."  GavelColor="#627452" />
+      <FooterFilter rounded="45px" mtfooteR="75px" bgColor="#627452" />
+      <Footer ptFtr="50px" BtnRadius="45px" BrdInput="45px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="colorGreenField" hoverbgF="colorGreenFieldbg" Logoimage={Logoimage1} />  
     </div>
   );
 }

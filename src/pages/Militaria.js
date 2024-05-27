@@ -24,13 +24,13 @@ function Militaria() {
       <Header catStyle="catStyle" bgColor="#5E3217"/>
       <MilImg />
       <Mainbottom />
-      <LatestAuto hoverTextBotm="colorBakersChocolate" hoverLatest="colorBakersChocolatebg" OneLatest="LATEST AUCTIONS" textLatest="Flintlock action, the 36 1/2in." textLatest1="barrel" art={militariaFlin} GavelTextColor="#5E3217" tooltipBg="#5E3217" howToused="Current Bid" />
+      <LatestAuto hoverTextBotm="colorBakersChocolate" hoverLatest="colorBakersChocolatebg" OneLatest="LATEST AUCTIONS" toolRadius="9px" textLatest="Flintlock action, the 36 1/2in." textLatest1="barrel" art={militariaFlin} GavelTextColor="#5E3217" tooltipBg="#5E3217" howToused="Current Bid" />
       <MilPoster /> 
-      <SalesAntiques imagePoster={imgMil} hoveredSales="colorBakersChocolate" hoverBGsales="colorBakersChocolatebg" imgPoster={imagePosterMil} SalesText="Africa Star with North Africa 1942-43 clasp and Defence" img={imageMil} toolBg="#5E3217" textPosterCard="DAGGERS" productCard="Products" numberProduct="4" productName="Products" posterCard="UNIFORMS" numberPoster="4"/>
+      <SalesAntiques display5={true} imagePoster={imgMil} hoveredSales="colorBakersChocolate" hoverBGsales="colorBakersChocolatebg" imgPoster={imagePosterMil} SalesText="Africa Star with North Africa 1942-43 clasp and Defence" img={imageMil} toolBg="#5E3217" textPosterCard="DAGGERS" productCard="Products" numberProduct="4" productName="Products" posterCard="UNIFORMS" numberPoster="4"/>
       <Locationn img={locationimageMil} GavellColor="#5E3217" mtLocation="15px" inputBg="#5E3217"/>
-      <FooterTop hoverColor="colorBakersChocolate" LatText1="The British Sea Service" LatestText2="Pistol" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to ensure..."  GavelColor="#5E3217" />
+      <FooterTop display={false} hoverColor="colorBakersChocolate" LatText1="The British Sea Service" LatestText2="Pistol" LatestTextp1="Bring to the table win-win survival" LatestTextp2="Strategies to ensure..."  GavelColor="#5E3217" />
       <FooterFilterArt bgColor="#5E3217" />
-      <Footer textH1="#343E47" textColorFB="#343E47" hoverFB="colorBakersChocolate" hoverbgF="colorBakersChocolatebg" Logoimage={LogoimageMil} />
+      <Footer BtnRadius="9px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="colorBakersChocolate" hoverbgF="colorBakersChocolatebg" Logoimage={LogoimageMil} />
     </div>
   )
 }

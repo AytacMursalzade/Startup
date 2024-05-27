@@ -9,8 +9,16 @@ function FooterTop({
   LatestText2,
   LatestTextp1,
   LatestTextp2,
-  hoverColor
-}) {
+  hoverColor,
+  LatestWidth,
+  LatestHeight,
+  friend,
+  display
+})
+
+
+
+{
   return (
     <>
       <div className="community">
@@ -29,6 +37,10 @@ function FooterTop({
           </div>
         </div>
         <AntiqueFooter
+          display={display}
+          friend={friend}
+          LatestWidth={LatestWidth}
+          LatestHeight={LatestHeight}
           hoverColor={hoverColor}
           LatText1={LatText1}
           LatestText2={LatestText2}
