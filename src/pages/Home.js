@@ -12,7 +12,12 @@ import Footer from "../components/Footer";
 import HeaderArrage from "../components/HeaderArrage";
 import Logoimage1 from "../assets/logo-ibid.png";
 import  Slide  from "../components/Slide";
-import imageHomeLoc from "../assets/location.png"
+import imageHomeLoc from "../assets/location.png";
+import image1 from "../assets/earphones.png";
+import image2 from "../assets/deliveries_icons.png";
+import image3 from "../assets/money_icons.png";
+import image4 from "../assets/tracking_icons.png";
+import HLimg1 from "../assets/121(1).jpg";
 
 
 function Home() {
@@ -22,8 +27,8 @@ function Home() {
         <HeaderArrage basketColor="#0543EC" Logoimage={Logoimage1}/>
         <Header bgColor="#2695FF"/>
         <Slide />
-        <Mainbottom mtTop="30px" colorP="#606060" colorH="#343e47"/>
-        <MainArravega />
+        <Mainbottom Item1="Call Center" Item2="Completely synergize" Item3="Order Tracking" Item4="Objectively emprowered" Item5="Fastes Delivery" Item6="Efficiently unleash media" Item7="Instant Buying" Item8="Podcasting Operational" mtTop="30px" colorP="#606060" colorH="#343e47" image1={image1} image2={image2} image3={image3} image4={image4}/>
+        <MainArravega HLimg1={HLimg1}/>
         <Hovered />
         <Salespart />
         <Locationn radiusBorder="45px" img={imageHomeLoc} GavellColor="#2695FF"  inputBg="#2695FF"/>

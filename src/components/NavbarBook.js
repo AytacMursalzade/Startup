@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 
 const NavbarBook = ({ bgColorTop }) => {
   return (
-    <div className="flex flex-col   ">
+    <div className="flex flex-col">
       <div
         style={{ backgroundColor: bgColorTop }}
         className="headerTop text-white flex justify-between h-[45px] px-[75px] py-[8px]  "

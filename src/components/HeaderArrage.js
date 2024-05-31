@@ -17,6 +17,44 @@ function HeaderArrage({basketColor,Logoimage,bgColor,display2}) {
   };
   return (
     <>
+      <div className="headerTop flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
+        <div className="flex justify-between gap-[28px]">
+          <div className="hidden topHeader">
+            <MdEmail />
+            <BsFillTelephoneFill />
+          </div>
+          <div className="nameTop flex gap-[15px] ">
+            <div>
+              <Link to="/">Dil degisimi</Link>
+            </div>
+            <div>
+              <p>
+                Call us toll free : <Link to="/">+99455815448</Link>
+              </p>
+            </div>
+            <div>
+              <p>
+                Send us an email: <Link to="/">contact@example.com</Link>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-7"></div>
+        <div className="wishTrack flex justify-between gap-[28px]">
+          <Link to="/">
+            <div className="flex gap-[2px] hover:opacity-50 ">
+              <FaTruck className="text-[20px] pt-[5px]" />
+              <p>Order Tracking</p>
+            </div>
+          </Link>
+          <Link to="/">
+            <div className="flex gap-[2px] hover:opacity-50 ">
+              <LuHeart className="text-[20px] pt-[5px]" />
+              <p>Wishlist</p>
+            </div>
+          </Link>
+        </div>
+      </div>
       <div style={{backgroundColor:bgColor,...handMade}} className="headerTop  flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
         <div className="flex justify-between gap-[28px]">
           <div className="hidden topHeader">

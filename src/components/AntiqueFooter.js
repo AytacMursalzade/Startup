@@ -11,6 +11,8 @@ function AntiqueFooter({
   LatestWidth,
   LatestHeight,
   display,
+  DomainImgLatest,
+  bgBtn
 }) {
   const btnLatest = {
     display: display ? "block" : "none",
@@ -23,7 +25,7 @@ function AntiqueFooter({
           <Link to="/" className="relative w-[118px] h-[119px] overflow-hidden">
             <div className="communitylink">
               <div style={{ width: LatestWidth, height: LatestHeight }}>
-                <img src={friend} alt="community" className="w-full h-full" />
+                <img src={DomainImgLatest} alt="community" className="w-full h-full" />
               </div>
               <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
             </div>
@@ -41,7 +43,7 @@ function AntiqueFooter({
             </p>
             <Link to="/">
               <div style={btnLatest}>
-                <button className="bg-[#6fcbf4] font-bold rounded-[5px] text-[white] hover:bg-[white] hover:text-[#484848] border border-[#f7f2f2] px-[30px] py-[10px]">
+                <button style={{backgroundColor:bgBtn}}  className="font-bold rounded-[5px] text-[white] hover:bg-[white] hover:text-[#484848] border border-[#f7f2f2] px-[30px] py-[10px]">
                   Read More
                 </button>
               </div>
@@ -68,7 +70,7 @@ function AntiqueFooter({
             </p>
             <Link to="/">
               <div style={btnLatest}>
-                <button className="bg-[#6fcbf4] font-bold rounded-[5px] text-[white] hover:bg-[white] hover:text-[#484848] border border-[#f7f2f2] px-[30px] py-[10px]">
+                <button style={{backgroundColor:bgBtn}} className="font-bold rounded-[5px] text-[white] hover:bg-[white] hover:text-[#484848] border border-[#f7f2f2] px-[30px] py-[10px]">
                   Read More
                 </button>
               </div>
@@ -95,7 +97,7 @@ function AntiqueFooter({
             </p>
             <Link to="/">
               <div style={btnLatest}>
-                <button className="bg-[#6fcbf4] font-bold rounded-[5px] text-[white] hover:bg-[white] hover:text-[#484848] border border-[#f7f2f2] px-[30px] py-[10px]">
+                <button style={{backgroundColor:bgBtn}} className="font-bold rounded-[5px] text-[white] hover:bg-[white] hover:text-[#484848] border border-[#f7f2f2] px-[30px] py-[10px]">
                   Read More
                 </button>
               </div>

@@ -13,9 +13,7 @@ const Navbar = (props) => {
   const {isSubmenuOpen} = useSelector(state => state.navbar);
 
 
-  // const catStyle = {
-  //   display: 'block'
-  // }
+ 
 
   const [isCategoryHovered, setIsCategoryHovered] = useState({
     categories: false
