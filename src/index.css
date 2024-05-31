@@ -59,6 +59,12 @@ li:hover .submenu {
 .RedCbg{
   @apply hover:bg-red-500;
 }
+.White{
+  @apply hover:text-red-500;
+}
+.Whitebg{
+  @apply hover:bg-red-500;
+}
 .colorBlue{
   @apply hover:text-blue-500;
 }
@@ -137,6 +143,28 @@ li:hover .submenu {
 .colorGreenBlue{
   @apply hover:text-[#4AD493];
 }
+.colorDomainbg{
+  @apply hover:bg-[#18AE91];
+}
+.colorDomain{
+  @apply hover:text-[#18AE91];
+}
+.sporbg{
+  @apply hover:bg-[#07745F];
+}
+.spor{
+  @apply hover:text-[#07745F];
+}
+
+.zoomable-bg {
+  background-position: center;
+  background-size: cover;
+  transition: background-size 0.5s ease; 
+}
+
+.zoomable-bg:hover {
+  background-size: 110%;
+}
 .NavbarCard ul ~ li{
   border: 2px solid black;
   background-color: #0543EC;
@@ -156,11 +184,29 @@ li:hover .submenu {
 .CoinsPThree{
   background-color: yellow;
 }
+
+.button {
+  width: 150px; 
+  padding: 10px 10px 7px 10px; 
+  text-align: center; 
+  border: none; 
+  cursor: pointer; 
+  position: relative; 
+}
+
+.button.active::after {
+  content: ""; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 3px; 
+  background-color: #4AD493;
+}
 .no-scrollbar {
   -ms-overflow-style: none; 
   scrollbar-width: none; 
 }
-
 .no-scrollbar::-webkit-scrollbar {
   display: none;  
 }
@@ -818,18 +864,18 @@ input:focus {
     margin-top: -50px;
     gap: 5px;
   }
-  .bulletArt{
+  /* .bulletArt{
   
     width: 535px;
     height: 289px;
     background-image: url("../src/assets/500benner.jpg");
-  }
-  .classicalArt{
+  } */
+  /* .classicalArt{
     width: 535px;
     height: 350px;
-    background-image: url("../src/assets/ibid_art_banner2.jpg");
+    background-image: url("../src/assets/AntiPoster.png");
     
-  }
+  } */
   /* //sales// */
   .symbols{
     display: flex;

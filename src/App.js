@@ -16,6 +16,9 @@ import Machine from "./pages/Machine";
 import Handmade from "./pages/Handmade";
 import Government from "./pages/Government";
 import Domain from "./pages/Domain";
+import Memorabilia from "./pages/Memorabilia";
+import Freelancer from "./pages/Freelancer";
+import Laboratory from "./pages/Laboratory";
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
           <Route path="/handmadeauctions" element={<Handmade />} />
           <Route path="/government" element={<Government />} />
           <Route path="/domain" element={<Domain />} />
+          <Route path="/memorabilia" element={<Memorabilia />} />
+          <Route path="/freelancer" element={<Freelancer />} />
+          <Route path="/laboratory" element={<Laboratory />} />
         </Routes>
       </Router>
     </div>

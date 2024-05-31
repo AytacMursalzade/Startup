@@ -17,6 +17,10 @@ import Footer from '../components/Footer'
 import LogoCountBlue from '../assets/logo-ibid.png'
 import CountClock from '../components/CountClock'
 import CountSoon from '../components/CountSoon'
+import image1 from "../assets/earphones.png"
+import image2 from "../assets/deliveries_icons.png"
+import image3 from "../assets/money_icons.png"
+import image4 from "../assets/tracking_icons.png"
 
 function CountDown() {
   return (
@@ -24,7 +28,7 @@ function CountDown() {
         <HeaderArrage basketColor="#EA3546" Logoimage={LogoCount}/>
         <Header bgColor="#EA3546"/>
         <Slide />
-        <Mainbottom colorP="#606060" colorH="#343e47"/>
+        <Mainbottom Item1="Call Center" Item2="Completely synergize" Item3="Order Tracking" Item4="Objectively emprowered" Item5="Fastes Delivery" Item6="Efficiently unleash media" Item7="Instant Buying" Item8="Podcasting Operational" image1={image1} image2={image2} image3={image3} image4={image4} colorP="#606060" colorH="#343e47"/>
         <CountSoon display4={true} tooltipBg="#EA3546" GavelColorshop="#EA3546" nameAuction="AUCTIONS EXPIRING SOON" toolRadius="45px" hoverBGsales="RedCbg"/>
         <TourSales
         display1={false}

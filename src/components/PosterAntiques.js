@@ -8,7 +8,7 @@ function PosterAntiques() {
       <div className="posterShow flex ml-[75px] mt-[140px] ">
         <div className="posterYelGreeArt flex gap-[8px]">
           <Link className='bulletArt'>
-            <div className=" w-[600px] h-[382px] ml-[75px]">
+            <div className=" w-[500px] h-[382px] ml-[75px]">
               <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px]  ">
                 <div className="flex flex-col">
                   <h1 className="font-extrabold text-[30px] text-white mt-[50px] ">
@@ -25,7 +25,7 @@ function PosterAntiques() {
             </div>
           </Link>
           <Link className='classicalArt'>
-            <div className=" w-[658px] h-[382px]">
+            <div className=" w-[500px] h-[382px]">
               <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px] ">
                 <div className="flex flex-col">
                   <h1 className="font-extrabold text-[30px] text-white mt-[50px] ">

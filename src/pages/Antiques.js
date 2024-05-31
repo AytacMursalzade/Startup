@@ -10,9 +10,8 @@ import HeaderArrageArt from "../components/HeaderArrageArt";
 import LatesAnti from "../components/LatestAnti";
 import PosterAntiques from "../components/PosterAntiques";
 import SalesAntiques from "../components/SalesAntiques";
-import imageAnt from "../assets/culon183.png";
-import imagePoster from "../assets/700Vintage.png";
-import imgAnt from "../assets/440color.png";
+import imgPoster from "../assets/700Vintage.png";
+import imagePoster from "../assets/440color.png";
 
 function Antiques() {
   return (
@@ -23,12 +22,10 @@ function Antiques() {
       <PosterAntiques />
       <SalesAntiques
         display5={true}
-        imagePoster={imgAnt}
+        imagePoster={imagePoster}
         hoveredSales="RedC"
         hoverBGsales="RedCbg"
-        imgPoster={imagePoster}
-        SalesText="Black Pearl"
-        img={imageAnt}
+        imgPoster={imgPoster}
         toolBg="red"
         textPosterCard="WATCHES"
         productCard="Products"
