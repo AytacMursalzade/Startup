@@ -8,7 +8,6 @@ import LatestAuto from "../components/LatestAuto";
 import militariaFlin from "../assets/Militaria-prod.jpg";
 import MilPoster from "../components/MilPoster";
 import SalesAntiques from "../components/SalesAntiques";
-import imageMil from "../assets/Militaria-prod1244.jpg";
 import imagePosterMil from "../assets/Militaria-banners420.jpg";
 import locationimageMil from "../assets/MilitariaLocation.png";
 import Locationn from "../components/Locationn";

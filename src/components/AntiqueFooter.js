@@ -8,10 +8,7 @@ function AntiqueFooter({
   LatestTextp1,
   LatestTextp2,
   hoverColor,
-  LatestWidth,
-  LatestHeight,
   display,
-  DomainImgLatest,
   bgBtn
 }) {
   const btnLatest = {
@@ -22,11 +19,9 @@ function AntiqueFooter({
     <div className="mt-[30px] px-[75px] ">
       <ul className="flex flex-row gap-[15px] justify-around latestnew ">
         <li className="communityPost flex flex-row mt-[20px] gap-[40px] ">
-          <Link to="/" className="relative w-[118px] h-[119px] overflow-hidden">
+        <Link to="/" className="relative w-[118px] h-[119px] overflow-hidden">
             <div className="communitylink">
-              <div style={{ width: LatestWidth, height: LatestHeight }}>
-                <img src={DomainImgLatest} alt="community" className="w-full h-full" />
-              </div>
+              <img src={friend} alt="community" className="w-full h-full" />
               <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
             </div>
           </Link>
@@ -51,10 +46,10 @@ function AntiqueFooter({
           </div>
         </li>
         <li className="communityPost flex flex-row mt-[20px] gap-[40px] ">
-          <Link to="/" className="relative w-[118px] h-[119px] overflow-hidden">
+        <Link to="/" className="relative w-[118px] h-[119px] overflow-hidden">
             <div className="communitylink">
               <img src={friend} alt="community" className="w-full h-full" />
-              <div className="absolute inset-0cl bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
+              <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
             </div>
           </Link>
 

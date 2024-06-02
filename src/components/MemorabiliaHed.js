@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { openSubmenu, closeSubmenu } from "../redux/navbarSlice";
 import { FaRegHeart } from "react-icons/fa";
 
-function MemorabiliaHed({ bgColor,src, display9, display8 }) {
+function MemorabiliaHed({ bgColor,src, display9}) {
   const dispatch = useDispatch();
   const { isSubmenuOpen } = useSelector((state) => state.navbar);
 

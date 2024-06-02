@@ -4,6 +4,12 @@ import LabSlider from '../components/LabSlider'
 import LabItemOne from '../components/LabItemOne'
 import LabItemTwo from '../components/LabItemTwo'
 import LabaratorySlide from '../components/LabaratorySlide'
+import LabSalesOne from '../components/LabSalesOne'
+import LabSalesTwo from '../components/LabSalesTwo'
+import LabSalesThree from '../components/LabSalesThree'
+import LabFinish from '../components/LabFinish'
+import FooterAverage from '../components/FooterAverage'
+import LabFooter from '../components/LabFooter'
 
 function Laboratory() {
   return (
@@ -13,6 +19,12 @@ function Laboratory() {
       <LabItemOne />
       <LabItemTwo />
       <LabaratorySlide />
+      <LabSalesOne />
+      <LabSalesThree />
+      <LabSalesTwo />
+      <LabFinish />
+      <FooterAverage display2={false} />
+      <LabFooter />
     </div>
   )
 }
