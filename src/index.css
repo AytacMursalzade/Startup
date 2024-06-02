@@ -155,6 +155,24 @@ li:hover .submenu {
 .spor{
   @apply hover:text-[#07745F];
 }
+.nftbg{
+  @apply hover:bg-[#4D79D2];
+}
+.nft{
+  @apply hover:text-[#4D79D2];
+}
+.funYellowbg{
+  @apply hover:bg-[#D4A619];
+}
+.funYellow{
+  @apply hover:text-[#D4A619];
+}
+.listbg{
+  @apply hover:bg-[#392061];
+}
+.list{
+  @apply hover:text-[#392061];
+}
 
 .zoomable-bg {
   background-position: center;

@@ -19,6 +19,9 @@ import Domain from "./pages/Domain";
 import Memorabilia from "./pages/Memorabilia";
 import Freelancer from "./pages/Freelancer";
 import Laboratory from "./pages/Laboratory";
+import NFTMarketplace from "./pages/NFTMarketplace";
+import Fundraising from "./pages/Fundraising";
+import ListAuction from "./pages/ListAuction";
 
 function App() {
   return (
@@ -45,6 +48,9 @@ function App() {
           <Route path="/memorabilia" element={<Memorabilia />} />
           <Route path="/freelancer" element={<Freelancer />} />
           <Route path="/laboratory" element={<Laboratory />} />
+          <Route path="/nftmarketplace" element={<NFTMarketplace />} />
+          <Route path="/fundraising" element={<Fundraising />} />
+          <Route path="/listauction" element={<ListAuction />} />
         </Routes>
       </Router>
     </div>
