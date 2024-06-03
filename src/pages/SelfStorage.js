@@ -21,6 +21,9 @@ import image1 from "../assets/earphones.png";
 import image2 from "../assets/deliveries_icons.png";
 import image3 from "../assets/money_icons.png";
 import image4 from "../assets/tracking_icons.png";
+import SelfLatest from "../components/SelfLatest";
+import LatestSelf from "../components/LatestSelf";
+import SelfFooter from "../components/SelfFooter";
 
 function SelfStorage() {
   return (
@@ -42,19 +45,9 @@ function SelfStorage() {
         image3={image3}
         image4={image4}
       />
-      <LatestAuto
-        hoverTextBotm="colorBluishBlack"
-        hoverLatest="colorBluishBlackbg"
-        OneLatest="LATEST AUCTIONS"
-        toolRadius="9px"
-        textLatest="iStorage Reading"
-        art={StorageFlin}
-        GavelTextColor="#414144"
-        tooltipBg="#414144"
-        howToused="Starting Bid"
-      />
+      <LatestSelf />
       <StoragePoster />
-      <SalesAntiques
+      <SelfLatest
         display5={true}
         imagePoster={imgSelf}
         hoveredSales="colorBluishBlack"
@@ -74,16 +67,7 @@ function SelfStorage() {
         GavellColor="#414144"
         inputBg="#414144"
       />
-      <FooterTop
-        display={false}
-        hoverColor="colorBluishBlack"
-        LatText1="How to Move Out of a"
-        LatestText2="Storage Unit"
-        LatestTextp1="Bring to the table win-win survival"
-        LatestTextp2="Strategies to ensure…"
-        GavelColor="#414144"
-      />
-      <FooterAverage GavelColorshop="#414144" nameAuction="LATEST NEWS" />
+      <SelfFooter hoverColor="colorBluishBlack" />
       <FooterFilter mtfooteR="75px" rounded="9px" bgColor="#414144" />
       <Footer
         ptFtr="50px"

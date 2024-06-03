@@ -14,7 +14,8 @@ function Footer({
   lastftrM,
   ptFtr,
   BrdInput,
-  BtnRadius
+  BtnRadius,
+  
 }) {
   return (
     <>
@@ -24,9 +25,10 @@ function Footer({
           height: heightFooter,
           backgroundColor: FooterBG,
           paddingTop: ptFtr,
+          
         }}
       >
-        <div className="averageFooter flex justify-around  ml-[10px] gap-[30px] ">
+        <div className="averageFooter flex justify-around pt-[75px]  ml-[10px] gap-[30px] ">
           <div>
             <ul className="flex flex-col gap-[8px] ">
               <Link>

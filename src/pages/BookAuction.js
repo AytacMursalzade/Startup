@@ -25,7 +25,7 @@ function BookAuction() {
       <CategoryBookFilter />
       <Locationn img={locationimageB} GavellColor="#F27928" inputBg="#F27928"/>
       <BookLatest />
-      <FooterAverage GavelColorshop="#F27928" nameAuction="SHOP BY BRAND" />
+      <FooterAverage GavelColorshop="#F27928" display2={true} nameAuction="SHOP BY BRAND" />
       <FooterFilter rounded="45px" mtfooteR="75px" bgColor="#F27928" />
       <Footer BtnRadius="45px" ptFtr="50px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="colorOrang" hoverbgF="colorOrangbg" Logoimage={Logoimage1} />
     </div>

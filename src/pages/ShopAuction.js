@@ -2,8 +2,6 @@ import React from "react";
 import HeaderArrageArt from "../components/HeaderArrageArt";
 import Header from "../components/Header";
 import Slide from "../components/Slide";
-import LatestAuto from "../components/LatestAuto";
-import SalesAntiques from "../components/SalesAntiques";
 import Locationn from "../components/Locationn";
 import FooterTop from "../components/FooterTop";
 import FooterAverage from "../components/FooterAverage";
@@ -11,9 +9,9 @@ import FooterFilter from "../components/FooterFilter";
 import Footer from "../components/Footer";
 import LogoimageShop from "../assets/ibidBlueOpen.png";
 import locationimageShop from "../assets/locationBlueOpen.png";
-import imageShop from "../assets/desktopCount.jpg";
 import ShopPoster from "../components/ShopPoster";
-import ShopFlin from "../assets/121(1).jpg";
+import ShopSales from "../components/ShopSales";
+import LatestSelf from "../components/LatestAuto";
 
 function ShopAuction() {
   return (
@@ -21,40 +19,14 @@ function ShopAuction() {
       <HeaderArrageArt basketColor="#009EA3" Logoimage={LogoimageShop} />
       <Header catStyle="catStyle" bgColor="#009EA3" />
       <Slide />
-      <LatestAuto
-        displayTool={false}
-        ToolStyleNew={true}
+      <LatestSelf
+       
         hoverTextBotm="colorBlueOpen"
         toolBg="colorBlueOpenbg"
-        hoverLatest="colorBlueOpenbg"
-        OneLatest="LATEST SALES"
-        toolRadius="9px"
-        textLatest="Dual SIM Smartphone"
-        art={ShopFlin}
-        GavelTextColor="#009EA3"
-        tooltipBg="#009EA3"
-        howToused="$160.00"
+       
       />
       <ShopPoster />
-      <SalesAntiques
-        displayBg={false}
-        display6={false}
-        display7={true}
-        posterCardd="LAPTOPS"
-        numberPosterr="5"
-        productNamee="Products"
-        display5={true}
-        hoveredSales="colorBlueOpen"
-        hoverBGsales="colorBlueOpenbg"
-        
-        toolBg="#009EA3"
-        textPosterCard="PHONES"
-        productCard="Products"
-        numberProduct="10"
-        productName="Products"
-        posterCard="ELECTRONICS"
-        numberPoster="6"
-      />
+      <ShopSales hoverBGsales="colorBlueOpenbg" hoveredSales="colorBlueOpen"/>
       <Locationn
         radiusBorder="9px"
         img={locationimageShop}
@@ -62,13 +34,7 @@ function ShopAuction() {
         inputBg="#009EA3"
       />
       <FooterTop
-        display={false}
         hoverColor="colorBlueOpen"
-        LatText1="A Phone Keeps Your"
-        LatestText2="Friend Away"
-        LatestTextp1="Bring to the table win-win survival"
-        LatestTextp2="Strategies to ensure…"
-        GavelColor="#009EA3"
       />
       <FooterAverage
         display2={true}

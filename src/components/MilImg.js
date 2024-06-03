@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
 import imageMil from "../assets/Militaria-slider-scaled.jpg";
 
 function MilImg() {
+
+  const titlemil = {
+    backgroundImage: `url(${imageMil})`,
+    backgroundPosition:"center",
+    backgroundSize:"cover"
+  }
   return (
-    <div
-      style={{ backgroundImage: `url(${imageMil})` }}
-      className='w-full h-[500px] bg-cover bg-center flex items-center justify-center text-white'
-    >
-      <h2 className='text-center text-[55px] font-extrabold '>
+    <div style={titlemil} className="w-[100%] h-[600px] flex justify-center items-center ">
+      <h2 className="text-center text-[white] text-[55px] font-extrabold ">
         MILITARIA & WAR <br /> MEMORABILIA
       </h2>
     </div>

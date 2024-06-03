@@ -1,17 +1,16 @@
 import React from "react";
-import articles from '../db/articles';
 import { FaGavel } from "react-icons/fa";
+import dataSlide from "../db/dataSlide";
 
-function ReadBtn({btnColor,display1,display2,nameAuction,GavelColorshop}) {
-
+function ReadBtn({ btnColor, display1, display2, nameAuction, GavelColorshop }) {
   const ArticleHidden = {
     display: display1 ? 'flex' : 'none',
     justifyContent: 'space-between',  
     alignItems: 'center'
-  }
+  };
   const ArticleHidden2 = {
     display: display2 ? 'block' : 'none'
-  }
+  };
     
   return (
     <div className="flex flex-col mt-[100px] gap-[50px]">
@@ -23,18 +22,17 @@ function ReadBtn({btnColor,display1,display2,nameAuction,GavelColorshop}) {
       </div>
       <div style={ArticleHidden2} className="flex flex-col items-center justify-center mt-[70px]">
         <h1 className="font-bold text-[34px] text-center">{nameAuction}</h1>
-
         <div className="flex items-center justify-center mt-[15px]">
-          <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
-          <span style={{color:GavelColorshop}} className="font-bold  text-[27px]">
+          <div className="border-t-2 border-[#D8D7DC] w-[230px] mx-2"></div>
+          <span style={{ color: GavelColorshop }} className="font-bold text-[27px]">
             <FaGavel />
           </span>
-          <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_left"></div>
+          <div className="border-t-2 border-[#D8D7DC] w-[230px] mx-2"></div>
         </div>
       </div>
       <div className="mb-[100px] flex justify-center">
-        <ul className="flex gap-[25px]">
-          {articles.map((article, index) => (
+        <ul className="flex gap-[25px] flex-wrap justify-center">
+          {dataSlide.map((article, index) => (
             <li key={index} className="w-[440px] h-[250px] flex gap-[20px] border-2">
               <div
                 style={{
@@ -42,7 +40,7 @@ function ReadBtn({btnColor,display1,display2,nameAuction,GavelColorshop}) {
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                 }}
-                className="w-[150px]"
+                className="w-[150px] h-[100%]"
               ></div>
               <div className="w-[280px] h-[230px] pt-[24px] flex flex-col justify-evenly">
                 <h1 className="text-[24px] text-[#484848] font-bold">
@@ -53,7 +51,7 @@ function ReadBtn({btnColor,display1,display2,nameAuction,GavelColorshop}) {
                   <br />
                   {article.paragraf2}
                 </p>
-              <button className={`w-[120px] h-[40px] rounded-[9px] font-bold text-[14px] text-[white] hover:bg-[white] hover:text-[#242424] ${btnColor}`}>
+                <button className={`w-[120px] h-[40px] rounded-[9px] font-bold text-[14px] text-[white] hover:bg-[white] hover:text-[#242424] ${btnColor}`}>
                   READ MORE
                 </button>
               </div>

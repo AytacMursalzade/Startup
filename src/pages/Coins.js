@@ -16,6 +16,8 @@ import FooterTop from "../components/FooterTop";
 import FooterAverage from "../components/FooterAverage";
 import FooterFilter from "../components/FooterFilter";
 import Footer from "../components/Footer";
+import LatestCoins from "../components/LatestCoins";
+import SalesCoins from "../components/SalesCoins";
 
 function Coins() {
   return (
@@ -23,19 +25,9 @@ function Coins() {
       <HeaderArrageArt basketColor="#4F89B0" Logoimage={LogoimageCoins} />
       <Header catStyle="catStyle" bgColor="#4F89B0" />
       <Slide />
-      <LatestAuto
-        hoverTextBotm="colorshipsHarbour"
-        hoverLatest="colorshipsHarbourbg"
-        OneLatest="LATEST AUCTIONS"
-        toolRadius="9px"
-        textLatest="Flintlock action, the 36 1/2in."
-        art={CoinsFlin}
-        GavelTextColor="#4F89B0"
-        tooltipBg="#4F89B0"
-        howToused="Current Bid"
-      />
+      <LatestCoins />
       <PosterCoins />
-      <SalesAntiques
+      <SalesCoins
         display5={true}
         imagePoster={imgMil}
         hoveredSales="colorshipsHarbour"
@@ -56,15 +48,11 @@ function Coins() {
         inputBg="#4F89B0"
       />
       <FooterTop
-        display={false}
+     
         hoverColor="colorshipsHarbour"
-        LatText1="A Phone keeps Your"
-        LatestText2="Friends away"
-        LatestTextp1="Bring to the table win-win survival"
-        LatestTextp2="Strategies to ensure…"
-        GavelColor="#4F89B0"
+        
       />
-      <FooterAverage GavelColorshop="#4F89B0" nameAuction="SHOP BY BRAND" />
+      <FooterAverage display2={true} GavelColorshop="#4F89B0" nameAuction="SHOP BY BRAND" />
       <FooterFilter mtfooteR="75px" rounded="9px" bgColor="#4F89B0" />
       <Footer
         ptFtr="50px"

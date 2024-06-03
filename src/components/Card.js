@@ -2,100 +2,160 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Card() {
+  const headerTop = [
+    {
+      id: 1,
+      description: "Art Auctions",
+      path: "/artauctions",
+    },
+    {
+      id: 2,
+      description: "Antiques & Collectibles",
+      path: "/antiques",
+    },
+    {
+      id: 3,
+      description: "Automotive Auctions",
+      path: "/automotive",
+    },
+    {
+      id: 4,
+      description: "Books & Comics",
+      path: "/bookauctions",
+    },
+    {
+      id: 5,
+      description: "Cattle Auctions",
+      path: "/cattleauctions",
+    },
+    {
+      id: 6,
+      description: "Memorabilia Auctions",
+      path: "/memorabilia",
+    },
+    {
+      id: 7,
+      description: "Militaria Auctions",
+      path: "/militaria",
+    },
+    {
+      id: 8,
+      description: "Freelancer Mode",
+      path: "/freelancer",
+    },
+    {
+      id: 9,
+      description: "NFT Marketplace",
+      path: "/nftmarketplace",
+    },
+    {
+      id: 10,
+      description: "Coins Auctions",
+      path: "/coins",
+    },
+    {
+      id: 11,
+      description: "Electronics Auctions",
+      path: "/",
+    },
+    {
+      id: 12,
+      description: "Fundraising Auctions",
+      path: "/fundraising",
+    },
+    {
+      id: 13,
+      description: "Machinery Auctions",
+      path: "/machineauction",
+    },
+    {
+      id: 14,
+      description: "Laboratory Auctions",
+      path: "/laboratory",
+    },
+    {
+      id: 15,
+      description: "Organic Food",
+      path: "/organicfood",
+    },
+    {
+      id: 16,
+      description: "Self Storage Auctions",
+      path: "/selfstorage",
+    },
+    {
+      id: 17,
+      description: "Government Surplus",
+      path: "/government",
+    },
+    {
+      id: 18,
+      description: "Real Estate Auctions",
+      path: "/realestate",
+    },
+    {
+      id: 19,
+      description: "Shop (No Auctions)",
+      path: "/shopauctions",
+    },
+    {
+      id: 20,
+      description: "Countdown Auctions",
+      path: "/countdown",
+    },
+    {
+      id: 21,
+      description: "List Auctions",
+      path: "/listauction",
+    },
+    {
+      id: 22,
+      description: "Fashion Shop",
+      path: "/fashionshop",
+    },
+    {
+      id: 23,
+      description: "Handmade Auctions",
+      path: "/handmadeauctions",
+    },
+    {
+      id: 24,
+      description: "Tours Vacantions",
+      path: "/toursvacantions",
+    },
+    {
+      id: 25,
+      description: "Automobilia Auctions",
+      path: "/automobilia",
+    },
+  ];
+
+  const columns = [];
+  const itemsPerColumn = 9;
+
+  for (let i = 0; i < 3; i++) {
+    columns.push(headerTop.slice(i * itemsPerColumn, (i + 1) * itemsPerColumn));
+  }
+
   return (
-    <div className="flex gap-[23px] text-[#334141] bg-white px-[20px] py-[20px] border-solid shadow-[-2px_5px_28px_-16px_rgba(46,46,46,0.73)] w-[550px] h-[439] ">
-      <div className="NavbarCard">
-        <ul >
-          <Link to="/">
-            <li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Art Auctions</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Art Auctions</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-         
+    <div className="flex w-[600px] h-[300px] bg-[white] gap-4">
+      {columns.map((column, columnIndex) => (
+        <ul
+          key={columnIndex}
+          className="flex flex-col divide-y w-[200px] divide-gray-200"
+        >
+          {column.map((item) => (
+            <li key={item.id} className="py-2">
+              <Link
+                to={item.path}
+                className="text-black hover:text-[#554444] transition-colors duration-300"
+              >
+                {item.description}
+              </Link>
+            </li>
+          ))}
         </ul>
-      </div>
-      <div>
-        <ul>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Art Auctions</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Art Auctions</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Art Auctions</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Art Auctions</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Art Auctions</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Art Auctions</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Art Auctions</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Art Auctions</li>
-          </Link>
-          <Link to="/">
-            <li className="w-[150px] h-[35px] flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Antiques & Collectibles</li>
-          </Link>
-         
-        </ul>
-      </div>
+      ))}
     </div>
   );
 }

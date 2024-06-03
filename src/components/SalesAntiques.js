@@ -65,7 +65,7 @@ function SalesAntiques({
           </p>
           <button
             style={{ backgroundColor: toolBg }}
-            className="w-[205px] h-[50px] hover:bg-white hover:text-[red] text-[14px] font-semibold text-white rounded-[9px]"
+            className="w-[205px] h-[50px] hover:bg-[white] hover:text-[white] text-[14px] font-semibold text-[white] rounded-[9px]"
           >
             VIEW ALL ITEMS
           </button>

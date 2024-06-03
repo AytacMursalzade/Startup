@@ -11,8 +11,8 @@ function LocationMachine({nameAuction,GavelColorshop}) {
           <div className="flex items-center justify-center mt-[15px]">
             <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
             <span
-              style={{ color: GavelColorshop }}
-              className="font-bold  text-[27px]"
+             
+              className="font-bold text-[#FBDE06]  text-[27px]"
             >
               <FaGavel />
             </span>

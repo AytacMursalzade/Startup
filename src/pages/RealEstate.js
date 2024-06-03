@@ -60,10 +60,7 @@ function RealEstate() {
         display={false}
         hoverColor="colorPurplishBlue"
         GavelColor="#414144"
-        LatText1="A Phone Keeps Your"
-        LatestText2="Friends Away"
-        LatestTextp1="Bring to the table win-win survival"
-        LatestTextp2="Strategies to ensure…"
+       
       />
       <FooterAverage GavelColorshop="#6449E7" nameAuction="SHOP BY BRAND" />
       <FooterFilter mtfooteR="75px" rounded="9px" bgColor="#6449E7" />

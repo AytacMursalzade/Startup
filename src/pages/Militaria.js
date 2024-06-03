@@ -4,14 +4,10 @@ import Header from "../components/Header";
 import LogoimageMil from "../assets/logo-militaria.png";
 import MilImg from "../components/MilImg";
 import Mainbottom from "../components/Mainbottom";
-import LatestAuto from "../components/LatestAuto";
-import militariaFlin from "../assets/Militaria-prod.jpg";
 import MilPoster from "../components/MilPoster";
-import SalesAntiques from "../components/SalesAntiques";
 import imagePosterMil from "../assets/Militaria-banners420.jpg";
 import locationimageMil from "../assets/MilitariaLocation.png";
 import Locationn from "../components/Locationn";
-import FooterTop from "../components/FooterTop";
 import FooterFilterArt from "../components/FooterFilterArt";
 import Footer from "../components/Footer";
 import imgMil from "../assets/Militaria-banner2.png";
@@ -19,6 +15,10 @@ import image1 from "../assets/earphones.png";
 import image2 from "../assets/deliveries_icons.png";
 import image3 from "../assets/money_icons.png";
 import image4 from "../assets/tracking_icons.png";
+import LatestMilitaria from "../components/LatestMilitaria";
+import Filtermilitaria from './../components/Filtermilitaria';
+import MilSales from "../components/MilSales";
+import Miltopfooter from "../components/Miltopfooter";
 
 function Militaria() {
   return (
@@ -40,21 +40,10 @@ function Militaria() {
         image3={image3}
         image4={image4}
       />
-      <LatestAuto
-        display1={false}
-        hoverTextBotm="colorBakersChocolate"
-        hoverLatest="colorBakersChocolatebg"
-        OneLatest="LATEST AUCTIONS"
-        toolRadius="9px"
-        textLatest="Flintlock action, the 36 1/2in."
-        textLatest1="barrel"
-        art={militariaFlin}
-        GavelTextColor="#5E3217"
-        tooltipBg="#5E3217"
-        howToused="Current Bid"
-      />
+      <LatestMilitaria />
+      <Filtermilitaria />
       <MilPoster />
-      <SalesAntiques
+      <MilSales
         display5={true}
         imagePoster={imgMil}
         hoveredSales="colorBakersChocolate"
@@ -74,19 +63,14 @@ function Militaria() {
         mtLocation="15px"
         inputBg="#5E3217"
       />
-      <FooterTop
-        display={false}
+      <Miltopfooter
         hoverColor="colorBakersChocolate"
-        LatText1="The British Sea Service"
-        LatestText2="Pistol"
-        LatestTextp1="Bring to the table win-win survival"
-        LatestTextp2="Strategies to ensure..."
-        GavelColor="#5E3217"
       />
       <FooterFilterArt bgColor="#5E3217" />
       <Footer
+        ftrM="20px"
         BtnRadius="9px"
-        lastftrM="70px"
+        lastftrM="40px"
         textH1="#343E47"
         textColorFB="#343E47"
         hoverFB="colorBakersChocolate"

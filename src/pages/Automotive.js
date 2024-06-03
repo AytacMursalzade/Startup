@@ -10,7 +10,7 @@ import HeaderArrage from "../components/HeaderArrage";
 import LatestAuto from "../components/LatestAuto";
 import PosterAutomotive from "../components/PosterAutomotive";
 import SalesAutomotive from "../components/SalesAutomotive";
-import artAuto from "../assets/Automotive.jpg"
+import artAuto from "../assets/Automotive.jpg";
 
 function Automotive() {
   return (
@@ -22,8 +22,8 @@ function Automotive() {
     <SalesAutomotive SalesText="El Camino" hoverTextColor="#EE964B"/>
     <LocationAuto helpGavel="#EE964B"/>
     <FooterTop display={false} hoverColor="colorOrange" GavelColor="#EE964B" />
-    <FooterAverage GavelColorshop="#EE964B" nameAuction="AUCTIONS BY BRAND" />
-    <FooterFilter mtfooteR="75px" bgColor="#EE964B"  />
+    <FooterAverage display2={true} GavelColorshop="#EE964B" nameAuction="AUCTIONS BY BRAND" />
+    <FooterFilter rounded="45px" mtfooteR="75px" bgColor="#EE964B"  />
     <Footer BtnRadius="45px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="colorOrange" hoverbgF="colorOrangebg" Logoimage={LogoimageAuto}/>
   </div>
   )

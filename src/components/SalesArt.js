@@ -6,13 +6,25 @@ import { IoMdEye } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
 import Tooltip from "@mui/material/Tooltip";
-
+import salesImg1 from "../assets/artPoster1.jpg";
+import salesImg2 from "../assets/artPoster2.jpg";
 function SalesArt() {
+
+  const salesPost = {
+    backgroundImage: `url(${salesImg1})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover"
+  }
+  const salesPost1 = {
+    backgroundImage: `url(${salesImg2})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover"
+  }
   return (
     <>
       <div className="viewPartArt flex flex-col gap-[73px] mt-[99px] mb-[100px] ">
         <div className="onePoster flex gap-[17px] justify-around ml-[75px] ">
-          <div className="PosterArt w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] ">
+          <div style={salesPost} className=" w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] ">
             <h1 className="text-[27px] text-white font-extrabold ">ABSTRACT</h1>
             <p className="text-white flex gap-[8px] ">
               <strong className="font-bold text-[16px] ">4</strong>Collections
@@ -167,7 +179,7 @@ function SalesArt() {
          
         </div>
         <div className="onePoster flex gap-[17px] justify-around ml-[75px] ">
-          <div className="PosterArt w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] ">
+          <div style={salesPost1} className=" w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] ">
             <h1 className="text-[27px] text-white font-extrabold ">ANTIQUE</h1>
             <p className="text-white flex gap-[8px] ">
               <strong className="font-bold text-[16px] ">4</strong>Collections
