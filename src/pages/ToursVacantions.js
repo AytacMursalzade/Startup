@@ -21,6 +21,7 @@ import image1 from "../assets/earphones.png";
 import image2 from "../assets/deliveries_icons.png";
 import image3 from "../assets/money_icons.png";
 import image4 from "../assets/tracking_icons.png";
+import LatestTour from "../components/LatestTour";
 
 function ToursVacantions() {
   return (
@@ -29,7 +30,14 @@ function ToursVacantions() {
       <HeaderBook bgColor="#092A5F" src={imageloGo} basketColor="#6FCBF4" />
       <ToursSlide />
       <Mainbottom
-        Item1="Call Center" Item2="Completely synergize" Item3="Worldwide Tours" Item4="Objectively emprowered" Item5="Fast Processing" Item6="Efficiently unleash media" Item7="Instant Buying" Item8="Podcasting Operational"
+        Item1="Call Center"
+        Item2="Completely synergize"
+        Item3="Worldwide Tours"
+        Item4="Objectively emprowered"
+        Item5="Fast Processing"
+        Item6="Efficiently unleash media"
+        Item7="Instant Buying"
+        Item8="Podcasting Operational"
         image1={image1}
         image2={image2}
         image3={image3}
@@ -40,15 +48,9 @@ function ToursVacantions() {
         colorP="white"
         colorH="white"
       />
-      <LatestAuto
+      <LatestTour
         hoverTextBotm="colorBlueMania"
         hoverLatest="colorBlueManiabg"
-        OneLatest="LATEST AUCTIONS"
-        textLatest="Athens ,Greece"
-        art={tourLatest}
-        GavelTextColor="#6FCBF4"
-        tooltipBg="#6FCBF4"
-        howToused="Current Bid"
       />
       <TourPoster />
       <TourSales
@@ -86,6 +88,7 @@ function ToursVacantions() {
       />
       <FooterFilter rounded="45px" bgColor="#6FCBF4" />
       <Footer
+        
         BtnRadius="45px"
         ptFtr="50px"
         BrdInput="45px"
@@ -93,7 +96,7 @@ function ToursVacantions() {
         FooterBG="#092A5F"
         widthFooter="1897"
         bgFootBtm="#22406F"
-        heightFooter="230px"
+        heightFooter="300px"
         textColorFB="white"
         hoverFB="colorBlueMania"
         hoverbgF="colorBlueManiabg"

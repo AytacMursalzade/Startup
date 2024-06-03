@@ -1,7 +1,7 @@
 import React from "react";
 import FooterTop from "../components/FooterTop";
 import FooterAverage from "../components/FooterAverage";
-import LocationArt from "./../components/LocationArt";
+import locationimageSelf from "../assets/locationRed.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Logoimage1 from "../assets/logo-red.png";
@@ -12,13 +12,14 @@ import PosterAntiques from "../components/PosterAntiques";
 import SalesAntiques from "../components/SalesAntiques";
 import imgPoster from "../assets/700Vintage.png";
 import imagePoster from "../assets/440color.png";
+import Locationn from "../components/Locationn";
 
 function Antiques() {
   return (
     <div className="container">
-      <HeaderArrageArt basketColor="red" Logoimage={Logoimage1} />
-      <Header bgColor="red" />
-      <LatesAnti textLatest="Jewelry Container" howToused="Current Bid" />
+      <HeaderArrageArt basketColor="#BE263F" Logoimage={Logoimage1} />
+      <Header bgColor="#BE263F" />
+      <LatesAnti />
       <PosterAntiques />
       <SalesAntiques
         display5={true}
@@ -26,7 +27,7 @@ function Antiques() {
         hoveredSales="RedC"
         hoverBGsales="RedCbg"
         imgPoster={imgPoster}
-        toolBg="red"
+        toolBg="#BE263F"
         textPosterCard="WATCHES"
         productCard="Products"
         numberProduct="11"
@@ -34,10 +35,15 @@ function Antiques() {
         posterCard="JEWELRY"
         numberPoster="5"
       />
-      <LocationArt />
+      <Locationn
+        radiusBorder="9px"
+        img={locationimageSelf}
+        GavellColor="#BE263F"
+        inputBg="#BE263F"
+      />
       <FooterTop display={false} hoverColor="RedC" GavelColor="red" />
-      <FooterAverage GavelColorshop="red" nameAuction="SHOP BY BRAND" />
-      <FooterFilterArt bgColor="red" />
+      <FooterAverage GavelColorshop="#BE263F" display2={true} nameAuction="SHOP BY BRAND" />
+      <FooterFilterArt bgColor="#BE263F" />
       <Footer BtnRadius="8px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="RedC" hoverbgF="RedCbg" Logoimage={Logoimage1} />
     </div>
   );

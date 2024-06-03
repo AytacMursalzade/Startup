@@ -54,10 +54,10 @@ li:hover .submenu {
 } */
 
 .RedC{
-  @apply hover:text-red-500;
+  @apply hover:text-[#BE263F];
 }
 .RedCbg{
-  @apply hover:bg-red-500;
+  @apply hover:bg-[#BE263F];
 }
 .White{
   @apply hover:text-red-500;

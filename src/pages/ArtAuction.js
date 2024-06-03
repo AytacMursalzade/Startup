@@ -23,7 +23,7 @@ function ArtAuction() {
       <SalesArt />
       <LocationArt helpGavel="#0543EC"/>
       <FooterTop display={false} hoverColor="colorBlue" GavelColor="#0543EC"/>
-      <FooterAverage GavelColorshop="#0543EC" nameAuction="SHOP BY BRAND"/>
+      <FooterAverage GavelColorshop="#0543EC" display2={true} nameAuction="SHOP BY BRAND"/>
       <FooterFilterArt bgColor="#0543EC"  />
       <Footer BtnRadius="8px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="colorBlue" hoverbgF="colorBluebg" Logoimage={Logoimage1}/>
     </div>
