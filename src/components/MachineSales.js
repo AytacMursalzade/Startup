@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FaGavel, FaSearch } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import Tooltip from "@mui/material/Tooltip";
-
 import imgData1 from "../assets/buldozer3.jpg";
 import imgData2 from "../assets/buldozers.jpg";
 import imgData3 from "../assets/buldozers4.jpg";
@@ -132,11 +131,11 @@ function MachineSales({
   };
 
   return (
-    <div className="viewPartArt flex flex-col gap-[73px] mt-[99px] mb-[100px]">
-      <div className="onePoster flex gap-[17px] justify-around ml-[75px]">
+    <div className="viewPart flex flex-col gap-[73px] mt-[99px] mb-[100px]">
+      <div className="onePoster1 flex gap-[17px] justify-around ml-[75px]">
       <div
           style={BGimageMil}
-          className="PosterCoins posterMilOne w-[380px] h-[430px] flex justify-center items-center flex-col gap-[15px]"
+          className="Poster posterMilOne w-[380px] h-[430px] flex justify-center items-center flex-col gap-[15px]"
         >
           <h1 className="text-[27px] text-[white] font-extrabold">
             EXCAVATORS
@@ -152,11 +151,11 @@ function MachineSales({
             VIEW ALL ITEMS
           </button>
         </div>
-        <div className="flex gap-[13px] mt-[30px] px-[71px]">
+        <div className="salesPartPost flex gap-[13px] mt-[30px] px-[71px]">
           {data.slice(0, 3).map((item, index) => (
             <div
               key={index}
-              className="relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group"
+              className="salesPart relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group"
             >
               <div
                 style={{
@@ -169,7 +168,7 @@ function MachineSales({
                 className="absolute inset-0 group-hover:scale-105"
               ></div>
               <div className="flex items-start pt-[30px] z-10">
-                <div className="flex flex-col gap-[8px] pl-[18px]">
+                <div className="symbols flex flex-col gap-[8px] pl-[18px]">
                   <Tooltip title="Bid Now">
                     <button className="bg-[#FBDE06] text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
                       <FaGavel />
@@ -187,7 +186,7 @@ function MachineSales({
                   </Tooltip>
                 </div>
               </div>
-              <div className="mt-auto h-[120px] bg-white flex flex-col border-t-2 justify-center items-center gap-[9px] z-10">
+              <div className="titleProduct mt-auto h-[120px] bg-white flex flex-col border-t-2 justify-center items-center gap-[9px] z-10">
                 <Link to="/">
                   <h2 className="text-[#484848] text-[18px] font-bold leading-[22px] hover:text-[#6FCBF4]">
                     {item.description}
@@ -204,10 +203,10 @@ function MachineSales({
           ))}
         </div>
       </div>
-      <div className="onePoster flex gap-[17px] justify-around ml-[75px]">
+      <div className="onePoster1 flex gap-[17px] justify-around ml-[75px]">
       <div
           style={BGimageMil3}
-          className="PosterCoins posterMilOne w-[380px] h-[430px] flex justify-center items-center flex-col gap-[15px]"
+          className="Poster posterMilOne w-[380px] h-[430px] flex justify-center items-center flex-col gap-[15px]"
         >
           <h1 className="text-[27px] text-[white] font-extrabold">
             BULDOZERS
@@ -223,11 +222,11 @@ function MachineSales({
             VIEW ALL ITEMS
           </button>
         </div>
-        <div className="flex gap-[13px] mt-[30px] px-[71px]">
+        <div className="salesPartPost flex gap-[13px] mt-[30px] px-[71px]">
           {data.slice(3, 6).map((item, index) => (
             <div
               key={index}
-              className="relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group"
+              className="salesPart relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group"
             >
               <div
                 style={{
@@ -240,7 +239,7 @@ function MachineSales({
                 className="absolute inset-0 group-hover:scale-105"
               ></div>
               <div className="flex items-start pt-[30px] z-10">
-                <div className="flex flex-col gap-[8px] pl-[18px]">
+                <div className="symbols flex flex-col gap-[8px] pl-[18px]">
                   <Tooltip title="Bid Now">
                     <button className="bg-[#FBDE06] text-[white] flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
                       <FaGavel />
@@ -258,7 +257,7 @@ function MachineSales({
                   </Tooltip>
                 </div>
               </div>
-              <div className="mt-auto h-[120px] bg-[white] flex flex-col border-t-2 justify-center items-center gap-[9px] z-10">
+              <div className="titleProduct mt-auto h-[120px] bg-[white] flex flex-col border-t-2 justify-center items-center gap-[9px] z-10">
                 <Link to="/">
                   <h2 className="text-[#484848] text-[18px] font-bold leading-[22px] hover:text-[#FBDE06]">
                     {item.description}
@@ -275,10 +274,10 @@ function MachineSales({
           ))}
         </div>
       </div>
-      <div className="onePoster flex gap-[17px] justify-around ml-[75px]">
+      <div className="onePoster1 flex gap-[17px] justify-around ml-[75px]">
       <div
           style={BGimageMil5}
-          className="PosterCoins posterMilOne w-[380px] h-[430px] flex justify-center items-center flex-col gap-[15px]"
+          className="Poster posterMilOne w-[380px] h-[430px] flex justify-center items-center flex-col gap-[15px]"
         >
           <h1 className="text-[27px] text-[white] font-extrabold">
             COMPACTORS
@@ -294,11 +293,11 @@ function MachineSales({
             VIEW ALL ITEMS
           </button>
         </div>
-        <div className="flex gap-[13px] mt-[30px] px-[71px]">
+        <div className="salesPartPost flex gap-[13px] mt-[30px] px-[71px]">
           {data.slice(6, 9).map((item, index) => (
             <div
               key={index}
-              className="relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group"
+              className="salesPart relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group"
             >
               <div
                 style={{
@@ -311,7 +310,7 @@ function MachineSales({
                 className="absolute inset-0 group-hover:scale-105"
               ></div>
               <div className="flex items-start pt-[30px] z-10">
-                <div className="flex flex-col gap-[8px] pl-[18px]">
+                <div className="symbols flex flex-col gap-[8px] pl-[18px]">
                   <Tooltip title="Bid Now">
                     <button className="bg-[#FBDE06] text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
                       <FaGavel />
@@ -329,7 +328,7 @@ function MachineSales({
                   </Tooltip>
                 </div>
               </div>
-              <div className="mt-auto h-[120px] bg-white flex flex-col border-t-2 justify-center items-center gap-[9px] z-10">
+              <div className="titleProduct mt-auto h-[120px] bg-white flex flex-col border-t-2 justify-center items-center gap-[9px] z-10">
                 <Link to="/">
                   <h2 className="text-[#484848] text-[18px] font-bold leading-[22px] hover:text-[#FBDE06]">
                     {item.description}
@@ -346,10 +345,10 @@ function MachineSales({
           ))}
         </div>
       </div>
-      <div className="onePoster flex gap-[17px] justify-around ml-[75px]">
+      <div className="onePoster1 flex gap-[17px] justify-around ml-[75px]">
         <div
           style={BGimageMil4}
-          className="PosterCoins posterMilOne w-[380px] h-[430px] flex justify-center items-center flex-col gap-[15px]"
+          className="Poster posterMilOne w-[380px] h-[430px] flex justify-center items-center flex-col gap-[15px]"
         >
           <h1 className="text-[27px] text-[white] font-extrabold">
             CRANES
@@ -365,11 +364,11 @@ function MachineSales({
             VIEW ALL ITEMS
           </button>
         </div>
-        <div className="flex gap-[13px] mt-[30px] px-[71px]">
+        <div className="salesPartPost flex gap-[13px] mt-[30px] px-[71px]">
           {data.slice(6, 9).map((item, index) => (
             <div
               key={index}
-              className="relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group"
+              className="salesPart relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group"
             >
               <div
                 style={{
@@ -382,7 +381,7 @@ function MachineSales({
                 className="absolute inset-0 group-hover:scale-105"
               ></div>
               <div className="flex items-start pt-[30px] z-10">
-                <div className="flex flex-col gap-[8px] pl-[18px]">
+                <div className="symbols flex flex-col gap-[8px] pl-[18px]">
                   <Tooltip title="Bid Now">
                     <button className="bg-[#FBDE06] text-[white] flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
                       <FaGavel />
@@ -400,7 +399,7 @@ function MachineSales({
                   </Tooltip>
                 </div>
               </div>
-              <div className="mt-auto h-[120px] bg-[white] flex flex-col border-t-2 justify-center items-center gap-[9px] z-10">
+              <div className="titleProduct mt-auto h-[120px] bg-[white] flex flex-col border-t-2 justify-center items-center gap-[9px] z-10">
                 <Link to="/">
                   <h2 className="text-[#484848] text-[18px] font-bold leading-[22px] hover:text-[#FBDE06]">
                     {item.description}

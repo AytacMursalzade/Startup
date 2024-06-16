@@ -67,7 +67,7 @@ function GovernmentCategory() {
                     <FaGavel style={{ color: "#4AD493" }} /> Bid: {item.price}
                   </p>
                   <p className="flex gap-[5px] justify-center items-center">
-                    <FaLocationDot style={{ color: "#4AD493" }} /> Area:{" "}
+                    <FaLocationDot style={{ color: "#4AD493" }} /> Area:
                     {item.area}
                   </p>
                 </div>

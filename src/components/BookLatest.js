@@ -39,9 +39,9 @@ function BookLatest() {
   return (
     <div className="mt-[30px] px-[75px] ">
          <div className="flex flex-col items-center justify-center mt-[126px]">
-          <h1 className="font-bold text-[34px] ">LATEST NEWS</h1>
+          <h1 className="topic font-bold text-[34px] ">LATEST NEWS</h1>
 
-          <div className="flex items-center justify-center mt-[15px]">
+          <div className="gavel flex items-center justify-center mt-[15px]">
             <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
             <span
               className="font-bold text-[#F27928] text-[27px]"
@@ -51,7 +51,7 @@ function BookLatest() {
             <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_left"></div>
           </div>
         </div>
-      <ul className="flex flex-row gap-[15px] mt-[15px] justify-around latestnew ">
+      <ul className="ftres flex flex-row gap-[15px] mt-[15px] justify-around latestnew ">
         {data.map((item,index) =>(
             <li key={index} className="communityPost flex flex-row mt-[20px] gap-[40px] ">
             <Link to="/" className="relative w-[118px] h-[119px] overflow-hidden">

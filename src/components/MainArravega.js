@@ -5,20 +5,14 @@ import Tooltip from "@mui/material/Tooltip";
 import homeData from "../db/homeData";
 
 function MainArravega() {
-  // const homeLatest1 = {
-  //   backgroundImage: `url(${HLimg1})`,
-  //   backgroundPosition: "center",
-  //   backgroundSize: "cover",
-  // };
-
   
-
+ 
   return (
     <>
-      <div className="topic flex flex-col items-center justify-center mt-[126px] mb-[25px] ">
-        <h1 className="font-bold text-[34px] ">LATEST AUCTIONS</h1>
+      <div className=" flex flex-col items-center justify-center mt-[126px] mb-[25px] ">
+        <h1 className="topic font-bold text-[34px] ">LATEST AUCTIONS</h1>
 
-        <div className="flex items-center justify-center mt-[15px]">
+        <div className="gavel flex items-center justify-center mt-[15px]">
           <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
           <span className="font-bold text-[#2695FF] text-[27px]">
             <FaGavel />
@@ -38,12 +32,12 @@ function MainArravega() {
                       <FaGavel />
                     </button>
                   </Tooltip>
-                  <Tooltip title="Add to Wishlist">
+                  <Tooltip className="falseTooltip" title="Add to Wishlist">
                     <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
                       <CiHeart />
                     </button>
                   </Tooltip>
-                  <Tooltip title="Quickview">
+                  <Tooltip className="falseTooltip" title="Quickview">
                     <button className="rounded-[45px] hover:bg-[#2695FF] text-[#606060] hover:text-[#606060] flex justify-center items-center text-[13px] w-[30px] h-[30px] shadow-md">
                       <FaSearch />
                     </button>

@@ -7,7 +7,6 @@ import LatestAuto from "../components/LatestAuto";
 import EstateFlin from "../assets/realEstateHome.jpg";
 import SalesAntiques from "../components/SalesAntiques";
 import imagePosterReal from "../assets/Villaestate.jpeg";
-import imageReal from "../assets/villaSmallestate.jpeg";
 import locationimageSelf from "../assets/location.png";
 import Locationn from "../components/Locationn";
 import FooterTop from "../components/FooterTop";

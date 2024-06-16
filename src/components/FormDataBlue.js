@@ -22,7 +22,7 @@ function FormDataBlue({submitColor}) {
   return (
     <div className="formData w-[680px]  p-6 bg-white shadow-md">
       <form onSubmit={handleSubmit}>
-        <div className="flex justify-between px-[15px]  ">
+        <div className="formInput flex justify-between px-[15px]  ">
           
           <div className="flex flex-col gap-[82px] ">
             <input
@@ -82,7 +82,7 @@ function FormDataBlue({submitColor}) {
         <button
           type="submit"
           style={{backgroundColor:submitColor}}
-          className="flex justify-center gap-[10px] px-3 font-semibold w-[100%] rounded-[9px] text-white  py-3  mt-1 input"
+          className="btnsubmit flex justify-center gap-[10px] px-3 font-semibold w-[100%] rounded-[9px] text-white  py-3  mt-1 input"
         >
          <div> SEND MESSAGE</div>
           <div className="mt-[4px] "><FaArrowRightLong /></div>

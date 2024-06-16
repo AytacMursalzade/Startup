@@ -3,7 +3,6 @@ import CategoryBookFilter from "../components/CategoryBookFilter";
 import HeaderBook from "../components/HeaderBook";
 import NavbarBook from "../components/NavbarBook";
 import Locationn from "../components/Locationn";
-import FooterTop from "../components/FooterTop";
 import FooterAverage from "../components/FooterAverage";
 import FooterFilter from "../components/FooterFilter";
 import Footer from "../components/Footer";

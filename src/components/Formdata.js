@@ -22,7 +22,7 @@ function Form({inputBg,radiusBorder}) {
   return (
     <div className="formData w-[680px]  p-6 bg-white shadow-md">
       <form onSubmit={handleSubmit}>
-        <div className="flex justify-between px-[15px]  ">
+        <div className="formInput flex justify-between px-[15px]  ">
           
           <div className="flex flex-col gap-[82px] ">
             <input
@@ -31,7 +31,7 @@ function Form({inputBg,radiusBorder}) {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="px-3 py-2 mt-1 input focus:outline-none focus:ring-0"
+              className="px-3 py-2 mt-1 inputBlue focus:outline-none focus:ring-0"
               placeholder="First Name"
               required
             />
@@ -41,7 +41,7 @@ function Form({inputBg,radiusBorder}) {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="px-3 py-2 mt-1  input focus:outline-none focus:ring-0"
+              className="px-3 py-2 mt-1  inputBlue focus:outline-none focus:ring-0"
               placeholder="Your Email"
               required
             />
@@ -50,7 +50,7 @@ function Form({inputBg,radiusBorder}) {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="px-3 py-2 mt-1 input focus:outline-none focus:ring-0"
+              className="px-3 py-2 mt-1 inputBlue focus:outline-none focus:ring-0"
               placeholder="Your Message"
               rows="4"
               required
@@ -63,7 +63,7 @@ function Form({inputBg,radiusBorder}) {
               name="lastname"
               value={formData.lastname}
               onChange={handleChange}
-              className="px-3 py-2 mt-1  input focus:outline-none focus:ring-0"
+              className="px-3 py-2 mt-1  inputBlue focus:outline-none focus:ring-0"
               placeholder="Last Name"
               required
             />
@@ -73,7 +73,7 @@ function Form({inputBg,radiusBorder}) {
               name="subject"
               value={formData.subject}
               onChange={handleChange}
-              className="px-3 py-2 mt-1 input focus:outline-none focus:ring-0"
+              className="px-3 py-2 mt-1 inputBlue focus:outline-none focus:ring-0"
               placeholder="Subject"
               required
             />
@@ -82,7 +82,7 @@ function Form({inputBg,radiusBorder}) {
         <button
           type="submit"
           style={{backgroundColor:inputBg,borderRadius:radiusBorder}}
-          className="flex justify-center gap-[10px] px-3 font-semibold w-[100%]  text-white  py-3  mt-1 input"
+          className="btnsubmit flex justify-center gap-[10px] px-3 font-semibold w-[100%]  text-white  py-3  mt-1 input"
         >
          <div> SEND MESSAGE</div>
           <div className="mt-[4px] "><FaArrowRightLong /></div>

@@ -10,15 +10,10 @@ import DomainList from "../components/DomainList";
 import DomainSlideBtm from "../components/DomainSlideBtm";
 import DomainSlide2Img from "../assets/DomainSlide2.jpg";
 import DomainTable from "../components/DomainTable";
-import FooterFilter from "../components/FooterFilter";
 import Footer from "../components/Footer";
 import DomainImgBtm from "../assets/DomainVtmLogo.png";
-import DomainBottom from "../components/DomainBottom";
-import DomainImgLatest from "../assets/DomainLatestonee.jpg";
-import ReadBtn from "../components/ReadBtn";
-import btn1Domain from "../assets/DomainLatestonee.jpg";
-import btn3Domain from "../assets/DomainLatestonee.jpg";
-import btn2Domain from "../assets/DomainLatestonee.jpg";
+import DomainRead from "../components/DomainRead";
+import FooterFilter from "../components/FooterFilter";
 
 function Domain() {
   return (
@@ -37,16 +32,18 @@ function Domain() {
       <DomainList />
       <DomainSlideBtm DomainSlide2Img={DomainSlide2Img} />
       <DomainTable />
-      <ReadBtn display1={true} display2={false} btnColor="bg-[#18AE91]" />
+      <DomainRead display1={true} display2={false} btnColor="bg-[#18AE91]" />
+      <FooterFilter mtfooteR="75px" rounded="45px" bgColor="#18AE91" />
       <Footer
+       
         BtnRadius="45px"
-        ptFtr="50px"
+        ptFtr="20px"
         BrdInput="45px"
         textH1="white"
         FooterBG="#442244"
         widthFooter="1897"
         bgFootBtm="#321A32"
-        heightFooter="230px"
+        heightFooter="280px"
         textColorFB="white"
         hoverFB="colorDomain"
         hoverbgF="colorDomainbg"

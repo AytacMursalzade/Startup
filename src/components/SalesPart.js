@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import headphones from "../assets/headphones.jpg";
 import { FaGavel, FaSearch, FaHeart } from "react-icons/fa";
 import { IoMdEye } from "react-icons/io";
 import Tooltip from "@mui/material/Tooltip";
@@ -14,7 +13,7 @@ function SalesPart() {
   return (
     <>
       <div className="viewPart flex flex-col gap-[73px] mt-[99px] mb-[100px] ">
-        <div className="onePoster flex gap-[17px] justify-around ml-[75px] ">
+        <div className="onePoster1 flex gap-[17px] justify-around ml-[75px] ">
           <div className="Poster w-[420px] h-[501px] flex justify-center items-center flex-col gap-[15px] bg-[blue] ">
             <h1 className="text-[27px] text-white font-extrabold ">Phones</h1>
             <p className="text-white flex gap-[8px] ">
@@ -35,7 +34,7 @@ function SalesPart() {
                     <img src={item.img} width={170} alt="sales" />
                   </div>
                 </Link>
-                <div className="flex flex-col gap-[20px] justify-center ">
+                <div className="titleProduct flex flex-col gap-[20px] justify-center ">
                   <Link to={item.link}>
                     <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[#2695FF] font-bold ">
                       {item.description}
@@ -70,7 +69,7 @@ function SalesPart() {
           </div>
         </div>
 
-        <div className="onePoster flex gap-[17px] justify-around ml-[75px] ">
+        <div className="onePoster1 flex gap-[17px] justify-around ml-[75px] ">
           <div className="Poster w-[420px] h-[501px] flex justify-center items-center flex-col gap-[15px] bg-[red] ">
             <h1 className="text-[27px] text-white font-extrabold ">
               ELECTRONICS
@@ -93,7 +92,7 @@ function SalesPart() {
                     <img src={item.img} width={170} alt="sales" />
                   </div>
                 </Link>
-                <div className="flex flex-col gap-[20px] justify-center ">
+                <div className="titleProduct flex flex-col gap-[20px] justify-center ">
                   <Link to={item.link}>
                     <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[#2695FF] font-bold ">
                       {item.description}
@@ -128,7 +127,7 @@ function SalesPart() {
           </div>
         </div>
 
-        <div className="onePoster flex gap-[17px] justify-around ml-[75px] ">
+        <div className="onePoster1 flex gap-[17px] justify-around ml-[75px] ">
           <div className="Poster w-[420px] h-[501px] justify-center items-center flex flex-col gap-[15px] bg-[yellow] ">
             <h1 className="text-[27px] text-white font-extrabold ">LAPTOP</h1>
             <p className="text-white flex gap-[8px] ">
@@ -149,7 +148,7 @@ function SalesPart() {
                     <img src={item.img} width={170} alt="sales" />
                   </div>
                 </Link>
-                <div className="flex flex-col gap-[20px] justify-center ">
+                <div className="titleProduct flex flex-col gap-[20px] justify-center ">
                   <Link to={item.link}>
                     <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[#2695FF] font-bold ">
                       {item.description}

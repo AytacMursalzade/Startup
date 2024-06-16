@@ -99,7 +99,7 @@ function LaboratoryHead({ bgColor, display2 }) {
             </Link>
           </div>
         </div>
-        <div className="w-[100%] flex justify-around items-center py-[30px] ">
+        <div className="logoIcons w-[100%] flex justify-around items-center py-[30px] ">
           <div className="logoicon">
             <div className="iconsHeader  hidden ">
               <Link to="/">

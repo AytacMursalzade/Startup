@@ -25,7 +25,7 @@ function Memorabilia() {
     <div className='container'>
       <HeaderHalf src={src} bgColorTop="#078169" bgColor="white"/>
       <MemoraliaSlide MemoImg={MemoImg} MemoImg1={MemoImg1}/>
-      <Mainbottom image1={image1} image2={image2} image3={image3} image4={image4} Item1="24/7 Support" Item2="Efficiently leash media" Item3="Track Shipment" Item4="Objective the empower" Item5="Fastes Delivery" Item6="Efficiently unleash media" Item7="Weekly Gifts" Item8="Podcasting Operational" />
+      <Mainbottom />
       <MemoSlide1 Itemimg={Itemimg}/>
       <Memoitems display1={false} hoverTextBotm="spor" hoverLatest="sporbg" OneLatest="Summer 2020 Sneak Peeks"  tooltipBg="#07745F" />
       <MemoSlide2 />

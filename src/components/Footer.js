@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaAnglesRight } from "react-icons/fa6";
 
 function Footer({
   Logoimage,
@@ -15,8 +16,28 @@ function Footer({
   ptFtr,
   BrdInput,
   BtnRadius,
-  
 }) {
+  const data = [
+    {
+      id: 1,
+      description: "Useful Links",
+      items: [
+        { id: 1, label: "Mobile Phone" },
+        { id: 2, label: "Laptop" },
+        { id: 3, label: "Headphones" },
+      ],
+    },
+    {
+      id: 2,
+      description: "Our Policy",
+      items: [
+        { id: 4, label: "Homepage" },
+        { id: 5, label: "Blog" },
+        { id: 6, label: "Services" },
+      ],
+    },
+  ];
+
   return (
     <>
       <div
@@ -25,7 +46,6 @@ function Footer({
           height: heightFooter,
           backgroundColor: FooterBG,
           paddingTop: ptFtr,
-          
         }}
       >
         <div className="averageFooter flex justify-around pt-[75px]  ml-[10px] gap-[30px] ">
@@ -40,54 +60,34 @@ function Footer({
               <li className="text-[#AFAFAF] ">+1-541-754-3010</li>
             </ul>
           </div>
+          {data.map((item) => (
+            <div key={item.id}>
+              <h1
+                style={{ color: textH1 }}
+                className="font-bold text-[24px] mb-[12px] "
+              >
+                {item.description}
+              </h1>
+              <ul className="text-[#AFAFAF] text-[16px] font-normal  flex flex-col gap-[8px] ">
+                {item.items.map((subItem) => (
+                  <Link key={subItem.id}>
+                    <li  className={`${hoverFB} flex gap-[4px] items-center `}><FaAnglesRight />{subItem.label}</li>
+                  </Link>
+                ))}
+              </ul>
+            </div>
+          ))}
           <div>
             <h1
               style={{ color: textH1 }}
               className="font-bold text-[24px] mb-[12px] "
             >
-              Useful Links
-            </h1>
-            <ul className="text-[#AFAFAF] text-[16px] font-normal  flex flex-col gap-[8px] ">
-              <Link>
-                <li className={`${hoverFB}`}>Mobile Phone</li>
-              </Link>
-              <Link>
-                <li className={`${hoverFB}`}>Laptop</li>
-              </Link>
-              <Link>
-                <li className={`${hoverFB}`}>Headphones</li>
-              </Link>
-            </ul>
-          </div>
-          <div>
-            <h1
-              style={{ color: textH1 }}
-              className="font-bold text-[24px] mb-[12px] "
-            >
-              Useful Links
-            </h1>
-            <ul className="text-[#AFAFAF] text-[16px] font-normal  flex flex-col gap-[8px] ">
-              <Link>
-                <li className={`${hoverFB}`}>Mobile Phone</li>
-              </Link>
-              <Link>
-                <li className={`${hoverFB}`}>Laptop</li>
-              </Link>
-              <Link>
-                <li className={`${hoverFB}`}>Headphones</li>
-              </Link>
-            </ul>
-          </div>
-          <div>
-            <h1
-              style={{ color: textH1 }}
-              className="font-bold text-[24px] mb-[12px] "
-            >
-              Subscribe to our Newsteller
+              Subscribe to our Newsletter
             </h1>
             <form className="flex shadow-md  relative ">
               <label>
-                <input style={{borderRadius:BrdInput}}
+                <input
+                  style={{ borderRadius: BrdInput }}
                   className="formFooter w-[200px] h-[40px] px-[12px] focus:outline-none focus:border-gray-700"
                   type="text"
                   name="name"
@@ -95,7 +95,7 @@ function Footer({
                 />
               </label>
               <button
-                style={{borderRadius:BtnRadius}}
+                style={{ borderRadius: BtnRadius }}
                 className={`btnFilter flex justify-center items-center ${hoverbgF} w-[110px] h-[40px] absolute right-9  bg-[#484848] text-white`}
               >
                 <input type="submit" value="Submit" />

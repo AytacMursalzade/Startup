@@ -128,6 +128,11 @@ function Card() {
       description: "Automobilia Auctions",
       path: "/automobilia",
     },
+    {
+      id: 25,
+      description: "Domain Auctions",
+      path: "/domain",
+    },
   ];
 
   const columns = [];
@@ -148,7 +153,7 @@ function Card() {
             <li key={item.id} className="py-2">
               <Link
                 to={item.path}
-                className="text-black hover:text-[#554444] transition-colors duration-300"
+                className="text-[#606060] hover:text-[#554444] transition-colors duration-300"
               >
                 {item.description}
               </Link>
