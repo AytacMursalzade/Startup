@@ -58,163 +58,175 @@ function SalesAutomotive({
   };
 
   return (
-    <div className="flex flex-col gap-16 mt-24 mb-24">
-      <div className="onePoster flex gap-16 ">
-        <div
-          style={{ ...BGimageMil }}
-          className="w-[420px] h-[480px] flex justify-center items-center flex-col gap-4 relative overflow-hidden"
+    <div className="viewPart flex flex-col gap-[70px] mt-[100px] mb-[100px] ">
+    <div className="onePoster1 flex gap-[60px] ml-[75px] ">
+      <div
+        style={BGimageMil}
+        className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] "
+      >
+        <h1 className="text-[27px] text-white font-extrabold ">
+          {textPosterCard}
+        </h1>
+        <p className="text-white flex gap-[8px] ">
+          <strong className="font-bold text-[16px] ">{numberProduct}</strong>
+          {productCard}
+        </p>
+        <button
+          style={{ backgroundColor: toolBg }}
+          className="w-[205px] h-[50px] hover:bg-[white] hover:text-[white] text-[14px] font-semibold text-[white] rounded-[9px]"
         >
-          <h1 className="text-2xl text-white font-extrabold">{textPosterCard}</h1>
-          <p className="text-white flex gap-2">
-            <strong className="font-bold text-lg">{numberProduct}</strong>
-            {productCard}
-          </p>
-          <button
-            style={{ backgroundColor: toolBg }}
-            className="w-[205px] h-[50px] hover:bg-white hover:text-white text-lg font-semibold text-white rounded-lg"
-          >
-            VIEW ALL ITEMS
-          </button>
-        </div>
-
-        <div className="salesPartPostArt flex flex-wrap gap-5 px-5 w-[1272px]">
-          {AntiquesData.slice(0, 4).map((item, index) => (
-            <div
-              key={index}
-              className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-3 px-4"
-            >
-              <Link>
-                <div className="overflow-hidden rounded-lg" style={{ width: '167px', height: '167px' }}>
-                  <img src={item.img} alt="sales" className="transition duration-300 transform hover:scale-105" style={{ transformOrigin: 'center', transition: 'transform 0.5s ease' }} />
-                </div>
-              </Link>
-              <div className="flex flex-col gap-5 pl-4 justify-center">
-                <Link>
-                  <h1 className={`text-[#484848] text-lg transition-all duration-300 ${hoveredSales} font-bold`}>
-                    {item.description}
-                  </h1>
-                </Link>
-
-                <div className="flex">
-                  <p className="text-sm text-[#606060] font-light">{item.paragraf1}</p>
-                  <p className="text-lg text-black font-bold">{item.price}</p>
-                </div>
-                <div className="symbols flex gap-2">
-                  <Tooltip style={styll} title="Bid Now">
-                    <button
-                      style={{ backgroundColor: toolBg }}
-                      className="rounded-lg text-white flex justify-center items-center text-sm w-[33px] h-[32px] shadow-md"
-                    >
-                      <FaGavel />
-                    </button>
-                  </Tooltip>
-                  <Tooltip style={styling} title="Add to cart">
-                    <button
-                      style={{ backgroundColor: toolBg }}
-                      className="rounded-lg text-white flex justify-center items-center text-sm w-[33px] h-[32px] shadow-md"
-                    >
-                      <FaShoppingBasket />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Add to Wishlist">
-                    <button
-                      className={`rounded-lg ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-sm w-[33px] h-[32px] shadow-md`}
-                    >
-                      <FaHeart />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Quickview">
-                    <button
-                      className={`rounded-lg ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-sm w-[33px] h-[32px] shadow-md`}
-                    >
-                      <FaSearch />
-                    </button>
-                  </Tooltip>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+          VIEW ALL ITEMS
+        </button>
       </div>
 
-      <div className="onePoster flex gap-16 ">
-        <div
-          style={{ ...BGimgMil }}
-          className="w-[420px] h-[480px] flex justify-center items-center flex-col gap-4 relative overflow-hidden"
-        >
-                    <h1 className="text-2xl text-white font-extrabold">{posterCard}</h1>
-          <p className="text-white flex gap-2">
-            <strong className="font-bold text-lg">{numberPoster}</strong>
-            {productName}
-          </p>
-          <button
-            style={{ backgroundColor: toolBg }}
-            className="w-[205px] h-[50px] hover:bg-white hover:text-red text-lg font-semibold text-white rounded-lg"
+      <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
+        {AntiquesData.slice(0, 4).map((item, index) => (
+          <div
+            key={index}
+            className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] "
           >
-            VIEW ALL ITEMS
-          </button>
-        </div>
-
-        <div className="salesPartPostArt flex flex-wrap gap-5 px-5 w-[1272px]">
-          {AntiquesData.slice(4, 8).map((item, index) => (
-            <div
-              key={index}
-              className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-3 px-4"
-            >
+            <Link>
+              <div>
+                <img src={item.img} width={167} alt="sales" />
+              </div>
+            </Link>
+            <div className="titleProduct flex flex-col gap-[20px] pl-[15px] justify-center ">
               <Link>
-                <div className="overflow-hidden rounded-lg" style={{ width: '167px', height: '167px' }}>
-                  <img src={item.img} alt="sales" className="transition duration-300 transform hover:scale-105" style={{ transformOrigin: 'center', transition: 'transform 0.5s ease' }} />
-                </div>
+                <h1
+                  className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`}
+                >
+                  {item.description}
+                </h1>
               </Link>
-              <div className="flex flex-col gap-5 pl-4 justify-center">
-                <Link>
-                  <h1 className={`text-[#484848] text-lg transition-all duration-300 ${hoveredSales} font-bold`}>
-                    {item.description}
-                  </h1>
-                </Link>
 
-                <div className="flex">
-                  <p className="text-sm text-[#606060] font-light">{item.paragraf1}</p>
-                  <p className="text-lg text-black font-bold">{item.price}</p>
-                </div>
-                <div className="symbols flex gap-2">
-                  <Tooltip style={styll} title="Bid Now">
-                    <button
-                      
-                      className="rounded-lg hover:bg-[#EE964B] text-white flex justify-center items-center text-sm w-[33px] h-[32px] shadow-md"
-                    >
-                      <FaGavel />
-                    </button>
-                  </Tooltip>
-                  <Tooltip style={styling} title="Add to cart">
-                    <button
-                    
-                      className="rounded-lg bg-[#EE964B] text-white flex justify-center items-center text-sm w-[33px] h-[32px] shadow-md"
-                    >
-                      <FaShoppingBasket />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Add to Wishlist">
-                    <button
-                      className="rounded-lg bg-[#EE964B] text-white flex justify-center items-center text-sm w-[33px] h-[32px] shadow-md"
-                    >
-                      <FaHeart />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Quickview">
-                    <button
-                      className={`rounded-lg ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-sm w-[33px] h-[32px] shadow-md`}
-                    >
-                      <FaSearch />
-                    </button>
-                  </Tooltip>
-                </div>
+              <div className="flex">
+                <p className="text-[14px] text-[#606060] font-light ">
+                  {item.paragraf1}
+                </p>
+                <p className="text-[16px] text-[black] font-bold ">{item.price}</p>
+              </div>
+              <div className="symbols flex gap-[8px] ">
+                <Tooltip style={styll} title="Bid Now">
+                  <button
+                    style={{ backgroundColor: toolBg }}
+                    className="rounded-[9px] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md "
+                  >
+                    <FaGavel />
+                  </button>
+                </Tooltip>
+                <Tooltip style={styling} title="Add to cart">
+                  <button
+                    style={{ backgroundColor: toolBg }}
+                    className="rounded-[9px] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md "
+                  >
+                    <FaShoppingBasket />
+                  </button>
+                </Tooltip>
+                <Tooltip title="Add to Wishlist">
+                  <button
+                    className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}
+                  >
+                    <FaHeart />
+                  </button>
+                </Tooltip>
+                <Tooltip title="Quickview">
+                  <button
+                    className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}
+                  >
+                    <FaSearch />
+                  </button>
+                </Tooltip>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
+
+    <div className="onePoster1 flex gap-[60px] ml-[75px] ">
+      <div
+        style={BGimgMil}
+        className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] "
+      >
+        <h1 className="text-[27px] text-white font-extrabold ">
+          {posterCard}
+        </h1>
+        <p className="text-white flex gap-[8px] ">
+          <strong className="font-bold text-[16px] ">{numberPoster}</strong>
+          {productName}
+        </p>
+        <button
+          style={{ backgroundColor: toolBg }}
+          className="w-[205px] h-[50px] hover:bg-[white] hover:text-[red] text-[14px] font-semibold text-white rounded-[9px] "
+        >
+          VIEW ALL ITEMS
+        </button>
+      </div>
+
+      <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
+        {AntiquesData.slice(4, 8).map((item, index) => (
+          <div
+            key={index}
+            className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] "
+          >
+            <Link>
+              <div>
+                <img src={item.img} width={167} alt="sales" />
+              </div>
+            </Link>
+            <div className="titleProduct flex flex-col gap-[20px] pl-[15px] justify-center ">
+              <Link>
+                <h1
+                  className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`}
+                >
+                  {item.description}
+                </h1>
+              </Link>
+
+              <div className="flex">
+                <p className="text-[14px] text-[#606060] font-light ">
+                  {item.paragraf1}
+                </p>
+                <p className="text-[16px] text-[black] font-bold ">{item.price}</p>
+              </div>
+              <div className="symbols flex gap-[8px] ">
+                <Tooltip style={styll} title="Bid Now">
+                  <button
+                    style={{ backgroundColor: toolBg }}
+                    className="rounded-[9px] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md "
+                  >
+                    <FaGavel />
+                  </button>
+                </Tooltip>
+                <Tooltip style={styling} title="Add to cart">
+                  <button
+                    style={{ backgroundColor: toolBg }}
+                    className="rounded-[9px] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md "
+                  >
+                    <FaShoppingBasket />
+                  </button>
+                </Tooltip>
+                <Tooltip title="Add to Wishlist">
+                  <button
+                    className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}
+                  >
+                    <FaHeart />
+                  </button>
+                </Tooltip>
+                <Tooltip title="Quickview">
+                  <button
+                    className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}
+                  >
+                    <FaSearch />
+                  </button>
+                </Tooltip>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
   );
 }
 

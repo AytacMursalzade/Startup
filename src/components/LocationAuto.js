@@ -8,9 +8,9 @@ function LocationAuto({helpGavel}) {
     <div>
       <div>
       <div className="flex flex-col items-center justify-center ">
-        <h1 className="font-bold text-[34px] ">NEED HELP? CONTACT US</h1>
+        <h1 className="topic font-bold text-[34px] ">NEED HELP? CONTACT US</h1>
 
-        <div className="flex items-center justify-center mt-[15px]">
+        <div className="gavel flex items-center justify-center mt-[15px]">
           <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
           <span style={{color:helpGavel}} className="font-bold  text-[27px]">
             <FaGavel />

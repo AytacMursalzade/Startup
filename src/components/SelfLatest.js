@@ -106,7 +106,7 @@ function SelfLatest({
   };
 
   return (
-    <div className="flex flex-col gap-[70px] mt-[100px] mb-[100px] ">
+    <div className="viewPart flex flex-col gap-[70px] mt-[100px] mb-[100px] ">
       <style>
         {`
           .zoom-effect {
@@ -117,10 +117,10 @@ function SelfLatest({
           }
         `}
       </style>
-      <div className="onePoster flex gap-[60px] ml-[75px] ">
+      <div className="onePoster1 flex gap-[60px] ml-[75px] ">
         <div
           style={BGimageMil}
-          className=" w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] "
+          className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] "
         >
           <h1 className="text-[27px] text-white font-extrabold ">
             {textPosterCard}
@@ -137,18 +137,18 @@ function SelfLatest({
           </button>
         </div>
 
-        <div className="salesPartPostArt flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
+        <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
           {Data.slice(0, 4).map((item, index) => (
             <div
               key={index}
-              className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] "
+              className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] "
             >
               <Link>
                 <div>
                   <img src={item.img} width={167} alt="sales" className="zoom-effect" />
                 </div>
               </Link>
-              <div className="flex flex-col gap-[20px] pl-[15px] justify-center ">
+              <div className="titleProduct flex flex-col gap-[20px] pl-[15px] justify-center ">
                 <Link>
                   <h1
                     className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`}
@@ -201,10 +201,10 @@ function SelfLatest({
         </div>
       </div>
 
-      <div className="onePoster flex gap-[60px] ml-[75px] ">
+      <div className="onePoster1 flex gap-[60px] ml-[75px] ">
         <div
           style={BGimgMil}
-          className=" w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] "
+          className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] "
         >
           <h1 className="text-[27px] text-white font-extrabold ">
             {posterCard}
@@ -221,18 +221,18 @@ function SelfLatest({
           </button>
         </div>
 
-        <div className="salesPartPostArt flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
+        <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
           {Data.slice(4, 8).map((item, index) => (
             <div
               key={index}
-              className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] "
+              className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] "
             >
               <Link>
                 <div>
                   <img src={item.img} width={167} alt="sales" className="zoom-effect" />
                 </div>
               </Link>
-              <div className="flex flex-col gap-[20px] pl-[15px] justify-center ">
+              <div className="titleProduct flex flex-col gap-[20px] pl-[15px] justify-center ">
                 <Link>
                   <h1
                     className={`text-[#484848] text-[18px] transition-all duration-300 ${hoveredSales} font-bold`}

@@ -40,8 +40,8 @@ function CountSoon({hoverBGsales}) {
   return (
     <div>
       <div className="flex flex-col items-center justify-center mt-[160px]">
-        <h1 className="font-bold text-[34px] text-center">AUCTIONS EXPIRING SOON</h1>
-        <div className="flex items-center justify-center mt-[15px]">
+        <h1 className="topic font-bold text-[34px] text-center">AUCTIONS EXPIRING SOON</h1>
+        <div className="gavel flex items-center justify-center mt-[15px]">
           <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2"></div>
           <span  className="font-bold text-[#EA3546] text-[27px]">
             <FaGavel />
@@ -49,9 +49,9 @@ function CountSoon({hoverBGsales}) {
           <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2"></div>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center ml-[70px] mt-[75px] ">
+      <div className="PhonesAll flex flex-wrap justify-center ml-[70px] mt-[75px] ">
         {data.map((item) => (
-          <div key={item.id} className="flex w-[720px] justify-between">
+          <div key={item.id} className="allPhones flex w-[720px] justify-between">
             <Link to='/'>
               <div className="flex items-start w-[350px] h-[360px] pt-[30px] shadow-2xl">
                 <div className="flex flex-col gap-[8px] pl-[18px]">
@@ -63,7 +63,7 @@ function CountSoon({hoverBGsales}) {
                       <IoMdEye />
                     </button>
                   </Tooltip>
-                  <Tooltip title="View Auction">
+                  <Tooltip className="falseTooltip" title="View Auction">
                     <button
                      
                       className={`${hoverBGsales} rounded-[50%]  text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}
@@ -71,7 +71,7 @@ function CountSoon({hoverBGsales}) {
                       <CiHeart />
                     </button>
                   </Tooltip>
-                  <Tooltip title="Quickview">
+                  <Tooltip className="falseTooltip" title="Quickview">
                     <button
                      
                       className={`${hoverBGsales} rounded-[50%]  text-[#606060] hover:text-white flex justify-center items-center text-[15px] w-[38px] h-[38px] shadow-md`}
@@ -85,7 +85,7 @@ function CountSoon({hoverBGsales}) {
                 </div>
               </div>
             </Link>
-            <div className="w-[300px] h-[320px] flex flex-col justify-center gap-[25px]">
+            <div className="phoneBottom w-[300px] h-[320px] flex flex-col justify-center gap-[25px]">
               <Link to="/">
                 <h1 className="text-[#484848] text-[18px] font-bold">
                   Desktop Gamer Las Vegas

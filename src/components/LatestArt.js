@@ -2,165 +2,108 @@ import React from "react";
 import { FaGavel } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
-import art from "../assets/350banner.jpg";
-import Tooltip from "@mui/material/Tooltip";
+import Tooltip from "@mui/material/Tooltip"; 
+import Item1 from "../assets/dataart1.jpg";
+import Item2 from "../assets/dataart2.jpg";
+import Item3 from "../assets/dataart3.jpg";
+import Item4 from "../assets/dataart4.jpg";
 import { Link } from "react-router-dom";
 
 function LatestArt() {
+
+  const data = [
+    {
+        id:"1",
+        img:Item1,
+        description: "Le bouquet de Paris",
+        paragraph: "Current Bid:",
+        price: "$5,043.00",
+    },
+    {
+        id:"2",
+        img:Item2,
+        description: "Smartphone Earbuds",
+        paragraph: "Sealed Bid Auction"
+    },
+    {
+        id:"3",
+        img:Item3,
+        description: "Bluetooth Headphones",
+        paragraph: "Auction Ended"
+    },
+    {
+        id:"4",
+        img:Item4,
+        description: "Smart TV 4K Ultra HD",
+        paragraph: "Current Bid:",
+        price:"$500.00"
+    },
+   
+];
+
+
+
   return (
     <>
-      <div className="topic flex flex-col items-center justify-center mt-[126px] mb-[25px] ">
-        <h1 className="font-bold text-[34px] ">LATEST AUCTIONS</h1>
-
-        <div className="flex items-center justify-center mt-[15px]">
-          <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
-          <span className="font-bold text-[#0543EC] text-[27px]">
-            <FaGavel />
-          </span>
-          <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_left"></div>
-        </div>
-      </div>
-
-      <div className="PhonesAll flex gap-[13px] px-[71px] ">
-        <div className="first flex gap-[13px] ">
-          <div className="allPhones w-[322px] h-[400px] shadow-lg">
-            <div className="flex flex-col">
-              <div className="flex  items-start pt-[30px]">
-                <div className="flex flex-col gap-[8px] pl-[18px] ">
-                  <Tooltip title="Bid Now">
-                    <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
-                      <FaGavel />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
-                      <CiHeart />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
-                      <FaSearch />
-                    </button>
-                  </Tooltip>
-                </div>
-                <div>
-                  <img width={280} src={art} alt="phones" />
-                </div>
-              </div>
-              <div className="phoneBottom flex flex-col  border-t-2 pt-[24px] items-center gap-[9px]">
-                <Link to="/"><h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#0543EC]">
-                  Le bouquet de Paris
-                </h2></Link>
-                <p className="text-[#606060] text-[14px] font-light loading-[22px]">
-                  Starting Bid Auction
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="allPhones w-[322px] h-[400px] shadow-lg">
-            <div className="flex flex-col">
-              <div className="flex justify-between items-start pt-[30px]">
-                <div className="flex flex-col gap-[8px] pl-[18px] ">
-                  <Tooltip title="Bid Now">
-                    <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
-                      <FaGavel />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
-                      <CiHeart />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
-                      <FaSearch />
-                    </button>
-                  </Tooltip>
-                </div>
-                <div>
-                  <img width={280} src={art} alt="phones" />
-                </div>
-              </div>
-              <div className="phoneBottom flex flex-col  border-t-2 pt-[24px] items-center gap-[9px]">
-                <Link to="/"><h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#0543EC]">
-                  Maison alsacienne
-                </h2></Link>
-                <p className="text-[#606060] text-[14px] font-light loading-[22px]">
-                  Current Bid
-                </p>
-              </div>
-            </div>
+     <div className="mt-[126px] mb-[75px]">
+        <div className=" flex flex-col items-center justify-center">
+          <h1 className="topic font-bold text-[34px]">LATEST AUCTIONS</h1>
+          <div className="gavel flex items-center justify-center mt-[15px]">
+            <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
+            <span className="font-bold text-[#0543EC] text-[27px]">
+              <FaGavel />
+            </span>
+            <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_left"></div>
           </div>
         </div>
-        <div className="second flex gap-[13px]  ">
-          <div className="allPhones w-[322px] h-[400px] shadow-lg">
-            <div className="flex flex-col">
-              <div className="flex justify-between items-start pt-[30px]">
-                <div className="flex flex-col gap-[8px] pl-[18px] ">
+
+        <div className="PhonesAll flex flex-wrap gap-[13px] mt-[30px]  px-[71px]">
+          {data.map((item, index) => (
+            <div key={index} className="allPhones relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group max-600:w-[219px]">
+              <div
+                style={{
+                  backgroundImage: `url(${item.img})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  transformOrigin: "center",
+                  transition: "transform 0.5s ease",
+                }}
+                className="absolute inset-0 group-hover:scale-105"
+              ></div>
+              <div className="flex items-start pt-[30px] z-10">
+                <div className="flex flex-col gap-[8px] pl-[18px]">
                   <Tooltip title="Bid Now">
                     <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
                       <FaGavel />
                     </button>
                   </Tooltip>
-                  <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
+                  <Tooltip className="falseTooltip" title="Add to Wishlist">
+                    <button className="rounded-[9px] hover:bg-[#0543EC] bg-white text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
                       <CiHeart />
                     </button>
                   </Tooltip>
-                  <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
+                  <Tooltip className="falseTooltip" title="Quickview">
+                    <button className="rounded-[9px] hover:bg-[#0543EC] bg-white text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
                       <FaSearch />
                     </button>
                   </Tooltip>
                 </div>
-                <div>
-                  <img width={280} src={art} alt="phones" />
-                </div>
               </div>
-              <div className="phoneBottom flex flex-col  border-t-2 pt-[18px] items-center gap-[9px]">
-                <Link to="/"><h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#0543EC]">
-                  Maison alsacienne
-                </h2></Link>
-                <p className="text-[#606060] text-[14px] font-light loading-[22px]">
-                  Current Bid
-                </p>
+              <div className="phoneBottom mt-auto h-[120px] bg-white flex flex-col border-t-2 justify-center items-center gap-[9px] z-10">
+                <Link to="/">
+                  <h2 className="text-[#484848] text-[18px] font-bold leading-[22px] hover:text-[#0543EC]">
+                    {item.description}
+                  </h2>
+                </Link>
+                <div className="flex gap-[5px]">
+                  <p className="text-[#606060] text-[16px] font-light leading-[22px]">
+                    {item.paragraph}
+                  </p>
+                  <p className="text-[14px] font-bold">{item.price}</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="allPhones w-[322px] h-[400px] shadow-lg">
-            <div className="flex flex-col">
-              <div className="flex justify-between items-start pt-[30px]">
-                <div className="flex flex-col gap-[8px] pl-[18px] ">
-                  <Tooltip title="Bid Now">
-                    <button className="rounded-[9px] bg-[#0543EC] text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
-                      <FaGavel />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Add to Wishlist">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
-                      <CiHeart />
-                    </button>
-                  </Tooltip>
-                  <Tooltip title="Quickview">
-                    <button className="rounded-[9px] hover:bg-[#0543EC] text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
-                      <FaSearch />
-                    </button>
-                  </Tooltip>
-                </div>
-                <div>
-                  <img width={280} src={art} alt="phones" />
-                </div>
-              </div>
-              <div className="phoneBottom flex flex-col  border-t-2 pt-[18px] items-center gap-[9px]">
-               <Link to="/"> <h2 className="text-[#484848] text-[18px] font-bold loading-[22px] hover:text-[#0543EC]">
-                  Maison alsacienne
-                </h2></Link>
-                <p className="text-[#606060] text-[14px] font-light loading-[22px]">
-                  Current Bid
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </>

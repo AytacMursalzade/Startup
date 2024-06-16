@@ -5,7 +5,7 @@ function FooterFilter({bgColor,rounded,mtfooteR}) {
   return (
     <div style={{backgroundColor:bgColor,marginTop:mtfooteR}} className="filterfooter w-[100%] h-[80px] " >
       <div className="footerblue flex justify-between pt-[30px] px-[95px] ">
-        <div className="text-white text-[18px] font-extrabold ">
+        <div className=" fooTopic text-white text-[18px] font-extrabold ">
           <h1>Browse through our products library!</h1>
         </div>
         <form style={{borderRadius:rounded}}  className="filterown flex items-center justify-between w-[420px] h-[40px] mt-[-10px] py-[4px] px-[18px] rounded-[45px] bg-white ">

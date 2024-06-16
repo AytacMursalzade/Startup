@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Card from './Card';
 import ShopCard from './ShopCard';
 import BlogCard from './BlogCard';
+import ShortcodeCard from './ShortcodeCard';
 
 
 const Navbar = (props) => {
@@ -155,7 +156,7 @@ const Navbar = (props) => {
             onMouseLeave={() => handleShortcodesLeave('shortcodes')} className={`border-t-2 border-transparent relative hover:border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Shortcodes
             {isSubmenuOpen && isShortcodesHovered['shortcodes'] && (
               <div className="absolute z-50 w-[70px] h-[70px] top-12 left-0 bg-white text-black">
-                <ShopCard/>
+                <ShortcodeCard />
               </div>
             )}
           </li></Link>
@@ -171,9 +172,9 @@ const Navbar = (props) => {
             onMouseLeave={() => handleMediaLeave('media')} className={`border-t-2 border-transparent relative hover:border-white transition duration-300 ${isSubmenuOpen ? 'visible' : ''}`}>Media
             {isSubmenuOpen && isMediaHovered['media'] && (
               <div className="absolute z-50 w-[70px] h-[70px] top-12 left-0 bg-white text-black">
-                <ul>
-                  <Link to="/media"><li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Media</li></Link>
-                  <Link to="/projects"><li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Projects</li></Link>
+                <ul className='w-[200px] h-[80px] bg-[white] px-[25px] text-[14px] font-normal text-[#484848] '>
+                  <Link to="/media"><li className="w-[150px] h-[50px] border-b-[2px] flex items-center py-[18px] hover:text-[#2695ff] text-[14px] font-normal ">Media</li></Link>
+                  <Link to="/projects"><li className="w-[150px] h-[35px]  flex items-center  py-[18px] hover:text-[#2695ff] text-[14px] font-normal ">Projects</li></Link>
                 </ul>
               </div>
             )}
@@ -187,11 +188,11 @@ const Navbar = (props) => {
             onMouseLeave={() => handlePagesLeave('pages')} className={`border-t-2 border-transparent relative hover:border-white transition duration-300${isSubmenuOpen ? 'visible' : ''}`}>Pages
             {isSubmenuOpen && isPagesHovered['pages'] && (
               <div className="absolute z-50 w-[70px] h-[70px] top-12 left-0 bg-white text-black">
-                <ul>
-                  <Link to="/media"><li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">Sitemap</li></Link>
-                  <Link to="/projects"><li className="w-[150px] h-[35px]  flex items-center  py-[15px] hover:text-[#2695ff] text-[14px] font-normal ">404 Not Found</li></Link>
-                </ul>
-              </div>
+              <ul className='w-[200px] h-[80px] bg-[white] px-[25px] text-[14px] font-normal text-[#484848] '>
+                <Link to="/media"><li className="w-[150px] h-[50px] border-b-[2px] flex items-center py-[18px] hover:text-[#2695ff] text-[14px] font-normal ">Sitemap</li></Link>
+                <Link to="/projects"><li className="w-[150px] h-[35px]  flex items-center  py-[18px] hover:text-[#2695ff] text-[14px] font-normal ">404 Not Found</li></Link>
+              </ul>
+            </div>
             )}
           </li></Link>
          

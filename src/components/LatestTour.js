@@ -45,9 +45,9 @@ function LatestTour() {
   return (
     <>
       <div className="mt-[126px] mb-[75px]">
-        <div className="topic flex flex-col items-center justify-center">
-          <h1 className="font-bold text-[34px]">LATEST AUCTIONS</h1>
-          <div className="flex items-center justify-center mt-[15px]">
+        <div className=" flex flex-col items-center justify-center">
+          <h1 className="topic font-bold text-[34px]">LATEST AUCTIONS</h1>
+          <div className="gavel flex items-center justify-center mt-[15px]">
             <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
             <span className="font-bold text-[#6FCBF4] text-[27px]">
               <FaGavel />
@@ -56,9 +56,9 @@ function LatestTour() {
           </div>
         </div>
 
-        <div className="flex gap-[13px] mt-[30px]  px-[71px]">
+        <div className="PhonesAll flex gap-[13px] mt-[30px]  px-[71px]">
           {data.map((item, index) => (
-            <div key={index} className="relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group">
+            <div key={index} className="allPhones relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group">
               <div
                 style={{
                   backgroundImage: `url(${item.img})`,
@@ -76,19 +76,19 @@ function LatestTour() {
                       <FaGavel />
                     </button>
                   </Tooltip>
-                  <Tooltip title="Add to Wishlist">
+                  <Tooltip className="falseTooltip" title="Add to Wishlist">
                     <button className=" hover:bg-[#6FCBF4] bg-white text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
                       <CiHeart />
                     </button>
                   </Tooltip>
-                  <Tooltip title="Quickview">
+                  <Tooltip className="falseTooltip" title="Quickview">
                     <button className=" hover:bg-[#6FCBF4] bg-white text-[#606060] hover:text-white flex justify-center items-center text-[13px] w-[33px] h-[33px] shadow-md">
                       <FaSearch />
                     </button>
                   </Tooltip>
                 </div>
               </div>
-              <div className="mt-auto h-[120px] bg-white flex flex-col border-t-2 justify-center items-center gap-[9px] z-10">
+              <div className="phoneBottom mt-auto h-[120px] bg-white flex flex-col border-t-2 justify-center items-center gap-[9px] z-10">
                 <Link to="/">
                   <h2 className="text-[#484848] text-[18px] font-bold leading-[22px] hover:text-[#6FCBF4]">
                     {item.description}

@@ -5,7 +5,7 @@ function FooterFilterArt({bgColor}) {
   return (
     <div style={{backgroundColor:bgColor}} className="filterfooter w-[100%] h-[80px] mt-[90px] mb-[75px]">
       <div className="footerblue flex justify-between pt-[30px] px-[95px] ">
-        <div className="text-white text-[18px] font-extrabold ">
+        <div className="fooTopic text-white text-[18px] font-extrabold ">
           <h1>Browse through our products library!</h1>
         </div>
         <form className="filterown flex items-center justify-between w-[420px] h-[40px] mt-[-10px] py-[4px] px-[19px] rounded-[9px] bg-white ">
