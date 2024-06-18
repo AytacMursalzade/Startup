@@ -20,20 +20,20 @@ function ProjectTwo() {
     const secondColumn = data.slice(3, 6);
 
     return (
-        <div className="mt-[75px] mx-auto w-[90%] flex justify-around gap-[28px] ">
-            <div className="flex flex-col gap-8">
+        <div className="mt-[75px] mx-auto w-[90%] flex justify-around gap-[28px] max-600:w-[454px]  ">
+            <div className="flex flex-col gap-8  ">
                 {firstColumn.map((item) => (
-                    <div key={item.id} className="relative">
-                        <img src={item.img} alt={`Project ${item.id}`} className="w-[690px] h-[421px]" />
-                        <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300"></div>
+                    <div key={item.id} className="relative max-600:w-[217px] max-600:h-[145px] ">
+                        <img src={item.img} alt={`Project ${item.id}`} className="w-[690px] h-[421px] max-600:w-[217px] max-600:h-[145px] " />
+                        <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300 max-600:w-[217px] max-600:h-[145px]"></div>
                     </div>
                 ))}
             </div>
             <div className="flex flex-col gap-8">
                 {secondColumn.map((item) => (
-                    <div key={item.id} className="relative">
-                        <img src={item.img} alt={`Project ${item.id}`} className="w-[690px] h-[390px]" />
-                        <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300"></div>
+                    <div key={item.id} className="relative max-600:w-[217px] max-600:h-[145px]">
+                        <img src={item.img} alt={`Project ${item.id}`} className="w-[690px] h-[390px] max-600:w-[217px] max-600:h-[145px]" />
+                        <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300 max-600:w-[217px] max-600:h-[145px]"></div>
                     </div>
                 ))}
             </div>

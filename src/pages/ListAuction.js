@@ -21,7 +21,7 @@ function ListAuction() {
       <Mainbottom  mtTop="30px" colorP="#606060" colorH="#343e47" />
       <ListPoster />
       <ListCat />
-      <ListFinish />
+      <ListFinish hoverColor="list"/>
       <FooterFilter rounded="45px" mtfooteR="75px" bgColor="#392061" />
       <Footer ptFtr="50px" BtnRadius="45px" BrdInput="45px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="list" hoverbgF="listbg" Logoimage={LogoimageList} />  
     </div>

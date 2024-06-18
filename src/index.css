@@ -954,6 +954,26 @@ input:focus {
   .btnHovered{
     display: none;
   }
+  .ReadBtn{
+    display: none;
+  }
+  .ReadFoto{
+    width: 452px;
+    height: 688px;
+  }
+  .sliderDesc{
+    display: none;
+  }
+  .headersmall{
+    display: none;
+  }
+  .btnCount{
+    display: none;
+  }
+  .btnAuc{
+    display: none;
+  }
+  
 }
 
 @media only screen and (min-width: 600px) {

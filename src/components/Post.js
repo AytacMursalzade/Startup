@@ -119,8 +119,8 @@ function Post() {
   };
 
   return (
-    <div className="mt-[100px] relative">
-      <Slider {...settings} className="w-[1350px] ml-[80px] ">
+    <div className="mt-[100px] relative max-600:w-[454px] max-600:flex max-600:justify-center ">
+      <Slider {...settings} className="w-[1350px] ml-[80px] max-600:w-[420px] ">
         {data.map((item) => (
           <div key={item.id} className="p-[4px] shadow-2xl">
             <div className="relative cursor-pointer w-[409px] h-[262px] rounded-t-[9px] bg-center bg-cover transition-opacity duration-300" style={{ backgroundImage: `url(${item.img})` }}>

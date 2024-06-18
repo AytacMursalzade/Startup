@@ -21,8 +21,8 @@ function ReadBtn({ btnColor, display1, display2, nameAuction, GavelColorshop }) 
         </button>
       </div>
       <div style={ArticleHidden2} className="flex flex-col items-center justify-center mt-[70px]">
-        <h1 className="font-bold text-[34px] text-center">{nameAuction}</h1>
-        <div className="flex items-center justify-center mt-[15px]">
+        <h1 className="topic font-bold text-[34px] text-center">{nameAuction}</h1>
+        <div className="gavel flex items-center justify-center mt-[15px]">
           <div className="border-t-2 border-[#D8D7DC] w-[230px] mx-2"></div>
           <span style={{ color: GavelColorshop }} className="font-bold text-[27px]">
             <FaGavel />
@@ -30,17 +30,17 @@ function ReadBtn({ btnColor, display1, display2, nameAuction, GavelColorshop }) 
           <div className="border-t-2 border-[#D8D7DC] w-[230px] mx-2"></div>
         </div>
       </div>
-      <div className="mb-[100px] flex justify-center">
-        <ul className="flex gap-[25px] flex-wrap justify-center">
+      <div className="mb-[100px] flex justify-center  ">
+        <ul className="flex gap-[25px] flex-wrap justify-center ">
           {dataSlide.map((article, index) => (
-            <li key={index} className="w-[440px] h-[250px] flex gap-[20px] border-2">
+            <li key={index} className="w-[440px] h-[250px] flex gap-[20px] border-2 max-600:flex max-600:flex-col max-600:w-[452px] max-600:h-[688px] ">
               <div
                 style={{
                   backgroundImage: `url(${article.img})`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                 }}
-                className="w-[150px] h-[100%]"
+                className="ReadFoto w-[150px] h-[100%]"
               ></div>
               <div className="w-[280px] h-[230px] pt-[24px] flex flex-col justify-evenly">
                 <h1 className="text-[24px] text-[#484848] font-bold">
@@ -51,7 +51,7 @@ function ReadBtn({ btnColor, display1, display2, nameAuction, GavelColorshop }) 
                   <br />
                   {article.paragraf2}
                 </p>
-                <button className={`w-[120px] h-[40px] rounded-[9px] font-bold text-[14px] text-[white] hover:bg-[white] hover:text-[#242424] ${btnColor}`}>
+                <button className={`ReadBtn w-[120px] h-[40px] rounded-[9px] font-bold text-[14px] text-[white] hover:bg-[white] hover:text-[#242424] ${btnColor}`}>
                   READ MORE
                 </button>
               </div>

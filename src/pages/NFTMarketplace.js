@@ -17,7 +17,7 @@ function NFTMarketplace() {
       <NftSlide />
       <MarketFilter />
       <NftPoster />
-      <NftFooterTop />
+      <NftFooterTop hoverColor="nft"/>
       <FooterFilter mtfooteR="75px" rounded="45px"  bgColor="#4D79D2"/>
       <Footer ptFtr="50px" BtnRadius="45px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="nft" hoverbgF="nftbg" Logoimage={Logonft}/>  
     </div>

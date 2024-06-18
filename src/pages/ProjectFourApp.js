@@ -4,16 +4,15 @@ import Header from "../components/Header";
 import FooterFilter from "../components/FooterFilter";
 import Footer from "../components/Footer";
 import Logoimage1 from "../assets/logo-ibid.png";
-import ShopTop from "../components/ShopTop";
-import Projecthree from "../components/Projecthree";
 import ProjectFour from "../components/ProjectFour";
+import ShopTopBlog from "../components/ShopTopBlog";
 
 function ProjectFourApp() {
   return (
     <div className="container">
       <HeaderArrage basketColor="#0543EC" Logoimage={Logoimage1} />
       <Header bgColor="#2695FF" />
-      <ShopTop display2={true} title="Projects" paragraph="4 columns" description="4 columns"/>
+      <ShopTopBlog display2={true} title="Projects" paragraph="4 columns" description="4 columns"/>
       <ProjectFour />
       <FooterFilter mtfooteR="70px" rounded="45px" bgColor="#2695FF" />
       <Footer

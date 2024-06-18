@@ -12,7 +12,7 @@ function RecentAdded() {
     <div className="container">
       <HeaderArrage basketColor="#0543EC" Logoimage={Logoimage1} />
       <Header bgColor="#2695FF" />
-      <ShopTop title="Shop" paragraph="Product Category" description="Product Category"/>
+      <ShopTop title="Shop" paragraph="Recent Added Products" description="Recent Added Products"/>
       <ProductCat />
       <FooterFilter mtfooteR="75px" rounded="45px" bgColor="#2695FF" />
       <Footer

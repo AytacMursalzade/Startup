@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaRegEye } from "react-icons/fa";
 
-function ShopTop({
+function ShopTopBlog({
   paragraph,
   description,
   title,
@@ -24,7 +24,7 @@ function ShopTop({
   };
   return (
     <div className="w-[100%] h-[150px] shadow-xl px-[75px] py-[40px] max-600:w-[483px] max-600:h-[20px] ">
-      <div className="sliderDesc text-[#999999] text-[15px] flex gap-[10px] ">
+      <div className="text-[#999999] text-[15px] flex gap-[10px] max-600:mt-[-40px] max-600:ml-[-58px] ">
         <Link to="/">
           <p>iBid Theme /</p>
         </Link>
@@ -44,7 +44,7 @@ function ShopTop({
         <p>{paragraph}</p>
       </div>
       <div>
-        <p className="text-[30px] font-bold text-[#242424] max-600:ml-[-58px] max-600:mt-[-30px] ">{description}</p>
+        <p className="text-[30px] font-bold text-[#242424] max-600:ml-[-58px] max-600:pt-[-45px] ">{description}</p>
       </div>
       <div style={icon}>
         <div className="flex items-center gap-[8px] mt-[10px] ">
@@ -58,4 +58,4 @@ function ShopTop({
   );
 }
 
-export default ShopTop;
+export default ShopTopBlog;

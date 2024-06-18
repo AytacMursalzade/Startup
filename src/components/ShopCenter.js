@@ -70,11 +70,11 @@ function ShopCenter() {
   ];
 
   return (
-    <div className=" flex flex-col gap-[50px] mt-[60px] ml-[40px]">
+    <div className=" flex flex-col gap-[50px] mt-[60px] ml-[40px] max-600:w-[483px] max-600:flex max-600:flex-col max-600:ml-[-10px] max-600:gap-4 ">
       {connetc.map((item) => (
         <div
           key={item.id}
-          className="w-[95%] h-[140px] flex px-[78px] justify-between items-center p-[10px] m-[10px]"
+          className="w-[95%] h-[140px] flex px-[78px] justify-between items-center p-[10px] m-[10px] max-600:w-[483px] max-600:h-[350px] max-600:flex-col max-600:justify-evenly "
           style={{ backgroundColor: item.backgroundColor }}
         >
           <div className="flex flex-col justify-between gap-[10px] ">

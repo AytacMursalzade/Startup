@@ -3,9 +3,9 @@ import imageEar from "../assets/earphoneSlide.png";
 
 function CountImg() {
   return (
-    <div className="w-full h-[720px] pt-[70px] bg-[black] flex ">
-      <div className="countP flex  bg-[white] w-[1300px] h-[600px] mx-[60px]">
-        <div className="flex flex-col px-[90px] py-[60px] gap-[25px] ">
+    <div className="w-full h-[720px] pt-[70px] bg-[black] flex max-600:w-[533px] ">
+      <div className="countP flex  bg-[white] w-[1300px] h-[600px] mx-[60px] max-600:mx-[20px] max-600:w-[484px] ">
+        <div className="flex flex-col px-[90px] py-[60px] gap-[25px] max-600:p-[30px]">
           <h1 className="font-bold text-[45px] text-[#252525] ">
             Smartphone Earbuds
           </h1>
@@ -20,7 +20,7 @@ function CountImg() {
           </span>
           <div></div>
           <div>
-            <button className="bg-[#ea3546] text-[white] text-[16px] rounded-[45px] font-semibold px-[20px] py-[10px] ">
+            <button className="btnCount bg-[#ea3546] text-[white] text-[16px] rounded-[45px] font-semibold px-[20px] py-[10px] ">
               BID NOW
             </button>
           </div>

@@ -18,7 +18,7 @@ function HeaderArrage({basketColor,Logoimage,bgColor,display2}) {
   return (
     <>
       <div className="headerTop flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
-        <div className="flex justify-between gap-[28px]">
+        <div className="headersmall flex justify-between gap-[28px]">
           <div className="hidden topHeader">
             <MdEmail />
             <BsFillTelephoneFill />
