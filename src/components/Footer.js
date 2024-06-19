@@ -77,18 +77,18 @@ function Footer({
               </ul>
             </div>
           ))}
-          <div>
+          <div className="max-600:w-[448px]">
             <h1
               style={{ color: textH1 }}
               className="font-bold text-[24px] mb-[12px] "
             >
               Subscribe to our Newsletter
             </h1>
-            <form className="flex shadow-md  relative ">
+            <form className="flex shadow-md relative max-600:w-[410px] ">
               <label>
                 <input
                   style={{ borderRadius: BrdInput }}
-                  className="formFooter w-[200px] h-[40px] px-[12px] focus:outline-none focus:border-gray-700"
+                  className="formFooter w-[200px] h-[40px] px-[12px] focus:outline-none focus:border-gray-700 "
                   type="text"
                   name="name"
                   placeholder="Enter your email"

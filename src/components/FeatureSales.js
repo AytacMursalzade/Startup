@@ -51,10 +51,10 @@ function FeatureSales() {
 
   return (
     <>
-      <div className="mt-[60px] mb-[75px]">
-        <div className="flex flex-wrap gap-[28px] mt-[30px]  px-[71px]">
+      <div className="mt-[60px] mb-[75px] max-600:w-[484px] mx-auto">
+        <div className="flex flex-wrap gap-[28px] mt-[30px] px-[71px] max-600:gap-[8px] max-600:px-0 max-600:justify-center">
           {data.map((item, index) => (
-            <div key={index} className="relative w-[322px] h-[400px] flex flex-col shadow-2xl overflow-hidden group">
+            <div key={index} className={`relative w-[322px] h-[400px] flex flex-col shadow-2xl overflow-hidden group max-600:w-[232px] ${index === 0 ? 'justify-start' : ''}`}>
               <div
                 style={{
                   backgroundImage: `url(${item.img})`,
@@ -106,4 +106,3 @@ function FeatureSales() {
 }
 
 export default FeatureSales;
-

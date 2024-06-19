@@ -69,48 +69,48 @@ function LabSalesTwo() {
   return (
     <>
       <div className="mt-[100px] px-[75px] ">
-        <h1 className="text-[24px] font-bold text-[#000000] ">
-          Research Machines
+        <h1 className="text-[24px] font-bold text-[#000000] max-600:ml-[-35px]  ">
+          Operating Room Equipment
         </h1>
-        <ul className="grid grid-cols-6 gap-6 mt-[48px] ">
+        <ul className="grid grid-cols-6 gap-6 mt-[48px] max-600:grid-cols-2 max-600:w-[483px] max-600:flex max-600:flex-wrap max-600:ml-[-25px]">
           {sales.map((item, index) => (
             <li key={index}>
-              <div className="flex flex-col items-center gap-[8px] ">
+            <div className="flex flex-col items-center gap-[8px] max-600:w-[231px] max-600:flex-col max-600:gap-4 max-600:ml-[-21px]">
+              <Link to="/">
+                <img
+                  className="transition-transform duration-300 ease-in-out transform hover:scale-110 max-600:w-[217px] "
+                  width={198}
+                  src={item.img}
+                  alt="laboratory"
+                />
+              </Link>
+              <Link to="/">
+                <h1 className="text-[18px] text-center hover:text-[#565ce0] text-[#484848] font-bold">
+                  {item.description} <br />
+                  {item.description1}
+                  <br />
+                  {item.description2}
+                </h1>
+              </Link>
+              <p className="text-[#606060] text-[14px] font-light ">
+                {item.auction}
+                <span className="text-[black] text-[14px] font-semibold ">
+                  {item.price}
+                </span>
+              </p>
+              <div className="symbol mt-[2px] flex gap-[6px] ">
                 <Link to="/">
-                  <img
-                    className="transition-transform duration-300 ease-in-out transform hover:scale-110"
-                    width={198}
-                    src={item.img}
-                    alt="laboratory"
-                  />
+                  <FaGavel />
                 </Link>
                 <Link to="/">
-                  <h1 className="text-[18px] text-center hover:text-[#565ce0] text-[#484848] font-bold">
-                    {item.description} <br />
-                    {item.description1}
-                    <br />
-                    {item.description2}
-                  </h1>
+                  <CiHeart />
                 </Link>
-                <p className="text-[#606060] text-[14px] font-light ">
-                  {item.auction}
-                  <span className="text-[black] text-[14px] font-semibold ">
-                    {item.price}
-                  </span>
-                </p>
-                <div className="symbol mt-[2px] flex gap-[6px] ">
-                  <Link to="/">
-                    <FaGavel />
-                  </Link>
-                  <Link to="/">
-                    <CiHeart />
-                  </Link>
-                  <Link to="/">
-                    <MdSearch />
-                  </Link>
-                </div>
+                <Link to="/">
+                  <MdSearch />
+                </Link>
               </div>
-            </li>
+            </div>
+          </li>
           ))}
         </ul>
       </div>

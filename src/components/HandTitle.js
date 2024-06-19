@@ -51,7 +51,7 @@ function HandTitle() {
   };
 
   return (
-    <div className="w-full h-[650px] bg-[#FFF0FD] flex flex-col gap-[35px] ">
+    <div className="SliderHand w-full h-[650px] bg-[#FFF0FD] flex flex-col gap-[35px]">
       
       <div className="topic flex flex-col mt-[85px] items-center justify-center">
         <h1 className="font-bold text-[34px]">LATEST PRODUCTS</h1>

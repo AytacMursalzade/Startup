@@ -72,7 +72,7 @@ function BlogSimple() {
   ];
 
   return (
-    <div className="flex flex-wrap  px-[50px] mt-[100px] ">
+    <div className="flex flex-wrap  px-[50px] mt-[100px] max-600:w-[484px] max-600:flex max-600:justify-center ">
       {data.map((item) => (
         <div key={item.id} className="w-[430px] m-[20px] ">
           <Link to="/">

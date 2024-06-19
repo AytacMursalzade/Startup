@@ -50,15 +50,15 @@ function MediaTwoCol() {
     }
 
     return (
-        <div className="mt-8 mx-auto w-[90%] ">
-            <Slider {...settings}>
+        <div className="mt-8 mx-auto w-[90%] max-600:w-[484px] ">
+            <Slider {...settings} className=' max-600:w-[448px]'>
                 {data.map((item) => (
-                    <div key={item.id} className="px-2">
+                    <div key={item.id} className="px-2 ">
                         <div className="relative pt-[80px] w-full h-64">
                             <img
                                 src={item.img}
                                 alt={`Slide ${item.id}`}
-                                className="w-full h-full object-cover"
+                                className="w-[150px] h-[100px] object-cover max-600:w-[150px] max-600:h-[100px] "
                             />
                         </div>
                     </div>

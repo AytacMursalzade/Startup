@@ -6,7 +6,6 @@ import imgData2 from "../assets/col3.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 function MediaThree() {
     const data = [
         {
@@ -31,7 +30,16 @@ function MediaThree() {
         slidesToShow: 3,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     };
 
     function SampleNextArrow(props) {
@@ -50,14 +58,14 @@ function MediaThree() {
         return (
             <div
                 className={className}
-                style={{ ...style, display: "block",color:"gray", background: "gray" }}
+                style={{ ...style, display: "block", color: "gray", background: "gray" }}
                 onClick={onClick}
             />
         );
     }
 
     return (
-        <div className="mt-8 mx-auto w-[90%] ">
+        <div className="mt-8 mx-auto w-[90%] max-w-[600px]">
             <Slider {...settings}>
                 {data.map((item) => (
                     <div key={item.id} className="px-2">

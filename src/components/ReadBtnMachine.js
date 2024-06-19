@@ -4,7 +4,7 @@ import DomainBtn1 from "../assets/labLatest.png";
 import DomainBtn2 from "../assets/labLatest.png";
 import DomainBtn3 from "../assets/labLatest.png";
 
-function ReadBtnMachine() {
+function ReadBtnMachine({btnColor}) {
     const dataSlide = [
         {
             id:"1",
@@ -35,35 +35,32 @@ function ReadBtnMachine() {
 
     
   return (
-    <div className="flex flex-col items-center  mt-[100px] gap-[50px]">
-      <div className=" px-[70px]">
-        <h1 className="text-[35px] text-[black] text-center font-bold">LATEST NEWS</h1>
-        <div className="flex items-center justify-center mt-[15px]">
-            <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
-            <span
-             
-              className="font-bold text-[#FBDE06] text-[27px]"
-            >
-              <FaGavel />
-            </span>
-            <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_left"></div>
-          </div>
+    <div className="flex flex-col mt-[100px] gap-[50px]">
+      
+      <div className="flex flex-col items-center justify-center mt-[70px]">
+        <h1 className="topic font-bold text-[34px] text-center">LATEST NEWS</h1>
+        <div className="gavel flex items-center justify-center mt-[15px]">
+          <div className="border-t-2 border-[#D8D7DC] w-[230px] mx-2"></div>
+          <span  className="font-bold text-[27px] text-[#FBDE06] ">
+            <FaGavel />
+          </span>
+          <div className="border-t-2 border-[#D8D7DC] w-[230px] mx-2"></div>
+        </div>
       </div>
-     
-      <div className="mb-[100px] flex justify-center">
-        <ul className="flex gap-[25px] flex-wrap justify-center">
+      <div className="mb-[100px] flex justify-center  ">
+        <ul className="flex gap-[25px] flex-wrap justify-center ">
           {dataSlide.map((article, index) => (
-            <li key={index} className="w-[440px] h-[250px] flex gap-[20px] border-2">
+            <li key={index} className="w-[440px] h-[250px] flex gap-[20px] border-2 max-600:flex max-600:flex-col max-600:w-[452px] max-600:h-[688px] ">
               <div
                 style={{
                   backgroundImage: `url(${article.img})`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                 }}
-                className="w-[150px] h-[100%]"
+                className="ReadFoto w-[150px] h-[100%]"
               ></div>
               <div className="w-[280px] h-[230px] pt-[24px] flex flex-col justify-evenly">
-                <h1 className="text-[24px] hover:text-[#FBDE06] text-[#484848] font-bold">
+                <h1 className="text-[24px] text-[#484848] font-bold">
                   {article.description1} <br /> {article.description2}
                 </h1>
                 <p className="text-[#606060] text-[14px] font-light">
@@ -71,7 +68,7 @@ function ReadBtnMachine() {
                   <br />
                   {article.paragraf2}
                 </p>
-                <button className="w-[120px] h-[40px] rounded-[7px] font-bold text-[14px] text-[white] bg-[#FBDE06] hover:bg-[white] hover:text-[#242424] ">
+                <button className={`ReadBtn w-[120px] h-[40px] rounded-[9px] font-bold text-[14px] text-[white] hover:bg-[white] hover:text-[#242424] ${btnColor}`}>
                   READ MORE
                 </button>
               </div>

@@ -118,7 +118,7 @@ const Navbar = (props) => {
   
 
   return (
-    <div className={`h-[70px] bg-[${props.bgColor}] flex justify-between`}>
+    <div className={`h-[70px] bg-[${props.bgColor}] flex justify-between `}>
       <nav>
         <ul className="flex gap-[44px] text-white items-center text-[14px] font-medium ">
           <Link to="/categories"><li

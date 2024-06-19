@@ -4,7 +4,6 @@ import Header from "../components/Header";
 import Slide from "../components/Slide";
 import LogoimageMachine from "../assets/logo-machinery.png";
 import LatestAuto from "../components/LatestAuto";
-import MachineLatestnew from "../assets/machinery_products3-400x400.jpg";
 import MachinePoster from "../components/MachinePoster";
 import MachineImg from "../components/MachineImg";
 import imgMachineVideo from "../assets/video_ovr.png";
@@ -25,13 +24,6 @@ function Machine() {
       <LatestAuto
         hoverTextBotm="colorYellow"
         hoverLatest="colorYellowbg"
-        OneLatest="LATEST AUCTIONS"
-        toolRadius="2px"
-        textLatest="CAT Center-Pivot 420"
-        art={MachineLatestnew}
-        GavelTextColor="#FBDE06"
-        tooltipBg="#FBDE06"
-        howToused="Starting Bid"
       />
       <MachinePoster />
       <MachineSales toolBg="#FBDE06" hoveredSales="colorYellow" />
@@ -41,7 +33,7 @@ function Machine() {
         GavelColorshop="colorYellow"
       />
       <SlideMachine />
-      <ReadBtnMachine />
+      <ReadBtnMachine btnColor="colorYellow"/>
       <FooterFilter rounded="45px" bgColor="#FBDE06" />
       <Footer
         

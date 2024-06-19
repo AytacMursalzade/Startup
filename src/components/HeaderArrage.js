@@ -18,7 +18,7 @@ function HeaderArrage({basketColor,Logoimage,bgColor,display2}) {
   return (
     <>
       <div className="headerTop flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
-        <div className="flex justify-between gap-[28px]">
+        <div className="headersmall flex justify-between gap-[28px] ">
           <div className="hidden topHeader">
             <MdEmail />
             <BsFillTelephoneFill />
@@ -93,8 +93,8 @@ function HeaderArrage({basketColor,Logoimage,bgColor,display2}) {
           </Link>
         </div>
       </div>
-      <div className="logoIcons flex col-3  justify-between items-center px-[75px] py-[30px] ">
-        <div className="logoicon">
+      <div className="logoIcons flex col-3  justify-between items-center px-[75px] py-[30px] max-600:w-[100%]  ">
+        <div className="logoicon max-600:flex max-600:justify-between">
           <div className="logo">
             <img width={80} src={Logoimage} alt="logo" />
           </div>

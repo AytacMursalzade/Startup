@@ -33,7 +33,7 @@ function LabItemOne() {
 
   return (
     <div>
-      <ul className="flex justify-around px-[75px] mt-[100px] ">
+      <ul className="flex justify-around px-[75px] mt-[100px] max-600:flex max-600:flex-col max-600:gap-4 max-600:justify-center max-600:ml-[-31px] ">
                 {data.map((item) => {
                     const LabitemImg = {
                         backgroundImage: `url(${item.img})`,
@@ -43,11 +43,11 @@ function LabItemOne() {
 
                     return (
                         <li key={item.id}>
-                            <div className="flex">
-                                <div style={LabitemImg} className="w-[436px]  h-[232px] flex flex-col justify-center gap-[15px] pl-[200px] ">
+                            <div className="flex max-600:w-[488px] ">
+                                <div style={LabitemImg} className="w-[436px]  h-[232px] flex flex-col justify-center gap-[15px] pl-[200px] max-600:w-[458px] max-600:h-[243px]">
                                     <h1 className="text-[#000000] text-[20px] font-bold ">{item.description}</h1>
                                     <p className="text-[#606060] font-light text-[14px] ">{item.paragraph1}<br/>{item.paragraph2}</p>
-                                    <button className="w-[138px] h-[38px] rounded-[45px] text-white bg-[#565CE0] font-bold hover:opacity-80">VIEW MORE</button>
+                                    <button className="labBtn w-[138px] h-[38px] rounded-[45px] text-white bg-[#565CE0] font-bold hover:opacity-80">VIEW MORE</button>
                                 </div>
                             </div>
                         </li>

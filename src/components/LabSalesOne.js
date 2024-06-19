@@ -71,16 +71,16 @@ function LabSalesOne() {
   return (
     <>
       <div className="mt-[100px] px-[75px] ">
-        <h1 className="text-[24px] font-bold text-[#000000] ">
+        <h1 className="text-[24px] font-bold text-[#000000] max-600:ml-[-35px]  ">
           Operating Room Equipment
         </h1>
-        <ul className="grid grid-cols-6 gap-6 mt-[48px] ">
+        <ul className="grid grid-cols-6 gap-6 mt-[48px] max-600:grid-cols-2 max-600:w-[483px] max-600:flex max-600:flex-wrap max-600:ml-[-25px]">
           {sales.map((item, index) => (
             <li key={index}>
-            <div className="flex flex-col items-center gap-[8px] ">
+            <div className="flex flex-col items-center gap-[8px] max-600:w-[231px] max-600:flex-col max-600:gap-4 max-600:ml-[-21px]">
               <Link to="/">
                 <img
-                  className="transition-transform duration-300 ease-in-out transform hover:scale-110"
+                  className="transition-transform duration-300 ease-in-out transform hover:scale-110 max-600:w-[217px] "
                   width={198}
                   src={item.img}
                   alt="laboratory"

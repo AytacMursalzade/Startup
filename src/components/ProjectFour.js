@@ -45,15 +45,15 @@ function ProjectFour() {
     ];
 
     return (
-        <div className="flex flex-wrap ml-[75px] mt-[75px] ">
+        <div className="flex flex-wrap ml-[75px] mt-[75px] max-600:w-[454px] max-600:flex max-600:justify-center max-600:gap-3 max-600:ml-[14px]">
             {data.map((item) => (
-                <div key={item.id} className="relative">
+                <div key={item.id} className="relative max-600:w-[217px] max-600:h-[217px]">
                     <img 
                         src={item.img} 
                         alt={`Project ${item.id}`} 
-                        className="w-[342px] h-[342px] transition-shadow duration-300 hover:shadow-lg"
+                        className="w-[342px] h-[342px] transition-shadow duration-300 hover:shadow-lg max-600:w-[217px] max-600:h-[217px] "
                     />
-                    <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300 max-600:w-[217px] max-600:h-[217px] "></div>
                 </div>
             ))}
         </div>
