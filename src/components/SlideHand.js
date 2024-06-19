@@ -7,7 +7,7 @@ function SlideHand({ imgHandPosterAverage,symbols,symbolsH,symbolsP,symbolsH1,sy
     backgroundPosition: "center",
   };
   return (
-    <div style={handMadeAverage} className="flex mt-[150px] text-center justify-around items-center w-[100%] h-[380px] max-600:flex max-600:flex-col max-600:h-[854px] max-600:w-[537px] ">
+    <div style={handMadeAverage} className="flex mt-[150px] text-center justify-around items-center w-[100%] h-[380px] max-600:flex max-600:flex-col max-600:h-[854px] max-600:w-full ">
       <div className="flex flex-col gap-[18px] ">
         <img className="ml-[150px] max-600:mx-auto " width={80} src={symbols} alt="symbols" />
         <h1 className="text-[30px] font-semibold text-[white] ">{symbolsH}</h1>

@@ -8,7 +8,7 @@ function Slidehandmade({ imgHandPoster }) {
   };
 
   return (
-    <div style={handMadeImg} className="w-[100%] h-[620px] flex flex-col gap-[18px] justify-center px-[75px] max-600:w-[537px]">
+    <div style={handMadeImg} className="w-[100%] h-[620px] flex flex-col gap-[18px] justify-center px-[75px] max-600:w-full">
       <h1 className="text-[50px] text-[#151515] font-bold ">Items crafted with love <br/> for your home</h1>
       <p className="text-[16px] text-[#606060] font-light ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula

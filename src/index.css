@@ -4,6 +4,33 @@
 
 
 
+
+
+/* body {
+  font-family: Arial, sans-serif;
+} */
+
+ 
+/* 
+  *::-webkit-scrollbar {
+width: 5px;
+}
+
+/* Track *
+*::-webkit-scrollbar-track {
+background:  blue; 
+}
+
+/* Handle *
+*::-webkit-scrollbar-thumb {
+background:  brown; 
+}
+
+/* Handle on hover *
+*::-webkit-scrollbar-thumb:hover {
+background:  rgb(119, 58, 58); 
+} */
+
 .slider-container {
   width: 60%;
   background: white;
@@ -22,7 +49,6 @@
 .indicators {
   display: flex;
   justify-content: center;
-  
 }
 
 .indicator {
@@ -36,9 +62,6 @@
 .indicator.active {
   background-color: white;
 }
-
-
-
 
 #progress-bar {
   display: table;
@@ -79,7 +102,7 @@
 #progress-bar li:after {
   width: 100%;
   height: 2px;
-  content: '';
+  content: "";
   position: absolute;
   background-color: #fff;
   top: 15px;
@@ -92,27 +115,27 @@
 }
 
 #progress-bar .step-done {
-  color: #2695FF;
+  color: #2695ff;
   font-weight: 700;
 }
 
 #progress-bar .step-done:before {
-  border-color: #2695FF;
-  background-color: #2695FF;
+  border-color: #2695ff;
+  background-color: #2695ff;
   color: #fff;
 }
 
 #progress-bar .step-done + li:after {
-  background-color: #2695FF;
+  background-color: #2695ff;
 }
 
 #progress-bar .step-active {
-  color: #2695FF;
+  color: #2695ff;
 }
 
 #progress-bar .step-active:before {
-  border-color: #2695FF;
-  color: #2695FF;
+  border-color: #2695ff;
+  color: #2695ff;
   font-weight: 900;
 }
 .accordion {
@@ -129,7 +152,7 @@
 }
 
 .accordion-title {
-  background: #EEEEEE;
+  background: #eeeeee;
   color: #666666;
   padding: 16px;
   font-size: 18px;
@@ -194,133 +217,131 @@
   transform: scale(0.95);
 }
 
-
-
-.RedC{
+.RedC {
   @apply hover:text-[#BE263F];
 }
-.RedCbg{
+.RedCbg {
   @apply hover:bg-[#BE263F];
 }
-.White{
+.White {
   @apply hover:text-red-500;
 }
-.Whitebg{
+.Whitebg {
   @apply hover:bg-red-500;
 }
-.colorBlue{
+.colorBlue {
   @apply hover:text-blue-500;
 }
-.colorBluebg{
+.colorBluebg {
   @apply hover:bg-blue-500;
 }
-.colorBlueOpen{
+.colorBlueOpen {
   @apply hover:text-[#009EA3];
 }
-.colorBlueOpenbg{
+.colorBlueOpenbg {
   @apply hover:bg-[#009EA3];
 }
-.colorOrange{
+.colorOrange {
   @apply hover:text-[#EE964B];
 }
-.colorOrangebg{
+.colorOrangebg {
   @apply hover:bg-[#EE964B];
 }
-.colorOrang{
+.colorOrang {
   @apply hover:text-[#F27928];
 }
-.colorOrangbg{
+.colorOrangbg {
   @apply hover:bg-[#F27928];
 }
-.colorGreenField{
+.colorGreenField {
   @apply hover:text-[#627452];
 }
-.colorGreenFieldbg{
+.colorGreenFieldbg {
   @apply hover:bg-[#627452];
 }
-.colorshipsHarbour{
+.colorshipsHarbour {
   @apply hover:text-[#4F89B0];
 }
-.colorshipsHarbourbg{
+.colorshipsHarbourbg {
   @apply hover:bg-[#4F89B0];
 }
-.colorBakersChocolate{
+.colorBakersChocolate {
   @apply hover:text-[#5E3217];
 }
-.colorBakersChocolatebg{
+.colorBakersChocolatebg {
   @apply hover:bg-[#5E3217];
 }
-.colorPurplishBlue{
+.colorPurplishBlue {
   @apply hover:text-[#6449E7];
 }
-.colorPurplishBluebg{
+.colorPurplishBluebg {
   @apply hover:bg-[#6449E7];
 }
-.colorBluishBlack{
+.colorBluishBlack {
   @apply hover:text-[#414144];
 }
-.colorBluishBlackbg{
+.colorBluishBlackbg {
   @apply hover:bg-[#414144];
 }
-.colorBlueMania{
+.colorBlueMania {
   @apply hover:text-[#6FCBF4];
 }
-.colorBlueManiabg{
+.colorBlueManiabg {
   @apply hover:bg-[#6FCBF4];
 }
-.colorYellow{
+.colorYellow {
   @apply hover:text-[#FBDE06];
 }
-.colorYellowbg{
+.colorYellowbg {
   @apply hover:bg-[#FBDE06];
 }
-.colorPurplebg{
+.colorPurplebg {
   @apply hover:bg-[#C16BB6];
 }
-.colorPurple{
+.colorPurple {
   @apply hover:text-[#C16BB6];
 }
-.colorGreenBluebg{
+.colorGreenBluebg {
   @apply hover:bg-[#4AD493];
 }
-.colorGreenBlue{
+.colorGreenBlue {
   @apply hover:text-[#4AD493];
 }
-.colorDomainbg{
+.colorDomainbg {
   @apply hover:bg-[#18AE91];
 }
-.colorDomain{
+.colorDomain {
   @apply hover:text-[#18AE91];
 }
-.sporbg{
+.sporbg {
   @apply hover:bg-[#07745F];
 }
-.spor{
+.spor {
   @apply hover:text-[#07745F];
 }
-.nftbg{
+.nftbg {
   @apply hover:bg-[#4D79D2];
 }
-.nft{
+.nft {
   @apply hover:text-[#4D79D2];
 }
-.funYellowbg{
+.funYellowbg {
   @apply hover:bg-[#D4A619];
 }
-.funYellow{
+.funYellow {
   @apply hover:text-[#D4A619];
 }
-.listbg{
+.listbg {
   @apply hover:bg-[#392061];
 }
-.list{
+.list {
   @apply hover:text-[#392061];
 }
 
 .zoomable-bg {
   background-position: center;
   background-size: cover;
-  transition: background-size 0.5s ease; 
+  transition: background-size 0.5s ease;
 }
 
 .zoomable-bg:hover {
@@ -334,15 +355,15 @@
 }
 
 .zoom-content img {
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
 .zoom-container:hover .zoom-content img {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
-.NavbarCard ul ~ li{
+.NavbarCard ul ~ li {
   border: 2px solid black;
-  background-color: #0543EC;
+  background-color: #0543ec;
   height: 15px;
   padding: 5px 10px;
   display: flex;
@@ -350,40 +371,40 @@
   justify-content: center;
 }
 
-.PosterCoins{
-  background-color: #E94A35;
+.PosterCoins {
+  background-color: #e94a35;
 }
-.CoinsPTwo{
+.CoinsPTwo {
   background-color: #2196f3;
 }
-.CoinsPThree{
+.CoinsPThree {
   background-color: yellow;
 }
 
 .button {
-  width: 150px; 
-  padding: 10px 10px 7px 10px; 
-  text-align: center; 
-  border: none; 
-  cursor: pointer; 
-  position: relative; 
+  width: 150px;
+  padding: 10px 10px 7px 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
 }
 
 .button.active::after {
-  content: ""; 
-  position: absolute; 
-  bottom: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 3px; 
-  background-color: #4AD493;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #4ad493;
 }
 .no-scrollbar {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .no-scrollbar::-webkit-scrollbar {
-  display: none;  
+  display: none;
 }
 /* .bullet {
   background-image: url("../src/assets/iphoneear.jpg");
@@ -536,18 +557,17 @@
 .villaTour{
   background-image: url("../src/assets/villastour.jpg");
 } */
-.communitylink{
+.communitylink {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 120px;
 }
-.sidebar-label-container{
+.sidebar-label-container {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
 }
 .sidebar-label-container:hover input ~ .checkmark {
   background-color: #ccc;
@@ -580,16 +600,16 @@
   margin-top: 3rem;
   border-color: #f7f7f7;
 }
-.backSubject{
-  text-shadow: 1px -6px 18px rgba(32,29,29,0.7);
+.backSubject {
+  text-shadow: 1px -6px 18px rgba(32, 29, 29, 0.7);
   color: white;
 }
 .slide-item {
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
 .slide-item:hover {
-  transform: translateX(5px); 
+  transform: translateX(5px);
 }
 *.container {
   width: 100%;
@@ -671,10 +691,8 @@ input:focus {
 
 .inputBlue:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #0543EC;
+  box-shadow: 0 0 0 2px #0543ec;
 }
-
-
 
 /* .imagePhone {
   background-image: url(../src/assets/mobile_prod1-1-400x400.jpg);
@@ -730,12 +748,11 @@ input:focus {
 }
 
 .input:focus {
-  border-top  : 1px solid #2695ff; 
-
+  border-top: 1px solid #2695ff;
 }
 
 .tooltip-container {
-  position: relative; 
+  position: relative;
 }
 
 /* .tooltip > title {
@@ -760,24 +777,22 @@ input:focus {
 /* //MEDIA QUERY// */
 
 @media only screen and (max-width: 600px) {
- 
-  br{
+  
+  br {
     display: none;
   }
-  .container{
-    width: 483px;
-  }
-  .hamburgerMenu{
+ 
+  .hamburgerMenu {
     color: #2695ff;
   }
-  .logoicon{
+  .logoicon {
     display: flex;
     flex-direction: row;
   }
-  .dropdown{
+  .dropdown {
     display: none;
   }
-  .logoIcons{
+  .logoIcons {
     width: 479px;
     height: 70px;
     display: flex;
@@ -785,18 +800,18 @@ input:focus {
     border-bottom: 1px solid rgb(212, 212, 212);
     margin-bottom: 18px;
   }
-  .carousel{
+  .carousel {
     width: 477px;
   }
-  .topHeader{
+  .topHeader {
     display: flex;
     flex-direction: row;
-    gap:5px;
+    gap: 5px;
     margin-left: 432px;
     padding-top: 8px;
     font-size: 16px;
   }
-  .iconsHeader{
+  .iconsHeader {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -804,7 +819,7 @@ input:focus {
     font-size: 19px;
     margin-left: 175px;
   }
-  
+
   .PhonesAll {
     padding: 0 16px;
     justify-content: center;
@@ -814,182 +829,179 @@ input:focus {
     max-width: 500px;
   }
   .allPhones {
-    width: calc(50% - 8.5px); 
+    width: calc(50% - 8.5px);
   }
-  .headerTop{
-    width: 483px;
+  .headerTop {
+    width: 100%; 
+    max-width: 483px; 
     display: block;
     border: none;
-    border-bottom: 1px solid rgb(225, 222, 222);
-  }
-  .nameTop{
+    border-bottom: 1px solid rgb(225, 222, 222); 
+}
+
+  .nameTop {
     display: none;
   }
-  .wishTrack{
+  .wishTrack {
     display: none;
   }
-  .slider-container{
-    width: 483px;
+  .slider-container {
+    width: 537px;
   }
-  .dropdown{
+  .dropdown {
     display: none;
   }
-  .headerNav{
+  .headerNav {
     display: none;
   }
-  .filtered{
+  .filtered {
     display: none;
   }
-  .basket{
+  .basket {
     display: none;
   }
-  
-  .logo{
-   width: 70px; 
-   position: relative;
-   right: 60px;
+
+  .logo {
+    width: 70px;
+    position: relative;
+    right: 60px;
   }
-  
-  .tracking{
+
+  .tracking {
     display: flex;
     padding-right: 58px;
     flex-direction: column;
     gap: 25px;
     margin-right: 129px;
   }
-  .topic{
+  .topic {
     font-size: 24px;
     font-weight: 700;
   }
-  .gavel{
+  .gavel {
     width: 330px;
   }
-  .falseTooltip{
+  .falseTooltip {
     display: none;
   }
-  .posterShow{
+  .posterShow {
     width: 483px;
     display: flex;
     flex-direction: column;
   }
-  .onePoster1{
+  .onePoster1 {
     width: 483px;
     display: flex;
     flex-direction: column;
   }
-  .Poster{
+  .Poster {
     width: 453px;
     height: 261px;
     margin-left: 9px;
   }
-  .viewPart{
+  .viewPart {
     margin-left: -70px;
   }
-  .salesPart{
+  .salesPart {
     width: 215px;
     height: 385px;
     display: flex;
     flex-direction: column;
   }
-  .salesPartPost{
+  .salesPartPost {
     width: 577px;
     margin-left: -8px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .formInput{
+  .formInput {
     display: flex;
     flex-direction: column;
   }
-  .formData{
+  .formData {
     width: 414px;
     margin-left: 18px;
   }
-  .btnsubmit{
+  .btnsubmit {
     margin-top: 20px;
   }
-  .ftres{
+  .ftres {
     margin-left: -50px;
     display: flex;
     flex-direction: column;
   }
-  .communityPost{
+  .communityPost {
     display: flex;
     flex-direction: column;
   }
-  .sliderpart{
+  .sliderpart {
     width: 483px;
   }
-  .filterfooter{
+  .filterfooter {
     width: 515px;
     height: 125px;
   }
-  .footerblue{
+  .footerblue {
     width: 510px;
     display: flex;
     flex-direction: column;
   }
-  .fooTopic{
+  .fooTopic {
     width: 370px;
     display: flex;
     flex-direction: column;
     justify-content: left;
     margin-left: -50px;
   }
-  .filterown{
+  .filterown {
     margin-left: -52px;
     margin-top: 10px;
   }
-  .averageFooter{
+  .averageFooter {
     margin-left: 15px;
     display: flex;
     flex-direction: column;
     margin-bottom: 70px;
   }
-  .lastFooter{
-    display: none;
-    
-  }
-  .btnHovered{
+  .lastFooter {
     display: none;
   }
-  .ReadBtn{
+  .btnHovered {
     display: none;
   }
-  .ReadFoto{
+  .ReadBtn {
+    display: none;
+  }
+  .ReadFoto {
     width: 452px;
     height: 688px;
   }
-  .sliderDesc{
+  .sliderDesc {
     display: none;
   }
-  .headersmall{
+  .headersmall {
     display: none;
   }
-  .btnCount{
+  .btnCount {
     display: none;
   }
-  .btnAuc{
+  .btnAuc {
     display: none;
   }
-  .labBtn{
+  .labBtn {
     display: none;
   }
-  .SliderHand{
+  .SliderHand {
     display: none;
   }
   
 }
 
 @media only screen and (min-width: 600px) {
-  
 }
 
 @media only screen and (min-width: 768px) {
-  
-
 }
 @media only screen and (min-width: 992px) {
- 
 }

@@ -46,7 +46,7 @@ function HandmadeLatest() {
   ];
 
   return (
-    <div className="flex flex-col px-[75px] justify-center mt-[126px] mb-[75px] max-600:w-[537px] max-600:px-[0]">
+    <div className="flex flex-col px-[75px] justify-center mt-[126px] mb-[75px] max-600:w-[537px] max-600:px-[0] max-600:flex max-600:p-[20px] max-600:mx-auto ">
       <div className="flex flex-col items-center justify-center">
         <h1 className="topic font-bold text-[34px]">LATEST AUCTIONS</h1>
         <div className="gavel flex items-center justify-center mt-[15px]">
@@ -58,11 +58,11 @@ function HandmadeLatest() {
         </div>
       </div>
 
-      <div className="PhonesAll flex flex-wrap justify-center gap-[42px] mt-[30px] max-600:gap-2 max-600:justify-center">
+      <div className="PhonesAll flex flex-wrap justify-center gap-[20px] mt-[30px] max-600:gap-2 max-600:justify-center  ">
         {data.map((item, index) => (
           <div
             key={index}
-            className="relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group max-600:w-[calc(50%-5px)] max-600:h-[350px]"
+            className="relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group max-600:w-[calc(50%-4px)] max-600:h-[350px]"
           >
             <div
               style={{

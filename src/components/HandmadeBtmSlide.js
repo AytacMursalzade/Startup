@@ -3,9 +3,9 @@ import srcImg from "../assets/handmadeSlide.png";
 
 function HandmadeBtmSlide() {
   return (
-    <div className="flex justify-around mt-[130px] max-600:flex max-600:flex-col max-600:ml-[10px] ">
+    <div className="flex justify-around mt-[130px]  max-600:flex max-600:flex-col  max-600:px-[20px] max-600:w-[100%] ">
       <div>
-        <img width={480} src={srcImg} alt="handmade" className="max-600:ml-[20px]" />
+        <img width={480} src={srcImg} alt="handmade"  />
       </div>
       <div className="flex flex-col justify-evenly max-600:flex max-600:gap-4">
         <h1 className="text-[35px] text-[#151515] font-bold">About iBid <br/> and the business</h1>
