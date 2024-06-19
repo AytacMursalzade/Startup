@@ -115,36 +115,37 @@ function LabItemTwo() {
       price: "£2.175.00",
     },
   ];
+
   return (
-    <div className="px-[75px] mt-[75px] ">
-      <h1 className="text-[24px] font-bold text-[#000000] ">
+    <div className="px-[75px] mt-[75px]">
+      <h1 className="text-[24px] font-bold text-[#000000] max-600:ml-[-27px] ">
         Most Recent Products
       </h1>
-      <ul className="grid grid-cols-4 gap-6 mt-[48px] ">
+      <ul className="grid grid-cols-4 gap-6 mt-[48px] max-w-full max-600:grid-cols-2">
         {data.map((item, index) => (
           <li key={index}>
-            <div className="flex items-center gap-[8px] ">
+            <div className="flex items-center gap-[8px] max-600:w-[231px] max-600:flex-col max-600:gap-4 max-600:justify-center max-600:ml-[-21px]">
               <Link to="/">
                 <img
-                  className="transition-transform duration-300 ease-in-out transform hover:scale-110"
+                  className="transition-transform duration-300 ease-in-out transform hover:scale-110 max-600:w-[231px] "
                   width={112}
                   src={item.img}
                   alt="laboratory"
                 />
               </Link>
-              <div className="flex flex-col gap-[8px]">
+              <div className="flex flex-col gap-[8px] max-600:w-[231px]">
                 <Link to="/">
-                  <h1 className="text-[17px] text-left hover:text-[#565ce0] text-[#484848] font-bold ">
+                  <h1 className="text-[17px] text-left hover:text-[#565ce0] text-[#484848] font-bold">
                     {item.description} <br /> {item.description1}
                   </h1>
                 </Link>
-                <p className="text-[#606060] text-[14px] font-light ">
+                <p className="text-[#606060] text-[14px] font-light">
                   {item.auction}
-                  <span className="text-[black] text-[14px] font-semibold ">
+                  <span className="text-[black] text-[14px] font-semibold">
                     {item.price}
                   </span>
                 </p>
-                <div className="symbol mt-[2px] flex gap-[6px] ">
+                <div className="symbol mt-[2px] flex gap-[6px]">
                   <Link to="/">
                     <FaGavel />
                   </Link>

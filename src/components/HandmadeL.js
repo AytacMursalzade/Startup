@@ -48,12 +48,12 @@ function HandmadeL({ hoverTextBotm }) {
   ];
 
   return (
-    <div className="container">
+    <div className="container ">
       <div className="mx-[75px] my-[100px] flex flex-col gap-[50px] rounded-[9px] ">
         {[0, 1].map((row) => (
-          <ul key={row} className="flex justify-around gap-[20px]">
+          <ul key={row} className="flex justify-around gap-[20px] max-600:w-[458px] max-600:flex max-600:flex-col ">
             {data.slice(row * 3, row * 3 + 3).map((item) => (
-              <li key={item.id} className="w-[350px] min-h-[110px] bg-[white] shadow-2xl rounded-[9px]">
+              <li key={item.id} className="w-[350px] min-h-[110px] bg-[white] shadow-2xl rounded-[9px] max-600:w-[100%] max-600:ml-[-53px] ">
                 <div className="flex gap-[30px] items-center p-[10px]">
                   <Link to="/">
                     <div>

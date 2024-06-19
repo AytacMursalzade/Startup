@@ -973,6 +973,12 @@ input:focus {
   .btnAuc{
     display: none;
   }
+  .labBtn{
+    display: none;
+  }
+  .SliderHand{
+    display: none;
+  }
   
 }
 
