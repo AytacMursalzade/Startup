@@ -69,29 +69,29 @@ function LatestProject() {
   ];
 
   return (
-    <div className="mt-[75px] ">
-      <div className=" px-[100px] mb-[30px] ">
-        <h1 className="topic text-[32px] text-[#222222] font-bold">
+    <div className="FreeLast mt-[75px] ">
+      <div className="px-[100px] mb-[30px] ">
+        <h1 className="listFreeLatest topic text-[32px] text-[#222222] font-bold">
           Latest Projects
         </h1>
-        <p className="text-[18px] text-[#606060] font-light">
+        <p className="listFreeLatest text-[18px] text-[#606060] font-light">
           Nunc est velit, dapibus nec mi id, laoreet mattis elit.
         </p>
       </div>
-      <ul className="PhonesAll">
+      <ul>
         {data.map((item, index) => (
           <li
             key={item.id}
-            className="allPhones flex gap-[10px] justify-between px-[100px] border-t-2 py-4"
+            className="FreeLast1 flex gap-[10px] justify-between px-[100px] border-t-2 py-4"
           >
             <div>
-              <img width={116} src={item.img} alt="project" />
+              <img width={116} src={item.img} alt="project" className="freeImg" />
             </div>
-            <div className="phoneBottom flex flex-col justify-around">
+            <div className="FreeLast2 flex flex-col justify-around">
               <h1 className="text-[#222222] hover:text-[#2695FF] text-[18px] font-semibold">
                 {item.description}
               </h1>
-              <p className="text-[15px] font-light text-[#606060]">
+              <p className="FreeNone text-[15px] font-light text-[#606060]">
                 {item.paragraph1} <br />
                 {item.paragraph2}
               </p>

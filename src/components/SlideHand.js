@@ -7,19 +7,19 @@ function SlideHand({ imgHandPosterAverage,symbols,symbolsH,symbolsP,symbolsH1,sy
     backgroundPosition: "center",
   };
   return (
-    <div style={handMadeAverage} className="flex mt-[150px] text-center justify-around items-center w-[100%] h-[380px] max-600:flex max-600:flex-col max-600:h-[854px] max-600:w-full ">
+    <div style={handMadeAverage} className="handmadeSlide flex mt-[150px] text-center justify-around items-center w-[100%] h-[380px] ">
       <div className="flex flex-col gap-[18px] ">
-        <img className="ml-[150px] max-600:mx-auto " width={80} src={symbols} alt="symbols" />
+        <img className="ml-[150px]" width={80} src={symbols} alt="symbols" />
         <h1 className="text-[30px] font-semibold text-[white] ">{symbolsH}</h1>
         <p className="text-[16px] text-[white] font-light ">{symbolsP}<br/>{symbolsP1}</p>
       </div>
       <div className="flex flex-col gap-[18px] ">
-        <img className="ml-[150px] max-600:mx-auto" width={80} src={symbols1} alt="symbols" />
+        <img className="ml-[150px] " width={80} src={symbols1} alt="symbols" />
         <h1 className="text-[30px] font-semibold text-[white] ">{symbolsH1}</h1>
         <p className="text-[16px] text-[white] font-light ">{symbolsP2}<br/>{symbolsP3}</p>
       </div>
       <div className="flex flex-col gap-[18px] ">
-        <img className="ml-[150px] max-600:mx-auto" width={80} src={symbols2} alt="symbols" />
+        <img className="ml-[150px]" width={80} src={symbols2} alt="symbols" />
         <h1 className="text-[30px] font-semibold text-[white] ">{symbolsH3}</h1>
         <p className="text-[16px] text-[white] font-light ">{symbolsP4}<br/>{symbolsP5}</p>
       </div>

@@ -14,6 +14,7 @@ import tesla2 from "../assets/tesla2.jpg";
 import tesla3 from "../assets/tesla3.jpg";
 import tesla4 from "../assets/tesla4.jpg";
 
+
 function ListCat() {
   const [selectedCategory, setSelectedCategory] = useState("AUDI");
 
@@ -118,7 +119,7 @@ function ListCat() {
   const filteredCars = cars.filter((car) => car.content === selectedCategory);
 
   return (
-    <div className="flex flex-col mt-[100px] mb-[100px] gap-[20px]">
+    <div className="auctionList-container flex flex-col mt-[100px] mb-[100px] gap-[20px]">
       <div className="flex justify-center gap-[2px] mb-[20px]">
         {categories.map((category) => (
           <button
@@ -135,7 +136,7 @@ function ListCat() {
         ))}
       </div>
       {filteredCars.map((item) => (
-        <div key={item.id} className="flex ml-[75px] justify-between shadow-2xl items-center px-[50px] w-[90%] h-[188px] ">
+        <div key={item.id} className="auctionListOne flex ml-[75px] justify-between shadow-2xl items-center px-[50px] w-[90%] h-[188px] ">
           <div className="flex gap-[35px]">
             <img width={188} src={item.img} alt="listauction" />
             <div className="flex pt-[25px] gap-[25px] flex-col">

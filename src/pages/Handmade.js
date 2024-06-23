@@ -26,7 +26,7 @@ function Handmade() {
       <HeaderArrage display2={false} basketColor="#C16BB6" Logoimage={LogoimageHandMade} />
       <Header bgColor="#C16BB6"/>
       <Slidehandmade imgHandPoster={imgHandPoster} />  
-      <HandmadeLatest hoverTextBotm="colorPurple" hoverLatest="colorPurplebg" />
+      <HandmadeLatest/>
       <SlideHand  imgHandPosterAverage={imgHandPosterAverage} symbols={symbols} symbols1={symbols1} symbols2={symbols2} symbolsH="A Variety of Products" symbolsP="Lorem ipsum dolor sit amet, consectetur adipiscing" symbolsP1="elit. Fusce vehicula hendrerit dolor." symbolsP2="Lorem ipsum dolor sit amet, consectetur adipiscing" symbolsP3="elit. Fusce vehicula hendrerit dolor." symbolsP4="Lorem ipsum dolor sit amet, consectetur adipiscing" symbolsP5="elit. Fusce vehicula hendrerit dolor." symbolsH1="Building a Community" symbolsH2="Quality Insurance" symbolsH3="Quality Insurance"/>
       <HandmadeL hoverTextBotm="colorBluishBlack"/>
       <PopularProducts hoverTextBotm="colorPurple" hoverLatest="colorPurplebg" 

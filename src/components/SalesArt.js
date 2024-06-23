@@ -87,11 +87,11 @@ function SalesArt() {
 
   return (
     <>
-      <div className=" flex flex-col gap-[73px] mt-[99px] mb-[100px] ">
-        <div className="flex gap-[17px] justify-around ml-[75px] max-600:flex max-600:flex-col max-600:w-[486px] max-600:ml-[15px] ">
+      <div className="viewPart flex flex-col gap-[73px] mt-[99px] mb-[100px] ">
+        <div className="onePoster1 flex gap-[17px] justify-around ml-[75px] max-600:flex max-600:flex-col max-600:w-[486px] max-600:ml-[15px] ">
           <div
             style={PostBgImg1}
-            className="w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] max-600:w-[454px] max-600:h-[236px] "
+            className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] max-600:w-[454px] max-600:h-[236px] "
           >
             <h1 className="text-[27px] text-white font-extrabold ">ABSTRACT</h1>
             <p className="text-white flex gap-[8px] ">
@@ -101,11 +101,11 @@ function SalesArt() {
               VIEW ALL ITEMS
             </button>
           </div>
-          <div className="flex flex-wrap gap-[22px]  px-[18px] w-[1272px] max-600:w-[486px] max-600:flex   max-600:flex-wrap max-600:px-[2px] max-600:items-center ">
+          <div className="salesPartPost1 flex flex-wrap gap-[22px]  px-[18px] w-[1272px] max-600:w-[486px] max-600:flex   max-600:flex-wrap max-600:px-[2px] max-600:items-center ">
             {data.map((item, index) => (
               <div
                 key={index}
-                className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] max-600:flex max-600:flex-col max-600:w-[219px] max-600:h-[331px] "
+                className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] max-600:flex max-600:flex-col max-600:w-[219px] max-600:h-[331px] "
               >
                 <Link>
                   <div
@@ -123,7 +123,7 @@ function SalesArt() {
                     />
                   </div>
                 </Link>
-                <div className="flex flex-col gap-[20px] pl-[19px] justify-center ">
+                <div className="titleProduct flex flex-col gap-[20px] pl-[19px] justify-center ">
                   <Link>
                     <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[#0543EC] font-bold ">
                       {item.description} <br /> {item.description1}
@@ -160,10 +160,10 @@ function SalesArt() {
             ))}
           </div>
         </div>
-        <div className="flex gap-[17px] justify-around ml-[75px] max-600:flex max-600:flex-col max-600:w-[486px] max-600:ml-[15px] ">
+        <div className="onePoster1 flex gap-[17px] justify-around ml-[75px] max-600:flex max-600:flex-col max-600:w-[486px] max-600:ml-[15px] ">
           <div
             style={PostBgImg2}
-            className="w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] max-600:w-[454px] max-600:h-[236px] "
+            className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] max-600:w-[454px] max-600:h-[236px] "
           >
             <h1 className="text-[27px] text-white font-extrabold ">ANTIQUE</h1>
             <p className="text-white flex gap-[8px] ">
@@ -173,11 +173,11 @@ function SalesArt() {
               VIEW ALL ITEMS
             </button>
           </div>
-          <div className="flex flex-wrap gap-[22px]  px-[18px] w-[1272px] max-600:w-[486px] max-600:flex   max-600:flex-wrap max-600:px-[2px] max-600:items-center ">
+          <div className="salesPartPost1 flex flex-wrap gap-[22px]  px-[18px] w-[1272px] max-600:w-[486px] max-600:flex   max-600:flex-wrap max-600:px-[2px] max-600:items-center ">
             {data.map((item, index) => (
               <div
                 key={index}
-                className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] max-600:flex max-600:flex-col max-600:w-[219px] max-600:h-[331px] "
+                className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] max-600:flex max-600:flex-col max-600:w-[219px] max-600:h-[331px] "
               >
                 <Link>
                   <div
@@ -195,7 +195,7 @@ function SalesArt() {
                     />
                   </div>
                 </Link>
-                <div className="flex flex-col gap-[20px] pl-[19px] justify-center ">
+                <div className="titleProduct flex flex-col gap-[20px] pl-[19px] justify-center ">
                   <Link>
                     <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[#0543EC] font-bold ">
                       {item.description} <br /> {item.description1}

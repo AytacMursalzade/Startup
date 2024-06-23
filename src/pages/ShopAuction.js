@@ -11,7 +11,7 @@ import LogoimageShop from "../assets/ibidBlueOpen.png";
 import locationimageShop from "../assets/locationBlueOpen.png";
 import ShopPoster from "../components/ShopPoster";
 import ShopSales from "../components/ShopSales";
-import LatestSelf from "../components/LatestAuto";
+import ShopLatest from "../components/ShopLatest";
 
 function ShopAuction() {
   return (
@@ -19,14 +19,9 @@ function ShopAuction() {
       <HeaderArrageArt basketColor="#009EA3" Logoimage={LogoimageShop} />
       <Header catStyle="catStyle" bgColor="#009EA3" />
       <Slide />
-      <LatestSelf
-       
-        hoverTextBotm="colorBlueOpen"
-        toolBg="colorBlueOpenbg"
-       
-      />
+      <ShopLatest />
       <ShopPoster />
-      <ShopSales hoverBGsales="colorBlueOpenbg" hoveredSales="colorBlueOpen"/>
+      <ShopSales />
       <Locationn
         radiusBorder="9px"
         img={locationimageShop}

@@ -10,7 +10,7 @@ function ListSlider() {
   };
 
   return (
-    <div style={listImg} className="px-[75px] flex justify-between pt-[90px] w-[100%] h-[500px] ">
+    <div style={listImg} className="listSlider px-[75px] flex justify-between pt-[90px] w-[100%] h-[500px] ">
       <div className="flex flex-col gap-[25px] ">
         <h1 className="text-[55px] font-bold text-left text-[black] ">Audi Q5 Premium</h1>
         <p className="text-[16px] text-[#606060] text-left font-normal ">Capitalize on low hanging fruit to identify a ballpark.</p>

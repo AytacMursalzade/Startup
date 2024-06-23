@@ -45,7 +45,8 @@ function LatestArt() {
 
   return (
     <>
-     <div className="mt-[126px] mb-[75px]">
+     <div className="latestMain">
+     <div className="viewPartLatest mt-[126px] mb-[75px]">
         <div className=" flex flex-col items-center justify-center">
           <h1 className="topic font-bold text-[34px]">LATEST AUCTIONS</h1>
           <div className="gavel flex items-center justify-center mt-[15px]">
@@ -57,9 +58,9 @@ function LatestArt() {
           </div>
         </div>
 
-        <div className="PhonesAll flex flex-wrap gap-[13px] mt-[30px]  px-[71px]">
+        <div className="salesPartPost flex flex-wrap gap-[13px] mt-[30px]  px-[71px]">
           {data.map((item, index) => (
-            <div key={index} className="allPhones relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group max-600:w-[219px]">
+            <div key={index} className="salesPart relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group max-600:w-[219px]">
               <div
                 style={{
                   backgroundImage: `url(${item.img})`,
@@ -68,7 +69,7 @@ function LatestArt() {
                   transformOrigin: "center",
                   transition: "transform 0.5s ease",
                 }}
-                className="absolute inset-0 group-hover:scale-105"
+                className="itemContent absolute inset-0 group-hover:scale-105"
               ></div>
               <div className="flex items-start pt-[30px] z-10">
                 <div className="flex flex-col gap-[8px] pl-[18px]">
@@ -106,6 +107,7 @@ function LatestArt() {
           ))}
         </div>
       </div>
+     </div>
     </>
   );
 }

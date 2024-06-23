@@ -1,81 +1,79 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import book1 from "../assets/comicBook1.jpg";
+import book2 from "../assets/comicBook2.jpg";
+import book3 from "../assets/comicBook41.jpg";
+import book4 from "../assets/comicBook5.jpg";
+import book5 from "../assets/comBook3.jpg";
 
 function HoveredBook() {
+  const data = [
+    {
+      id:1,
+      img:book1,
+      description:"Collectable Comic Books",
+      title:"20 Products"
+    },
+    {
+      id:2,
+      img:book2,
+      description:"Old Comic Books",
+      title:"29 Products"
+    },
+    {
+      id:3,
+      img:book3,
+      description:"Literature Books",
+      title:"29 Products"
+    },
+    {
+      id:4,
+      img:book4,
+      description:"Develop Personally",
+      title:"29 Products"
+    },
+    {
+      id:5,
+      img:book5,
+      description:"Colored Comics",
+      title:"29 Products"
+    },
+  ]
+
   return (
-    <>
-      <div className="posterShow flex gap-[20px] ">
-        <div className="posterYelGree ">
-          <Link>
-            <div className="bulletBook relative w-[640px] h-[707px] ml-[75px]">
-              <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px]  ">
-                <div className="flex flex-col">
-                  <h1 className="font-extrabold text-[30px] text-white absolute bottom-[80px] ">
-                    Collectable Comic Books
-                  </h1>
-                  <p className="text-white absolute bottom-[50px] font-light">20 Products</p>
+    <div className="BookP">
+      <div className="posterTall flex gap-[15px] ml-[75px] mt-[140px]">
+        {data.map((item,index) => {
+          const posterPage = {
+            backgroundImage: `url(${item.img})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover"
+          }
+          return (
+            <div key={index} style={posterPage} className="posterTall1 flex gap-[15px]">
+              <Link>
+                <div className="posterM w-[600px] h-[382px] ml-[75px]">
+                  <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px]">
+                    <div className="posterMH flex flex-col">
+                      <h1 className="font-extrabold text-[30px] text-white mt-[50px]">
+                        {item.description}
+                      </h1>
+                      <p className="text-white font-light">{item.title}</p>
+                    </div>
+                    <div>
+                      <button className="btnHovered border-1 border-black-100 hover:bg-white rounded-[8px] hover:text-[#EE964B] text-white font-semibold  border border-solid-1 px-[20px] py-[6px] ">
+                        VIEW MORE
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
-          </Link>
-        </div>
-        <div className="flex flex-col gap-[19px]">
-          <div className="posterTwo flex gap-[19px] ">
-            <Link>
-              <div className="droneBook relative w-[340px] h-[340px]">
-                <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px] ">
-                  <div className="flex flex-col">
-                    <h1 className="font-extrabold text-[30px] text-white mt-[50px] absolute bottom-[80px] left-[19px] ">
-                      Old Comic Books
-                    </h1>
-                    <p className="text-white font-light absolute bottom-[50px] left-[19px] ">29 Products</p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-            <Link>
-              <div className="handleearphoneBook relative w-[340px] h-[340px] ml-[5px] ">
-                <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px] ">
-                  <div className="flex flex-col">
-                    <h1 className="font-extrabold absolute left-[19px] bottom-[80px] text-[30px] text-white mt-[50px] ">
-                      Literature Books
-                    </h1>
-                    <p className="text-white font-light absolute bottom-[50px] left-[19px] ">29 Products</p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className="flex gap-[19px]">
-            <Link>
-              <div className="chargerBook relative w-[340px] h-[340px]  mt-[-70px] ">
-                <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px] ">
-                  <div className="flex flex-col">
-                    <h1 className="font-extrabold absolute left-[19px] bottom-[80px] text-[30px] text-white mt-[50px] ">
-                      Develop Personally
-                    </h1>
-                    <p className="text-white absolute left-[19px] bottom-[50px] font-light">29 Products</p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-            <Link>
-              <div className="charBook relative w-[340px] h-[340px] ml-[5px] mt-[-70px] ">
-                <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px] ">
-                  <div className="flex flex-col">
-                    <h1 className="font-extrabold absolute left-[19px] bottom-[80px] text-[30px] text-white mt-[50px] ">
-                      Develop Personally
-                    </h1>
-                    <p className="text-white absolute left-[19px] bottom-[50px] font-light">29 Products</p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
+          );
+        })}
       </div>
-    </>
-  );
+    </div>
+  )
 }
 
 export default HoveredBook;

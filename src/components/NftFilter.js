@@ -175,12 +175,12 @@ function NftFilter() {
       .map((item) => (
         <div
           key={item.id}
-          className={`item flex flex-col gap-[8px] mt-[45px] items-center shadow-2xl h-[421px] text-center ${item.content.toLowerCase().replace(" ", "-")}`}
+          className={`nft-item flex flex-col gap-[8px] mt-[45px] items-center shadow-2xl h-[421px] text-center ${item.content.toLowerCase().replace(" ", "-")}`}
         >
           <Link to="/"><img width={259} src={item.img} alt={item.description} /></Link>
-          <Link to="/"><h3 className="text-[#484848] hover:text-[#4d79d2] text-[24px] font-bold ">{item.description}</h3></Link>
-          <p className="text-[16px] text-[#4d79d2] font-bold ">{item.price}</p>
-          <Link to="/"><button className="bg-[#4D79D2] font-bold text-[12px] text-white rounded-[30px] w-[160px] h-[47px] "><p>{item.paragraph}<br/>{item.paragraph1}</p></button></Link>
+          <Link to="/"><h3 className="nft-item-title text-[#484848] hover:text-[#4d79d2] text-[24px] font-bold ">{item.description}</h3></Link>
+          <p className="nft-item-price text-[16px] text-[#4d79d2] font-bold ">{item.price}</p>
+          <Link to="/"><button className="nft-item-button bg-[#4D79D2] font-bold text-[12px] text-white rounded-[30px] w-[160px] h-[47px] "><p>{item.paragraph}<br/>{item.paragraph1}</p></button></Link>
         </div>
       ));
   };
@@ -190,30 +190,58 @@ function NftFilter() {
   };
 
   return (
-    <div className="flex w-[100%] gap-9 ">
+    <div className="nft-filter-container flex w-[100%] gap-9 ">
       {showFilters && (
-        <div className="w-[303px]">
+        <div className="filter-sidebar w-[303px]">
           <FilterCategory toggleShowFilters={toggleShowFilters} />
         </div>
       )}
-      <div className={`flex-1 ${showFilters ? "pl-4" : ""}`}>
+      <div className={`nft-items-container flex-1 ${showFilters ? "pl-4" : ""}`}>
         {!showFilters && (
-          <div className="h-[45px]  absolute text-[black] font-bold  flex items-center justify-start mb-4 pl-4">
+          <div className="filter-toggle h-[45px]  absolute text-[black] font-bold  flex items-center justify-start mb-4 pl-4">
             <h1 className="cursor-pointer" onClick={toggleShowFilters}>
               FILTERS
             </h1>
           </div>
         )}
-        <div className="h-[50px] w-[100%] pl-[25%] bg-[white] shadow-2xl text-[#666666] flex items-center justify-around buttons mb-4 text-[14px] font-bold ">
-          <button onClick={() => setActiveCat("all")} className="mr-2 cursor hover:text-[#4D79D2] ">All</button>
-          <button onClick={() => filterGroup("ART")} className="mr-2 cursor hover:text-[#4D79D2] ">ART</button>
-          <button onClick={() => filterGroup("DOMAINS")} className="mr-2 cursor hover:text-[#4D79D2] ">DOMAINS</button>
-          <button onClick={() => filterGroup("SPORTS")} className="mr-2 cursor hover:text-[#4D79D2] ">SPORTS</button>
-          <button onClick={() => filterGroup("TRADING CARDS")} className="mr-2 cursor hover:text-[#4D79D2] ">TRADING CARDS</button>
-          <button onClick={() => filterGroup("UTILITY")} className="mr-2 cursor hover:text-[#4D79D2] ">UTILITY</button>
-          <button onClick={() => filterGroup("VIRTUAL WORLDS")} className="mr-2 cursor hover:text-[#4D79D2] ">VIRTUAL WORLDS</button>
+        <div className="filter-buttons-container h-[50px] w-[100%] pl-[25%] bg-[white] shadow-2xl text-[#666666] flex items-center justify-around mb-4 text-[14px] font-bold">
+          <button
+            onClick={() => setActiveCat("all")}
+            className="filter-button mr-2 cursor hover:text-[#4D79D2] ">
+            All
+          </button>
+          <button
+            onClick={() => filterGroup("ART")}
+            className="filter-button mr-2 cursor hover:text-[#4D79D2] ">
+            ART
+          </button>
+          <button
+            onClick={() => filterGroup("DOMAINS")}
+            className="filter-button mr-2 cursor hover:text-[#4D79D2] ">
+            DOMAINS
+          </button>
+          <button
+            onClick={() => filterGroup("SPORTS")}
+            className="filter-button mr-2 cursor hover:text-[#4D79D2] ">
+            SPORTS
+          </button>
+          <button
+            onClick={() => filterGroup("TRADING CARDS")}
+            className="filter-button mr-2 cursor hover:text-[#4D79D2] ">
+            TRADING CARDS
+          </button>
+          <button
+            onClick={() => filterGroup("UTILITY")}
+            className="filter-button mr-2 cursor hover:text-[#4D79D2] ">
+            UTILITY
+          </button>
+          <button
+            onClick={() => filterGroup("VIRTUAL WORLDS")}
+            className="filter-button mr-2 cursor hover:text-[#4D79D2] ">
+            VIRTUAL WORLDS
+          </button>
         </div>
-        <div className="items-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="nft-items-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {renderDivs()}
         </div>
       </div>

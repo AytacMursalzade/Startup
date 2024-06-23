@@ -31,10 +31,7 @@ function SalesAntiques({
     backgroundSize: "cover",
     backgroundPosition: "center",
   };
-  // const posterThree = {
-  //   display: display5 ? "block" : "none",
-  //   backgroundColor: "yellow",
-  // };
+ 
   const post1 = {
     backgroundColor: "blue",
   };
@@ -155,7 +152,7 @@ function SalesAntiques({
           </button>
         </div>
 
-        <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
+        <div className="salesPartPost3 flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
           {AntiquesData.slice(4, 8).map((item, index) => (
             <div
               key={index}

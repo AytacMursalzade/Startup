@@ -21,7 +21,7 @@ function PosterAct() {
   ];
 
   return (
-    <div className="mt-[140px] lg:ml-[75px]">
+    <div className="posterTall mt-[140px] lg:ml-[75px]">
       <div className="flex flex-col max-600:flex max-600:items-center lg:flex-row lg:gap-[15px] lg:justify-start">
         {data.map((item, index) => {
           const posterPage = {
@@ -33,12 +33,12 @@ function PosterAct() {
             <div
               key={index}
               style={posterPage}
-              className="w-full h-[382px] mb-[15px] lg:mb-0 lg:ml-[75px] max-600:w-[448px] max-600:h-[260px]   md:ml-[10px]"
+              className="posterTall1 w-full h-[382px] mb-[15px] lg:mb-0 lg:ml-[75px] max-600:w-[448px] max-600:h-[260px]   md:ml-[10px]"
             >
               <Link to="#">
-                <div className="w-full h-full">
+                <div className="posterM w-full h-full">
                   <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px]">
-                    <div className="flex flex-col max-600:mt-[-100px] max-600:ml-[-18px]  ">
+                    <div className="posterMH flex flex-col max-600:mt-[-100px] max-600:ml-[-18px]  ">
                       <h1 className="font-extrabold text-[30px] text-white mt-[50px] max-600:text-[20px]">
                         {item.description}
                       </h1>

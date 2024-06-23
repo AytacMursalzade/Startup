@@ -30,9 +30,9 @@ function GovernBottm() {
   return (
     <div className="flex flex-col mb-[100px] mt-[100px] ">
       <h1 className="text-[32px] px-[96px]  text-[#252525] font-bold">Popular Posts</h1>
-      <div className="flex justify-around px-[95px] ">
+      <div className="finishBtn flex justify-around px-[95px] ">
         {data.map((item) => (
-          <div key={item.id} className="mt-[40px] flex gap-[12px] ">
+          <div key={item.id} className="finishParag mt-[40px] flex gap-[12px] ">
             <img className="w-[280px] h-[265px]" width={200} src={item.img} atl="government" />
             <div className="h-[280px] flex flex-col justify-around ">
               <div className="flex flex-col px-[10px] w-[380px] gap-[12px] pb-[5px] ">

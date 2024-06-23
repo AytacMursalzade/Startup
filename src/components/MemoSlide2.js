@@ -16,7 +16,7 @@ function MemoSlide2() {
         backgroundPosition:"center"
     }
   return (
-    <div className='w-[100%] h-[600px]  mt-[170px] flex justify-around'>
+    <div className='MemoslideOne w-[100%] h-[600px]  mt-[170px] flex justify-around'>
       <div className='w-[590px] h-[500px] flex flex-col justify-end ' style={sportsImage1}><h1 className='font-bold text-[#242424] text-[30px] '>Must-Haves</h1><p className='text-[#888888] text-[14px] font-light flex items-center gap-[8px]  '>Don't miss our newest NFL collections<FaAngleRight /> </p></div>
       <div className='w-[590px] h-[500px] flex flex-col justify-end ' style={sportsImage2}><h1 className='font-bold text-[#242424] text-[30px] '>Own History</h1><p className='text-[#888888] flex items-center gap-[8px] text-[14px] font-light  '>Shop exclusive game-Used memorabilia<FaAngleRight /> </p></div>
     </div>

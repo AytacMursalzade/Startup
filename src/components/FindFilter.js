@@ -32,10 +32,9 @@ import scifi2 from "../assets/sici2.jpg";
 import scifi3 from "../assets/sici3.jpg";
 import scifi4 from "../assets/sici4.jpg";
 import { Link } from 'react-router-dom';
-import FundFiltercat from './FundFiltercat';
-import { FaRegHeart } from "react-icons/fa6";
+import FilterCategory from './FilterCategory';  
 
-function FundFilter() {
+function FindFilter() {
   const [activeCat, setActiveCat] = useState("all");
   const [showFilters, setShowFilters] = useState(true);
 
@@ -410,24 +409,12 @@ function FundFilter() {
       .map((item) => (
         <div
           key={item.id}
-          className={`w-full h-[495px] item flex flex-col gap-[8px] items-center shadow-2xl text-center ${item.content.toLowerCase().replace(" ", "-")}`}
+          className={`nft-itemCat item flex flex-col  gap-[8px] mt-[45px] items-center shadow-2xl h-[421px] text-center ${item.content.toLowerCase().replace(" ", "-")}`}
         >
           <Link to="/"><img width={259} src={item.img} alt={item.description} /></Link>
-          <Link to="/"><h3 className="text-[#484848] hover:text-[#D4A619] text-[18px] font-bold ">{item.description}</h3></Link>
-          <div className="flex gap-[2px] ">
-            <p className="text-[14px] text-[#606060]">{item.bid}</p>
-            <p className="text-[16px] text-[#242424] font-bold ">{item.price}</p>
-          </div>
-          <div className="flex gap-[2px] ">
-            <p className="text-[14px] text-[#606060]">{item.on}</p>
-            <p className="text-[16px] text-[#242424] font-bold ">{item.date}</p>
-          </div>
-          <div className="w-[200px] h-[40px] px-[15px] flex gap-[2px] items-center border-2 border-[#606060] text-center">
-            <p><FaRegHeart width={16} /></p>
-            <p className="text-[16px] text-[#606060] ">Cause:</p>
-            <p className="text-[#D4A619] text-[15px]">Stop The Fight</p>
-          </div>
-          <Link to="/"><button className="bg-[#D4A619] hover:bg-[white] hover:text-[#D4A619] font-bold text-[14px] text-white rounded-[30px] w-[160px] h-[47px] "><p>{item.paragraph}</p></button></Link>
+          <Link to="/"><h3 className="nft-item-title text-[#484848] hover:text-[#D4A619] text-[24px] font-bold ">{item.description}</h3></Link>
+          <p className="nft-item-price text-[16px] text-[#D4A619] font-bold ">{item.price}</p>
+          <Link to="/"><button className="nft-item-button bg-[#D4A619] font-bold text-[12px] text-white rounded-[30px] w-[160px] h-[47px] "><p>{item.paragraph}<br/>{item.paragraph1}</p></button></Link>
         </div>
       ));
   };
@@ -437,32 +424,30 @@ function FundFilter() {
   };
 
   return (
-    <div className="flex w-[100%] gap-3">
+    <div className="nft-filter-container flex w-[100%] mt-[100px] mb-[100px] gap-9 ">
       {showFilters && (
-        <div className="w-[295px]">
-          <FundFiltercat toggleShowFilters={toggleShowFilters} />
+        <div className="filter-sidebar w-[303px]">
+          <FilterCategory toggleShowFilters={toggleShowFilters} />
         </div>
       )}
-      <div className={`flex-1 ${showFilters ? "pl-4" : ""}`}>
+      <div className={`nft-items-container flex-1 ${showFilters ? "pl-4" : ""}`}>
         {!showFilters && (
-          <div className="h-[45px] absolute text-[black] font-bold flex items-center justify-start mb-4 pl-4">
+          <div className="filter-toggle h-[45px]  absolute text-[black] font-bold  flex items-center justify-start mb-4 pl-4">
             <h1 className="cursor-pointer" onClick={toggleShowFilters}>
               FILTERS
             </h1>
           </div>
         )}
-        <div className="h-[50px] w-[100%] pl-[10%] bg-[white] shadow-2xl text-[#666666] flex justify-around buttons mb-4 text-[14px] font-bold">
-          <button onClick={() => setActiveCat("all")} className="mr-2 cursor hover:text-[#D4A619]">All</button>
-          <button onClick={() => filterGroup("DRAMA")} className="mr-2 cursor hover:text-[#D4A619]">DRAMA</button>
-          <button onClick={() => filterGroup("ADVENTURE")} className="mr-2 cursor hover:text-[#D4A619]">ADVENTURE</button>
-          <button onClick={() => filterGroup("ANTHOLOGY")} className="mr-2 cursor hover:text-[#D4A619]">ANTHOLOGY</button>
-          <button onClick={() => filterGroup("BIOGRAPHY")} className="mr-2 cursor hover:text-[#D4A619]">BIOGRAPHY</button>
-          <button onClick={() => filterGroup("CROWDFUNDINGS")} className="mr-2 cursor hover:text-[#D4A619]">CROWDFUNDINGS</button>
-          <button onClick={() => filterGroup("FANTASY")} className="mr-2 cursor hover:text-[#D4A619]">FANTASY</button>
-          <button onClick={() => filterGroup("HORROR")} className="mr-2 cursor hover:text-[#D4A619]">HORROR</button>
-          <button onClick={() => filterGroup("SCI-FI")} className="mr-2 cursor hover:text-[#D4A619]">SCI-FI</button>
+        <div className="filter-buttons-container h-[50px] w-[100%] pl-[25%] bg-[white] shadow-2xl text-[#666666] flex items-center justify-around buttons mb-4 text-[14px] font-bold ">
+          <button onClick={() => setActiveCat("all")} className="filter-button mr-2 cursor hover:text-[#D4A619] ">All</button>
+          <button onClick={() => filterGroup("ART")} className="filter-button mr-2 cursor hover:text-[#D4A619] ">ART</button>
+          <button onClick={() => filterGroup("DOMAINS")} className="filter-button mr-2 cursor hover:text-[#D4A619] ">DOMAINS</button>
+          <button onClick={() => filterGroup("SPORTS")} className="filter-button mr-2 cursor hover:text-[#D4A619] ">SPORTS</button>
+          <button onClick={() => filterGroup("TRADING CARDS")} className="filter-button mr-2 cursor hover:text-[#D4A619] ">TRADING CARDS</button>
+          <button onClick={() => filterGroup("UTILITY")} className="filter-button mr-2 cursor hover:text-[#D4A619] ">UTILITY</button>
+          <button onClick={() => filterGroup("VIRTUAL WORLDS")} className="filter-button mr-2 cursor hover:text-[#D4A619] ">VIRTUAL WORLDS</button>
         </div>
-        <div className="items-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="nft-items-grid items-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {renderDivs()}
         </div>
       </div>
@@ -470,4 +455,4 @@ function FundFilter() {
   );
 }
 
-export default FundFilter;
+export default FindFilter;

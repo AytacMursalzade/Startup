@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGavel } from "react-icons/fa6";
-import { FaSearch, FaShoppingBasket } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa6";
+import { FaGavel, FaSearch, FaShoppingBasket, FaHeart } from "react-icons/fa";
 import Tooltip from "@mui/material/Tooltip";
 import sword1 from "../assets/pistol1.jpg";
 import sword2 from "../assets/pistol2.jpg";
@@ -12,8 +10,6 @@ import uniform1 from "../assets/pistol20.jpg";
 import uniform2 from "../assets/pistol22.jpg";
 import uniform3 from "../assets/pistol23.jpg";
 import uniform4 from "../assets/pistol23.jpg";
-
-
 
 function MilSales({
   toolBg,
@@ -30,88 +26,81 @@ function MilSales({
   display7,
   display6,
 }) {
-  
+  const AntiquesData = [
+    {
+      id: "1",
+      img: sword1,
+      description: "19th Century",
+      description1: "military rifle powder",
+      description2: "flask for a Jaeger",
+      paragraf1: "Starting Bid:",
+      price: "$88.00",
+    },
+    {
+      id: "2",
+      img: sword2,
+      description: "British Heavy",
+      description1: "military rifle powder",
+      description2: "flask for a Jaeger",
+      paragraf1: "Starting Bid:",
+      price: "$100.00",
+    },
+    {
+      id: "3",
+      img: sword3,
+      description: "No. 11704, 28in.",
+      description1: "Nitro-proofed",
+      description2: "barrels,rib",
+      description3: "engraved",
+      paragraf1: "Starting Bid:",
+      price: "$100.00",
+    },
+    {
+      id: "4",
+      img: sword4,
+      description: "Queen Victoria",
+      description1: "Volunteer Officier's",
+      description2: "Decoration awarded",
+      paragraf1: "Starting Bid:",
+      price: "$30.00",
+    },
+    {
+      id: "5",
+      img: uniform1,
+      description: "Africa star with",
+      description1: "North Africa 1942-43",
+      description2: "clasp and Defence",
+      paragraf1: "Starting Bid:",
+      price: "$75.00",
+    },
+    {
+      id: "6",
+      img: uniform2,
+      description: "Air Crew Europe",
+      description1: "star with France",
+      description2: "and Germany clasp",
+      paragraf1: "Starting Bid:",
+      price: "$100.00",
+    },
+    {
+      id: "7",
+      img: uniform3,
+      description: "Distinguished",
+      description1: "Flying Cross and",
+      description2: "double bar",
+      paragraf1: "Starting Bid:",
+      price: "$80.00",
+    },
+    {
+      id: "8",
+      img: uniform4,
+      description: "Tenantry Volunteer",
+      description1: "Infantry interest",
+      paragraf1: "Starting Bid:",
+      price: "$43.00",
+    },
+  ];
 
-
-
-const AntiquesData = [
-    {
-        id:"1",
-        img:sword1,
-        description: "19th Century",
-        description1: "military rifle powder",
-        description2: "flask for a Jaeger",
-        paragraf1: "Starting Bid:",
-        price:"$88.00"
-        
-    },
-    {
-        id:"2",
-        img:sword2,
-        description: "British Heavy",
-        description1: "military rifle powder",
-        description2: "flask for a Jaeger",
-        paragraf1: "Starting Bid:",
-        price:"$100.00"
-    },
-    {
-        id:"3",
-        img:sword3,
-        description: "No. 11704, 28in.",
-        description1: "Nitro-proofed",
-        description2: "barrels,rib",
-        description3: "engraved",
-        paragraf1: "Starting Bid:",
-        price:"$100.00"
-    },
-    {
-        id:"4",
-        img:sword4,
-        description: "Queen Victoria",
-        description1: "Volunteer Officier's",
-        description2: "Decoration awarded",
-        paragraf1: "Starting Bid:",
-        price:"$30.00"
-    },
-    {
-        id:"5",
-        img:uniform1,
-        description: "Africa star with",
-        description1: "North Africa 1942-43",
-        description2: "clasp and Defence",
-        paragraf1: "Starting Bid:",
-        price:"$75.00"
-    },
-    {
-        id:"6",
-        img:uniform2,
-        description: "Air Crew Europe",
-        description1: "star with France",
-        description2: "and Germany clasp",
-        paragraf1: "Starting Bid:",
-        price:"$100.00"
-    },
-    {
-        id:"7",
-        img:uniform3,
-        description: "Distinguished",
-        description1: "Flying Cross and",
-        description2: "double bar",
-        paragraf1: "Starting Bid:",
-        price:"$80.00"
-        
-    },
-    {
-        id:"8",
-        img:uniform4,
-        description: "Tenantry Volunteer",
-        description1: "Infantry interest",
-        paragraf1: "Starting Bid:",
-        price:"$43.00"
-        
-    },
-   
-];
   const BGimgMil = {
     backgroundImage: `url(${imgPoster})`,
     backgroundSize: "cover",
@@ -159,7 +148,7 @@ const AntiquesData = [
           </button>
         </div>
 
-        <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
+        <div className="salesPartPost1 flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
           {AntiquesData.slice(0, 4).map((item, index) => (
             <div
               key={index}
@@ -229,21 +218,21 @@ const AntiquesData = [
           className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] "
         >
           <h1 className="text-[27px] text-white font-extrabold ">
-            {posterCard}
+            {numberPoster}
           </h1>
           <p className="text-white flex gap-[8px] ">
-            <strong className="font-bold text-[16px] ">{numberPoster}</strong>
+            <strong className="font-bold text-[16px] ">{numberProduct}</strong>
             {productName}
           </p>
           <button
             style={{ backgroundColor: toolBg }}
-            className="w-[205px] h-[50px] hover:bg-[white] hover:text-[white] text-[14px] font-semibold text-[white] rounded-[9px] "
+            className="w-[205px] h-[50px] hover:bg-[white] hover:text-[white] text-[14px] font-semibold text-[white] rounded-[9px]"
           >
             VIEW ALL ITEMS
           </button>
         </div>
 
-        <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
+        <div className="salesPartPost1 flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
           {AntiquesData.slice(4, 8).map((item, index) => (
             <div
               key={index}

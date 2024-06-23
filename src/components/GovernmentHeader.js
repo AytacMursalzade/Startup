@@ -8,7 +8,7 @@ import GovernHeader from "./GovernHeader";
 function GovernmentHeader({src}) {
   return (
     <>
-      <div className="mx-[75px] py-[5px] ">
+      <div className="governH mx-[75px] py-[5px] ">
         <div className="flex justify-between">
           <div>
             <ul className="w-[600px] flex ">

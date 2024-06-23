@@ -31,7 +31,7 @@ function Memorabilia5() {
   ];
 
   return (
-    <div className="mt-[30px] px-[75px]">
+    <div className="memoArticles mt-[30px] px-[75px]">
       <div className="flex flex-col items-center justify-center mt-[126px]">
         <h1 className="font-bold text-[34px] text-[#242424]">
           Articles You Might Like
@@ -42,13 +42,16 @@ function Memorabilia5() {
       </div>
       <ul className="flex gap-[10px] mt-[35px] ">
         {items.map(item => (
-          <li key={item.id} className="w-[450px] h-[461px] flex flex-col gap-[20px] ">
+          <li key={item.id} className="w-[450px] h-[461px] flex flex-col gap-[20px] pointer ">
+            
+              <div className="relative">
+                <img width={420} src={item.img} alt="memorabilia" />
+                <div className="memoHover absolute inset-0 w-[420px] bg-black opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
+              </div>
+            
+            <p className="text-[#078169] text-center text-[14px] font-medium">{item.date}</p>
             <Link to="/">
-              <img width={420} src={item.img} alt="memorabilia" />
-            </Link>
-            <p className="text-[#078169] text-center  text-[14px] font-medium">{item.date}</p>
-            <Link to="/">
-              <h1 className="text-[#151515] text-center  font-semibold text-[16px]">
+              <h1 className="text-[#151515] text-center font-semibold text-[16px]">
                 {item.description}<br/>{item.description1}
               </h1>
             </Link>

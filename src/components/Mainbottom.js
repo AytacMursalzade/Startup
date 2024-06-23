@@ -38,7 +38,7 @@ function Mainbottom({
   ];
 
   return (
-    <div>
+    <div className="trackingMain">
       <div
         style={{
           backgroundColor: colorBg,

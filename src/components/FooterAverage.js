@@ -8,7 +8,7 @@ function FooterAverage({GavelColorshop, nameAuction,display2}) {
     display: display2 ? 'block' : 'none',
   };
   return (
-    <div className='max-600:flex max-600:justify-center  '>
+    <div className='FootSlide'>
       <div style={Footr} className="flex flex-col items-center justify-center mt-[160px] ">
         <h1 className="topic font-bold text-[34px] text-center">{nameAuction}</h1>
 
