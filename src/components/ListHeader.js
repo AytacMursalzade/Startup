@@ -117,7 +117,7 @@ const ListHeader = (props) => {
   
 
   return (
-    <div className={`h-[70px] bg-[#392061] flex justify-between`}>
+    <div className={`headerList h-[70px] bg-[#392061] flex justify-between`}>
       <nav>
         <ul className="flex gap-[44px]  text-white items-center text-[14px] font-medium ">
           <Link to="/categories"><li

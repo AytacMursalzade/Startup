@@ -49,9 +49,9 @@ function CountSoon({hoverBGsales}) {
           <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2"></div>
         </div>
       </div>
-      <div className="PhonesAll flex flex-wrap justify-center ml-[70px] mt-[75px] max-600:flex max-600:flex-wrap max-600:w-[484px] max-600:justify-center] ">
+      <div className="soonAuc flex flex-wrap justify-center ml-[70px] mt-[75px]">
         {data.map((item) => (
-          <div key={item.id} className="allPhones flex w-[720px] justify-between   max-600:flex max-600:flex-col max-600:w-[217px]">
+          <div key={item.id} className="AucSoon flex w-[720px] justify-between">
             <Link to='/'>
               <div className="flex items-start w-[350px] h-[360px] pt-[30px] shadow-2xl  ">
                 <div className="flex flex-col gap-[8px] pl-[18px]">
@@ -85,7 +85,7 @@ function CountSoon({hoverBGsales}) {
                 </div>
               </div>
             </Link>
-            <div className="phoneBottom w-[300px] h-[320px] flex flex-col justify-center gap-[25px] max-600:w-[217px] ">
+            <div className=" w-[300px] h-[320px] flex flex-col justify-center gap-[25px]">
               <Link to="/">
                 <h1 className="text-[#484848] text-[18px] font-bold">
                   Desktop Gamer Las Vegas

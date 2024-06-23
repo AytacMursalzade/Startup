@@ -13,8 +13,8 @@ import FooterTop from "../components/FooterTop";
 import FooterAverage from "../components/FooterAverage";
 import FooterFilter from "../components/FooterFilter";
 import Footer from "../components/Footer";
-import imageRealEstate from "../assets/estateVillaReal.jpeg";
 import RealEstatePoster from "../components/RealStatePoster";
+import RealSales from "../components/RealSales";
 
 function RealEstate() {
   return (
@@ -22,33 +22,9 @@ function RealEstate() {
       <HeaderArrageArt basketColor="#6449E7" Logoimage={LogoimageEstate} />
       <Header catStyle="catStyle" bgColor="#6449E7" />
       <Slide />
-      <LatestAuto
-        hoverTextBotm="colorPurplishBlue"
-        hoverLatest="colorPurplishBluebg"
-        OneLatest="LATEST PROPERTIES AUCTIONS"
-        toolRadius="9px"
-        textLatest="Villa Flowers"
-        art={EstateFlin}
-        GavelTextColor="#6449E7"
-        tooltipBg="#6449E7"
-        howToused="Current Bid"
-      />
+      <LatestAuto/>
       <RealEstatePoster />
-      <SalesAntiques
-        display5={true}
-        hoveredSales="colorPurplishBlue"
-        hoverBGsales="colorPurplishBluebg"
-        imagePoster={imageRealEstate}
-        imgPoster={imagePosterReal}
-        
-        toolBg="#6449E7"
-        textPosterCard="VILLA"
-        productCard="Products"
-        numberProduct="6"
-        productName="Products"
-        posterCard="DUPLEX"
-        numberPoster="4"
-      />
+      <RealSales />
       <Locationn
         radiusBorder="9px"
         img={locationimageSelf}

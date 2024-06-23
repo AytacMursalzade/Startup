@@ -6,8 +6,8 @@ import memoImage4 from "../assets/Memhbdhhcdbh.jpg";
 
 function MemoMain() {
   return (
-    <div className="flex mt-[75px] ">
-      <div className="flex flex-col px-[75px] mr-[90px]  ">
+    <div className="memoPoster flex mt-[75px] ">
+      <div className="memoItems flex flex-col px-[75px] mr-[90px]  ">
         <h1 className="font-bold text-[30px] text-[#242424] ">
           Consign Your <br /> Sports with iBid <br /> Auctions
         </h1>
@@ -17,11 +17,11 @@ function MemoMain() {
           when it comes to buying and selling.
         </p>
       </div>
-      <div>
+      <div className="memoRabilia">
         <ul>
           <li>
             <img src={memoImage1} alt="memo" />
-            <div className="w-[900px] flex flex-col justify-evenly h-[150px] shadow-2xl ">
+            <div className="contentFooter w-[900px] flex flex-col justify-evenly h-[150px] shadow-2xl ">
               <div>
                 <h1 className="font-medium text-center  text-[18px] text-[#484848]">
                   1960 Topss Baseball complete set ranked #20 On PSA Registry
@@ -44,7 +44,7 @@ function MemoMain() {
           </li>
           <li>
             <img src={memoImage2} alt="memo" />
-            <div className="w-[900px] flex flex-col justify-evenly h-[150px] shadow-2xl ">
+            <div className="contentFooter w-[900px] flex flex-col justify-evenly h-[150px] shadow-2xl ">
               <div>
                 <h1 className="font-medium text-center  text-[18px] text-[#484848]">
                 2013-14 Kobe Bryant Los Angeles Lakers "Hollywood Nights" Jersey
@@ -66,7 +66,7 @@ function MemoMain() {
           </li>
           <li>
             <img src={memoImage3} alt="memo" />
-            <div className="w-[900px] flex flex-col justify-evenly h-[150px] shadow-2xl ">
+            <div className="contentFooter w-[900px] flex flex-col justify-evenly h-[150px] shadow-2xl ">
               <div>
                 <h1 className="font-medium text-center  text-[18px] text-[#484848]">
                 1960 Topps Baseball Complete Set Ranked #20 on PSA Registry with 8.01
@@ -88,7 +88,7 @@ function MemoMain() {
           </li>
           <li>
             <img src={memoImage4} alt="memo" />
-            <div className="w-[900px] flex flex-col justify-evenly h-[150px] shadow-2xl ">
+            <div className="contentFooter w-[900px] flex flex-col justify-evenly h-[150px] shadow-2xl ">
               <div>
                 <h1 className="font-medium text-center  text-[18px] text-[#484848]">
                 Ed Figuroas 1978 New York Yankees World Series Champions 14K Gold

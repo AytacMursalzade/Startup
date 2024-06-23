@@ -64,7 +64,7 @@ const GovernmentSlideCor = () => {
 
   return (
     <div
-      className="w-[694px] m-h-[249px] text-[white] flex flex-col gap-[30px] justify-center items-center "
+      className="slidergov w-[694px] m-h-[249px] text-[white] flex flex-col gap-[30px] justify-center items-center "
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}

@@ -41,7 +41,7 @@ function DomainList() {
   ];
 
   return (
-    <div className="mt-[100px]">
+    <div className="Listdomain mt-[100px]">
       <div className="flex justify-between items-center px-[68px]">
         <h1 className="text-[35px] text-[black] font-bold">NEW .COM DOMAINS</h1>
         <button className="text-[16px] text-[#45414166] font-semibold w-[170px] h-[40px] rounded-[9px] bg-[#18AE91] hover:text-[black]">

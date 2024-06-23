@@ -118,22 +118,22 @@ function LabItemTwo() {
 
   return (
     <div className="px-[75px] mt-[75px]">
-      <h1 className="text-[24px] font-bold text-[#000000] max-600:ml-[-27px] ">
+      <h1 className="text-[24px] font-bold text-[#000000]">
         Most Recent Products
       </h1>
-      <ul className="grid grid-cols-4 gap-6 mt-[48px] max-w-full max-600:grid-cols-2">
+      <ul className="LabTwo grid grid-cols-4 gap-6 mt-[48px] max-w-full">
         {data.map((item, index) => (
           <li key={index}>
-            <div className="flex items-center gap-[8px] max-600:w-[231px] max-600:flex-col max-600:gap-4 max-600:justify-center max-600:ml-[-21px]">
+            <div className="LabThree flex items-center gap-[8px]">
               <Link to="/">
                 <img
-                  className="transition-transform duration-300 ease-in-out transform hover:scale-110 max-600:w-[231px] "
+                  className="LabImg transition-transform duration-300 ease-in-out transform hover:scale-110 "
                   width={112}
                   src={item.img}
                   alt="laboratory"
                 />
               </Link>
-              <div className="flex flex-col gap-[8px] max-600:w-[231px]">
+              <div className="flex flex-col gap-[8px]">
                 <Link to="/">
                   <h1 className="text-[17px] text-left hover:text-[#565ce0] text-[#484848] font-bold">
                     {item.description} <br /> {item.description1}

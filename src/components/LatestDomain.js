@@ -40,10 +40,10 @@ function LatestDomain() {
         </button>
       </div>
       <div className="mt-[50px]">
-        <ul className="PhonesAll flex justify-around">
+        <ul className="PhonesDomain flex justify-around">
           {data.map((item) => (
-            <li key={item.id} className="allPhones w-[320px] h-[260px] shadow-2xl flex flex-col items-center">
-              <div className="phoneBottom w-[320px] h-[90px] bg-[#18AE91] flex justify-center items-center">
+            <li key={item.id} className="PhonesDomain1 w-[320px] h-[260px] shadow-2xl flex flex-col items-center">
+              <div className="phoneBottomDom w-[320px] h-[90px] bg-[#18AE91] flex justify-center items-center">
                 <Link to="/">
                   <h1 className="text-[18px] font-bold text-[white]">{item.description}</h1>
                 </Link>

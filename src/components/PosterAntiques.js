@@ -22,7 +22,7 @@ function PosterAntiques() {
 
   return (
     <div>
-      <div className="flex gap-[15px] ml-[75px] mt-[140px] max-600:w-[500px]  max-600:flex max-600:flex-col  max-600:ml-[13px] ">
+      <div className="posterTall flex gap-[15px] ml-[75px] mt-[140px] max-600:w-[500px]  max-600:flex max-600:flex-col  max-600:ml-[13px] ">
         {data.map((item,index) => {
           const posterPage = {
             backgroundImage: `url(${item.img})`,
@@ -30,11 +30,11 @@ function PosterAntiques() {
             backgroundSize: "cover"
           }
           return (
-            <div key={index} style={posterPage} className="flex gap-[15px] max-600:w-[450px] max-600:h-[260px] max-600:flex max-600:justify-center">
+            <div key={index} style={posterPage} className="posterTall1 flex gap-[15px] max-600:w-[450px] max-600:h-[260px] max-600:flex max-600:justify-center">
               <Link>
-                <div className=" w-[600px] h-[382px] ml-[75px]">
+                <div className="posterM w-[600px] h-[382px] ml-[75px]">
                   <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px]">
-                    <div className="flex flex-col max-600:mt-[-100px] max-600:ml-[-18px] max-600:pl-[30px] ">
+                    <div className="posterMH flex flex-col max-600:mt-[-100px] max-600:ml-[-18px] max-600:pl-[30px] ">
                       <h1 className="font-extrabold text-[30px] text-white mt-[50px] max-600:text-[20px] ">
                         {item.description}
                       </h1>

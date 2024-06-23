@@ -3,6 +3,7 @@ import fundImg1 from "../assets/fund1.png"
 import fundImg2 from "../assets/fund2.png"
 import fundImg3 from "../assets/fund3.jpg"
 import { Link } from 'react-router-dom'
+import { FaGavel } from 'react-icons/fa'
 
 function FundFooterBtm() {
 
@@ -28,7 +29,17 @@ function FundFooterBtm() {
     ]
   return (
     <div>
-      <ul className="flex gap-[30px] mt-[75px]  mb-[100px] justify-center ">
+          <div className="mainFund flex flex-col items-center justify-center">
+            <h1 className="topic font-bold text-[34px]">THE CAUSES OF IBID</h1>
+            <div className="gavel flex items-center justify-center mt-[15px]">
+              <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
+              <span className="font-bold text-[#D4A619] text-[27px]">
+                <FaGavel />
+              </span>
+              <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_left"></div>
+            </div>
+          </div>
+      <ul className="FundMain flex gap-[30px] mt-[75px]  mb-[100px] justify-center ">
         {image.map(item => (
           <li key={item.id} className="w-[420px] min-h-[405px] relative shadow-2xl flex flex-col gap-[10px]  items-center ">
             <Link to="/" >

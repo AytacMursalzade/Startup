@@ -10,14 +10,13 @@ import HeaderArrage from "../components/HeaderArrage";
 import LatestAuto from "../components/LatestAuto";
 import PosterAutomotive from "../components/PosterAutomotive";
 import SalesAutomotive from "../components/SalesAutomotive";
-import artAuto from "../assets/Automotive.jpg";
 
 function Automotive() {
   return (
     <div className="container automark ">
     <HeaderArrage basketColor="#EE964B" Logoimage={LogoimageAuto}/>
     <Header bgColor="#EE964B"/>
-    <LatestAuto hoverTextBotm="colorOrange" hoverLatest="colorOrangebg" OneLatest="LATEST AUCTIONS" toolRadius="50%" textLatest="Orange Fiat 500" art={artAuto} GavelTextColor="#EE964B" tooltipBg="#EE964B" howToused="Current Bid" />
+    <LatestAuto  />
     <PosterAutomotive />
     <SalesAutomotive SalesText="El Camino" hoverTextColor="#EE964B"/>
     <LocationAuto helpGavel="#EE964B"/>

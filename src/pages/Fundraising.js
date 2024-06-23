@@ -1,18 +1,18 @@
 import React from 'react'
 import FundHeader from '../components/FundHeader'
-import FundFilter from '../components/FundFilter'
 import FundFooterBtm from '../components/FundFooterBtm'
 import FooterFilter from '../components/FooterFilter'
 import Footer from '../components/Footer'
 import imageloGo from "../assets/logo-machinery.png"
 import FundSlide from '../components/FundSlide'
+import FindFilter from '../components/FindFilter'
 
 function Fundraising() {
   return (
     <div>
       <FundHeader />
       <FundSlide />
-      <FundFilter />
+      <FindFilter />
       <FundFooterBtm />
       <FooterFilter rounded="45px" bgColor="#D4A619" />
       <Footer

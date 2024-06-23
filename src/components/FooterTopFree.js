@@ -53,27 +53,27 @@ function FooterTopFree() {
   ];
   return (
     <div className="mt-[100px] ">
-      <div className=" px-[120px] mb-[30px] ">
+      <div className="freeStyle px-[120px] mb-[30px] ">
         <h1 className="topic text-[32px] text-[#222222] font-bold">
           Benefits of iBid
         </h1>
-        <p className="gavel text-[18px] text-[#606060] font-light">
+        <p className="freeStyleP  text-[18px] text-[#606060] font-light">
           Nunc est velit, dapibus nec mi id, laoreet mattis elit.
         </p>
       </div>
-      <ul className="ftres grid grid-cols-3 gap-[30px] px-[120px]">
+      <ul className="ftresFree grid grid-cols-3 gap-[30px] px-[120px]">
         {information.map((item, index) => (
-          <li key={index} className="communityPost w-[420px] flex flex-wrap pb-[2px]">
+          <li key={index} className="communityPostFree w-[420px] flex flex-wrap pb-[2px]">
             <div className="communitylink flex flex-col">
               
               <div className="flex gap-[15px] items-center ">
                 <img width={50} src={item.img} alt="freelancer" />
-                <h1 className="text-[18px] text-[#222222] font-bold">
+                <h1 className="freeBolder text-[18px] text-[#222222] font-bold">
                   {item.description}
                 </h1>
               </div>
               <div>
-                <p className="text-[15px] text-[#606060] mt-[10px] font-light">
+                <p className="FreeP text-[15px] text-[#606060] mt-[10px] font-light">
                   {item.paragraph} <br />
                   {item.paragraph1} <br />
                   {item.paragraph3}

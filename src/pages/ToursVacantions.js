@@ -8,11 +8,6 @@ import ToursSlide from "../components/ToursSlide";
 import Mainbottom from "../components/Mainbottom";
 import TourPoster from "./../components/TourPoster";
 import TourSales from "../components/TourSales";
-import imageTour from "../assets/tourCattle.jpg";
-import imagePoster3 from "../assets/ourCruises.jpg";
-import imgPoster from "../assets/ToursBullet.jpg";
-import imagePoster5 from "../assets/breaks.jpg";
-import imagePoster4 from "../assets/realEstateHome.jpg";
 import TourImg from "../components/TourImg";
 import ReadBtn from "./../components/ReadBtn";
 import LatestTour from "../components/LatestTour";
@@ -31,36 +26,9 @@ function ToursVacantions() {
         colorP="white"
         colorH="white"
       />
-      <LatestTour
-        hoverTextBotm="colorBlueMania"
-        hoverLatest="colorBlueManiabg"
-      />
+      <LatestTour/>
       <TourPoster />
-      <TourSales
-        display={false}
-        imagePoster4={imagePoster4}
-        imagePoster3={imagePoster3}
-        tooltipBg="#6FCBF4"
-        howToused="Starting Bid"
-        textLatest="Budapest, Hungary"
-        hoveredSales="colorBlueMania"
-        hoverBGsales="colorBlueManiabg"
-        imagePoster5={imagePoster5}
-        imgPoster={imgPoster}
-        SalesText="Budapest,Hungary"
-        imageTour={imageTour}
-        toolBg="#6FCBF4"
-        textPosterCard="TOURS"
-        productCard="Products"
-        numberProduct="3"
-        productName="Products"
-        posterCard="CRUISES"
-        numberPoster="3"
-        numberPoster3="3"
-        productName1="Products"
-        numberPoster1="3"
-        productName3="Products"
-      />
+      <TourSales/>
       <TourImg />
       <ReadBtn
         nameAuction="LATEST NEWS"

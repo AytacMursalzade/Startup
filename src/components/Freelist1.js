@@ -11,38 +11,47 @@ import post9 from "../assets/post9.png";
 import post10 from "../assets/post10.png";
 import post11 from "../assets/post11.png";
 import post12 from "../assets/post12.png";
+import { Link } from "react-router-dom";
 
 function Freelist1() {
- 
+  const categories = [
+    { img: post1, title: "Web Development (5)" },
+    { img: post2, title: "Php (3)" },
+    { img: post3, title: "Banner Design (3)" },
+    { img: post4, title: "CSS (2)" },
+    { img: post5, title: "Copywriting (5)" },
+    { img: post6, title: "Web Analytics (3)" },
+    { img: post7, title: "JavaScript (3)" },
+    { img: post8, title: "Photo Editing (1)" },
+    { img: post9, title: "Web Designert (5)" },
+    { img: post10, title: "Link Building (2)" },
+    { img: post11, title: "Linux (3)" },
+    { img: post12, title: "Server (3)" },
+  ];
 
   return (
-    <div className="mt-[75px] ">
-      <div className=" px-[120px] mb-[30px] ">
-        <h1 className="text-[32px] text-[#222222] font-bold">
-        Categories
-        </h1>
+    <div className="listFree mt-[75px] ">
+      <div className="listFreeDesc px-[120px] mb-[30px] ">
+        <h1 className="text-[32px] text-[#222222] font-bold">Categories</h1>
         <p className="text-[18px] text-[#606060] font-light">
           Nunc est velit, dapibus nec mi id, laoreet mattis elit.
         </p>
       </div>
-      <ul className="flex flex-wrap justify-around mx-[100px] gap-[20px] ">
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post1} alt="frelancer" /> Web Development (5)</li>
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post2} alt="frelancer" /> Php (3)</li>
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post3} alt="frelancer" /> Banner Design (3)</li>
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post4} alt="frelancer" /> CSS (2)</li>
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post5} alt="frelancer" /> Copywriting (5)</li>
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post6} alt="frelancer" /> Web Analytics (3)</li>
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post7} alt="frelancer" /> JavaScript (3)</li>
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post8} alt="frelancer" /> Photo Editing (1)</li>
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post9} alt="frelancer" /> Web Designert (5)</li>
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post10} alt="frelancer" /> Link Building (2)</li>
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post11} alt="frelancer" /> Linux (3)</li>
-       <li className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] px-[12px] border-2 border-[gray] "><img width={38} src={post12} alt="frelancer" /> Server (3)</li>
-      
+      <ul className="FreeListOne flex flex-wrap justify-around mx-[100px] gap-[20px] ">
+        {categories.map((category, index) => (
+          <Link to="/">
+            <li
+              key={index}
+              className="w-[280px] flex items-center gap-[15px] text-[#151515] font-semibold text-[16px] h-[80px] hover:text-[#1163FA] px-[12px] border-2 border-[gray] "
+            >
+              <img width={38} src={category.img} alt="frelancer" />
+              {category.title}
+            </li>
+          </Link>
+        ))}
       </ul>
     </div>
   );
 }
 
 export default Freelist1;
-

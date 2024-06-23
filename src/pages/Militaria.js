@@ -22,9 +22,7 @@ function Militaria() {
       <HeaderArrageArt basketColor="#5E3217" Logoimage={LogoimageMil} />
       <Header catStyle="catStyle" bgColor="#5E3217" />
       <MilImg />
-      <Mainbottom
-      
-      />
+      <Mainbottom/>
       <LatestMilitaria />
       <Filtermilitaria />
       <MilPoster />

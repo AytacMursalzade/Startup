@@ -5,10 +5,6 @@ import MemoraliaSlide from '../components/MemoraliaSlide'
 import MemoImg from "../assets/MemoSport.png"
 import MemoImg1 from "../assets/MemoHockey.png"
 import Mainbottom from '../components/Mainbottom'
-import image1 from "../assets/MemoItem1.png"
-import image2 from "../assets/MemoItem4.png"
-import image3 from "../assets/MemoItem3.png"
-import image4 from "../assets/MemoItem2.png"
 import MemoSlide1 from '../components/MemoSlide1'
 import Itemimg from "../assets/MemoItemSlide.jpg"
 import Memoitems from '../components/MemoItems'

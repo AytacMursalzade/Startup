@@ -14,6 +14,7 @@ import Footer from "../components/Footer";
 import LogoimageMachineWhite from "../assets/ibdiWhite.png";
 import MachineSales from "../components/MachineSales";
 import ReadBtnMachine from "../components/ReadBtnMachine";
+import LatestM from "../components/LatestM";
 
 function Machine() {
   return (
@@ -21,10 +22,7 @@ function Machine() {
       <HeaderArrage basketColor="#FBDE06" Logoimage={LogoimageMachine} />
       <Header bgColor="#151515" />
       <Slide />
-      <LatestAuto
-        hoverTextBotm="colorYellow"
-        hoverLatest="colorYellowbg"
-      />
+      <LatestM />
       <MachinePoster />
       <MachineSales toolBg="#FBDE06" hoveredSales="colorYellow" />
       <MachineImg imgMachineVideo={imgMachineVideo} />
@@ -33,7 +31,7 @@ function Machine() {
         GavelColorshop="colorYellow"
       />
       <SlideMachine />
-      <ReadBtnMachine btnColor="colorYellow"/>
+      <ReadBtnMachine />
       <FooterFilter rounded="45px" bgColor="#FBDE06" />
       <Footer
         

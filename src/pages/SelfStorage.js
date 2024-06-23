@@ -21,9 +21,7 @@ function SelfStorage() {
       <HeaderArrageArt basketColor="#414144" Logoimage={LogoimageStorage} />
       <Header catStyle="catStyle" bgColor="#414144" />
       <Slide />
-      <Mainbottom
-        
-      />
+      <Mainbottom/>
       <LatestSelf />
       <StoragePoster />
       <SelfLatest

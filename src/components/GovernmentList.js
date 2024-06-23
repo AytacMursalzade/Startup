@@ -121,11 +121,11 @@ function GovernmentList() {
     
   ];
   return (
-    <div className='px-[75px] flex flex-wrap gap-[69px] h-[695px] mt-[90px]  mb-[90px] '>
+    <div className='GovernList px-[75px] flex flex-wrap gap-[69px] h-[695px] mt-[90px]  mb-[90px] '>
       {data.map((category) => (
-        <div key={category.id} className='flex justify-around'>
-          <ul className='w-[280px] border-r-2 flex flex-col gap-[12px] border-r-[#d6d0d0]'>
-            <h1 className='font-bold text-[16px] text-[#242424] '>{category.description} AUCTIONS</h1>
+        <div key={category.id} className='category flex justify-around'>
+          <ul className='category-list w-[280px] border-r-2 flex flex-col gap-[12px] border-r-[#d6d0d0]'>
+            <h1 className='category-title font-bold text-[16px] text-[#242424] '>{category.description} AUCTIONS</h1>
             {category.items.map((item) => (
               <li key={item.id} className='flex items-center gap-[10px] text-[#777777] font-medium text-[17px] hover:text-[#a09797] '>
                 <MdChevronRight />

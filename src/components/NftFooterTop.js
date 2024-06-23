@@ -53,9 +53,9 @@ function NftFooterTop({hoverColor}) {
         </div>
       <ul className="ftres flex flex-row gap-[15px] mt-[15px] justify-around latestnew ">
         {data.map((item,index) =>(
-            <li key={index} className="communityPost flex flex-row mt-[20px] gap-[40px] max-600:px-[-50px]">
-            <Link to="/" className="relative w-[118px] h-[119px] overflow-hidden max-600:w-[423px] max-600:h-[400px] ">
-              <div className="communitylink w-[535px] h-[170px] flex max-600:w-[423px] max-600:h-[400px] ">
+            <li key={index} className="communityPost flex flex-row mt-[20px] gap-[40px]">
+            <Link to="/" className="relative w-[118px] h-[119px] overflow-hidden">
+              <div className="communitylink w-[535px] h-[170px] flex">
                 <div >
                   <img width={120} src={item.img} alt="nft" className="imgFoto w-full h-full mt-[-38px] " />
                 </div>

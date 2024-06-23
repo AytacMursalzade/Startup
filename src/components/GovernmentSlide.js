@@ -9,7 +9,7 @@ function GovernmentSlide({ imageGovern }) {
   };
 
   return (
-    <div style={GSlide} className="px-[75px] mx-[75px] h-[600px] ">
+    <div style={GSlide} className="GovernSlide px-[75px] mx-[75px] h-[600px] ">
       <div>
         <FilterPure />
       </div> 

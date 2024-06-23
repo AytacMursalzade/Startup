@@ -23,17 +23,17 @@ function ReadBtn({ btnColor, display1, display2, nameAuction, GavelColorshop }) 
       <div style={ArticleHidden2} className="flex flex-col items-center justify-center mt-[70px]">
         <h1 className="topic font-bold text-[34px] text-center">{nameAuction}</h1>
         <div className="gavel flex items-center justify-center mt-[15px]">
-          <div className="border-t-2 border-[#D8D7DC] w-[230px] mx-2"></div>
-          <span style={{ color: GavelColorshop }} className="font-bold text-[27px]">
-            <FaGavel />
-          </span>
-          <div className="border-t-2 border-[#D8D7DC] w-[230px] mx-2"></div>
-        </div>
+              <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
+              <span className="font-bold text-[#6FCBF4] text-[27px]">
+                <FaGavel />
+              </span>
+              <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_left"></div>
+            </div>
       </div>
       <div className="mb-[100px] flex justify-center  ">
         <ul className="flex gap-[25px] flex-wrap justify-center ">
           {dataSlide.map((article, index) => (
-            <li key={index} className="w-[440px] h-[250px] flex gap-[20px] border-2 max-600:flex max-600:flex-col max-600:w-[452px] max-600:h-[688px] ">
+            <li key={index} className="readFoto1 w-[440px] h-[250px] flex gap-[20px] border-2">
               <div
                 style={{
                   backgroundImage: `url(${article.img})`,

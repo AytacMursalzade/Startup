@@ -15,7 +15,6 @@ function Memoitems({
   hoverTextBotm,
   display1,
   display2,
-  toolimg,
 }) {
   const ToolStyle = {
     display: display1 ? "block" : "none",
@@ -36,16 +35,16 @@ function Memoitems({
     <>
       <div className="topic flex flex-col items-center justify-center mt-[126px] mb-[25px] ">
         <h1 className="font-bold text-[34px] text-[#242424] ">{OneLatest}</h1>
-        <p className="text-[#666666] text-[15px] front-light ">
+        <p className="MemoText text-[#666666] text-[15px] front-light ">
           Handpicked Memorabilia And Cards By iBid
         </p>
       </div>
 
-      <div className="PhonesAll flex gap-[50px] justify-center px-[71px] flex-wrap">
+      <div className="PhonesMemo flex gap-[50px] justify-center px-[71px] flex-wrap">
         {spor.map((item) => (
           <div
             key={item.id}
-            className="allPhones rounded-[9px] w-[290px] min-h-[425px] shadow-lg"
+            className="allMemo rounded-[9px] w-[290px] min-h-[425px] shadow-lg"
           >
             <div className="flex flex-col">
               <div
@@ -60,6 +59,8 @@ function Memoitems({
                       key={index}
                       style={button.style}
                       title={button.title}
+                      className="falseTooltip"
+
                     >
                       <button
                         style={{

@@ -61,9 +61,9 @@ function SalesCattle() {
 
   return (
     <>
-      <div className="viewPartArt flex flex-col gap-[73px] mt-[99px] mb-[100px]">
-        <div className="flex gap-[17px] justify-around ml-[75px] max-600:flex max-600:flex-col max-600:w-[486px] max-600:ml-[15px]">
-          <div style={PostBgImg1} className="w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] max-600:w-[454px] max-600:h-[236px]">
+      <div className="viewPart flex flex-col gap-[73px] mt-[99px] mb-[100px]">
+        <div className="onePoster1 flex gap-[17px] justify-around ml-[75px]">
+          <div style={PostBgImg1} className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px]">
             <h1 className="text-[27px] text-white font-extrabold">CHICKENS</h1>
             <p className="text-white flex gap-[8px]">
               <strong className="font-bold text-[16px]">4</strong> Products
@@ -72,15 +72,15 @@ function SalesCattle() {
               VIEW ALL ITEMS
             </button>
           </div>
-          <div className="flex flex-wrap gap-[22px] px-[18px] w-[1272px] max-600:w-[486px] max-600:flex max-600:flex-wrap max-600:px-[2px] max-600:items-center">
+          <div className="salesPartPost1 flex flex-wrap gap-[22px] px-[18px] w-[1272px]">
             {data.map((item, index) => (
-              <div key={index} className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] max-600:flex max-600:flex-col max-600:w-[219px] max-600:h-[331px]">
+              <div key={index} className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px]">
                 <Link>
                   <div className="overflow-hidden rounded-lg" style={{ width: '167px', height: '167px' }}>
                     <img src={item.img} alt="sales" className="transition duration-300 transform hover:scale-105" style={{ transformOrigin: 'center', transition: 'transform 0.5s ease' }} />
                   </div>
                 </Link>
-                <div className="flex flex-col gap-[20px] pl-[19px] justify-center">
+                <div className="titleProduct flex flex-col gap-[20px] pl-[19px] justify-center">
                   <Link>
                     <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[#627452] font-bold">
                       {item.description} <br /> {item.description1}
@@ -112,8 +112,8 @@ function SalesCattle() {
             ))}
           </div>
         </div>
-        <div className="flex gap-[17px] justify-around ml-[75px] max-600:flex max-600:flex-col max-600:w-[486px] max-600:ml-[15px]">
-          <div style={PostBgImg2} className="w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] max-600:w-[454px] max-600:h-[236px]">
+        <div className="onePoster1 flex gap-[17px] justify-around ml-[75px]">
+          <div style={PostBgImg2} className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px]">
             <h1 className="text-[27px] text-white font-extrabold">DONKEYS</h1>
             <p className="text-white flex gap-[8px]">
               <strong className="font-bold text-[16px]">4</strong> Products
@@ -122,15 +122,15 @@ function SalesCattle() {
               VIEW ALL ITEMS
             </button>
           </div>
-          <div className="flex flex-wrap gap-[22px] px-[18px] w-[1272px] max-600:w-[486px] max-600:flex max-600:flex-wrap max-600:px-[2px] max-600:items-center">
+          <div className="salesPartPost1 flex flex-wrap gap-[22px] px-[18px] w-[1272px]">
             {data.map((item, index) => (
-              <div key={index} className="salesPartArt w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] max-600:flex max-600:flex-col max-600:w-[219px] max-600:h-[331px]">
+              <div key={index} className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px]">
                 <Link>
                   <div className="overflow-hidden rounded-lg" style={{ width: '167px', height: '167px' }}>
                     <img src={item.img} alt="sales" className="transition duration-300 transform hover:scale-105" style={{ transformOrigin: 'center', transition: 'transform 0.5s ease' }} />
                   </div>
                 </Link>
-                <div className="flex flex-col gap-[20px] pl-[19px] justify-center">
+                <div className="titleProduct flex flex-col gap-[20px] pl-[19px] justify-center">
                   <Link>
                     <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[#627452] font-bold">
                       {item.description} <br /> {item.description1}
