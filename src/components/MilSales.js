@@ -183,14 +183,7 @@ function MilSales({
                       <FaGavel />
                     </button>
                   </Tooltip>
-                  <Tooltip style={styling} title="Add to cart">
-                    <button
-                      style={{ backgroundColor: toolBg }}
-                      className="rounded-[9px] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md "
-                    >
-                      <FaShoppingBasket />
-                    </button>
-                  </Tooltip>
+                  
                   <Tooltip title="Add to Wishlist">
                     <button
                       className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}
@@ -218,7 +211,7 @@ function MilSales({
           className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] "
         >
           <h1 className="text-[27px] text-white font-extrabold ">
-            {numberPoster}
+            {posterCard}
           </h1>
           <p className="text-white flex gap-[8px] ">
             <strong className="font-bold text-[16px] ">{numberProduct}</strong>

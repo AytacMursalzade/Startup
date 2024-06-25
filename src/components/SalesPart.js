@@ -92,13 +92,13 @@ function SalesPart() {
                     <img src={item.img} width={170} alt="sales" />
                   </div>
                 </Link>
-                <div className="titleProduct flex flex-col gap-[20px] justify-center ">
+                <div className=" flex flex-col gap-[20px] justify-center ">
                   <Link to={item.link}>
                     <h1 className="text-[#484848] text-[18px] transition-all duration-300 hover:text-[#2695FF] font-bold ">
                       {item.description}
                     </h1>
                   </Link>
-                  <div className="flex">
+                  <div className="titleProduct flex">
                     <p className="text-[14px] text-[#606060] font-light ">
                       {item.paragraf1}
                     </p>

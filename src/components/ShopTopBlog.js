@@ -23,7 +23,7 @@ function ShopTopBlog({
     display: display3 ? "block" : "none",
   };
   return (
-    <div className="w-[100%] h-[150px] shadow-xl px-[75px] py-[40px] max-600:w-[483px] max-600:h-[20px] ">
+    <div className="w-[100%] h-[150px] shadow-xl px-[75px] py-[40px] max-600:w-[100%] max-600:h-[20px] ">
       <div className="text-[#999999] text-[15px] flex gap-[10px] max-600:mt-[-40px] max-600:ml-[-58px] ">
         <Link to="/">
           <p>iBid Theme /</p>

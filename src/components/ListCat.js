@@ -124,10 +124,10 @@ function ListCat() {
         {categories.map((category) => (
           <button
             key={category}
-            className={`px-[15px] w-[274px] h-[62px] py-[10px] text-white ${
+            className={`px-[15px] w-[274px] h-[62px] py-[10px] text-[white] ${
               selectedCategory === category
-                ? "bg-[white] text-[#392061] font-normal"
-                : "bg-[#392061] font-bold"
+                ? "bg-[white] text-[darkblue] font-bolder"
+                : "bg-[#392061] text-[#fff] font-bold"
             }`}
             onClick={() => setSelectedCategory(category)}
           >

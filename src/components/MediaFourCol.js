@@ -23,11 +23,9 @@ function MediaFourCol() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
         responsive: [
             {
-                breakpoint: 600,
+                breakpoint: 583,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
@@ -36,56 +34,22 @@ function MediaFourCol() {
         ]
     };
 
-    function SampleNextArrow(props) {
-        const { className, style, onClick } = props;
-        return (
-            <div
-                className={className}
-                style={{ ...style, display: "block", background: "gray" }}
-                onClick={onClick}
-            />
-        );
-    }
-
-    function SamplePrevArrow(props) {
-        const { className, style, onClick } = props;
-        return (
-            <div
-                className={className}
-                style={{ ...style, display: "block", background: "gray" }}
-                onClick={onClick}
-            />
-        );
-    }
-
+    
     return (
-        <div className="container mx-auto mt-8">
-            <div className="hidden md:block"> 
-                <div className="flex justify-around">
-                    {data.map((item) => (
-                        <div key={item.id} className="p-4">
+        <div className="mt-8 mx-auto w-[90%] max-w-[600px]">
+            <Slider {...settings}>
+                {data.map((item) => (
+                    <div key={item.id} className="px-2">
+                        <div className="relative pt-[80px] w-full h-64">
                             <img
                                 src={item.img}
-                                alt={`Image ${item.id}`}
+                                alt={`Slide ${item.id}`}
                                 className="w-[150px] h-[100px] object-cover"
                             />
                         </div>
-                    ))}
-                </div>
-            </div>
-            <div className="block md:hidden"> 
-                <Slider {...settings}>
-                    {data.map((item) => (
-                        <div key={item.id} className="p-4">
-                            <img
-                                src={item.img}
-                                alt={`Image ${item.id}`}
-                                className="w-[150px] h-[100px] object-cover"
-                            />
-                        </div>
-                    ))}
-                </Slider>
-            </div>
+                    </div>
+                ))}
+            </Slider>
         </div>
     );
 }

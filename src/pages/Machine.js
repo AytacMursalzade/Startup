@@ -3,7 +3,6 @@ import HeaderArrage from "../components/HeaderArrage";
 import Header from "../components/Header";
 import Slide from "../components/Slide";
 import LogoimageMachine from "../assets/logo-machinery.png";
-import LatestAuto from "../components/LatestAuto";
 import MachinePoster from "../components/MachinePoster";
 import MachineImg from "../components/MachineImg";
 import imgMachineVideo from "../assets/video_ovr.png";

@@ -17,9 +17,12 @@ const navbarSlice = createSlice({
     closeSubmenu: (state) => {
       state.isSubmenuOpen = false;
     },
+    toggleSubmenu: state => {
+      state.isSubmenuOpen = !state.isSubmenuOpen;
+    }
   },
 });
 
-export const { openSubmenu, closeSubmenu } = navbarSlice.actions;
+export const { openSubmenu, closeSubmenu,toggleSubmenu } = navbarSlice.actions;
 
 export default navbarSlice.reducer;

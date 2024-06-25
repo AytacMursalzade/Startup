@@ -9,71 +9,102 @@ import book5 from "../assets/comBook3.jpg";
 function HoveredBook() {
   const data = [
     {
-      id:1,
-      img:book1,
-      description:"Collectable Comic Books",
-      title:"20 Products"
+      id: 1,
+      img: book1,
+      description: "Collectable Comic Books",
+      title: "20 Products",
     },
     {
-      id:2,
-      img:book2,
-      description:"Old Comic Books",
-      title:"29 Products"
+      id: 2,
+      img: book2,
+      description: "Old Comic Books",
+      title: "29 Products",
     },
     {
-      id:3,
-      img:book3,
-      description:"Literature Books",
-      title:"29 Products"
+      id: 3,
+      img: book3,
+      description: "Literature Books",
+      title: "29 Products",
     },
     {
-      id:4,
-      img:book4,
-      description:"Develop Personally",
-      title:"29 Products"
+      id: 4,
+      img: book4,
+      description: "Develop Personally",
+      title: "29 Products",
     },
     {
-      id:5,
-      img:book5,
-      description:"Colored Comics",
-      title:"29 Products"
+      id: 5,
+      img: book5,
+      description: "Colored Comics",
+      title: "29 Products",
     },
-  ]
+  ];
+
+  const getItemSize = (id) => {
+    switch (id) {
+      case 1:
+        return "w-[670px] h-[656px]";
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+        return "w-[320px] h-[320px]";
+      default:
+        return "w-[320px] h-[320px]";
+    }
+  };
 
   return (
-    <div className="BookP">
-      <div className="posterTall flex gap-[15px] ml-[75px] mt-[140px]">
-        {data.map((item,index) => {
-          const posterPage = {
-            backgroundImage: `url(${item.img})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover"
-          }
-          return (
-            <div key={index} style={posterPage} className="posterTall1 flex gap-[15px]">
-              <Link>
-                <div className="posterM w-[600px] h-[382px] ml-[75px]">
-                  <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px]">
-                    <div className="posterMH flex flex-col">
-                      <h1 className="font-extrabold text-[30px] text-white mt-[50px]">
-                        {item.description}
-                      </h1>
-                      <p className="text-white font-light">{item.title}</p>
-                    </div>
-                    <div>
-                      <button className="btnHovered border-1 border-black-100 hover:bg-white rounded-[8px] hover:text-[#EE964B] text-white font-semibold  border border-solid-1 px-[20px] py-[6px] ">
-                        VIEW MORE
-                      </button>
-                    </div>
+    <div className="book-container ml-[75px] mt-[140px] flex gap-[15px]">
+      <div className="flex flex-col gap-[15px]">
+       
+        <div className={`flex items-center justify-center ${getItemSize(1)}`} style={{ backgroundImage: `url(${data[0].img})`, backgroundPosition: "center", backgroundSize: "cover" }}>
+          <Link to="#">
+            <div className="w-[326px] h-full flex items-center mt-[495px] ml-[-247px] ">
+              <div >
+                <h1 className="font-extrabold text-[30px] text-white">{data[0].description}</h1>
+                <p className="text-white text-[16px] font-light">{data[0].title}</p>
+                
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+      <div className="flex flex-col gap-[15px]">
+       
+        <div className="flex gap-[15px]">
+          {data.slice(1, 3).map((item, index) => (
+            <div key={index} style={{ backgroundImage: `url(${item.img})`, backgroundPosition: "center", backgroundSize: "cover" }} className={`flex items-center justify-center ${getItemSize(item.id)}`}>
+              <Link to="#">
+                <div className="w-[326px] h-full flex items-center mt-[495px] ml-[-247px] ">
+                  <div>
+                    <h1 className="font-extrabold text-[20px] text-white">{item.description}</h1>
+                    <p className="text-white font-light">{item.title}</p>
+                    
                   </div>
                 </div>
               </Link>
             </div>
-          );
-        })}
+          ))}
+        </div>
+        <div className="flex gap-[15px]">
+          {data.slice(3).map((item, index) => (
+            <div key={index} style={{ backgroundImage: `url(${item.img})`, backgroundPosition: "center", backgroundSize: "cover" }} className={`flex items-center justify-center ${getItemSize(item.id)}`}>
+              <Link to="#">
+                <div className="w-[326px] h-full flex items-center ml-[25px]  ">
+                  <div>
+                    <h1 className="font-extrabold text-[20px] text-white">{item.description}</h1>
+                    <p className="text-white font-light">{item.title}</p>
+                    
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default HoveredBook;

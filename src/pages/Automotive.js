@@ -7,16 +7,16 @@ import Footer from "../components/Footer";
 import LogoimageAuto from "../assets/logo-ibid-automotive.png";
 import FooterFilter from "../components/FooterFilter";
 import HeaderArrage from "../components/HeaderArrage";
-import LatestAuto from "../components/LatestAuto";
 import PosterAutomotive from "../components/PosterAutomotive";
 import SalesAutomotive from "../components/SalesAutomotive";
+import AutomotiveLatest from "../components/AutomotiveLatest";
 
 function Automotive() {
   return (
     <div className="container automark ">
     <HeaderArrage basketColor="#EE964B" Logoimage={LogoimageAuto}/>
     <Header bgColor="#EE964B"/>
-    <LatestAuto  />
+    <AutomotiveLatest />
     <PosterAutomotive />
     <SalesAutomotive SalesText="El Camino" hoverTextColor="#EE964B"/>
     <LocationAuto helpGavel="#EE964B"/>

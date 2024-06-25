@@ -49,7 +49,7 @@ function PieChart() {
     <>
       <div className="mt-[100px] ">
         <h1 className="text-[32px] font-bold text-[#333] ml-[100px] mb-[5px]">Piecharts</h1>
-        <div className="flex justify-around">
+        <div className="chartPie flex justify-around">
           {chartData.map((item, index) => (
             <div
               key={index}
@@ -58,7 +58,9 @@ function PieChart() {
                 width: "380px",
                 height: "400px",
                 margin: "1%",
+               
               }}
+              
             >
               <Chart
                 chartType="PieChart"
@@ -66,6 +68,7 @@ function PieChart() {
                 height="100%"
                 data={item.data}
                 options={options}
+                className="chartpiedough"
               />
               <div
                 style={{

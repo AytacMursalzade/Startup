@@ -32,11 +32,11 @@ function ServicesTable() {
     ];
 
     return (
-        <div>
+        <div className='services'>
             <h1 className='text-[32px] font-bold text-[#333] mt-[100px] ml-[75px] mb-[20px]'>Services</h1>
             <div className='flex justify-around flex-wrap'>
                 {data.map((item) => (
-                    <div key={item.id} className='w-[30%] mb-[20px]'>
+                    <div key={item.id} className='servicesItem w-[30%] mb-[20px]'>
                         <div className='flex flex-col items-center'>
                             <img src={item.img} alt="service" className='service-img mb-[10px]' />
                             <h1 className='text-[18px] font-bold text-[#333] mb-[10px]'>{item.description}</h1>
