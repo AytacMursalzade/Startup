@@ -21,31 +21,27 @@ function PosterAct() {
   ];
 
   return (
-    <div className="posterTall mt-[140px] lg:ml-[75px]">
-      <div className="flex flex-col max-600:flex max-600:items-center lg:flex-row lg:gap-[15px] lg:justify-start">
-        {data.map((item, index) => {
+    <div>
+      <div className="posterTall flex gap-[15px] ml-[75px] mt-[140px]">
+        {data.map((item,index) => {
           const posterPage = {
             backgroundImage: `url(${item.img})`,
             backgroundPosition: "center",
             backgroundSize: "cover"
-          };
+          }
           return (
-            <div
-              key={index}
-              style={posterPage}
-              className="posterTall1 w-full h-[382px] mb-[15px] lg:mb-0 lg:ml-[75px] max-600:w-[448px] max-600:h-[260px]   md:ml-[10px]"
-            >
-              <Link to="#">
-                <div className="posterM w-full h-full">
+            <div key={index} style={posterPage} className="posterTall1 flex gap-[15px]">
+              <Link>
+                <div className="posterM w-[600px] h-[382px] ml-[75px]">
                   <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px]">
-                    <div className="posterMH flex flex-col max-600:mt-[-100px] max-600:ml-[-18px]  ">
-                      <h1 className="font-extrabold text-[30px] text-white mt-[50px] max-600:text-[20px]">
+                    <div className="posterMH flex flex-col">
+                      <h1 className="font-extrabold text-[30px] text-white mt-[50px]">
                         {item.description}
                       </h1>
                       <p className="text-white font-light">{item.title}</p>
                     </div>
                     <div>
-                      <button className="btnHovered border-1 border-black-100 hover:bg-white hover:text-[#2695FF] text-white font-semibold rounded-[9px] border border-solid-1 px-[20px] py-[6px]">
+                      <button className="btnHovered border-1 border-black-100 hover:bg-white rounded-[8px] hover:text-[#0543EC] text-white font-semibold  border border-solid-1 px-[20px] py-[6px] ">
                         VIEW MORE
                       </button>
                     </div>

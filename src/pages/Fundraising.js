@@ -23,7 +23,7 @@ function Fundraising() {
         FooterBG="#1C1F26"
         widthFooter="1897"
         bgFootBtm="#27282A"
-        heightFooter="230px"
+        heightFooter="300px"
         textColorFB="white"
         hoverFB="funYellow"
         hoverbgF="funYellowbg"

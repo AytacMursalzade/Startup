@@ -5,51 +5,51 @@ import { FaHeart } from "react-icons/fa6";
 import { FaRegClock } from "react-icons/fa";
 
 function CountersShort() {
-
     const data = [
         {
-            id:1,
+            id: 1,
             icon: <FaSignal />,
             numbers: "2,222",
-            paragraph:"App Downloads"
+            paragraph: "App Downloads"
         },
         {
-            id:2,
+            id: 2,
             icon: <BiSolidCoffeeAlt />,
             numbers: "612",
-            paragraph:"Coffees Consumed"
+            paragraph: "Coffees Consumed"
         },
         {
-            id:3,
+            id: 3,
             icon: <FaHeart />,
             numbers: "231",
-            paragraph:"Wide Grip Pushups"
+            paragraph: "Wide Grip Pushups"
         },
         {
-            id:4,
+            id: 4,
             icon: <FaRegClock />,
             numbers: "458",
-            paragraph:"Hours Worked"
+            paragraph: "Hours Worked"
         },
-    ]
-  return (
-    <div className='mt-[120px] '>
-      <h1 className='text-[32px] text-[#333333] font-bold ml-[90px] '>Counters</h1>
-      <ul className='flex justify-around'>
-        {data.map((items,index) =>(
-            <li key={index}>
-            <div className='flex flex-col'>
-                <div className='text-[60px] text-[#333] font-black '>{items.numbers}</div>
-                <div className='flex gap-[10px] items-center text-[20px] text-[#888] '>
-                    <div>{items.icon}</div>
-                    <div>{items.paragraph}</div>
-                </div>
+    ];
+
+    return (
+        <div className='mt-[120px]'>
+            <h1 className='text-[32px] text-[#333333] font-bold ml-[90px]'>Counters</h1>
+            <div className='flex-container'>
+                {data.map((item, index) => (
+                    <div className='count' key={index}>
+                        <div className='flex flex-col'>
+                            <div className='text-[60px] text-[#333] font-black'>{item.numbers}</div>
+                            <div className='flex gap-[10px] items-center text-[20px] text-[#888]'>
+                                <div>{item.icon}</div>
+                                <div>{item.paragraph}</div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
-        </li>
-        ))}
-      </ul>
-    </div>
-  )
+        </div>
+    );
 }
 
-export default CountersShort
+export default CountersShort;

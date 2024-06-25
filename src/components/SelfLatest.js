@@ -131,7 +131,7 @@ function SelfLatest({
           </p>
           <button
             
-            className="w-[205px] h-[50px] hover:bg-[white] bg-[#4F89B0] hover:text-[#4F89B0] text-[14px] font-semibold text-[white] rounded-[9px] "
+            className="w-[205px] h-[50px] hover:bg-[white]  hover:text-[#4F89B0] text-[14px] font-semibold text-[white] rounded-[9px] "
           >
             VIEW ALL ITEMS
           </button>
@@ -215,7 +215,7 @@ function SelfLatest({
           </p>
           <button
             
-            className="w-[205px] h-[50px] hover:bg-[white] bg-[#4F89B0] hover:text-[#4F89B0] text-[14px] font-semibold text-[white] rounded-[9px] "
+            className="w-[205px] h-[50px] hover:bg-[white]  hover:text-[#4F89B0] text-[14px] font-semibold text-[white] rounded-[9px] "
           >
             VIEW ALL ITEMS
           </button>

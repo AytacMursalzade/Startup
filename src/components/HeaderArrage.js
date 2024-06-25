@@ -111,9 +111,7 @@ function HeaderArrage({basketColor,Logoimage,bgColor,display2}) {
             <Link to="/">
               <FaBasketShopping />
             </Link>
-            <Link to="/">
-              <GiHamburgerMenu className="hamburgerMenu" />
-            </Link>
+            
           </div>
         </div>
         <div className="flex  border-solid shadow-lg rounded-l-3xl rounded-r-3xl ">

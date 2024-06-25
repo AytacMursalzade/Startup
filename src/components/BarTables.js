@@ -65,7 +65,7 @@ const chartData = [
 
 function BarTables() {
   return (
-    <div className="mt-[100px]">
+    <div className="BarTable mt-[100px]">
       <h1 className='text-[32px] ml-[80px] font-bold text-[#333] mb-[20px]'>Bar Charts</h1>
       <div className="flex justify-evenly gap-[25px]">
         <div className="flex flex-col items-center w-[30%]">

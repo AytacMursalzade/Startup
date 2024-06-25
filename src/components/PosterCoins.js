@@ -44,7 +44,7 @@ function PosterCoins() {
                         <p className="text-white font-light">{item.title}</p>
                       </div>
                       <div>
-                        <button className="btnHovered border-1 border-black-100 hover:bg-white rounded-[8px] hover:text-[#EE964B] text-white font-semibold  border border-solid-1 px-[20px] py-[6px] ">
+                        <button className="btnHovered border-1 border-black-100 hover:bg-white rounded-[8px] hover:text-[#2695FF] text-white font-semibold  border border-solid-1 px-[20px] py-[6px] ">
                           VIEW MORE
                         </button>
                       </div>

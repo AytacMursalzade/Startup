@@ -32,22 +32,22 @@ function LabFinish() {
   return (
     <div className="mt-[30px] px-[75px]">
       <div className="flex flex-col items-center justify-center mt-[126px]">
-        <h1 className="font-bold text-[24px] text-[#242424] self-start max-600:self-start max-600:ml-[-36px] max-600:text-[30px] ">
+        <h1 className="font-bold text-[24px] text-[#242424] self-start">
           From the Blog
         </h1>
       </div>
       <div className="flex justify-center ">
-        <ul className="flex gap-[45px] mt-[35px]  flex-wrap max-600:gap-[29px]">
+        <ul className="flex gap-[30px] mt-[35px] flex-wrap">
           {items.map((item) => (
             <li
               key={item.id}
-              className="w-[480px] h-[461px] flex flex-col gap-[20px] max-600:w-[450px] max-600:h-auto max-600:gap-[15px]"
+              className="w-[420px] h-[461px] flex flex-col gap-[20px]"
             >
               <Link to="/" className="relative block">
                 <img
                   src={item.img}
                   alt="memorabilia"
-                  className="w-full h-auto max-600:w-full max-600:h-[253px]"
+                  className="w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-black opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
               </Link>
