@@ -17,7 +17,7 @@ import FilterCatCattle from "../components/FilterCatCattle";
 
 function CattleAuction() {
   return (
-    <div className="container">
+    <div>
       <HeaderArrage basketColor="#627452" Logoimage={LogoimageCattle} />
       <Header bgColor="#627452" />
       <Cattle />

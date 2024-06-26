@@ -17,7 +17,7 @@ import LatestM from "../components/LatestM";
 
 function Machine() {
   return (
-    <div className="container">
+    <div>
       <HeaderArrage basketColor="#FBDE06" Logoimage={LogoimageMachine} />
       <Header bgColor="#151515" />
       <Slide />

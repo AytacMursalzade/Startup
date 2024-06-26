@@ -17,7 +17,7 @@ import Footer from '../components/Footer'
 
 function Government() {
   return (
-    <div className='container'>
+    <div>
       <GovernmentHeader src={src}/>
       <GovernmentSlide imageGovern={imageGovern}/>
       <GovernmentList />

@@ -15,7 +15,7 @@ import LatestArt from "../components/LatestArt";
 
 function ArtAuction() {
   return (
-    <div className="container">
+    <div>
       <HeaderArrageArt basketColor="#0543EC" Logoimage={Logoimage1}/>
       <Header bgColor="#0543EC"/>
       <LatestArt />

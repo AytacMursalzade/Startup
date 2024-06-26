@@ -16,7 +16,7 @@ import Locationn from "../components/Locationn";
 
 function Antiques() {
   return (
-    <div className="container">
+    <div>
       <HeaderArrageArt basketColor="#BE263F" Logoimage={Logoimage1} />
       <Header bgColor="#BE263F" />
       <LatesAnti />

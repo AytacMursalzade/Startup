@@ -17,7 +17,6 @@ function MilSales({
   productCard,
   productName,
   posterCard,
-  numberPoster,
   imgPoster,
   textPosterCard,
   numberProduct,

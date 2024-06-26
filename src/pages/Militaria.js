@@ -18,7 +18,7 @@ import Miltopfooter from "../components/Miltopfooter";
 
 function Militaria() {
   return (
-    <div className="container">
+    <div>
       <HeaderArrageArt basketColor="#5E3217" Logoimage={LogoimageMil} />
       <Header catStyle="catStyle" bgColor="#5E3217" />
       <MilImg />

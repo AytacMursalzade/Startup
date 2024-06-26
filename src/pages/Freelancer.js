@@ -9,7 +9,7 @@ import FooterFreeBtm from '../components/FooterFreeBtm';
 
 function Freelancer() {
   return (
-    <div className='container'>
+    <div>
         <FreelancerHeader />
         <FreelancerSlide />
         <FooterAverage />

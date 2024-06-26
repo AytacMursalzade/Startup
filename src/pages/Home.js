@@ -18,7 +18,7 @@ import imageHomeLoc from "../assets/location.png";
 function Home() {
   return (
     <>
-      <div className="container">
+      <div>
         <HeaderArrage basketColor="#0543EC" Logoimage={Logoimage1}/>
         <Header bgColor="#2695FF"/>
         <Slide />

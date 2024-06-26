@@ -22,7 +22,7 @@ function Handmade() {
    
 
   return (
-    <div className="container">
+    <div>
       <HeaderArrage display2={false} basketColor="#C16BB6" Logoimage={LogoimageHandMade} />
       <Header bgColor="#C16BB6"/>
       <Slidehandmade imgHandPoster={imgHandPoster} />  

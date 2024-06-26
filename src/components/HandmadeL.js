@@ -48,7 +48,7 @@ function HandmadeL({ hoverTextBotm }) {
   ];
 
   return (
-    <div className="handListOne container mx-auto">
+    <div className="handListOne mx-auto">
       <div className="handList  mx-[75px] my-[100px] flex flex-col gap-[50px] rounded-[9px]">
         {[0, 1].map((row) => (
           <ul key={row} className="flex justify-between gap-[20px] flex-wrap">

@@ -26,7 +26,6 @@ function Memoitems({
 
   const buttonData = [
     { title: "Bid Now", icon: <IoMdEye />, style: ToolStyle },
-    { title: "Add to cart", icon: <FaShoppingBasket />, style: ToolStyleNew },
     { title: "Add to Wishlist", icon: <CiHeart />, style: {} },
     { title: "Quickview", icon: <FaSearch />, style: {} },
   ];

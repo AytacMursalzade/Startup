@@ -19,7 +19,7 @@ import CountLatest from "../components/CountLatest";
 
 function CountDown() {
   return (
-    <div className="container">
+    <div>
       <HeaderArrage basketColor="#EA3546" Logoimage={LogoCount} />
       <Header bgColor="#EA3546" />
       <Slide />

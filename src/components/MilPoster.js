@@ -49,8 +49,10 @@ function MilPoster() {
     }
   };
 
+
   return (
-    <div>
+    <>
+      <div>
       <div className="posterTall flex flex-wrap gap-[10px] ml-[75px] mt-[140px]">
         {data.map((item, index) => {
           const posterPage = {
@@ -62,15 +64,15 @@ function MilPoster() {
             <div key={index} style={posterPage} className={`posterTall1 flex gap-[15px] ${getItemSize(item.id)}`}>
               <Link to="#">
                 <div className="posterM">
-                  <div className="flex flex-col gap-[40px] mt-[77px] ml-[53px]">
-                    <div className="posterMH mt-[-81px] flex flex-col">
+                  <div className="flex flex-col gap-[20px] mt-[77px] ml-[53px]">
+                    <div className="posterMH flex flex-col">
                       <h1 className="font-extrabold text-[30px] text-white mt-[50px]">
                         {item.description}
                       </h1>
                       <p className="text-white font-light">{item.title}</p>
                     </div>
                     <div>
-                      <button className="btnHovered border-1 border-black-100 hover:bg-white rounded-[8px] hover:text-[#5E3217] text-white font-semibold border border-solid-1 px-[20px] py-[6px]">
+                      <button className="btnHovered border-1 border-black-100 hover:bg-white rounded-[8px] hover:text-[#414144] text-white font-semibold border border-solid-1 px-[20px] py-[6px]">
                         VIEW MORE
                       </button>
                     </div>
@@ -82,6 +84,7 @@ function MilPoster() {
         })}
       </div>
     </div>
+    </>
   );
 }
 export default MilPoster
