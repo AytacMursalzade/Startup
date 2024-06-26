@@ -37,7 +37,7 @@ function NftFooterTop({hoverColor}) {
   
 
   return (
-    <div className="mt-[30px] px-[75px] ">
+    <div className="footerTopRes mt-[30px] px-[75px] ">
          <div className="flex flex-col items-center justify-center mt-[126px]">
           <h1 className="topic font-bold text-[34px] ">LATEST NEWS</h1>
 
@@ -54,7 +54,7 @@ function NftFooterTop({hoverColor}) {
       <ul className="ftres flex flex-row gap-[15px] mt-[15px] justify-around latestnew ">
         {data.map((item,index) =>(
             <li key={index} className="communityPost flex flex-row mt-[20px] gap-[40px]">
-            <Link to="/" className="relative w-[118px] h-[119px] overflow-hidden">
+            <Link to="/" className="imgTall relative w-[118px] h-[119px] overflow-hidden">
               <div className="communitylink w-[535px] h-[170px] flex">
                 <div >
                   <img width={120} src={item.img} alt="nft" className="imgFoto w-full h-full mt-[-38px] " />

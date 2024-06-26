@@ -8,10 +8,6 @@ import ArtImg from "../assets/art1new.jpg";
 import ArtImg1 from "../assets/art22new.jpg";
 import ArtImg2 from "../assets/art33new.jpg";
 import ArtImg3 from "../assets/art4new.jpg";
-import ArtImg5 from "../assets/art5new.jpg";
-import ArtImg6 from "../assets/art6new.jpg";
-import ArtImg7 from "../assets/art7new.jpg";
-import ArtImg8 from "../assets/art8new.jpg";
 import imgcattle1 from "../assets/artPoster1new.jpg";
 import imgcattle2 from "../assets/artPoster2new.jpg";
 
@@ -84,14 +80,17 @@ function SalesArt() {
     //   price: "$20.00",
     // },
   ];
+  const salesParts1 = data.slice(0, 4);
+  const salesParts2 = data.slice(4, 8);
+  const salesParts3 = data.slice(8, 12);
 
   return (
     <>
       <div className="viewPart flex flex-col gap-[73px] mt-[99px] mb-[100px] ">
-        <div className="onePoster1 flex gap-[17px] justify-around ml-[75px] max-600:flex max-600:flex-col max-600:w-[486px] max-600:ml-[15px] ">
+        <div className="onePoster1 flex gap-[17px] justify-around ml-[75px]">
           <div
             style={PostBgImg1}
-            className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] max-600:w-[454px] max-600:h-[236px] "
+            className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px]"
           >
             <h1 className="text-[27px] text-white font-extrabold ">ABSTRACT</h1>
             <p className="text-white flex gap-[8px] ">
@@ -101,11 +100,11 @@ function SalesArt() {
               VIEW ALL ITEMS
             </button>
           </div>
-          <div className="salesPartPost1 flex flex-wrap gap-[22px]  px-[18px] w-[1272px] max-600:w-[486px] max-600:flex   max-600:flex-wrap max-600:px-[2px] max-600:items-center ">
-            {data.map((item, index) => (
+          <div className="salesPartPost1 flex flex-wrap gap-[22px]  px-[18px] w-[1272px]">
+            {salesParts1.map((item, index) => (
               <div
                 key={index}
-                className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] max-600:flex max-600:flex-col max-600:w-[219px] max-600:h-[331px] "
+                className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px]"
               >
                 <Link>
                   <div
@@ -160,10 +159,10 @@ function SalesArt() {
             ))}
           </div>
         </div>
-        <div className="onePoster1 flex gap-[17px] justify-around ml-[75px] max-600:flex max-600:flex-col max-600:w-[486px] max-600:ml-[15px] ">
+        <div className="onePoster1 flex gap-[17px] justify-around ml-[75px]">
           <div
             style={PostBgImg2}
-            className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px] max-600:w-[454px] max-600:h-[236px] "
+            className="Poster w-[420px] h-[480px] flex justify-center items-center flex-col gap-[15px]"
           >
             <h1 className="text-[27px] text-white font-extrabold ">ANTIQUE</h1>
             <p className="text-white flex gap-[8px] ">
@@ -173,11 +172,11 @@ function SalesArt() {
               VIEW ALL ITEMS
             </button>
           </div>
-          <div className="salesPartPost1 flex flex-wrap gap-[22px]  px-[18px] w-[1272px] max-600:w-[486px] max-600:flex   max-600:flex-wrap max-600:px-[2px] max-600:items-center ">
+          <div className="salesPartPost1 flex flex-wrap gap-[22px]  px-[18px] w-[1272px] ">
             {data.map((item, index) => (
               <div
                 key={index}
-                className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px] max-600:flex max-600:flex-col max-600:w-[219px] max-600:h-[331px] "
+                className="salesPart w-[457px] h-[230px] shadow-xl flex justify-start items-center gap-[12px] px-[15px]"
               >
                 <Link>
                   <div

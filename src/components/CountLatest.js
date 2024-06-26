@@ -104,7 +104,7 @@ function CountLatest() {
               VIEW ALL ITEMS
             </button>
           </div>
-          <div className="salesPartPost1 flex flex-wrap gap-[22px]  px-[18px] w-[1272px] ">
+          <div className="salesPartPost flex flex-wrap gap-[22px]  px-[18px] w-[1272px] ">
             {salesParts1.map((item, index) => (
               <div
                 key={index}
@@ -162,7 +162,7 @@ function CountLatest() {
               VIEW ALL ITEMS
             </button>
           </div>
-          <div className="salesPartPost1 flex flex-wrap gap-[22px]  px-[18px] w-[1272px] ">
+          <div className="salesPartPost flex flex-wrap gap-[22px]  px-[18px] w-[1272px] ">
             {salesParts2.map((item, index) => (
               <div
                 key={index}
@@ -218,7 +218,7 @@ function CountLatest() {
               VIEW ALL ITEMS
             </button>
           </div>
-          <div className="salesPartPost1 flex flex-wrap gap-[22px]  px-[18px] w-[1272px] ">
+          <div className="salesPartPost flex flex-wrap gap-[22px]  px-[18px] w-[1272px] ">
             {salesParts3.map((item, index) => (
               <div
                 key={index}

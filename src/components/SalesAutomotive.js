@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGavel, FaSearch, FaShoppingBasket, FaHeart } from "react-icons/fa";
+import { FaGavel, FaSearch,FaHeart } from "react-icons/fa";
 import Tooltip from "@mui/material/Tooltip";
 import Car1 from "../assets/item1.jpg";
 import Car2 from "../assets/item2.jpg";
@@ -109,19 +109,12 @@ function SalesAutomotive({
                 <Tooltip style={styll} title="Bid Now">
                   <button
                     style={{ backgroundColor: toolBg }}
-                    className="rounded-[9px] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md "
+                    className="rounded-[9px] text-[white] bg-[#EE964B] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md "
                   >
                     <FaGavel />
                   </button>
                 </Tooltip>
-                <Tooltip style={styling} title="Add to cart">
-                  <button
-                    style={{ backgroundColor: toolBg }}
-                    className="rounded-[9px] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md "
-                  >
-                    <FaShoppingBasket />
-                  </button>
-                </Tooltip>
+                
                 <Tooltip title="Add to Wishlist">
                   <button
                     className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}
@@ -193,19 +186,12 @@ function SalesAutomotive({
                 <Tooltip style={styll} title="Bid Now">
                   <button
                     style={{ backgroundColor: toolBg }}
-                    className="rounded-[9px] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md "
+                    className="rounded-[9px] text-white bg-[#EE964B] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md "
                   >
                     <FaGavel />
                   </button>
                 </Tooltip>
-                <Tooltip style={styling} title="Add to cart">
-                  <button
-                    style={{ backgroundColor: toolBg }}
-                    className="rounded-[9px] text-white flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md "
-                  >
-                    <FaShoppingBasket />
-                  </button>
-                </Tooltip>
+                
                 <Tooltip title="Add to Wishlist">
                   <button
                     className={`rounded-[9px] ${hoverBGsales} hover:text-white text-[#606060] flex justify-center items-center text-[13px] w-[33px] h-[32px] shadow-md `}

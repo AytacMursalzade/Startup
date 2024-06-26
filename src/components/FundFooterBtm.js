@@ -48,7 +48,7 @@ function FundFooterBtm() {
             </Link>
             <p className="text-[#D4A619] text-center  text-[14px] font-medium">{item.date}</p>
             <Link to="/">
-              <h1 className="text-[#151515] text-center hover:text-[#D4A619]  font-semibold text-[18px]">
+              <h1 className=" text-[#151515] text-center hover:text-[#D4A619]  font-semibold text-[18px]">
                 {item.description}<br/>{item.description1}
               </h1>
             </Link>

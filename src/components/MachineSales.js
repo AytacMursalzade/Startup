@@ -232,7 +232,7 @@ function MachineSales() {
             VIEW ALL ITEMS
           </button>
         </div>
-        <div className="salesPartPost1 flex flex-wrap gap-[22px] px-[18px] w-[1272px]">
+        <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px]">
           {renderItems(excavatorsData)}
         </div>
       </div>
@@ -252,7 +252,7 @@ function MachineSales() {
             VIEW ALL ITEMS
           </button>
         </div>
-        <div className="salesPartPost1 flex flex-wrap gap-[22px] px-[18px] w-[1272px]">
+        <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px]">
           {renderItems(buldozersData)}
         </div>
       </div>
@@ -272,7 +272,7 @@ function MachineSales() {
             VIEW ALL ITEMS
           </button>
         </div>
-        <div className="salesPartPost1 flex flex-wrap gap-[22px] px-[18px] w-[1272px]">
+        <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px]">
           {renderItems(compactorsData)}
         </div>
       </div>
@@ -292,7 +292,7 @@ function MachineSales() {
             VIEW ALL ITEMS
           </button>
         </div>
-        <div className="salesPartPost1 flex flex-wrap gap-[22px] px-[18px] w-[1272px]">
+        <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px]">
           {renderItems(cranesData)}
         </div>
       </div>
