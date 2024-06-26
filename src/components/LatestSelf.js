@@ -44,11 +44,10 @@ function LatestSelf() {
 
   return (
     <>
-      <div className="latestMain">
-        <div className="viewPartLatest mt-[126px] mb-[75px]">
+      <div className="mt-[126px] mb-[75px]">
           <div className=" flex flex-col items-center justify-center">
             <h1 className="topic font-bold text-[34px]">LATEST AUCTIONS</h1>
-            <div className="gavel flex items-center justify-center mt-[15px]">
+            <div className="gavel  flex items-center justify-center mt-[15px]">
               <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>
               <span className="font-bold text-[#414144] text-[27px]">
                 <FaGavel />
@@ -57,11 +56,11 @@ function LatestSelf() {
             </div>
           </div>
 
-          <div className="salesPartPost flex flex-wrap gap-[13px] mt-[30px]  px-[71px]">
+          <div className="PhonesMemo flex flex-wrap gap-[13px] mt-[30px]  px-[71px]">
             {data.map((item, index) => (
               <div
                 key={index}
-                className="salesPart relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group max-600:w-[219px]"
+                className="allMemo relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group max-600:w-[219px]"
               >
                 <div
                 
@@ -99,9 +98,9 @@ function LatestSelf() {
                       {item.description}
                     </h2>
                   </Link>
-                  <div className="flex gap-[5px]">
-                    <p className="text-[#606060] text-[16px] font-light leading-[22px]">
-                      {item.paragraph}
+                  <div className="tooldesc flex gap-[5px]">
+                    <p className=" text-[#606060] text-[16px] font-light leading-[22px]">
+                      {item.paragraf1}
                     </p>
                     <p className="text-[14px] font-bold">{item.price}</p>
                   </div>
@@ -110,7 +109,6 @@ function LatestSelf() {
             ))}
           </div>
         </div>
-      </div>
     </>
   );
 }

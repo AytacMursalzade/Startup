@@ -44,8 +44,8 @@ function LatestTour() {
 
   return (
     <>
-      <div className="latestMain">
-        <div className="viewPartLatest mt-[126px] mb-[75px]">
+      <div>
+        <div className="mt-[126px] mb-[75px]">
           <div className=" flex flex-col items-center justify-center">
             <h1 className="topic font-bold text-[34px]">LATEST AUCTIONS</h1>
             <div className="gavel flex items-center justify-center mt-[15px]">
@@ -57,11 +57,11 @@ function LatestTour() {
             </div>
           </div>
 
-          <div className="salesPartPost flex flex-wrap gap-[13px] mt-[30px]  px-[71px]">
+          <div className="PhonesMemo flex flex-wrap gap-[13px] mt-[30px]  px-[71px]">
             {data.map((item, index) => (
               <div
                 key={index}
-                className="salesPart relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group max-600:w-[219px]"
+                className="allMemo relative w-[322px] h-[400px] flex flex-col shadow-lg overflow-hidden group max-600:w-[219px]"
               >
                 <div
                 

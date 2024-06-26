@@ -23,20 +23,7 @@ function Coins() {
       <Slide />
       <LatestCoins />
       <PosterCoins />
-      <SalesCoins
-        display5={true}
-        imagePoster={imgMil}
-        hoveredSales="colorshipsHarbour"
-        hoverBGsales="colorshipsHarbourbg"
-        imgPoster={imagePosterCoin}
-        toolBg="#4F89B0"
-        textPosterCard="ANCIENT"
-        productCard="Collections"
-        numberProduct="5"
-        productName="Collections"
-        posterCard="SILVER"
-        numberPoster="4"
-      />
+      <SalesCoins/>
       <Locationn
         radiusBorder="9px"
         img={locationimageCoins}
