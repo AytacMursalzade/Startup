@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGavel, FaSearch, FaHeart } from "react-icons/fa";
-import { IoMdEye } from "react-icons/io";
+import {FaSearch, FaHeart } from "react-icons/fa";
 import Tooltip from "@mui/material/Tooltip";
 import homeDataList2 from "../db/homeDataList2";
 import { FaBasketShopping } from "react-icons/fa6";

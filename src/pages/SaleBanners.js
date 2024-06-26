@@ -10,7 +10,7 @@ import Hovered from "../components/Hovered";
 
 function SaleBanners() {
   return (
-    <div className="container">
+    <div >
       <HeaderArrage basketColor="#0543EC" Logoimage={Logoimage1} />
       <Header bgColor="#2695FF" />
       <ShopTop title="Shop" paragraph="Sale Banner" description="Sale Banner"/>

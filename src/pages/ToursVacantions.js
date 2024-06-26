@@ -14,7 +14,7 @@ import LatestTour from "../components/LatestTour";
 
 function ToursVacantions() {
   return (
-    <div className="container">
+    <div>
       <NavbarBook bgColorTop="#022147" />
       <HeaderBook bgColor="#092A5F" src={imageloGo} basketColor="#6FCBF4" />
       <ToursSlide />

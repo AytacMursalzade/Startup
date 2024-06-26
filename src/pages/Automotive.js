@@ -13,7 +13,7 @@ import AutomotiveLatest from "../components/AutomotiveLatest";
 
 function Automotive() {
   return (
-    <div className="container automark ">
+    <div className="automark ">
     <HeaderArrage basketColor="#EE964B" Logoimage={LogoimageAuto}/>
     <Header bgColor="#EE964B"/>
     <AutomotiveLatest />

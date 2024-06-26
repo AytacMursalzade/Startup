@@ -14,7 +14,7 @@ import LogoimageList from "../assets/logo-ibid-automotive.png";
 
 function ListAuction() {
   return (
-    <div className="container">
+    <div>
       <HeaderArrage basketColor="#392061" Logoimage={LogoListimage} />
       <ListHeader />
       <ListSlider />

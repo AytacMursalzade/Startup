@@ -15,7 +15,7 @@ function FooterFilter({bgColor,rounded,mtfooteR}) {
             type="text"
             placeholder="Search products..."
           />
-          <button style={{borderRadius:rounded}} className="mr-[-25px]  flex justify-center items-center w-[43px] h-[43px] bg-[#484848] text-white ">
+          <button style={{borderRadius:rounded}} className="searchIcon mr-[-25px]  flex justify-center items-center w-[43px] h-[43px] bg-[#484848] text-white ">
             <IoSearchSharp size={20} />
           </button>
         </form>

@@ -18,7 +18,7 @@ import Memorabilia5 from '../components/Memorabilia5'
 
 function Memorabilia() {
   return (
-    <div className='container'>
+    <div >
       <HeaderHalf src={src} bgColorTop="#078169" bgColor="white"/>
       <MemoraliaSlide MemoImg={MemoImg} MemoImg1={MemoImg1}/>
       <Mainbottom />

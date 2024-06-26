@@ -17,7 +17,7 @@ import SelfFooter from "../components/SelfFooter";
 
 function SelfStorage() {
   return (
-    <div className="container">
+    <div>
       <HeaderArrageArt basketColor="#414144" Logoimage={LogoimageStorage} />
       <Header catStyle="catStyle" bgColor="#414144" />
       <Slide />

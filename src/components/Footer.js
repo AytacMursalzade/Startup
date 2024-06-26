@@ -84,7 +84,7 @@ function Footer({
             >
               Subscribe to our Newsletter
             </h1>
-            <form className="flex shadow-md relative max-600:w-[410px] ">
+            <form className="formLabelOne flex shadow-md relative max-600:w-[410px] ">
               <label>
                 <input
                   style={{ borderRadius: BrdInput }}

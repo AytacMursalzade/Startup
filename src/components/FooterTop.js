@@ -59,7 +59,7 @@ function FooterTop({hoverColor}) {
                 <div>
                   <img width={120} src={item.img} alt="nft" className="imgFoto w-full h-full mt-[-38px] " />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
+                <div className="imgHover absolute bottom-0 left-0 right-0 top-0 bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
               </div>
             </Link>
   

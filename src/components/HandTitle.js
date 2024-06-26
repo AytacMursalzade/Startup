@@ -64,7 +64,7 @@ function HandTitle() {
         </div>
       </div>
       <div className=" flex items-center justify-center relative">
-        <div className="container" style={{ overflowX: "hidden" }}>
+        <div style={{ overflowX: "hidden" }}>
           <Slider {...settings} className="w-full">
             {title.map((item) => (
               <div

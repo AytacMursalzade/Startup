@@ -9,7 +9,7 @@ function MainArravega() {
   return (
     <>
         <div className="mt-[126px] mb-[75px]">
-          <div className=" flex flex-col items-center justify-center">
+          <div className="topgav flex flex-col items-center justify-center">
             <h1 className="topic font-bold text-[34px]">LATEST AUCTIONS</h1>
             <div className="gavel flex items-center justify-center mt-[15px]">
               <div className="border border-t-[2px] border-[#D8D7DC] w-[230px] mx-2 arrow_right"></div>

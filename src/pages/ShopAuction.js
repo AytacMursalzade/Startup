@@ -15,7 +15,7 @@ import ShopLatest from "../components/ShopLatest";
 
 function ShopAuction() {
   return (
-    <div className="container">
+    <div>
       <HeaderArrageArt basketColor="#009EA3" Logoimage={LogoimageShop} />
       <Header catStyle="catStyle" bgColor="#009EA3" />
       <Slide />

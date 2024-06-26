@@ -9,11 +9,10 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
 import { RiAdminFill } from "react-icons/ri";
-import { GiHamburgerMenu } from "react-icons/gi";
 
-function HeaderArrage({basketColor,Logoimage,bgColor,display2}) {
+function HeaderArrage({ basketColor, Logoimage, bgColor, display2 }) {
   const handMade = {
-    display: display2 ? 'block' : 'none',
+    display: display2 ? "block" : "none",
   };
   return (
     <>
@@ -55,7 +54,10 @@ function HeaderArrage({basketColor,Logoimage,bgColor,display2}) {
           </Link>
         </div>
       </div>
-      <div style={{backgroundColor:bgColor,...handMade}} className="headerTop  flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">
+      <div
+        style={{ backgroundColor: bgColor, ...handMade }}
+        className="headerTop  flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 "
+      >
         <div className="flex justify-between gap-[28px]">
           <div className="hidden topHeader">
             <MdEmail />
@@ -98,20 +100,27 @@ function HeaderArrage({basketColor,Logoimage,bgColor,display2}) {
           <div className="logo">
             <img width={80} src={Logoimage} alt="logo" />
           </div>
-          <div className="iconsHeader  hidden ">
-            <Link to="/">
-              <RiAdminFill />
-            </Link>
-            <Link to="/">
-              <LuHeart />
-            </Link>
-            <Link to="/">
-              <FaSearch />
-            </Link>
-            <Link to="/">
-              <FaBasketShopping />
-            </Link>
-            
+          <div className="hidden ">
+            <div className="iconsHeader">
+              <Link to="/">
+                <RiAdminFill />
+              </Link>
+            </div>
+            <div className="iconsHeader">
+              <Link to="/">
+                <LuHeart />
+              </Link>
+            </div>
+            <div className="iconsHeader">
+              <Link to="/">
+                <FaSearch />
+              </Link>
+            </div>
+            <div className="iconsHeader">
+              <Link to="/">
+                <FaBasketShopping />
+              </Link>
+            </div>
           </div>
         </div>
         <div className="flex  border-solid shadow-lg rounded-l-3xl rounded-r-3xl ">
@@ -132,7 +141,10 @@ function HeaderArrage({basketColor,Logoimage,bgColor,display2}) {
             </Link>
           </div>
           <Link>
-            <div style={{color:basketColor}} className="text-[25px] mt-[10px] ">
+            <div
+              style={{ color: basketColor }}
+              className="text-[25px] mt-[10px] "
+            >
               <FaBasketShopping />
             </div>
           </Link>

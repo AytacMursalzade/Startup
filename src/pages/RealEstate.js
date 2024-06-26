@@ -15,7 +15,7 @@ import RealSales from "../components/RealSales";
 
 function RealEstate() {
   return (
-    <div className="container">
+    <div>
       <HeaderArrageArt basketColor="#6449E7" Logoimage={LogoimageEstate} />
       <Header catStyle="catStyle" bgColor="#6449E7" />
       <Slide />
