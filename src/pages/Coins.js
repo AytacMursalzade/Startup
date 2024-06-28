@@ -4,8 +4,6 @@ import Header from "../components/Header";
 import LogoimageCoins from "../assets/logo-red.png";
 import Slide from "../components/Slide";
 import PosterCoins from "../components/PosterCoins";
-import imagePosterCoin from "../assets/ibid_coins_banner2.jpg";
-import imgMil from "../assets/ibid_coin_banner1.jpg";
 import locationimageCoins from "../assets/contact-us-red.png";
 import Locationn from "../components/Locationn";
 import FooterTop from "../components/FooterTop";

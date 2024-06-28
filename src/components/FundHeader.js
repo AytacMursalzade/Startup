@@ -46,30 +46,6 @@ function FundHeader() {
         
         className="headerNav w-[100%] bg-[#1C1F26] h-[100px]"
       >
-        <div className="logoIcons flex justify-between items-center gap-[90px] px-[75px] py-[30px] ">
-          <div className="logoicon">
-            <div className="logo">
-              <img width={80} src={src} alt="logo" />
-            </div>
-            <div className="iconsHeader  hidden ">
-              <Link to="/">
-                <RiAdminFill />
-              </Link>
-              <Link to="/">
-                <LuHeart />
-              </Link>
-              <Link to="/">
-                <FaSearch />
-              </Link>
-              <Link to="/">
-                <FaBasketShopping />
-              </Link>
-              <Link to="/">
-                <GiHamburgerMenu className="hamburgerMenu" />
-              </Link>
-            </div>
-          </div>
-
           <nav>
             <ul className="flex gap-[44px] text-white items-center text-[14px] font-medium ">
               <Link to="/home">
@@ -179,8 +155,32 @@ function FundHeader() {
               ></div>
             </Link>
           </div>
-        </div>
+        
       </div>
+      <div className="logoIconFund flex justify-between items-center gap-[90px] px-[75px] py-[30px] ">
+          <div className="logoicon">
+            <div className="logo">
+              <img width={80} src={src} alt="logo" />
+            </div>
+            <div className="iconsHeader  hidden ">
+              <Link to="/">
+                <RiAdminFill />
+              </Link>
+              <Link to="/">
+                <LuHeart />
+              </Link>
+              <Link to="/">
+                <FaSearch />
+              </Link>
+              <Link to="/">
+                <FaBasketShopping />
+              </Link>
+              <Link to="/">
+                <GiHamburgerMenu className="hamburgerMenu" />
+              </Link>
+            </div>
+          </div>
+        </div>
     </>
   );
 }

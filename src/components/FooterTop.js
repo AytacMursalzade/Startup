@@ -37,8 +37,8 @@ function FooterTop({hoverColor}) {
   
 
   return (
-    <div className="footerTopRes mt-[30px] px-[75px] ">
-         <div className="flex flex-col items-center justify-center mt-[126px]">
+    <div className="mt-[30px] px-[75px] ">
+         <div className="topgav flex flex-col items-center justify-center mt-[126px]">
           <h1 className="topic font-bold text-[34px] ">LATEST NEWS</h1>
 
           <div className="gavel flex items-center justify-center mt-[15px]">

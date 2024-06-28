@@ -12,7 +12,7 @@ function SaleBanners() {
   return (
     <div >
       <HeaderArrage basketColor="#0543EC" Logoimage={Logoimage1} />
-      <Header bgColor="#2695FF" />
+      {/* <Header bgColor="#2695FF" /> */}
       <ShopTop title="Shop" paragraph="Sale Banner" description="Sale Banner"/>
       <Hovered />
       <FooterFilter mtfooteR="75px" rounded="45px" bgColor="#2695FF" />
