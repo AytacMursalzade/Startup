@@ -38,7 +38,7 @@ function Miltopfooter({hoverColor}) {
 
   return (
     <div className="mt-[30px] px-[75px] ">
-         <div className="flex flex-col items-center justify-center mt-[126px]">
+         <div className="topgav flex flex-col items-center justify-center mt-[126px]">
           <h1 className="topic font-bold text-[34px] ">LATEST NEWS</h1>
 
           <div className="gavel flex items-center justify-center mt-[15px]">
@@ -53,13 +53,13 @@ function Miltopfooter({hoverColor}) {
         </div>
       <ul className="ftres flex flex-row gap-[15px] mt-[15px] justify-around latestnew ">
         {data.map((item,index) =>(
-            <li key={index} className="communityPost flex flex-row mt-[20px] gap-[40px] max-600:px-[-50px]">
-            <Link to="/" className="relative w-[118px] h-[119px] overflow-hidden max-600:w-[423px] max-600:h-[400px] ">
-              <div className="communitylink w-[535px] h-[170px] flex max-600:w-[423px] max-600:h-[400px] ">
+            <li key={index} className="communityPost flex flex-row mt-[20px] gap-[40px]">
+            <Link to="/" className="imgTall relative w-[118px] h-[119px] overflow-hidden ">
+              <div className="communitylink w-[535px] h-[170px] flex">
                 <div >
                   <img width={120} src={item.img} alt="nft" className="w-full h-full mt-[-38px] " />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
+                <div className="imgHover absolute bottom-0 left-0 right-0 top-0 bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-30"></div>
               </div>
             </Link>
   

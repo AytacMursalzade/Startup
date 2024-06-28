@@ -68,7 +68,7 @@ function SalesAntiques({
           </button>
         </div>
 
-        <div className="salesPartPost flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
+        <div className="salesPartPost1 flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
           {AntiquesData.slice(0, 4).map((item, index) => (
             <div
               key={index}
@@ -152,7 +152,7 @@ function SalesAntiques({
           </button>
         </div>
 
-        <div className="salesPartPost3 flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
+        <div className="salesPartPost1 flex flex-wrap gap-[22px] px-[18px] w-[1272px] ">
           {AntiquesData.slice(4, 8).map((item, index) => (
             <div
               key={index}

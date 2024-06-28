@@ -60,6 +60,7 @@ function Hovered() {
             backgroundImage: `url(${item.img})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
+            
           };
           return (
             <div key={index} style={posterPage} className={`posterTall1 flex gap-[15px] ${getItemSize(item.id)}`}>

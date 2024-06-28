@@ -3,7 +3,7 @@ import Carousel from './Carousel';
 
 const Slider = () => {
   return (
-    <div className=" slider-container">
+    <div className="slider-container">
       <Carousel />
     </div>
   );

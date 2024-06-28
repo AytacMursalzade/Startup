@@ -8,7 +8,7 @@ import NftTopHead from "./NftTopHead";
 
 function NftHeader({ bgColorTop,bgColor,src }) {
   return (
-    <div>
+    <div className="headernft">
       <div className="w-[85%] flex flex-col ml-[15%] font-semibold">
         <div
           style={{ backgroundColor: bgColorTop }}

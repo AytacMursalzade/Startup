@@ -42,9 +42,21 @@ function Antiques() {
         inputBg="#BE263F"
       />
       <FooterTop display={false} hoverColor="RedC" GavelColor="red" />
-      <FooterAverage GavelColorshop="#BE263F" display2={true} nameAuction="SHOP BY BRAND" />
+      <FooterAverage
+        GavelColorshop="#BE263F"
+        display2={true}
+        nameAuction="SHOP BY BRAND"
+      />
       <FooterFilterArt bgColor="#BE263F" />
-      <Footer BtnRadius="8px" lastftrM="70px" textH1="#343E47" textColorFB="#343E47" hoverFB="RedC" hoverbgF="RedCbg" Logoimage={Logoimage1} />
+      <Footer
+        BtnRadius="8px"
+        lastftrM="70px"
+        textH1="#343E47"
+        textColorFB="#343E47"
+        hoverFB="RedC"
+        hoverbgF="RedCbg"
+        Logoimage={Logoimage1}
+      />
     </div>
   );
 }

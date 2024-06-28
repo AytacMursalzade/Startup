@@ -643,12 +643,7 @@ input:focus {
 /* //MEDIA QUERY// */
 
 @media only screen and (max-width: 320px) {
-  html {
-    max-width: 320px;
-  }
-  .App {
-    max-width: 320px;
-  }
+
   * {
     margin: 0;
     padding: 0;
@@ -675,6 +670,7 @@ input:focus {
     border-bottom: 1px solid rgb(212, 212, 212);
     margin-bottom: 18px;
   }
+  
   .carousel {
     width: 100%;
   }
@@ -1502,12 +1498,12 @@ input:focus {
   }
 }
 @media only screen and (max-width: 600px) {
-  html {
+  /* html {
     width: 100%;
   }
   .App {
     width: 100%;
-  }
+  } */
   * {
     margin: 0;
     padding: 0;
@@ -1519,26 +1515,54 @@ input:focus {
   .hamburgerMenu {
     color: #2695ff;
   }
-  .logoicon {
+ 
+  .shopSale{
+    min-width: 599px;
+  }
+  /* .iconsHeadersale { 
+    min-width: 599px;
     display: flex;
     flex-direction: row;
-  }
+    gap: 10px;
+    align-items: center;
+    margin-right: 0px;
+  } */
   .dropdown {
     display: none;
   }
   .logoIcons {
-    width: 479px;
+    min-width: 599px;
     height: 70px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(212, 212, 212);
     margin-bottom: 18px;
   }
+  .logoicon {
+    min-width: 599px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -64px;
+  }
+  .logoIconFund{
+    min-width: 599px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    margin-bottom: 18px;
+    background-color: #1C1F26; 
+    color: #fff;   
+  }
+  .hamburgerMenu{
+    color: #D4A619;
+  }
   .carousel {
-    width: 477px;
+    width: 100%;
   }
   .finishFooter {
-    width: 100%;
+    min-width: 599px;
   }
   /* .topHeader {
     display: flex;
@@ -1552,20 +1576,24 @@ input:focus {
     display: none;
   }
   .iconsHeader {
+    width: 75px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
     font-size: 19px;
-    margin-left: 175px;
+    margin-right: 43px;
   }
-
+  .topgav {
+    min-width: 300px;
+    margin: auto;
+  }
   .headerTop {
-    width: 100%;
-    max-width: 483px;
+    min-width: 599px;
+    /* max-width: 483px; */
     display: flex;
     border: none;
-    border-bottom: 1px solid rgb(225, 222, 222);
+    border-bottom: none;
   }
 
   .nameTop {
@@ -1575,7 +1603,7 @@ input:focus {
     display: none;
   }
   .slider-container {
-    width: 537px;
+    min-width: 599px; 
   }
   .dropdown {
     display: none;
@@ -1599,11 +1627,11 @@ input:focus {
     right: 60px;
   }
   .slideMain {
-    width: 100%;
+    min-width: 599px;
   }
 
   .tracking {
-    width: 553px4;
+    width: 553px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -1612,7 +1640,7 @@ input:focus {
   .trackingMain {
     display: flex;
     margin-left: 25px;
-    width: 553px;
+    max-width: 100%;
   }
   .topic {
     font-size: 24px;
@@ -1626,7 +1654,7 @@ input:focus {
   }
 
   .onePoster1 {
-    max-width: 600px;
+    min-width: 599px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1641,7 +1669,6 @@ input:focus {
     min-width: 553px;
     height: 261px;
     display: flex;
-    margin-left: -6px;
   }
   .latestMain {
     width: 570px;
@@ -1656,21 +1683,22 @@ input:focus {
     align-items: center;
   }
   .viewPart {
-    max-width: 600px;
+    min-width: 599px;
     gap: 50px;
     margin-top: 80px;
     margin-bottom: 80px;
   }
 
   .Poster {
-    width: 100%;
-    max-width: 535px;
+    min-width: 599px;
+
+    /* max-width: 535px; */
   }
 
   .salesPartPost1 {
-    width: 100%;
-    margin-left: -15px;
+    max-width: 599px;
     display: flex;
+    justify-content: center;
     gap: 8px;
   }
 
@@ -1681,20 +1709,18 @@ input:focus {
  
 
   .itemContent {
-    width: 100%;
+    max-width: 599px;
+
   }
 
   .salesPartPost {
-    max-width: 600px;
+    min-width: 599px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .salesPart {
     width: 100%;
-  }
-
-  .salesPart {
     display: flex;
     flex-direction: column;
     height: 382px;
@@ -1863,7 +1889,7 @@ input:focus {
     width: full;
   }
   .PhonesAll {
-    width: 100%;
+    min-width: 100%;
     gap: 10px;
     margin-left: -40px;
   }
@@ -1873,7 +1899,7 @@ input:focus {
     padding: 8px; 
   } */
   .handmadeSlide {
-    width: 100%;
+    width: 100%;     /*bax*/
     height: 855px;
     display: flex;
     flex-direction: column;
@@ -1899,7 +1925,7 @@ input:focus {
     padding: 10px;
   }
   .formFooter {
-    max-width: 300px;
+    max-width: 300px; /*bax*/
   }
 
   .posterShow {
@@ -1909,21 +1935,34 @@ input:focus {
     gap: 2;
   }
   .PosterItem {
-    width: 549px;
+    min-width: 549px;
     height: 250px;
   }
   .posterTall {
-    width: 549px;
+    min-width: 550px;
     display: flex;
-    margin: auto;
     flex-direction: column;
+    /* margin-left: 25px; */
+    margin-left: 2rem;
+    /* margin-right: 2rem; */
   }
   .posterTall1 {
-    max-width: 545px;
+    width: 545px;
     height: 350px;
+    
+  }
+  .headernft{
+    min-width: 599px;
+    margin-left: -106px;
+  }
+  .sliderNft h1 p{
+    min-width: 599px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
   }
   .posterM {
-    width: 330px;
+    width: 370px;
     display: flex;
     gap: 10px;
     margin-top: -99px;
@@ -1949,7 +1988,7 @@ input:focus {
     flex-direction: column;
   }
   .GovernSlide {
-    width: 100%;
+    min-width: 100%;
   }
   .GovernList {
     padding-left: 15px;
@@ -1962,7 +2001,7 @@ input:focus {
   }
 
   .category-list {
-    width: 100%;
+    min-width: 100%;
     border-right: none;
     border-bottom: 2px solid #d6d0d0;
     padding-bottom: 15px;
@@ -1999,7 +2038,7 @@ input:focus {
   }
 
   .item-info {
-    width: 100%;
+    min-width: 100%;
     padding: 0 10px;
   }
 
@@ -2088,7 +2127,7 @@ input:focus {
     display: none;
   }
   .PhonesMemo {
-    max-width: 600px;
+    min-width: 599px;
     display: flex;
     flex-wrap: wrap;
     gap: 4;
@@ -2354,7 +2393,7 @@ input:focus {
     gap: 15px;
   }
   .auctionList-container {
-    max-width: 600px;
+    max-width: 100%;
   }
 
   .auctionListOne {
