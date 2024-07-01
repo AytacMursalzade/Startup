@@ -648,9 +648,7 @@ input:focus {
   padding: 10px 20px;
   border-bottom: 1px solid #fff; /* Adjust as needed */
 }
-.mobilMenuIcon {
-  display: none;
-}
+
 
 /* //MEDIA QUERY// */
 
@@ -1523,9 +1521,7 @@ input:focus {
   br {
     display: none;
   }
- .mobilMenuIcon{
-    display: block;
-  }
+ 
   .hamburgerMenu {
     color: #2695ff;
   }
@@ -1605,6 +1601,9 @@ input:focus {
   .headerNav {
     display: none;
   }
+  .hamburgerRes{
+    display: block;
+  }
   .headerTop {
     min-width: 599px;
     /* max-width: 483px; */
@@ -1624,13 +1623,6 @@ input:focus {
   }
   .dropdown {
     display: none;
-  }
-  .mobilMenuIcon {
-    display: block;
-    position: absolute;
-    top: 20px; 
-    right: 20px; 
-    z-index: 20;
   }
   .BookP {
     margin-top: 35px;
@@ -2461,7 +2453,7 @@ input:focus {
     color: #861d1d;
     border: none;
     outline: none;
-    right: -86px;
+    right: 12px;
   }
 }
 
