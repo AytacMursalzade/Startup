@@ -630,13 +630,25 @@ input:focus {
 .dropdown-menu ul li:hover {
   background-color: #f0f0f0;
 }
-
+.mobilMenuIcon{
+  display: none;
+}
 .nav-links-mobile {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #000; 
+  z-index: 1000;
 }
 
-.mobile-menu-icon {
+.nav-links-mobile .menu-item {
+  padding: 10px 20px;
+  border-bottom: 1px solid #fff; /* Adjust as needed */
+}
+.mobilMenuIcon {
   display: none;
 }
 
@@ -1511,7 +1523,9 @@ input:focus {
   br {
     display: none;
   }
-
+ .mobilMenuIcon{
+    display: block;
+  }
   .hamburgerMenu {
     color: #2695ff;
   }
@@ -1582,11 +1596,14 @@ input:focus {
     align-items: center;
     gap: 15px;
     font-size: 19px;
-    margin-right: 43px;
+    margin-right: 104px;
   }
   .topgav {
     min-width: 300px;
     margin: auto;
+  }
+  .headerNav {
+    display: none;
   }
   .headerTop {
     min-width: 599px;
@@ -1608,8 +1625,12 @@ input:focus {
   .dropdown {
     display: none;
   }
-  .headerNav {
-    display: none;
+  .mobilMenuIcon {
+    display: block;
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    z-index: 20;
   }
   .BookP {
     margin-top: 35px;
@@ -2416,6 +2437,31 @@ input:focus {
 
   .auctionListTwo .flex-1 {
     width: 100%;
+  }
+  .nav-links-mobile{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: blue;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    top: 98px;
+    transition: all 0.5s ease-out;
+    min-width: 599px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .mobilMenuIcon{
+    display: block;
+    position: absolute;
+    top: 68px;
+    font-size: 25px;
+    color: #861d1d;
+    border: none;
+    outline: none;
+    right: -86px;
   }
 }
 
