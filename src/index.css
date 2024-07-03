@@ -1911,8 +1911,61 @@ input:focus {
     width: 350px;
     padding: 8px; 
   } */
+  .countSlider{
+    min-width: 599px;
+    display: flex;
+    flex-direction: column;
+  }
+  .countOne{
+    min-width: 599px;
+    padding-left: 15px;
+    padding-right: 12px;
+    padding-bottom: 25px;
+  }
+  .countWo{
+    min-width: 599px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .countP{
+    display: flex;
+    gap:25px;
+  }
+  .machinerySlider{
+    min-width: 599px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+  }
+  .labSlider{
+    min-width: 599px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+  }
+  .SelfSlider{
+    min-width: 599px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+  .oneSelf{
+    min-width: 200px;
+  }
+  .twoSelf{
+    min-width: 200px;
+  }
+  .slideTwoself{
+    display: none;
+  }
   .handmadeSlide {
-    width: 100%;     /*bax*/
+   
     height: 855px;
     display: flex;
     flex-direction: column;

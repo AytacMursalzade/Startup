@@ -14,13 +14,14 @@ import LogoimageMachineWhite from "../assets/ibdiWhite.png";
 import MachineSales from "../components/MachineSales";
 import ReadBtnMachine from "../components/ReadBtnMachine";
 import LatestM from "../components/LatestM";
+import MachinerySlider from "../components/MachinerySlider";
 
 function Machine() {
   return (
     <div>
       <HeaderArrage basketColor="#FBDE06" Logoimage={LogoimageMachine} />
       <Header bgColor="#151515" />
-      <Slide />
+      <MachinerySlider />
       <LatestM />
       <MachinePoster />
       <MachineSales toolBg="#FBDE06" hoveredSales="colorYellow" />

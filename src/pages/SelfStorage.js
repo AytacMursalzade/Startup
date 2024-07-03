@@ -14,13 +14,14 @@ import imgSelf from "../assets/assortStorage1.jpg";
 import SelfLatest from "../components/SelfLatest";
 import LatestSelf from "../components/LatestSelf";
 import SelfFooter from "../components/SelfFooter";
+import SelfStorageSlider from "../components/SelfStorageSlider";
 
 function SelfStorage() {
   return (
     <div>
       <HeaderArrageArt basketColor="#414144" Logoimage={LogoimageStorage} />
       <Header catStyle="catStyle" bgColor="#414144" />
-      <Slide />
+      <SelfStorageSlider />
       <Mainbottom/>
       <LatestSelf />
       <StoragePoster />

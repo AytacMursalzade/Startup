@@ -16,18 +16,17 @@ function ShortcodesApp() {
   return (
     <Router>
       <Routes>
-        <Route path="/shortcodes/*" element={<Shortcodes />}>
-          <Route path="pricingtables" element={<PricingTables />} />
-          <Route path="accordion" element={<AccordionData />} />
-          <Route path="clientsgrid" element={<GrisSystem />} />
-          <Route path="counters" element={<CountersShort />} />
-          <Route path="piecharts" element={<PieChart />} />
-          <Route path="services" element={<ServicesTable />} />
-          <Route path="bars" element={<BarTables />} />
-          <Route path="members" element={<MemberSlide />} />
-          <Route path="testimonials" element={<TerminalSlider />} />
-          <Route path="shopfeature" element={<ShopShort />} />
-        </Route>
+        <Route path="/shortcodes/*" element={<Shortcodes />} />
+        <Route path="/shortcodes/pricingtables" element={<PricingTables />} />
+        <Route path="/shortcodes/accordion" element={<AccordionData />} />
+        <Route path="/shortcodes/clientsgrid" element={<GrisSystem />} />
+        <Route path="/shortcodes/counters" element={<CountersShort />} />
+        <Route path="/shortcodes/piecharts" element={<PieChart />} />
+        <Route path="/shortcodes/services" element={<ServicesTable />} />
+        <Route path="/shortcodes/bars" element={<BarTables />} />
+        <Route path="/shortcodes/members" element={<MemberSlide />} />
+        <Route path="/shortcodes/testimonials" element={<TerminalSlider />} />
+        <Route path="/shortcodes/shopfeature" element={<ShopShort />} />
       </Routes>
     </Router>
   );

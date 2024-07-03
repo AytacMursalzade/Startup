@@ -16,13 +16,14 @@ import LogoCountBlue from "../assets/logo-ibid.png";
 import CountClock from "../components/CountClock";
 import CountSoon from "../components/CountSoon";
 import CountLatest from "../components/CountLatest";
+import CountDownSlider from "../components/CountDownSlider";
 
 function CountDown() {
   return (
     <div>
       <HeaderArrage basketColor="#EA3546" Logoimage={LogoCount} />
       <Header bgColor="#EA3546" />
-      <Slide />
+      <CountDownSlider />
       <Mainbottom
        
         colorP="#606060"
