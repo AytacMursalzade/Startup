@@ -33,9 +33,9 @@ function CountersShort() {
     ];
 
     return (
-        <div className='mt-[120px]'>
+        <div className='mt-[120px] flex flex-col gap-[50px] '>
             <h1 className='text-[32px] text-[#333333] font-bold ml-[90px]'>Counters</h1>
-            <div className='flex-container'>
+            <div className='flex-container flex justify-around '>
                 {data.map((item, index) => (
                     <div className='count' key={index}>
                         <div className='flex flex-col'>

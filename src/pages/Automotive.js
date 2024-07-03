@@ -10,12 +10,14 @@ import HeaderArrage from "../components/HeaderArrage";
 import PosterAutomotive from "../components/PosterAutomotive";
 import SalesAutomotive from "../components/SalesAutomotive";
 import AutomotiveLatest from "../components/AutomotiveLatest";
+import AutomotiveSlider from "../components/AutomotiveSlider";
 
 function Automotive() {
   return (
     <div className="automark ">
     <HeaderArrage basketColor="#EE964B" Logoimage={LogoimageAuto}/>
     <Header bgColor="#EE964B"/>
+    <AutomotiveSlider />
     <AutomotiveLatest />
     <PosterAutomotive />
     <SalesAutomotive SalesText="El Camino" hoverTextColor="#EE964B"/>

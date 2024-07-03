@@ -58,7 +58,7 @@ import MediaFourApp from "./pages/MediaFourApp";
 import ProjectTwoApp from "./pages/ProjectTwoApp";
 import ProjecThreeApp from "./pages/ProjecThreeApp";
 import ProjectFourApp from "./pages/ProjectFourApp";
-import ShorrtC from "./pages/ShorrtC";
+// import ShorrtC from "./pages/ShorrtC";
 
 function App() {
   return (
@@ -101,7 +101,7 @@ function App() {
           <Route path="/myaccountnew" element={<MyAccountnew />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/mybasket" element={<MyBasket />} />
-          <Route path="/shortcodesapp" element={<ShortcodesApp />} />
+          <Route path="/shortcodes" element={<ShortcodesApp />} />
           <Route path="/boxedlayoutapp" element={<BoxedLayoutApp />} />
           <Route path="/postcarousel" element={<PostCarousel />} />
           <Route path="/newsfiltered" element={<NewsFiltered />} />
@@ -113,7 +113,7 @@ function App() {
           <Route path="/projectwo" element={<ProjectTwoApp />} />
           <Route path="/projecthree" element={<ProjecThreeApp />} />
           <Route path="/projecfour" element={<ProjectFourApp />} />
-          <Route path="/shorthcodes" element={<ShorrtC />} />
+          {/* <Route path="/shorthcodes" element={<ShorrtC />} /> */}
         </Routes>
       </Router>
     </div>

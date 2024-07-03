@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeaderArrage from "../components/HeaderArrage";
 import Header from "../components/Header";
 import FooterFilter from "../components/FooterFilter";
@@ -15,23 +15,56 @@ import BarTables from "../components/BarTables";
 import MemberSlide from "../components/MemberSlide";
 import ShopShort from "../components/ShopShort";
 import TerminalSlider from "../components/TerminalSlider";
+import { useLocation } from "react-router-dom";
 
 function Shortcodes() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const element = document.getElementById(pathname.replace("/shortcodes/", ""));
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [pathname]);
+
   return (
     <div className="container">
       <HeaderArrage basketColor="#0543EC" Logoimage={Logoimage1} />
       <Header bgColor="#2695FF" />
       <ShopTop title="Shop" paragraph="Shortcodes" description="Shortcodes" />
-      <AccordionData />
-      <GrisSystem />
-      <CountersShort />
-      <PieChart />
-      <PricingTables />
-      <ServicesTable />
-      <BarTables />
-      <MemberSlide />
-      <TerminalSlider />
-      <ShopShort />
+
+     
+      <div id="accordion">
+        <AccordionData />
+      </div>
+      <div id="pricingtables">
+        <PricingTables />
+      </div>
+      <div id="clientsgrid">
+        <GrisSystem />
+      </div>
+      <div id="counters">
+        <CountersShort />
+      </div>
+      <div id="piecharts">
+        <PieChart />
+      </div>
+      <div id="services">
+        <ServicesTable />
+      </div>
+      <div id="bars">
+        <BarTables />
+      </div>
+      <div id="members">
+        <MemberSlide />
+      </div>
+      <div id="testimonials">
+        <TerminalSlider />
+      </div>
+      <div id="shopfeature">
+        <ShopShort />
+      </div>
+
       <FooterFilter mtfooteR="75px" rounded="45px" bgColor="#2695FF" />
       <Footer
         ptFtr="50px"

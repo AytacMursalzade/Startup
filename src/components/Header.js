@@ -35,7 +35,7 @@ function Header({ bgColor }) {
           <div className="mr-[94px] text-white font-bold py-[20px]">Sign in</div>
         </Link>
       </div>
-      <div className="hamburgerRes">
+      <div className="hamburgerRes hidden">
         <NavbarItem />
       </div>
       
