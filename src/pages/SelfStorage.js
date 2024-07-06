@@ -2,7 +2,6 @@ import React from "react";
 import HeaderArrageArt from "../components/HeaderArrageArt";
 import Header from "../components/Header";
 import LogoimageStorage from "../assets/logo-cattle.png";
-import Slide from "../components/Slide";
 import imagePosterself from "../assets/householdSelf.jpg";
 import locationimageSelf from "../assets/locationBlack.png";
 import Locationn from "../components/Locationn";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaGavel } from "react-icons/fa6";
-import { FaSearch, FaShoppingBasket } from "react-icons/fa";
+import { FaSearch} from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
 import Tooltip from "@mui/material/Tooltip";
 import coins1 from "../assets/coins1.jpg";

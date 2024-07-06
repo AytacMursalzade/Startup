@@ -630,7 +630,7 @@ input:focus {
 .dropdown-menu ul li:hover {
   background-color: #f0f0f0;
 }
-.mobilMenuIcon{
+.mobilMenuIcon {
   display: none;
 }
 .nav-links-mobile {
@@ -640,20 +640,97 @@ input:focus {
   top: 70px;
   left: 0;
   width: 100%;
-  background-color: #000; 
+  background-color: #000;
   z-index: 1000;
 }
 
 .nav-links-mobile .menu-item {
   padding: 10px 20px;
-  border-bottom: 1px solid #fff; /* Adjust as needed */
+  border-bottom: 1px solid #fff;
+}
+#listGrid ul {
+  list-style: none;
+}
+#listGrid .buttons {
+  margin-bottom: 20px;
 }
 
+#listGrid .list li {
+  width: 100%;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#listGrid .grid li {
+  float: left;
+  width: 20%;
+  height: 50px;
+  border-right: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  padding: 20px;
+}
+#listGrid {
+  padding: 20px;
+}
+.glistview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.glistview button {
+  margin: 0 10px;
+}
+.gridview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.listData {
+  display: block;
+}
+
+.itemData {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: start;
+}
+.itemDesc {
+  padding-top: 10%;
+}
+.BidPrice {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+.itemData img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.description {
+  font-weight: bold;
+}
+.bidData,
+.priceData {
+  margin-top: 5px;
+}
+.symbolsHop {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
+.itemData {
+  height: 314px;
+}
 
 /* //MEDIA QUERY// */
 
 @media only screen and (max-width: 320px) {
-
   * {
     margin: 0;
     padding: 0;
@@ -680,20 +757,21 @@ input:focus {
     border-bottom: 1px solid rgb(212, 212, 212);
     margin-bottom: 18px;
   }
-  
+
   .carousel {
     width: 100%;
   }
   .topHeader {
     display: none;
   }
-  .iconsHeader{
+  .iconsHeader {
     max-width: 320px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-left: -30px;
-    gap: 15px;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* margin-left: -30px; */
+    /* gap: 15px; */
     font-size: 19px;
   }
 
@@ -793,7 +871,7 @@ input:focus {
   .onePoster1 {
     width: 319px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .salesPartPost1 {
@@ -919,13 +997,13 @@ input:focus {
   .fooTopic h1 {
     display: none;
   }
-  .filterown{
+  .filterown {
     max-width: 320px;
     width: 246px;
     display: flex;
     justify-content: start;
   }
-  .formLabelOne{
+  .formLabelOne {
     max-width: 320px;
     width: 246px;
     display: flex;
@@ -985,7 +1063,7 @@ input:focus {
     width: 230px;
     margin: 0 8px;
   }
-  
+
   .PhonesAll {
     width: 100%;
     gap: 10px;
@@ -1521,12 +1599,12 @@ input:focus {
   br {
     display: none;
   }
- 
+
   .hamburgerMenu {
     color: #2695ff;
   }
- 
-  .shopSale{
+
+  .shopSale {
     min-width: 599px;
   }
   /* .iconsHeadersale { 
@@ -1540,33 +1618,33 @@ input:focus {
   .dropdown {
     display: none;
   }
-  .logoIcons {
+  /* .logoIcons {
     min-width: 599px;
     height: 70px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(212, 212, 212);
     margin-bottom: 18px;
-  }
+  } */
   .logoicon {
     min-width: 599px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: -64px;
+    justify-content: space-around;
+    /* margin-left: -64px; */
   }
-  .logoIconFund{
+  .logoIconFund {
     min-width: 599px;
     height: 70px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(212, 212, 212);
     margin-bottom: 18px;
-    background-color: #1C1F26; 
-    color: #fff;   
+    background-color: #1c1f26;
+    color: #fff;
   }
-  .hamburgerMenu{
-    color: #D4A619;
+  .hamburgerMenu {
+    color: #d4a619;
   }
   .carousel {
     width: 100%;
@@ -1601,7 +1679,7 @@ input:focus {
   .headerNav {
     display: none;
   }
-  .hamburgerRes{
+  .hamburgerRes {
     display: block;
   }
   .headerTop {
@@ -1619,7 +1697,7 @@ input:focus {
     display: none;
   }
   .slider-container {
-    min-width: 599px; 
+    min-width: 599px;
   }
   .dropdown {
     display: none;
@@ -1719,11 +1797,9 @@ input:focus {
     width: 100%;
     max-width: 535px;
   }
- 
 
   .itemContent {
     max-width: 599px;
-
   }
 
   .salesPartPost {
@@ -1838,7 +1914,6 @@ input:focus {
     margin-top: 10px;
     margin-left: -59px;
   }
-  
 
   .averageFooter {
     margin-left: 15px;
@@ -1911,43 +1986,41 @@ input:focus {
     width: 350px;
     padding: 8px; 
   } */
-  .countSlider{
+  .countSlider {
     min-width: 599px;
     display: flex;
     flex-direction: column;
   }
-  .countOne{
+  .countOne {
     min-width: 599px;
     padding-left: 15px;
     padding-right: 12px;
     padding-bottom: 25px;
   }
-  .countWo{
+  .countWo {
     min-width: 599px;
     display: flex;
     flex-direction: column;
-
   }
-  .countP{
+  .countP {
     display: flex;
-    gap:25px;
+    gap: 25px;
   }
-  .machinerySlider{
+  .machinerySlider {
     min-width: 599px;
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
     padding-right: 2rem;
-
   }
-  .labSlider{
+  .labSlider {
     min-width: 599px;
     height: 680px;
     display: flex;
     flex-direction: column;
     padding-top: 12px;
   }
-  .SelfSlider{
+  .SelfSlider {
     min-width: 599px;
     display: flex;
     justify-content: space-around;
@@ -1955,17 +2028,16 @@ input:focus {
     padding-right: 1rem;
     box-sizing: border-box;
   }
-  .oneSelf{
+  .oneSelf {
     min-width: 200px;
   }
-  .twoSelf{
+  .twoSelf {
     min-width: 200px;
   }
-  .slideTwoself{
+  .slideTwoself {
     display: none;
   }
   .handmadeSlide {
-   
     height: 855px;
     display: flex;
     flex-direction: column;
@@ -2015,13 +2087,12 @@ input:focus {
   .posterTall1 {
     width: 545px;
     height: 350px;
-    
   }
-  .headernft{
+  .headernft {
     min-width: 599px;
     margin-left: -106px;
   }
-  .sliderNft h1 p{
+  .sliderNft h1 p {
     min-width: 599px;
     display: flex;
     justify-content: start;
@@ -2483,7 +2554,7 @@ input:focus {
   .auctionListTwo .flex-1 {
     width: 100%;
   }
-  .nav-links-mobile{
+  .nav-links-mobile {
     position: absolute;
     display: block;
     list-style: none;
@@ -2498,7 +2569,7 @@ input:focus {
   .nav-links {
     display: none;
   }
-  .mobilMenuIcon{
+  .mobilMenuIcon {
     display: block;
     position: absolute;
     top: 68px;

@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ArtAuction from "./pages/ArtAuction";
@@ -58,9 +59,10 @@ import MediaFourApp from "./pages/MediaFourApp";
 import ProjectTwoApp from "./pages/ProjectTwoApp";
 import ProjecThreeApp from "./pages/ProjecThreeApp";
 import ProjectFourApp from "./pages/ProjectFourApp";
+import Shop from './pages/Shop';
 // import ShorrtC from "./pages/ShorrtC";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Router>
@@ -113,6 +115,7 @@ function App() {
           <Route path="/projectwo" element={<ProjectTwoApp />} />
           <Route path="/projecthree" element={<ProjecThreeApp />} />
           <Route path="/projecfour" element={<ProjectFourApp />} />
+          <Route path="/shop" element={<Shop />} />
           {/* <Route path="/shorthcodes" element={<ShorrtC />} /> */}
         </Routes>
       </Router>
@@ -120,4 +123,4 @@ function App() {
   );
 }
 
-export default App;
+export default React.memo(App);
