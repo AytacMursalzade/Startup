@@ -1,7 +1,6 @@
 import React from "react";
 import HeaderArrage from "../components/HeaderArrage";
 import Header from "../components/Header";
-import Slide from "../components/Slide";
 import LogoimageMachine from "../assets/logo-machinery.png";
 import MachinePoster from "../components/MachinePoster";
 import MachineImg from "../components/MachineImg";

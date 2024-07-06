@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGavel, FaSearch, FaHeart } from "react-icons/fa";
+import {FaSearch, FaHeart } from "react-icons/fa";
 import { IoMdEye } from "react-icons/io";
 import Tooltip from "@mui/material/Tooltip";
 import imgData1 from "../assets/a1.jpg";

@@ -53,15 +53,15 @@ const NavbarItem = (props) => {
 
   const data = [
     { id: 1, concept: "CATEGORIES", subMenu: <Card />, icon: <GiHamburgerMenu /> },
-    { id: 2, concept: "Home", subMenu: <Card /> },
-    { id: 3, concept: "Shop", subMenu: <ShopCard /> },
-    { id: 4, concept: "Vendors" },
-    { id: 5, concept: "Shortcodes", subMenu: <ShortcodeCard /> },
-    { id: 6, concept: "Blog", subMenu: <BlogCard /> },
-    { id: 7, concept: "Media", subMenu: <MediaCard /> },
-    { id: 8, concept: "About" },
-    { id: 9, concept: "Contact" },
-    { id: 10, concept: "Pages", subMenu: <PagesCard /> },
+    { id: 2, concept: "Home", subMenu: <Card />, link: "/" },
+    { id: 3, concept: "Shop", subMenu: <ShopCard />, link: "/shop" },
+    { id: 4, concept: "Vendors", link: "/vendors" },
+    { id: 5, concept: "Shortcodes", subMenu: <ShortcodeCard />, link: "/shortcodes" },
+    { id: 6, concept: "Blog", subMenu: <BlogCard />, link: "/blog" },
+    { id: 7, concept: "Media", subMenu: <MediaCard />, link: "/media" },
+    { id: 8, concept: "About", link: "/about" },
+    { id: 9, concept: "Contact", link: "/contact" },
+    { id: 10, concept: "Pages", subMenu: <PagesCard />, link: "/pages" },
   ];
 
   return (
@@ -71,13 +71,15 @@ const NavbarItem = (props) => {
           {data.map((item) => (
             <li
               key={item.id}
-              className={`menu-item relative border-t-2 border-transparent hover:border-white transition duration-300 ${isSubmenuOpen && activeItem === item.id ? 'visible' : ''}`}
+              className={`menu-item relative border-t-2 border-transparent hover:border-white transition duration-300 ${isSubmenuOpen && activeItem === item.id ? 'visible' : ''} cursor-pointer`}
               onClick={() => handleMobileClick(item.id)}
               onMouseEnter={() => !isMobile && handleOpenSubmenu(item.id)}
               style={{ width: item.id === 1 ? '240px' : 'auto', justifyContent: item.id === 1 ? 'center' : 'initial' }}
             >
-              {item.icon && <span className="mr-2">{item.icon}</span>}
-              {item.concept}
+              <a href={item.link || "#"}>
+                {item.icon && <span className="mr-2">{item.icon}</span>}
+                {item.concept}
+              </a>
               {isSubmenuOpen && activeItem === item.id && item.subMenu && (
                 <div
                   className="absolute z-50 w-[200px] h-auto top-12 left-0 bg-white text-black"

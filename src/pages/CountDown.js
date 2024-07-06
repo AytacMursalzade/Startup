@@ -1,7 +1,6 @@
 import React from "react";
 import HeaderArrage from "../components/HeaderArrage";
 import Header from "../components/Header";
-import Slide from "../components/Slide";
 import LogoCount from "../assets/logo-red.png";
 import Mainbottom from "../components/Mainbottom";
 import CountImg from "../components/CountImg";

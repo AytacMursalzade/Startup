@@ -1,5 +1,4 @@
 import React from 'react'
-import { AiOutlinePercentage } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import { FaObjectGroup, FaSlidersH } from "react-icons/fa";
 import { FaTableList } from "react-icons/fa6";

@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import { FaBasketShopping } from "react-icons/fa6";
 import { LuHeart } from "react-icons/lu";
 import { FaTruck } from "react-icons/fa";
-import Filter from "./Filter";
-import DropdownButton from "./DropdownButton";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
@@ -18,9 +16,7 @@ import DropdownArt from "./DropdownArt";
 
 
 function LaboratoryHead({display2,basketColor }) {
-  const handMade = {
-    display: display2 ? "block" : "none",
-  };
+ 
   return (
     <>
       <div className="headerTop flex justify-between h-[45px] px-[75px] py-[8px] border border-bottom border-black-500/40 ">

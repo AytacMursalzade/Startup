@@ -49,10 +49,7 @@ function SalesAutomotive({
     backgroundPosition: "center",
   };
 
-  const styling = {
-    display: display7 ? "block" : "none",
-  };
-  
+
   const styll = {
     display: display6 ? "block" : "none",
   };
