@@ -6,7 +6,6 @@ import { FaSearch, FaTruck } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { RiAdminFill } from "react-icons/ri";
-import { GiHamburgerMenu } from "react-icons/gi";
 import FilterArt from "./FilterArt";
 import DropdownArt from "./DropdownArt";
 
@@ -62,11 +61,11 @@ function HeaderArrage({ basketColor, Logoimage, bgColor, display2 }) {
         <div className="grid grid-cols-7"></div>
         
       </div>
-      <div className="logoIcons flex col-3  justify-between items-center px-[75px] py-[30px] ">
+      <div className="logoIcons flex  justify-between items-center px-[75px] py-[30px] ">
         <div className="logoicon">
           
           <Link>
-              <div>
+              <div className="logoIbid">
                 <img width={90} src={Logoimage} alt="logo" />
               </div>
             </Link>

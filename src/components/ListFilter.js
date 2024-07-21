@@ -25,12 +25,14 @@ import Tooltip from "@mui/material/Tooltip";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import FilterShop from "./FilterShop";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const CombinedComponent = () => {
   const [viewMode, setViewMode] = useState("grid");
   const [filteredList, setFilteredList] = useState([]);
   const [sortCriteria, setSortCriteria] = useState("Default sorting");
-  const [error, setError] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const recordsPerPage = 9;
 
   const data = [
     {
@@ -175,89 +177,50 @@ const CombinedComponent = () => {
     setViewMode(mode);
   };
 
-  // const filterBySearch = (e) => {
-  //   let query = e.target.value;
-  //   let updatedList = [...sortOptions];
-  //   updatedList = updatedList.filter((item) => {
-  //     return item.name.toLowerCase().includes(query.toLowerCase());
-  //   });
-  //   if (updatedList.length === 0) {
-  //     setError("Not found");
-  //   } else {
-  //     setError("");
-  //   }
-  //   setFilteredList(updatedList);
-  // };
-
   const handleSortChange = (e) => {
     setSortCriteria(e.target.value);
   };
 
   const sortedData = () => {
     switch (sortCriteria) {
-      case "Sort by popularity":
-        return data;
-      case "Sort by average rating":
-        return data;
-      case "Sort by latest":
-        return data;
       case "Sort by price: low to high":
         return [...data].sort(
-          (a, b) => parseFloat(a.price.slice(1)) - parseFloat(b.price.slice(1))
+          (a, b) =>
+            parseFloat(a.price?.slice(1) || 0) -
+            parseFloat(b.price?.slice(1) || 0)
         );
       case "Sort by price: high to low":
         return [...data].sort(
-          (a, b) => parseFloat(b.price.slice(1)) - parseFloat(a.price.slice(1))
+          (a, b) =>
+            parseFloat(b.price?.slice(1) || 0) -
+            parseFloat(a.price?.slice(1) || 0)
         );
-      case "Sort by current bid: low to high":
-        return data;
-      case "Sort by current bid: high to low":
-        return data;
-      case "Sort auction by ending soonest":
-        return data;
-      case "Sort auction by recently started":
-        return data;
-      case "Sort auction by most active":
-        return data;
       default:
         return data;
     }
   };
 
+  const handlePagination = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const filteredAndSortedData = sortedData().filter((item) => {
+    return filteredList.length > 0 ? filteredList.includes(item) : true;
+  });
+
+  const lastIndex = currentPage * recordsPerPage;
+  const firstIndex = lastIndex - recordsPerPage;
+  const currentRecords = filteredAndSortedData.slice(firstIndex, lastIndex);
+  const npage = Math.ceil(filteredAndSortedData.length / recordsPerPage);
+  const pageNumbers = [...Array(npage + 1).keys()].slice(1);
+
   return (
-    <Container>
-      <Row>
-        {/* <Col md={3}>
-          <div className="filters">
-            <div className="search-header">
-              <div className="search-text">Search:</div>
-              <input id="search-box" onChange={filterBySearch} />
-              <p>{filteredList.length === 0 && error}</p>
-            </div>
-            <div className="filter-price">
-              <div className="filter-price-text">Filter by Price:</div>
-              <select onChange={handleSortChange} value={sortCriteria}>
-                {sortOptions.slice(4, 6).map((option, index) => (
-                  <option key={index} value={option.name}>
-                    {option.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="filter-category">
-              <div className="filter-category-text">Filter by Category:</div>
-              <select onChange={handleSortChange} value={sortCriteria}>
-                {sortOptions.slice(6).map((option, index) => (
-                  <option key={index} value={option.name}>
-                    {option.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-        </Col> */}
-        <Col className="flex pl-[54px] ">
-          <div><FilterShop /></div>
+    <Container >
+      <Row className="flex">
+        <Col md={3}>
+          <FilterShop setFilteredList={setFilteredList} data={data} />
+        </Col>
+        <Col md={9}>
           <div className="ml-[47px] " id="listGrid">
             <div className="glistview">
               <button
@@ -273,15 +236,6 @@ const CombinedComponent = () => {
                 <FaList />
               </button>
             </div>
-            <div id="item-list">
-              <ol>
-                {filteredList.map((x, index) => (
-                  <div className="haii" key={index}>
-                    <li>{x.name}</li>
-                  </div>
-                ))}
-              </ol>
-            </div>
             <div className="sort-header">
               <select onChange={handleSortChange} value={sortCriteria}>
                 {sortOptions.map((option, index) => (
@@ -293,10 +247,10 @@ const CombinedComponent = () => {
             </div>
             <ul
               className={`flex flex-wrap ${
-                viewMode === "list" ? "flex-row  " : ""
+                viewMode === "list" ? "flex-row" : ""
               }`}
             >
-              {sortedData().map((item) => (
+              {currentRecords.map((item) => (
                 <li
                   key={item.id}
                   className={`mb-[30px] shadow-2xl ${
@@ -323,7 +277,7 @@ const CombinedComponent = () => {
                     <div className="border border-[#c5c5c5]"></div>
                     <div className="content py-[10px] px-0 flex flex-col items-center ">
                       <div className="title">{item.description}</div>
-                      <div className="dualCalss flex gap-[12px] ">
+                      <div className="dualClass flex gap-[12px] ">
                         {item.bid && <div className="bid">{item.bid}</div>}
                         {item.price && (
                           <div className="price text-[black] font-semibold ">
@@ -336,6 +290,35 @@ const CombinedComponent = () => {
                 </li>
               ))}
             </ul>
+            <div>
+              <ul className="pagination flex gap-[15px] ">
+                
+                {pageNumbers.map((number) => (
+                  <li
+                    className={`page-item ${
+                      currentPage === number ? "active" : ""
+                    }`}
+                    key={number}
+                  >
+                    <button
+                      className="page-link w-[45px] h-[45px] rounded-[50%] text-[black] hover:text-[white] shadow-md hover:bg-[#2695FF] "
+                      onClick={() => handlePagination(number)}
+                    >
+                      {number}
+                    </button>
+                  </li>
+                ))}
+                <li className="page-item">
+                  <button
+                    className="page-link flex items-center justify-center w-[45px] h-[45px] rounded-[50%] text-[black] hover:text-[white] shadow-md hover:bg-[#2695FF]"
+                    onClick={() => handlePagination(currentPage + 1)}
+                    disabled={currentPage === npage}
+                  >
+                   <FaArrowRightLong />
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </Col>
       </Row>
