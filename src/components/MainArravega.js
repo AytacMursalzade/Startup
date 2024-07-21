@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function MainArravega() {
   return (
     <>
-        <div className="mt-[126px] mb-[75px]">
+        <div className="mt-[126px] mb-[75px] ">
           <div className="topgav flex flex-col items-center justify-center">
             <h1 className="topic font-bold text-[34px]">LATEST AUCTIONS</h1>
             <div className="gavel flex items-center justify-center mt-[15px]">
@@ -20,7 +20,7 @@ function MainArravega() {
             </div>
           </div>
 
-          <div className="PhonesMemo flex flex-wrap gap-[13px] mt-[30px]  px-[71px]">
+          <div className="PhonesMemo hidden grid-cols-2  gap-[13px] mt-[30px]  px-[71px]">
             {homeData.map((item, index) => (
               <div
                 key={index}

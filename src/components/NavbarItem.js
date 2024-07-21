@@ -65,20 +65,30 @@ const NavbarItem = (props) => {
   ];
 
   return (
-    <div className={`h-[70px] bg-[${props.bgColor}] flex justify-between`}>
-      <nav>
-        <ul className={`${isMobile ? "nav-links-mobile" : "nav-links"} flex gap-[44px] text-white mt-[3%] ml-[1%] text-[14px] font-medium`}>
+    <div className={`h-[70px] bg-[${props.bgColor}] flex justify-between items-center`}>
+      <nav className="flex items-center w-full">
+        <ul className={`${isMobile ? "nav-links-mobile" : "nav-links"} flex gap-[44px] text-white  mt-[3%] ml-[1%] text-[14px] font-medium`}>
           {data.map((item) => (
             <li
               key={item.id}
-              className={`menu-item relative border-t-2 border-transparent hover:border-white transition duration-300 ${isSubmenuOpen && activeItem === item.id ? 'visible' : ''} cursor-pointer`}
+              className={`menu-item relative border-t-2 border-transparent hover:border-white transition duration-300 ${isSubmenuOpen && activeItem === item.id ? 'visible' : ''} cursor-pointer flex justify-between items-center`}
               onClick={() => handleMobileClick(item.id)}
               onMouseEnter={() => !isMobile && handleOpenSubmenu(item.id)}
               style={{ width: item.id === 1 ? '240px' : 'auto', justifyContent: item.id === 1 ? 'center' : 'initial' }}
             >
-              <a href={item.link || "#"}>
+              <a
+                href={isMobile ? '#' : (item.link || '#')}
+                onClick={(e) => {
+                  if (isMobile && item.subMenu) {
+                    e.preventDefault();
+                    handleMobileClick(item.id);
+                  }
+                }}
+                className="flex justify-between items-center w-full"
+              >
                 {item.icon && <span className="mr-2">{item.icon}</span>}
                 {item.concept}
+                {/* {item.subMenu && <span className="ml-2">&#x25BC;</span>} */}
               </a>
               {isSubmenuOpen && activeItem === item.id && item.subMenu && (
                 <div
@@ -93,7 +103,9 @@ const NavbarItem = (props) => {
             </li>
           ))}
         </ul>
-        <button onClick={() => setIsMobile(!isMobile)} className='mobilMenuIcon'>{isMobile ? <GiSplitCross /> : <GiHamburgerMenu />}</button>
+        <button onClick={() => setIsMobile(!isMobile)} className='mobilMenuIcon ml-auto'>
+          {isMobile ? <GiSplitCross /> : <GiHamburgerMenu />}
+        </button>
       </nav>
     </div>
   );

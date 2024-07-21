@@ -73,8 +73,9 @@ const Carousel = () => {
         {images.map((image, index) => (
           <div key={index} className="slide-item w-full flex items-center justify-center absolute top-0 left-0" style={{ left: `${index * 100}%` }}>
             <SlideItem
+              
               subject="TECH EQUIPMENT"
-              backSubject={index === 0 ? "HEADPHONES" : index === 1 ? "MACKBOOK" : "WATCH"}
+              backSubject={<span className="SlideItemBack">{index === 0 ? "HEADPHONES" : index === 1 ? "MACKBOOK" : "WATCH"}</span>}
               src={image}
               alt={`Slide ${index + 1}`}
               text1={index === 0 ? "Balanced High, Mid and Low tones" : index === 1 ? "2.9 GHz Dual-Core Intel Core i5" : "Dual-Core Processor,Integrated GPS"}
